@@ -1,0 +1,17 @@
+# mewcode 权限配置示例
+# 三层配置：本地(.mewcode/settings.local.yaml) > 项目(.mewcode/settings.yaml) > 用户(~/.mewcode/settings.yaml)
+# 复制为 .mewcode/settings.yaml 生效；本地层 .mewcode/settings.local.yaml 已被 gitignore（人在回路「永久」写入此处）。
+
+# 可选：默认权限模式（default / acceptEdits / plan / bypassPermissions），不写则 default
+default_mode: default
+
+permissions:
+  # allow：提前放行某些调用（规则未命中时，default 模式下文件写/命令执行会询问）
+  allow:
+    - "Bash(git *)"       # 放行所有 git 子命令
+    - "Bash(pytest)"      # 放行 pytest
+  # deny：明确拦截（对只读类也可做围栏，如 Read(.env)）
+  deny:
+    - "Bash(rm *)"
+    - "Read(.env)"
+    - "Write(.env)"

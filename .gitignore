@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+.mypy_cache/
+.ruff_cache/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# mewcode runtime config (contains real API keys)
+.mewcode/config.yaml
+
+# mewcode local permission rules (human-in-the-loop "always allow" writes here)
+.mewcode/settings.local.yaml
+
+# mewcode session archives (JSONL + tool-result spill files)
+.mewcode/sessions/
+
+# ch14: Worktree 隔离副本（仅供 SubAgent 与手动管理使用）
+.mewcode/worktrees/
+.mewcode/worktree_session.json

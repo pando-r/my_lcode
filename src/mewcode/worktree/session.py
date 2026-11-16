@@ -1,0 +1,54 @@
+"""Active worktree session model and atomic JSON persistence."""
+
+from __future__ import annotations
+
+import json
+import os
+from dataclasses import asdict, dataclass
+from pathlib import Path
+
+
+@dataclass
+class WorktreeSession:
+    original_cwd: str
+    worktree_path: str
+    worktree_name: str
+    original_branch: str = ""
+    original_head_commit: str = ""
+    session_id: str = ""
+    hook_based: bool = False
+
+    def to_json(self) -> str:
+        return json.dumps(asdict(self), ensure_ascii=False)
+
+    @classmethod
+    def from_json(cls, raw: str) -> WorktreeSession:
+        data = json.loads(raw)
+        if not isinstance(data, dict):
+            raise ValueError("worktree session 必须是 JSON 对象")
+        return cls(**data)
+
+
+def load_session(path: Path) -> WorktreeSession | None:
+    if not path.is_file():
+        return None
+    raw = path.read_text(encoding="utf-8").strip()
+    if not raw or raw == "null":
+        return None
+    return WorktreeSession.from_json(raw)
+
+
+def save_session(path: Path, session: WorktreeSession | None) -> None:
+    # 原子写：同目录 tmp 文件 + os.replace，避免启动时读到半截 JSON。
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    payload = "null" if session is None else session.to_json()
+    tmp.write_text(payload, encoding="utf-8")
+    os.replace(tmp, path)
+
+
+def clear_session(path: Path) -> None:
+    save_session(path, None)
+
+
+__all__ = ["WorktreeSession", "clear_session", "load_session", "save_session"]

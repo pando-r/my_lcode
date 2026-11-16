@@ -1,0 +1,10 @@
+# mewcode MCP 服务器配置（项目级）
+# 同名 server 会覆盖用户级 ~/.mewcode/config.yaml 里的定义。
+# env / headers 的值支持 ${VAR} 从宿主环境变量展开（密钥不落盘）。
+
+mcp_servers:
+  # 网页搜索：Tavily（免费额度，去 https://tavily.com 注册拿 API key）
+  # 注意：tavily-mcp 是 HTTP 服务器，需要先在另一个终端手动启动它（见 README 说明）。
+  tavily:
+    type: http
+    url: "http://localhost:8083/mcp"
