@@ -17,8 +17,9 @@ Windows（PowerShell）：
 irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1 | iex
 ```
 
-脚本会检测并自动安装 `uv`（**无需自己准备 Python**），把 mewcode 装进隔离环境，并生成
-`~/.mewcode/config.yaml`。之后只需要两步：
+脚本会自动挑安装器：有 `uv` 用 `uv`、有 `pipx` 用 `pipx`、否则用你已有的 **Python 3.12+**
+的 `pip`（**不会强制下载 uv**）。只有机器上完全找不到 Python 时，才会安装 uv 来自带 Python。
+装好后会生成 `~/.mewcode/config.yaml`。之后只需要两步：
 
 ```bash
 # 1) 把 providers[0].api_key 换成你的真实密钥
@@ -28,10 +29,11 @@ $EDITOR ~/.mewcode/config.yaml     # Windows: notepad %USERPROFILE%\.mewcode\con
 mewcode
 ```
 
-不想装到全局？临时跑一次：
+不想装到全局？临时跑一次（二选一，装了 pipx 的话不需要 uv）：
 
 ```bash
 uvx --from git+https://github.com/pando-r/my_mecode.git mewcode
+pipx run --spec git+https://github.com/pando-r/my_mecode.git mewcode
 ```
 
 配置查找优先级：`--config` > `MEWCODE_CONFIG` 环境变量 > `./.mewcode/config.yaml` >
@@ -40,6 +42,35 @@ uvx --from git+https://github.com/pando-r/my_mecode.git mewcode
 
 > 安全提示：mewcode 会调用 `bash` 执行命令并读写文件，所有写操作都会经过权限引擎。
 > 首次在陌生仓库里使用时，建议逐条确认权限弹窗，不要盲目选择"全部允许"。
+
+## 不用 uv 的安装方式（pip / pipx）
+
+mewcode 是标准 PEP 517 包（hatchling 后端），`pip` 可以直接装，不需要 uv。
+前提只有 **Python 3.12+**；`git` 可选（没有 git 时用 GitHub 的 zip 源码包）。
+
+```bash
+# 推荐：用 pipx 装成隔离的全局命令（pipx 本身可 pip install --user pipx）
+pipx install "git+https://github.com/pando-r/my_mecode.git"
+
+# 只用 pip：装到用户目录，Windows 上不需要管理员权限
+pip install --user "git+https://github.com/pando-r/my_mecode.git"
+
+# 没有 git 也行，直接装 zip 源码包
+pip install --user https://github.com/pando-r/my_mecode/archive/refs/heads/main.zip
+
+# 升级
+pipx upgrade mewcode        # 或 pip install --user --upgrade <上面的地址>
+```
+
+装完执行 `mewcode --init` 生成配置模板，编辑好 api_key 后直接 `mewcode` 启动。
+
+- `pip install --user` 会把可执行文件放到用户脚本目录（Linux/macOS 一般是 `~/.local/bin`，
+  Windows 是 `%APPDATA%\Python\Python3XX\Scripts`），首次可能需新开终端或手动加 PATH。
+- Debian/Ubuntu 等的系统 Python 有 `externally-managed-environment` 保护，请改用 `pipx`，
+  或建独立虚拟环境：
+  `python3 -m venv ~/.mewcode/venv && ~/.mewcode/venv/bin/pip install "git+https://github.com/pando-r/my_mecode.git"`
+- 一行脚本也支持显式指定安装器：`MEWCODE_INSTALLER=pip curl -LsSf .../scripts/install.sh | sh`
+  （Windows：`$env:MEWCODE_INSTALLER='pip'; irm .../install.ps1 | iex`）。
 
 ## 特性
 
@@ -225,11 +256,29 @@ cp .mewcode/config.yaml.example .mewcode/config.yaml   # 编辑填入真实密�
 uv run mewcode   # 或 uv run python -m mewcode
 ```
 
+不用 uv 的等价做法（需要 Python 3.12+）：
+
+```bash
+python -m venv .venv
+. .venv/bin/activate                  # Windows: .venv\Scripts\activate
+pip install -e .                      # 装 mewcode 本体与运行依赖
+pip install pytest pytest-asyncio ruff mypy   # dev 依赖
+python -m mewcode
+```
+
 ## 发布到 PyPI
 
 ```bash
 uv build                 # 生成 dist/mewcode-<version>-*.whl
 uv publish               # 需要 UV_PUBLISH_TOKEN，或配置 Trusted Publishing
+```
+
+没有 uv 时用标准工具，效果相同：
+
+```bash
+pip install build twine
+python -m build          # 生成 dist/*.whl 与 *.tar.gz
+twine upload dist/*
 ```
 
 发布后安装脚本可切到 PyPI 渠道（默认仍走 GitHub 源码）：
@@ -244,4 +293,12 @@ MEWCODE_CHANNEL=pypi curl -LsSf .../scripts/install.sh | sh
 uv run pytest
 uv run ruff check .
 uv run ruff format --check .
+```
+
+没有 uv 时（已在虚拟环境里装好 dev 依赖）：
+
+```bash
+pytest
+ruff check .
+ruff format --check .
 ```
