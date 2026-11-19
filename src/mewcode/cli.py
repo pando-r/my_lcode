@@ -83,6 +83,10 @@ async def _amain(member_args=None) -> int:
     registry = new_default_registry()
     root = str(Path.cwd().resolve())
 
+    # 内置 stdio MCP server（如 mewcode.mcp_servers.web_search）需要「装着 mewcode 的解释器」，
+    # 允许 .mewcode.yaml 里写 command: "${MEWCODE_PYTHON}"，不必把绝对路径写死。
+    os.environ.setdefault("MEWCODE_PYTHON", sys.executable)
+
     mcp_cfg = mcp_client.load_config(root)
     mcp_mgr = await mcp_client.new_manager(mcp_cfg, __version__)
 

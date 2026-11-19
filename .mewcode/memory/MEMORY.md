@@ -4,3 +4,4 @@
 - [project_knowledge] mewcode 长期记忆存储布局 — 记忆分两级目录，由 cli.py:47-50 的 memory.Manager 构造：项目级 <cwd>/.mewcode/memory/（当前为 D:\Project\AgentProject\my_mecode\.mewcode\mem
 - [project_knowledge] mewcode Agent.run ReAct 循环关键设计 — mewcode/src/mewcode/agent/__init__.py 的 Agent.run() 是主 ReAct 循环（AsyncIterator[Event]），几个关键设计：
 - [reference_material] mewcode 中三处正则用法位置 — mewcode 源码中三处典型的 re.compile 正则，可作为讲解/参考示例：
+- [project_knowledge] mewcode Skill 加载器需手动 reload — mewcode 的 Skill 加载器在会话开始时扫描一次 skill 目录；会话进行中新安装的 skill 不会被自动识别，LoadSkill 会返回「未知 Skill: xxx」。解决：执行 `/skill reload` 重新扫描，之

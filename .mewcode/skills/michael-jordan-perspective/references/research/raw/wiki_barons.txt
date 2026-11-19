@@ -1,0 +1,212 @@
+SOURCE: https://en.wikipedia.org/w/index.php?title=Birmingham_Barons&action=raw
+
+{{Use American English|date=March 2026}}
+{{Use mdy dates|date=May 2025}}
+{{Infobox Minor League Baseball
+|name             = Birmingham Barons
+|founded          = 1885
+|city             = Birmingham, Alabama
+|misc             =
+|logo             = BirminghamBaronsLogo2007.PNG
+|uniformlogo      = BirminghamBaronsCap.png
+|class level      = Double-A (1946–1961; 1964–1965; 1967–1975; 1981–present)
+|past class level = {{plainlist|
+* Class-A1 (1936–1945)
+* Class-A (1902–1935)
+* Class-B (1892–1901)
+}}
+|current league   = [[Southern League (1964–present)|Southern League]] (1964–1965; 1967–1970; 1972–1975; 1981–present)
+|conference       =
+|division         = North Division
+|past league      = {{plainlist|
+* [[Dixie Association]] (1971)
+* [[Southern Association]] (1901–1961)
+* [[Southern League (1885–1899)|Southern League]] (1885; 1887–1889; 1892–1893; 1896; 1898)
+}}
+|majorleague      = [[Chicago White Sox]] (1986–present)
+|pastmajorleague  = {{plainlist|
+* [[Detroit Tigers]] (1957–1961; 1981–1985)
+* [[Kansas City Athletics|Kansas City]]/[[Oakland Athletics]] (1964–1975)
+* [[New York Yankees]] (1953–1956)
+* [[Boston Red Sox]] (1948–1952)
+* [[Philadelphia Athletics]] (1947)
+* [[Pittsburgh Pirates]] (1946)
+* [[Cincinnati Reds]] (1939–1945)
+* [[Chicago Cubs]] (1936–1938)
+}}
+|nickname         = Birmingham Barons (1901–1961; 1964–1965; 1981–present)
+|pastnames        = {{plainlist|
+* Birmingham A's (1967–1975)
+* Birmingham Reds (1898)
+* Birmingham Bluebirds (1896)
+* Birmingham Blues (1893)
+* Birmingham Grays (1892–1893)
+* Birmingham (1889)
+* Birmingham Maroons (1888)
+* Birmingham Ironmakers (1887)
+* Birmingham Coal Barons (1885)
+}}
+|colors           = Black, red, gray<br>{{color box|#2D2926}} {{color box|#BF0D3E}} {{color box|#FFFFFF}}
+|ballpark         = {{plainlist|
+* [[Regions Field]] (2013–present) 
+* [[Rickwood Field]] (1910–1961, 1964–1965, 1967-1975, 1981–1987, 1996–present)
+}}
+|pastparks        = {{plainlist|
+* West End Park (aka "The Slag Pile") (1885–1910)
+* [[Hoover Metropolitan Stadium]] (1988–2012)
+}}
+|mascot           = Babe Ruff (1992-present)<br /> Lillie Mays (2006-present)<br /> WickyWood (1981-1992)
+|dixienum         = 6
+|dixiechamps      = {{hlist|1929|1931|1948|1951|1958|1967}}
+|leaguenum        = 14
+|leaguechamps     = {{hlist|1928|1936|1948|1951|1958|1967|1983|1987|1989|1993|2002|2013|2024|2025}}
+|pennum           = 10
+|pennants         = {{hlist|1888|1892|1906|1912|1914|1928|1929|1931|1958|1959}}
+|divnum           = 10
+|divisionchamps   = {{hlist|1983|1987|1989|1991|1993|2002|2013|2021|2024|2025}}
+|firsthalfnum     = 11
+|firsthalfchamps  = {{hlist|1983|1987|1989|1991|2000|2002|2008|2009|2011|2013|2024}}
+|secondhalfnum    = 7
+|secondhalfchamps = {{hlist|1990|1993|2001|2003|2004|2005|2025}}
+|owner            = [[Diamond Baseball Holdings]]<ref name="sale2023">{{cite web |last1=Reitz |first1=Ian |title=Birmingham Barons sold to new ownership group |url=https://www.wvtm13.com/article/birmingham-barons-new-owners-baseball/45086406 |website=WVTM |access-date=13 September 2023 |language=en |date=12 September 2023}}</ref>
+|manager          = Pat Leyland
+|gm               = John Cook
+|website          = {{URL|https://www.milb.com/birmingham|milb.com/birmingham}}
+}}
+
+The '''Birmingham Barons''' are a [[Minor League Baseball]] team based in [[Birmingham, Alabama]]. The team, which plays in the [[Southern League (1964–present)|Southern League]], is the [[Double-A (baseball)|Double-A]] affiliate of the [[Chicago White Sox]] and plays at [[Regions Field]] in downtown Birmingham. The Barons were previously located in [[Montgomery, Alabama]], and known as the [[Montgomery Rebels]].<ref>{{Cite news|url=http://funwhileitlasted.net/2017/11/18/1965-1980-montgomery-rebels/|title=1965-1980 Montgomery Rebels - Fun While It Lasted|date=2017-11-18|work=Fun While It Lasted|access-date=2018-04-24|language=en-US |df=mdy-all}}</ref>
+
+==History==
+Most of the professional baseball teams that have played in Birmingham have used the name Barons. The current team began playing in Birmingham in 1981, having previously played in [[Montgomery, Alabama]] as the [[Montgomery Rebels]]. Like previous Barons teams, they played at [[Rickwood Field]] on a full-time basis from 1981 to 1987.  Since then, they have only played at Rickwood on special occasions. From 1988 to 2012, the team played at [[Hoover Metropolitan Stadium]] in the suburb of [[Hoover, Alabama]], where former basketball star [[Michael Jordan]] played with the team in {{baseball year|1994}}.<ref>{{cite web|last=Crenshaw, Jr.|first=Solomon|title=20 years ago today, Michael Jordan signed with White Sox to produce our Summer of Jordan|url=https://www.al.com/sports/2014/02/20_years_ago_today_michael_jor.html|website=AL.com Alabama News|date=February 7, 2014|access-date=January 23, 2025}}</ref> Since 2013, the team has played at [[Regions Field]] in the downtown part of Birmingham.
+
+As a result of [[Major League Baseball]]'s restructuring of Minor League Baseball in 2021, the Barons were organized into the eight-team Double-A South.<ref>{{cite web|last=Mayo|first=Jonathan|title=MLB Announces New Minors Teams, Leagues|url=https://www.mlb.com/news/new-minor-league-baseball-structure|website=Major League Baseball|date=February 12, 2021|access-date=June 18, 2024}}</ref> In 2022, the Double-A South became known as the Southern League, the name historically used by the regional circuit prior to the 2021 reorganization.<ref>{{cite web|url=https://www.milb.com/news/minor-league-baseball-historical-league-names-to-return-in-2022|title=Historical League Names to Return in 2022|website=Minor League Baseball|date=March 16, 2022|access-date=June 18, 2024}}</ref>
+
+[[Elmore Sports Group]] purchased the team in 1995.<ref>{{Cite web |last= |title=Team History |url=https://www.milb.com/news/gcs-343755 |access-date=2026-01-17 |website=MiLB.com |language=en}}</ref> In 2005, [[Elmore Sports Group]] sold to team to [[Don Logan]].<ref>{{Cite web |date=2005-09-29 |title=Barons welcome new ownership |url=https://www.oursportscentral.com/services/releases/barons-welcome-new-ownership/n-3227062 |access-date=2026-01-17 |website=OurSports Central |language=en}}</ref> In 2023, [[Diamond Baseball Holdings]] purchased the team from [[Don Logan|The Logan Family]].<ref name="sale2023" />
+
+==Playoffs and championships==
+* Southern League playoff appearances (18): 1983, 1987, 1989, 1990, 1991, 1993, 2000, 2001, 2002, 2003, 2004, 2005, 2008, 2009, 2011, 2013, 2024, 2025
+* [[List of Southern League champions|Southern League championships]] (8): 1983, 1987, 1989, 1993, 2002, 2013, 2024, 2025
+* [[Dixie Series]] championships (6): 1929, 1931, 1948, 1951, 1958, 1967<ref>{{citation|first=Bill|last=O'Neal|title=The Southern League: Baseball in Dixie, 1885–1994|publisher=Eakin Press|date=1994|isbn=0890159521|pages=307–308}}</ref>
+
+==Television and radio==
+All Birmingham Barons games are televised live on [[MiLB.TV]].<ref>{{cite web|url=http://www.milb.com/milb/multimedia/index.jsp?affiliateID=MiLBmenu |title=MiLB.tv |publisher=Minor League Baseball |access-date=July 28, 2017}}</ref> All games are also broadcast on radio on either [[WJQX]] 100.5 FM, [[WJOX-FM]] 94.5 FM or [[WJOX (AM)|WJOX-AM]] 690 AM.<ref>{{cite web|url=http://www.milb.com/documents/7/6/6/180554766/2016_Media_Guide_Final_JOB2_e29v6yel.pdf |title=Covering the Barons |work=Birmingham Barons Media Guide |publisher=Minor League Baseball |access-date=July 28, 2017 |page=108}}</ref> Birmingham Barons Hall-of-Fame broadcaster Curt Bloom is the broadcast commentator for both WERC and MiLB.TV and has been the voice of the Barons since 1992.<ref>{{cite web|url=http://www.milb.com/documents/7/6/6/180554766/2016_Media_Guide_Final_JOB2_e29v6yel.pdf |title=Barons Front Office Staff |work=Birmingham Barons Media Guide |publisher=Minor League Baseball |access-date=July 28, 2017 |page=105}}</ref>
+
+==Roster==
+{{Birmingham Barons roster}}
+
+==Notable Barons/A's==
+{{Div col|colwidth=18em}}
+* [[Jeff Abbott (baseball)|Jeff Abbott]]
+*[[Tim Anderson (baseball)|Tim Anderson]]
+* [[Wilson Álvarez]]
+* [[Dylan Axelrod]]
+* [[Wally Backman]] (manager)
+* [[Sal Bando]]
+* [[Jason Bere]]
+* [[Eddie Brinkman]] (manager)
+* [[Vida Blue]]
+* [[Britt Burns]] (pitching coach)
+* [[Mark Buehrle]]
+* [[Mike Cameron]]
+* [[Bert Campaneris]]
+* [[Phil Cavarretta]] (manager)
+* [[Ron Coomer]]
+* [[Joe Crede]]
+* [[Rob Dibble]]
+* [[Dave Duncan (baseball)|Dave Duncan]]
+* [[Ray Durham]]
+* [[Darrell Evans]]
+* [[Scott Eyre]]
+* [[Rollie Fingers]]
+* [[Terry Francona]] (manager)
+* [[Jon Garland]]
+* [[Brad Goldberg]]
+* [[Burleigh Grimes]]
+* [[Sam Hairston]] (bench coach) (Patriarch of the 3-generation Hairston MLB family) 
+* [[Mike Heath (baseball)|Mike Heath]] (manager)
+* [[Roberto Hernández (relief pitcher)|Roberto Hernández]]
+* [[Bo Jackson]]
+* [[Reggie Jackson]]
+* [[Bobby Jenks]]
+* [[Howard Johnson (baseball)|Howard Johnson]]
+* [[Michael Jordan]]
+* [[Paul Konerko]]
+* [[Marcel Lachemann]]
+* [[Rene Lachemann]]
+* [[Tony La Russa]]
+* [[Carlos Lee]]
+* [[Paul Lindblad]]
+* [[Rube Marquard]]
+* [[Jack McDowell]]
+* [[John McNamara (baseball)|John McNamara]] (manager)
+* [[Bob Melvin]]
+* [[Jim Nash (baseball)|Jim Nash]]
+* [[Blue Moon Odom]]
+* [[Miguel Olivo]]
+* [[Magglio Ordóñez]]
+* [[Jake Peavy]]
+* [[Rico Petrocelli]] (manager)
+* [[Jimmy Piersall]]
+* [[Aaron Poreda]]
+* [[Johnny Riddle]] (player/manager)
+* [[Luis Robert]]
+* [[Aaron Rowand]]
+* [[Joe Rudi]]
+* [[Marcus Semien]]
+* [[Razor Shines]] (manager)
+* [[Bill Stafford]]
+* [[Wally Taylor (baseball)|Wally Taylor]]
+* [[Gene Tenace]]
+* [[Bobby Thigpen]]
+* [[Frank Thomas]]
+* [[Pie Traynor]]
+* [[Robin Ventura]]
+* [[Omar Vizquel]] (manager)
+* [[Phil Weintraub]]
+* [[Bob Wickman]]
+{{Div col end}}
+
+==See also==
+* [[Birmingham Black Barons]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://www.barons.com/ Official website]
+* [http://www.birminghamprosports.com/ BirminghamProSports.com]
+* [https://www.bhamwiki.com/w/Birmingham_Barons Birmingham Barons at Bhamwiki.com]
+* [https://web.archive.org/web/20050525161510/http://www.al.com/printer/printer.ssf?%2Fbase%2Fsports%2F1085303947134240.xml "Our Summer with Michael", newspaper story about Michael Jordan's season with the Barons]
+
+{{s-start}}
+{{succession box
+| before = [[New Orleans Pelicans (baseball)|New Orleans Pelicans]]
+| title  = [[Boston Red Sox]]<br>Double-A affiliate
+| after  = [[Oklahoma City Indians]]<br>(1956)
+| years  = 1948–1952
+}}
+{{s-end}}
+
+{{Chicago White Sox}}
+{{Southern League (baseball)}}
+{{Alabama Sports}}
+{{Diamond Baseball Holdings}}
+
+[[Category:Birmingham Barons| ]]
+[[Category:Baseball teams established in 1885]]
+[[Category:Chicago White Sox minor league affiliates]]
+[[Category:Detroit Tigers minor league affiliates]]
+[[Category:Oakland Athletics minor league affiliates]]
+[[Category:New York Yankees minor league affiliates]]
+[[Category:Boston Red Sox minor league affiliates]]
+[[Category:Pittsburgh Pirates minor league affiliates]]
+[[Category:Kansas City Athletics minor league affiliates]]
+[[Category:Philadelphia Athletics minor league affiliates]]
+[[Category:Cincinnati Reds minor league affiliates]]
+[[Category:Chicago Cubs minor league affiliates]]
+[[Category:Southern League (1964–present) teams]]
+[[Category:Southern League (1885–1899) teams]]
+[[Category:Professional baseball teams in Alabama]]
+[[Category:1885 establishments in Alabama]]
+[[Category:Double-A South teams]]
+[[Category:Diamond Baseball Holdings]]

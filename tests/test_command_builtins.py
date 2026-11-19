@@ -10,6 +10,7 @@ from mewcode.prompt import EXECUTE_DIRECTIVE
 EXPECTED = {
     "clear",
     "compact",
+    "copy",
     "do",
     "exit",
     "help",
@@ -69,11 +70,11 @@ def _registry() -> Registry:
 def test_register_builtins_all_registered():
     reg = _registry()
     visible = reg.visible()
-    assert len(visible) == 15
+    assert len(visible) == 16
     assert {c.name for c in visible} == EXPECTED
     assert [c.name for c in visible] == sorted(EXPECTED)
     assert all(c.name == c.name.lower() for c in visible)
-    assert len({c.name for c in visible}) == 15
+    assert len({c.name for c in visible}) == 16
 
 
 def test_register_builtins_no_collision():
@@ -84,6 +85,7 @@ def test_register_builtins_kinds():
     reg = _registry()
     kinds = {c.name: c.kind for c in reg.visible()}
     assert [n for n, k in kinds.items() if k is Kind.LOCAL] == [
+        "copy",
         "help",
         "hooks",
         "memory",

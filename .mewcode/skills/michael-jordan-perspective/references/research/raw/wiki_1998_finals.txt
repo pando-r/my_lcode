@@ -1,0 +1,415 @@
+SOURCE: https://en.wikipedia.org/w/index.php?title=1998_NBA_Finals&action=raw
+
+{{short description|1998 basketball championship series}}
+{{Use mdy dates|date=February 2024}}
+{{NBA Finals summary
+| image = 1998 NBA Finals.jpg
+| league = NBA
+| year = 1998
+| champion = [[1997–98 Chicago Bulls season|Chicago Bulls]]
+| champion_coach = [[Phil Jackson]]
+| champion_games = 4
+| runnerup = [[1997–98 Utah Jazz season|Utah Jazz]]
+| runnerup_coach = [[Jerry Sloan]]
+| runnerup_games = 2
+| date = June 3–14
+| MVP = [[Michael Jordan]]<br />(Chicago Bulls)
+| HOFers = '''Bulls:'''<br />[[Michael Jordan]] (2009)<br />[[Toni Kukoc]] (2021)<br />[[Scottie Pippen]] (2010)<br />[[Dennis Rodman]] (2011)<br />'''Jazz:'''<br />[[Karl Malone]] (2010)<br />[[John Stockton]] (2009)<br />'''Coaches:'''<br />[[Phil Jackson]] (2007)<br />[[Jerry Sloan]] (2009)<br />[[Tex Winter]] (2011)<br />'''Officials:'''<br />[[Dick Bavetta]] (2015)<br />[[Danny Crawford]] (2025)<br />[[Hugh Evans (basketball)|Hugh Evans]] (2022)
+| ECF result = [[1997–98 Chicago Bulls season|Bulls]] defeated [[1997–98 Indiana Pacers season|Pacers]], 4–3
+| WCF result = [[1997–98 Utah Jazz season|Jazz]] defeated [[1997–98 Los Angeles Lakers season|Lakers]], 4–0
+}}
+
+The '''1998 NBA Finals''' was the [[NBA Finals|championship series]] of the [[National Basketball Association]]'s (NBA) [[1997–98 NBA season|1997–98 season]], and the conclusion of the [[1998 NBA playoffs|season's playoffs]]. The two-time [[1997 NBA Finals|defending NBA champion]] and [[Eastern Conference (NBA)|Eastern Conference]] champion [[1997–98 Chicago Bulls season|Chicago Bulls]] played against the [[Western Conference (NBA)|Western Conference]] champion [[1997–98 Utah Jazz season|Utah Jazz]], with the Jazz holding home-court advantage for the first 2 games in [[Salt Lake City, Utah|Salt Lake City]]. In a repeat of the [[1997 NBA Finals|previous year's Finals]], the Bulls defeated the Jazz in six games for their third consecutive NBA title and their sixth in eight seasons.
+
+[[Michael Jordan]] was voted the [[Bill Russell NBA Finals Most Valuable Player Award|NBA Finals MVP]] of the series (he also had won the award the last five times the Bulls won the Finals: 1991, 1992, 1993, 1996, and 1997). This would be his sixth NBA championship and sixth Finals MVP award in six full basketball seasons. This would be his final season of winning the NBA championship and Finals MVP. Until 2021 this would be the last finals not to feature a team from California, Florida, or Texas.
+
+The 1998 Finals garnered the highest [[National Basketball Association Nielsen ratings|Nielsen TV ratings]] in NBA history at 18.7, and even surpassed the Nielsen ratings for the [[1998 World Series]], marking the first time the NBA had a higher rating in its championship round than of [[Major League Baseball]]'s [[World Series|championship round]].
+
+The Bulls headed into the series as the underdogs. Bulls' small forward Scottie Pippen stated, "It's a different feeling. We’ve never been in this situation where we’ve sort of been written off. It’s a great feeling being the underdog because you want to go out now and prove everybody wrong."<ref>{{cite web|author=Terry Armour|url=https://www.chicagotribune.com/sports/bulls/ct-chicago-bulls-utah-jazz-underdogs-20200516-7zuyrgs6rnfnzg3exn7lfaxwi4-story.html|title=Chicago Bulls head into the 1998 NBA Finals against the Utah Jazz as underdogs: 'You want to go out now and prove everybody wrong'|publisher=[[Chicago Tribune]]|date=June 3, 1998|access-date=October 20, 2021}}</ref>
+
+As of {{CURRENTYEAR}}, this is Chicago's most recent championship and Finals appearance, and they currently hold the longest Finals appearance drought of the [[Central Division (NBA)|Central Division]] teams.
+
+==Background==
+Entering the [[1997–98 Chicago Bulls season|1997–98]], this was widely expected to be the last season of the Chicago Bulls core of [[Michael Jordan]], [[Scottie Pippen]], [[Dennis Rodman]], and head coach [[Phil Jackson]]. In training camp, Phil Jackson wrote on the chalk board and named the season "The Last Dance".<ref>{{Cite news |last=Stein |first=Marc |date=2020-04-22 |title=Why Phil Jackson Needs ‘The Last Dance’ (Published 2020) |url=https://www.nytimes.com/2020/04/22/sports/basketball/phil-jackson-michael-jordan-last-danc.html |archive-url=https://web.archive.org/web/20230523223329/https://www.nytimes.com/2020/04/22/sports/basketball/phil-jackson-michael-jordan-last-danc.html |archive-date=2023-05-23 |access-date=2025-12-20 |language=en-US}}</ref>
+
+A point of contention for the Bulls was Scottie Pippen's contract status.<ref>{{Cite web |last=Quinn |first=Sam |date=2020-05-17 |title=Scottie Pippen contract explained: How the Bulls managed to sign Hall of Famer for pennies on the dollar |url=https://www.cbssports.com/nba/news/scottie-pippen-contract-explained-how-the-bulls-managed-to-sign-hall-of-famer-for-pennies-on-the-dollar/ |access-date=2026-06-22 |website=CBS Sports}}</ref> Pippen had purposefully delayed off-season surgery so that his summer off-season would not be complicated by rehab, pushing his unavailability well into the regular season.<ref>{{Cite web |last=Armstrong |first=Megan |title=Scottie Pippen on Delaying Surgery in 1997: 'I'm Not Gonna F--k My Summer Up' |url=https://bleacherreport.com/articles/2887502-scottie-pippen-on-delaying-surgery-in-1997-im-not-gonna-f-k-my-summer-up |access-date=2026-06-22 |website=bleacherreport.com}}</ref> In addition to this increasing the load on Jordan to drive the team towards a potential final championship together, it stirred an active effort by Bulls general manager [[Jerry Krause]] to trade Pippen, who responded in turn with his own trade demand.<ref>{{Cite AV media |url=https://www.youtube.com/watch?v=gzMizNykDWI |title=Tracy McGrady: I was VERY close to being traded for Scottie Pippen on 1997 draft night {{!}} The Jump |date=2020-04-20 |last=ESPN |access-date=2026-06-22 |via=YouTube}}</ref> In spite of this drama, Pippen ultimately rejoined the team in January, playing only 44 games on the season.<ref>{{Cite web |title=Scottie Pippen Stats, Height, Weight, Position, Draft Status and more |url=https://www.basketball-reference.com/players/p/pippesc01.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref>
+
+In the playoffs, the Jazz were pushed to the brink by the [[1997–98 Houston Rockets season|Houston Rockets]] before winning Game 5 in Utah, and then overcame [[NBA Rookie of the Year Award|Rookie of the Year]] [[Tim Duncan]] and the [[1997–98 San Antonio Spurs season|San Antonio Spurs]] 4–1. They then swept the [[1997–98 Los Angeles Lakers season|Los Angeles Lakers]] in the Western Conference finals. The Bulls swept the [[1997–98 New Jersey Nets season|New Jersey Nets]] and then took out the [[1997–98 Charlotte Hornets season|Charlotte Hornets]] in five, but it took seven games to overcome the [[1997–98 Indiana Pacers season|Indiana Pacers]] in the Eastern Conference Finals.<ref>{{Cite web |title=1997-98 Utah Jazz Schedule |url=https://www.basketball-reference.com/teams/UTA/1998_games.html |access-date=2026-06-22 |website=Basketball-Reference.com |language=en}}</ref><ref>{{Cite web |title=1997-98 Chicago Bulls Schedule |url=https://www.basketball-reference.com/teams/CHI/1998_games.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref><ref>{{Cite AV media |url=https://www.youtube.com/watch?v=z716Ir4TxtA |title=Pacers @ Bulls 1998 ECF Deciding Game 7 Highlights (NBA On NBC) |date=2024-08-21 |last=MDBBall |access-date=2026-06-22 |via=YouTube}}</ref> The series marked the first time since 1989 that the same two teams met in the Finals in consecutive years. The Jazz earned the league's best record by virtue of sweeping the two-game regular season series with the Bulls despite both teams finishing at 62 wins.<ref>{{Cite web |last=Hauser|first=Jeff|date=2026-05-18|title=10,170 days: Spurs vs. Thunder Western Conference Finals is a generational NBA Playoff series|url=https://sports.yahoo.com/articles/10-170-days-spurs-vs-141107997.html|access-date=2026-05-19|website=YahooSports.com}}</ref>
+
+By 1998, the Finals logo was now embroidered on the Finals participants' jerseys, instead of the [[Larry O'Brien Championship Trophy|Larry O'Brien trophy]] patch as seen from [[1996 NBA Finals|1996]] and [[1997 NBA Finals|1997]].<ref>{{Cite web |date=2025-06-26 |title=NBA Finals Patch Guide (1990s–Now) — Read This Before You Add One to Your Jersey - Hoop Jersey Store |url=https://hoopjersey.com/blogs/nba-jersey-wiki/nba-finals-patch-guide-1990s-now-read-this-before-you-add-one-to-your-jersey/ |access-date=2026-06-22 |website=hoopjersey.com}}</ref>
+
+===Road to the Finals===
+{{Main|1998 NBA playoffs}}
+{| style="width:100%; font-size:90%" class="wikitable"
+|- valign=top
+! colspan="2" style="width:45%;"|[[Utah Jazz]] ([[Western Conference (NBA)|Western Conference]] champion) !! !! colspan="2" style="width:45%;"|[[Chicago Bulls]] ([[Eastern Conference (NBA)|Eastern Conference]] champion)
+|-
+|align=right|
+{{1997–98 NBA West standings|team=UTA}}First seed in the West, best league record
+!colspan=2|[[1997–98 NBA season|Regular season]]
+|
+{{1997–98 NBA East standings|team=CHI}}First seed in the East, second-best league record
+|-
+|align=right|Defeated the (8) [[1997–98 Houston Rockets season|Houston Rockets]], 3–2
+!colspan=2|First round
+|Defeated the (8) [[1997–98 New Jersey Nets season|New Jersey Nets]], 3–0
+|-
+|align=right|Defeated the (5) [[1997–98 San Antonio Spurs season|San Antonio Spurs]], 4–1
+!colspan=2|Conference semifinals
+|Defeated the (4) [[1997–98 Charlotte Hornets season|Charlotte Hornets]], 4–1
+|-
+|align=right|Defeated the (3) [[1997–98 Los Angeles Lakers season|Los Angeles Lakers]], 4–0
+!colspan=2|Conference finals
+|Defeated the (3) [[1997–98 Indiana Pacers season|Indiana Pacers]], 4–3
+|}
+
+===Regular season series===
+The [[Utah Jazz]] won both games in the regular season series:
+{{basketballbox
+ | bg=#fff
+ | date = January 25, 1998
+| team1 = '''[[Utah Jazz]]''' |score1=101
+ | team2 = [[Chicago Bulls]] |score2=94
+ | place = [[United Center]], [[Chicago]], [[Illinois]]
+ }}
+{{basketballbox
+ | date = February 4, 1998
+| team1 = [[Chicago Bulls]] |score1=93
+ | team2 = '''[[Utah Jazz]]''' |score2=101
+ | place = [[Delta Center]], [[Salt Lake City]], [[Utah]]
+}}The Jazz were the only Western Conference team to beat the Bulls in a season twice since Jordan came back from his second retirement.<ref>{{Cite web |date=2026-06-22 |title=Jordan Record Against Western Conference Teams By Year |url=https://www.statmuse.com/nba/ask/jordan-record-against-western-conference-teams-by-year |access-date=2026-06-22 |website=StatMuse |language=en}}</ref>
+
+==1998 NBA Finals rosters==
+
+===Chicago Bulls===
+{{NBA roster header|team=Chicago Bulls|season=1997–98}}
+<!-- begin player list -->
+{{player2 | num = 22 | first = Keith | last = Booth | pos = SF | ft = 6 | in = 6 | lbs = 226 | college = Maryland | DOB = 1974–10–09 }}
+{{player2 | num = 1 | first = Randy | last = Brown | dab = basketball |  pos = PG | ft = 6 | in = 2 | lbs = 190 | college = New Mexico State | DOB = 1968–05–22 }}
+{{player2 | num = 30 | first = Jud | last = Buechler | pos = SF | ft = 6 | in = 6 | lbs = 220 | college = Arizona | DOB = 1968–06–19 }}
+{{player2 | num = 24 | first = Scott | last = Burrell | pos = SF | ft = 6 | in = 7 | lbs = 218 | college = Connecticut | DOB = 1971–01–12 }}
+{{player2 | num = 9 | first = Ron | last = Harper | pos = PG | ft = 6 | in = 6 | lbs = 185 | college = Miami (OH) | DOB = 1964–01–20 }}
+{{player2 | num = 23 | first = Michael | last = Jordan | pos = SG | ft = 6 | in = 6 | lbs = 215 | college = North Carolina | DOB = 1963–02–17 }}
+{{player2 | num = 25 | first = Steve | last = Kerr | pos = PG | ft = 6 | in = 3 | lbs = 175 | college = Arizona | DOB = 1965–09–27 }}
+{{player2 | num = 53 | first = Joe | last = Kleine | pos = C | ft = 6 | in = 11 | lbs = 255 | college = Arkansas | DOB = 1962–01–04 }}
+{{player2 | num = 7 | first = Toni | last = Kukoč | pos = SF | ft = 6 | in = 10 | lbs = 192 | from = Croatia | DOB = 1968–09–18 }}
+{{player2 | num = 5 | first = Rusty | last = LaRue | pos = PG | ft = 6 | in = 2 | lbs = 210 | college = Wake Forest | DOB = 1973–12–10 }}
+{{player2 | num = 13 | first = Luc | last = Longley | pos = C | ft = 7 | in = 2 | lbs = 265 | college = New Mexico | DOB = 1969–01–19 }}
+{{player2 | num = 33 | first = Scottie | last = Pippen | pos = SF | ft = 6 | in = 8 | lbs = 220 | college = Central Arkansas | DOB = 1965–09–25 }}
+{{player2 | num = 91 | first = Dennis | last = Rodman | pos = PF | ft = 6 | in = 8 | lbs = 210 | college = Southeastern Oklahoma State | DOB = 1961–05–13 }}
+{{player2 | num = 34 | first = Bill | last = Wennington | pos = C | ft = 7 | in = 0 | lbs = 245 | college = St. John's | DOB = 1963–04–26 }}
+<!-- end player list -->
+{{NBA roster footer
+| head_coach =
+* [[Phil Jackson]]
+| asst_coach =
+* [[Bill Cartwright]]
+* [[Frank Hamblen]]
+* [[Jimmy Rodgers (basketball)|Jim Rodgers]]
+* [[Tex Winter]]
+| roster_url = https://www.basketball-reference.com/teams/CHI/1998.html
+}}
+
+===Utah Jazz===
+{{NBA roster header|team=Utah Jazz|season=1997–98
+| bg1 = #3C2F88 | color1 = #FFFFFF
+| bg2 = #007A8C | color2 = #FFFFFF
+}}
+<!-- begin player list -->
+{{player2 | num = 40 | first = Shandon | last = Anderson | pos = SG | ft = 6 | in = 6 | lbs = 208 | college = Georgia | DOB = 1973–12–31 }}
+{{player2 | num = 55 | first = Antoine | last = Carr | pos = PF | ft = 6 | in = 9 | lbs = 225 | college = Wichita State | DOB = 1961–07–23 }}
+{{player2 | num = 10 | first = Howard | last = Eisley | pos = PG | ft = 6 | in = 2 | lbs = 177 | college = Boston College | DOB = 1972–12–04 }}
+{{player2 | num = 44 | first = Greg | last = Foster | dab = basketball | pos = C | ft = 6 | in = 11 | lbs = 240 | college = UTEP | DOB = 1968–10–03}}
+{{player2 | num = 14 | first = Jeff | last = Hornacek | pos = SG | ft = 6 | in = 3 | lbs = 190 | college = Iowa State | DOB = 1963–05–03 }}
+{{player2 | num = 25 | first = Troy | last = Hudson | pos = PG | ft = 6 | in = 1 | lbs = 170 | college = Southern Illinois | DOB = 1976–03–13 }}
+{{player2 | num = 31 | first = Adam| last = Keefe | dab = basketball | pos = SF | ft = 6 | in = 9 | lbs = 230 | college = Stanford | DOB = 1970–02–22 }}
+{{player2 | num = 32 | first = Karl | last = Malone | pos = PF | ft = 6 | in = 9 | lbs = 250 | college = Louisiana Tech | DOB = 1963–07–24 }}
+{{player2 | num = 34 | first = Chris | last = Morris | dab = basketball | pos = SF | ft = 6 | in = 8 | lbs = 210 | college = Auburn | DOB = 1966–01–20 }}
+{{player2 | num = 00 | first = Greg | last = Ostertag | pos = C | ft = 7 | in = 2 | lbs = 280 | college = Kansas | DOB = 1973–03–06 }}
+{{player2 | num = 3 | first = Bryon | last = Russell | pos = SF | ft = 6 | in = 7 | lbs = 225 | college = Long Beach State | DOB = 1970–12–31 }}
+{{player2 | num = 12 | first = John | last = Stockton | pos = PG | ft = 6 | in = 1 | lbs = 170 | college = Gonzaga | DOB = 1962–03–26}}
+{{player2 | num = 11 | first = Jacque | last = Vaughn | pos = PG | ft = 6 | in = 1 | lbs = 190 | college = Kansas | DOB = 1975–02–11 }}
+<!-- end player list -->
+{{NBA roster footer
+| head_coach =
+* [[Jerry Sloan]]
+| asst_coach =
+* [[Gordon Chiesa]]
+* [[David Fredman]]
+* [[Phil Johnson (basketball, born 1941)|Phil Johnson]]
+* [[Kenny Natt]]
+| roster_url = https://www.basketball-reference.com/teams/UTA/1998.html
+}}
+
+==Series summary==
+{| class="wikitable"
+|-
+! Game !! Date !! Road team !! Result !! Home team
+|-
+| Game 1 || June 3 || Chicago Bulls || 85–88 (OT) (0–1) || '''Utah Jazz'''
+|-
+| Game 2 || June 5 || '''Chicago Bulls''' || 93–88 (1–1) || Utah Jazz
+|-
+| Game 3 || June 7 || Utah Jazz || 54–96 (1–2) || '''Chicago Bulls'''
+|-
+| Game 4 || June 10 || Utah Jazz || 82–86 (1–3) || '''Chicago Bulls'''
+|-
+| Game 5 || June 12 || '''Utah Jazz''' || 83–81 (2–3) || Chicago Bulls 
+|-
+| [[Game 6 of the 1998 NBA Finals|Game 6]] || June 14 || '''Chicago Bulls''' || 87–86 (4–2) || Utah Jazz
+|}
+
+Bulls win the series 4–2.
+
+===Game 1===
+{{Basketballbox|bg=#eee |date=June 3 |time= |place=[[Delta Center]], [[Salt Lake City, Utah]] |TV=[[NBA on NBC|NBC]]
+|team1=[[Chicago Bulls]] |score1=85
+|team2='''[[Utah Jazz]]''' |score2='''88'''
+|overtime=OT
+|report=[https://www.basketball-reference.com/boxscores/199806030UTA.html Boxscore]
+|Q1=17–17 |Q2=23–'''28''' |Q3=19–'''22''' |Q4='''20'''–12 |OT=6–'''9'''
+|points1=[[Michael Jordan]] 33 |points2=[[John Stockton]] 24
+|rebounds1=[[Scottie Pippen|Pippen]], [[Luc Longley|Longley]] 8 |rebounds2=[[Karl Malone]] 14
+|assist1=[[Steve Kerr]] 5 |assist2=[[John Stockton]] 8
+|attendance=19,911
+|referee=<br />
+* Ron Garretson
+* Steve Javie
+* Bennett Salvatore
+|series=Utah leads the series, 1–0
+}}
+
+===Game 2===
+{{Basketballbox|bg=#eee |date=June 5 |time= |place=[[Delta Center]], [[Salt Lake City, Utah]] |TV=[[NBA on NBC|NBC]]
+|team1='''[[Chicago Bulls]]''' |score1='''93'''
+|team2=[[Utah Jazz]] |score2=88
+|overtime=
+|report=[https://www.basketball-reference.com/boxscores/199806050UTA.html Boxscore]
+|Q1='''23'''–20 |Q2='''27'''–26 |Q3=20–'''27''' |Q4='''23'''–15
+|points1=[[Michael Jordan]] 37 |points2=[[Jeff Hornacek]] 20
+|rebounds1=[[Toni Kukoč|Kukoč]], [[Dennis Rodman|Rodman]] 9 |rebounds2=[[Karl Malone]] 12
+|assist1=[[Scottie Pippen]] 4 |assist2=[[John Stockton]] 7
+|attendance=19,911
+|referee=<br />
+* Danny Crawford
+* Joe Crawford
+* Bill Oakes
+|series=Series tied, 1–1
+}}
+
+===Game 3===
+{{Basketballbox|bg=#eee |date=June 7 |time= |place=[[United Center]], [[Chicago, Illinois]] |TV=[[NBA on NBC|NBC]]
+|team1=[[Utah Jazz]] |score1=54
+|team2='''[[Chicago Bulls]]''' |score2='''96'''
+|overtime=
+|report=[https://www.basketball-reference.com/boxscores/199806070CHI.html Boxscore]
+|Q1=14–'''17''' |Q2=17–'''32''' |Q3=14–'''23''' |Q4=9–'''24'''
+|points1=[[Karl Malone]] 22 |points2=[[Michael Jordan]] 24
+|rebounds1=[[Greg Ostertag]] 9 |rebounds2=[[Ron Harper]] 10
+|assist1=[[John Stockton]] 7 |assist2=[[Ron Harper]] 7
+|attendance=23,844
+|referee=<br />
+* Dick Bavetta
+* Hue Hollins
+* Ronnie Nunn
+|series=Chicago leads series, 2–1
+}}
+
+===Game 4===
+{{Basketballbox|bg=#eee |date=June 10 |time= |place=[[United Center]], [[Chicago, Illinois]] |TV=[[NBA on NBC|NBC]]
+|team1=[[Utah Jazz]] |score1=82
+|team2='''[[Chicago Bulls]]''' |score2='''86'''
+|overtime=
+|report=[https://www.basketball-reference.com/boxscores/199806100CHI.html Boxscore]
+|Q1=19–'''21''' |Q2=18–18 |Q3=20–'''22''' |Q4=25–25
+|points1=[[Karl Malone]] 21 |points2=[[Michael Jordan]] 34
+|rebounds1=[[Karl Malone]] 14 |rebounds2=[[Dennis Rodman]] 14
+|assist1=[[John Stockton]] 13 |assist2=[[Scottie Pippen]] 5
+|attendance=23,844
+|referee=<br />
+* Hugh Evans
+* Steve Javie
+* Jack Nies
+|series=Chicago leads series, 3–1
+}}Crowd: 24,000 at United Center (sellout)
+
+===Game 5===
+{{Basketballbox|bg=#eee |date=June 12 |time= |place=[[United Center]], [[Chicago, Illinois]] |TV=[[NBA on NBC|NBC]]
+|team1='''[[Utah Jazz]]''' |score1='''83'''
+|team2=[[Chicago Bulls]] |score2=81
+|overtime=
+|report=[https://www.basketball-reference.com/boxscores/199806120CHI.html Boxscore]
+|Q1=16–'''18''' |Q2=14–'''18''' |Q3='''29'''–19 |Q4=24–'''26'''
+|points1=[[Karl Malone]] 39 |points2=[[Toni Kukoč]] 30
+|rebounds1=[[Karl Malone]] 9 |rebounds2=[[Scottie Pippen]] 11
+|assist1=[[John Stockton]] 12 |assist2=[[Scottie Pippen]] 11
+|attendance=23,844
+|referee=<br />
+* Joe Crawford
+* Bill Oakes
+* Bennett Salvatore
+|series=Chicago leads series, 3–2
+}}
+
+To date, this is the most recent NBA Finals game played in Chicago.
+
+===[[Game 6 of the 1998 NBA Finals|Game 6]]===
+{{Basketballbox|bg=#eee |date=June 14 |time= |place=[[Delta Center]], [[Salt Lake City, Utah]] |TV=[[NBA on NBC|NBC]]
+|team1='''[[Chicago Bulls]]''' |score1='''87'''
+|team2=[[Utah Jazz]] |score2=86
+|overtime=
+|report=[https://www.basketball-reference.com/boxscores/199806140UTA.html Boxscore]
+|Q1=22–'''25''' |Q2=23–'''24''' |Q3=16–'''17''' |Q4='''26'''–20
+|points1=[[Michael Jordan]] 45 |points2=[[Karl Malone]] 31
+|rebounds1=[[Dennis Rodman]] 8 |rebounds2=[[Karl Malone]] 11
+|assist1=[[Toni Kukoč|Kukoč]], [[Scottie Pippen|Pippen]] 4 |assist2=[[Karl Malone]] 7
+|attendance=19,911
+|referee=<br />
+* Dick Bavetta
+* Danny Crawford
+* Hue Hollins
+|series=Chicago wins NBA Finals, 4–2
+}}
+{{external media|video1={{YouTube|92fLApYaCGI|Full game broadcast by NBC}}}}
+
+To date, this is the most recent NBA Finals game played in Salt Lake City.
+
+==Game summaries==
+
+===Games 1 and 2===
+Unlike the 1997 Finals, the Jazz and Bulls entered this series as equals. The Jazz had won both regular season meetings with the Bulls, and many analysts predicted a hard-fought seven-game series. The two teams entered the Finals on completely different notes; the Jazz uneventfully swept the Los Angeles Lakers in the Western Conference finals and had a total of ten days' rest before the Finals began. The Bulls, meanwhile, endured a hard-fought series against a resurgent Indiana Pacers team helmed by Larry Bird (in his first year as head coach). They would need all seven games to get past the Pacers and would have only two days' rest before having to travel to Utah. Predictions of a Jazz championship were strengthened with their 88–85 Game 1 victory in overtime in Utah, with Scottie Pippen just missing a 3-pointer at the buzzer. True to form, the Bulls tied the series in Game 2 while putting together a huge fourth-quarter run to silence the Delta Center and holding on to win 93–88, finally securing their first victory against Utah all season. Karl Malone shot very poorly in the first two games of the series with some misses including one layup in Game 2 that hit the underside of the rim.<ref>{{Cite web |title=1998 NBA Finals Game 1: Bulls vs Jazz, June 3, 1998 |url=https://www.basketball-reference.com/boxscores/199806030UTA.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref><ref>{{Cite web |title=1998 NBA Finals Game 2: Bulls vs Jazz, June 5, 1998 |url=https://www.basketball-reference.com/boxscores/199806050UTA.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref>
+
+===Games 3–5===
+The Finals moved to Chicago with control of the series at stake in Game 3. In a 96–54 loss, the Jazz set the record for the 42-point loss in Finals history and were hammered by the media for the score, as well as the lowest number of points scored in any NBA game (since eclipsed by a score of 49 from the Bulls on April 10, 1999) since the inception of the [[shot clock]]. Every player on the Bulls roster scored at least once, with the Bulls' last-remaining scoreless player, backup center [[Bill Wennington]], nailing his bucket with only 5.2 seconds remaining in the game.<ref>Archived at [https://ghostarchive.org/varchive/youtube/20211205/gicBjkeYjGw Ghostarchive]{{cbignore}} and the [https://web.archive.org/web/20211125174437/https://www.youtube.com/watch?v=gicBjkeYjGw&t=1548s Wayback Machine]{{cbignore}}: {{cite web| url = https://www.youtube.com/watch?v=gicBjkeYjGw&t=1548s| title = Bulls x Jazz 1998 Finals Game 3 | website=[[YouTube]]}}{{cbignore}}</ref>
+
+Chicago won Game 4 in a close game, 86–82, and Utah took Game 5 83–81 despite nearly blowing a seven-point lead in the last two minutes. Karl Malone had his best game of the series with 39 points, while Antoine Carr made all five of his field goal attempts. The series returned to Utah with the Bulls leading 3–2.
+
+===Game 6 - "The Last Shot"===
+{{Main|Game 6 of the 1998 NBA Finals}}
+
+{{external media|video1={{YouTube|92fLApYaCGI|Full game broadcast by NBC}}}}
+As the Bulls arrived at Delta Center for Game 6, they had to face a significant challenge. Scottie Pippen, whose back was already injured going into the game, aggravated his injury when he dunked the opening basket of the game. He scored only 8 points the whole game. To keep pace with Utah, the Bulls were forced to rely almost entirely on Michael Jordan, who scored 23 points in the first half. Emotions ran high at the Delta Center when the Jazz suffered a critical shot clock violation in the second quarter. Referee [[Dick Bavetta]] ruled that Howard Eisley did not get a successful 3-point shot off in time, although TV replays showed that the ball was out of Eisley's hands just before the shot clock hit zero. Later in the fourth quarter, Jordan's two free throws tied the game with only a minute left. The Jazz received some relief as John Stockton hit a three-pointer with 41.9 seconds left to give Utah an 86–83 lead and sent the Delta Center into a frenzy.
+
+After Jordan made a layup to make it 86–85, the Bulls needed to stop the Jazz from scoring again. When John Stockton passed the ball to Karl Malone, Jordan stole the ball away and dribbled down the court. Guarding him was [[Bryon Russell]], one of the Jazz's best defenders. With 10 seconds remaining, Jordan started to dribble right, then crossed over to his left, possibly pushing off on Russell as he did so.<ref>{{Cite web|url=https://archive.sltrib.com/article.php?id=57515784&itype=cmsid|title=Luhm: Bryon Russell still asked about Jordan's push, game-winner|author=Steve Luhm|website=The Salt Lake Tribune|access-date=June 29, 2026}}</ref> Now wide open, Jordan buried a 20-foot jumper to give the Bulls an 87–86 lead with 5.2 seconds remaining.<ref>Kerber, Fred. [http://www.nypost.com/p/sports/item_KNZREOLkuJgmjBinLODwSK;jsessionid=A7E129E3F58985B453F7B691AA52CCEB Former NBA Ref Blasts Officiating] {{Webarchive|url=https://web.archive.org/web/20121023065522/http://www.nypost.com/p/sports/item_KNZREOLkuJgmjBinLODwSK;jsessionid=A7E129E3F58985B453F7B691AA52CCEB |date=October 23, 2012 }}, ''[[New York Post]]'', August 17, 2007. Retrieved March 24, 2008.</ref><ref>Knott, Tom. [http://www.washingtontimes.com/news/2006/dec/08/20061208-123619-7969r/ "Someone has to win Eastern Conference"], ''[[The Washington Times]]'', December 8, 2006. Retrieved November 17, 2008.</ref><ref>Deveney, Sean.{{cite web|url=http://www.sportingnews.com/exclusives/20050314/607149.html |title=Crying Foul |access-date=April 29, 2007 |url-status=bot: unknown |archive-url=https://web.archive.org/web/20070313185001/http://www.sportingnews.com/exclusives/20050314/607149.html |archive-date=March 13, 2007 }}, sportingnews.com, March 14, 2005. Retrieved April 29, 2007.</ref> After a time-out, Stockton missed a potential game-winning 3-pointer, giving the Bulls their sixth NBA title in eight years. Jordan, who scored 45 points, and whose game-winning shot has been immortalized around the world, was named Finals MVP for the sixth time.<ref>{{Cite web |title=1998 NBA Finals Game 6: Bulls vs Jazz, June 14, 1998 |url=https://www.basketball-reference.com/boxscores/199806140UTA.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref>
+
+==Player statistics==
+{{NBA roster statistics legend}}
+
+{{NBA roster statistics start|team=Chicago Bulls}}
+|-
+| align="left" | {{sortname|Randy|Brown|dab=basketball}} || 2 || 0 || 3.5 || .333 || .000 || .000 || 1.0 || 0.0 || 0.5 || 0.0 || 1.0
+|-
+| align="left" | {{sortname|Jud|Buechler}} || 6 || 0 || 5.2 || '''.600''' || '''.667''' || .000 || 0.3 || 0.3 || 0.2 || 0.2 || 1.3
+|-
+| align="left" | {{sortname|Scott|Burrell}} || 6 || 0 || 14.0 || .409 || .250 || .667 || 2.5 || 0.0 || 1.2 || 0.0 || 3.5
+|-
+| align="left" | {{sortname|Ron|Harper}} || 6 || 6 || 28.7 || .364 || .167 || .583 || 4.5 || 2.8 || 1.5 || 0.7 || 5.3
+|-! style="background:#FDE910;"
+| align="left" | {{sortname|Michael|Jordan}} || 6 || 6 || '''41.7''' || .427 || .308 || .814 || 4.0 || 2.3 || '''1.8''' || 0.7 || '''33.5'''
+|-
+| align="left" | {{sortname|Steve|Kerr}} || 6 || 0 || 20.7 || .350 || .385 || '''1.000''' || 0.3 || 2.5 || 0.3 || 0.0 || 3.8
+|-
+| align="left" | {{sortname|Toni|Kukoč}} || 6 || 6 || 37.0 || .500 || .304 || .615 || 4.7 || 2.7 || 1.2 || 0.7 || 15.2
+|-
+| align="left" | {{sortname|Luc|Longley}} || 6 || 6 || 21.7 || .444 || .000 || .750 || 4.8 || 1.5 || 0.8 || '''0.8''' || 5.0
+|-
+| align="left" | {{sortname|Scottie|Pippen}} || 6 || 6 || 39.5 || .410 || .231 || .833 || 6.8 || '''4.8''' || 1.7 || '''0.8''' || 15.7
+|-
+| align="left" | {{sortname|Dennis|Rodman}} || 6 || 0 || 30.5 || .462 || .000 || .667 || '''8.3''' || 1.0 || 1.2 || 0.3 || 3.3
+|-
+| align="left" | {{sortname|Bill|Wennington}} || 3 || 0 || 4.3 || .400 || .000 || .000 || 1.0 || 0.3 || 0.0 || 0.3 || 1.3
+{{s-end}}
+
+{{NBA roster statistics start|team=Utah Jazz}}
+|-
+| align="left" | {{sortname|Shandon|Anderson}} || 6 || 0 || 21.0 || .500 || '''.333''' || .818 || 2.7 || 0.3 || 0.2 || 0.2 || 7.3
+|-
+| align="left" | {{sortname|Antoine|Carr}} || 6 || 0 || 14.3 || .500 || .000 || .750 || 2.0 || 0.0 || 0.0 || 0.2 || 4.2
+|-
+| align="left" | {{sortname|Howard|Eisley}} || 6 || 0 || 17.5 || .375 || .143 || '''1.000''' || 2.0 || 3.8 || 0.3 || 0.2 || 4.7
+|-
+| align="left" | {{sortname|Greg|Foster|dab=basketball}} || 6 || 2 || 10.5 || .267 || .000 || .000 || 2.3 || 0.0 || 0.2 || 0.3 || 1.3
+|-
+| align="left" | {{sortname|Jeff|Hornacek}} || 6 || 6 || 34.2 || .411 || '''.333''' || .833 || 2.7 || 2.7 || 0.8 || 0.2 || 10.7
+|-
+| align="left" | {{sortname|Adam|Keefe|dab=basketball}} || 5 || 3 || 12.0 || .429 || .000 || .500 || 3.4 || 0.2 || 0.4 || 0.0 || 2.8
+|-
+| align="left" | {{sortname|Karl|Malone}} || 6 || 6 || '''40.5''' || '''.504''' || .000 || .789 || '''10.5''' || 3.8 || 1.0 || '''1.2''' || '''25.0'''
+|-
+| align="left" | {{sortname|Chris|Morris|dab=basketball}} || 6 || 0 || 17.5 || .393 || .000 || .667 || 2.5 || 0.5 || 0.3 || 0.2 || 4.3
+|-
+| align="left" | {{sortname|Greg|Ostertag}} || 5 || 1 || 11.0 || .417 || .000 || '''1.000''' || 3.2 || 0.0 || 0.0 || 0.2 || 2.2
+|-
+| align="left" | {{sortname|Bryon|Russell}} || 6 || 6 || 36.0 || .409 || .286 || .688 || 5.0 || 1.3 || 1.2 || 0.2 || 8.8
+|-
+| align="left" | {{sortname|John|Stockton}} || 6 || 6 || 32.3 || .490 || .222 || .727 || 2.5 || '''8.7''' || '''2.0''' || 0.0 || 9.7
+|-
+| align="left" | {{sortname|Jacque|Vaughn}} || 1 || 0 || 7.0 || .000 || .000 || .000 || 2.0 || 0.0 || 0.0 || 0.0 || 0.0
+{{s-end}}
+
+==Media coverage==
+The Finals were televised in the United States by [[NBA on NBC|NBC]] (including for the second straight year [[WMAQ-TV]] in Chicago and [[KSL-TV]] in Salt Lake City), with [[Bob Costas]] on play-by-play and [[Doug Collins (basketball)|Doug Collins]] and [[Isiah Thomas]] serving as color analysts. [[Hannah Storm]] hosted the pre-game show, assisted by [[Bill Walton]], [[John Salley]] and [[Peter Vecsey (sports columnist)|Peter Vescey]], and [[Ahmad Rashad]] and [[Jim Gray (sportscaster)|Jim Gray]] reported from the sidelines. This was the first time since NBC took over the broadcasting rights to the [[1991 NBA Finals|NBA Finals in 1991]] that [[Marv Albert]] was not the play by play commentator. He was fired from NBC on September 25, 1997, for sexually assaulting a woman.<ref>{{Cite news |last=Sandomir |first=Richard |date=1997-09-26 |title=TV SPORTS; Albert Lost His Case, His Job and His Dream |url=https://www.nytimes.com/1997/09/26/sports/tv-sports-albert-lost-his-case-his-job-and-his-dream.html |access-date=2026-06-22 |work=The New York Times |issn=0362-4331}}</ref>
+
+==Legacy and aftermath==
+[[World Championship Wrestling]] would capitalize on the animosity following the Finals between [[Dennis Rodman]] and [[Karl Malone]], as on July 12, 1998, Rodman and [[Hulk Hogan|Hollywood Hogan]] would defeat Malone and [[Diamond Dallas Page]] in a tag team match at [[Bash at the Beach (1998)|Bash at the Beach]].<ref>{{cite web |title=In 1998, Karl Malone and Dennis Rodman did battle. In a pro wrestling ring. |url=https://www.denverpost.com/2018/07/12/karl-malone-dennis-rodman-wcw-bash-at-the-beach/ |website=The Denver Post |access-date=May 1, 2023 |date=July 12, 2018}}</ref>
+
+{{As of|2024|04|alt=As of [[2024–25 NBA season|the 2024–25 season]]}}, this series remains the last Finals appearances for both the Bulls and Jazz. After the season, the Bulls dynasty broke up. Without its key personnel, the Bulls missed the playoffs in the [[1998–99 NBA lockout|lockout-shortened]] [[1998–99 NBA season|1999 season]], winning just 13 of 50 games; the Bulls would later go on to win the draft lottery and select [[Elton Brand]] as the first overall pick in [[1999 NBA Draft|that season's draft]], making them the only team to win the draft lottery after winning an NBA championship in the previous season. The Bulls would not make the postseason again until [[2005 NBA playoffs|2005]]. Both teams have made just one Conference Finals appearance since this Finals, with the Jazz qualifying in 2007, losing to the [[2006-07 San Antonio Spurs|San Antonio Spurs]], and the Bulls qualifying in 2011 under MVP [[Derrick Rose]], losing to the [[2010-11 Miami Heat|Miami Heat]].
+
+[[Phil Jackson]] declined an offer from the team president to coach another season.<ref>{{cite web|title=The head Bull rides off into the sunset|url=http://sportsillustrated.cnn.com/basketball/nba/news/1998/06/22/jackson_update/|archive-url=https://web.archive.org/web/20010708131953/http://sportsillustrated.cnn.com/basketball/nba/news/1998/06/22/jackson_update/|url-status=dead|archive-date=July 8, 2001|work=CNN.com|agency=Associated Press|access-date=July 9, 2011|date=June 22, 1998}}</ref> He would come back as head coach of the [[Los Angeles Lakers]] in [[1999–2000 NBA season|1999]], winning five NBA titles in two separate stints with the team before retiring in 2011. This would give Jackson 11 NBA Titles, the most for a coach in the history of the four major American sports leagues. [[Ron Harper]] followed Jackson to the Lakers and won championships during his final two seasons in [[2000 NBA Finals|2000]] and [[2001 NBA Finals|2001]] (other Bulls dynasty alum were on those teams, such as [[John Salley]] and [[Horace Grant]]).
+
+On January 13, 1999, [[Michael Jordan]] announced his retirement for the second time;<ref>{{cite news|last=Wise|first=Mike|title=As Jordan Retires, Legend Swells|url=http://partners.nytimes.com/library/sports/basketball/011399bkn-jordan.html|access-date=June 20, 2011|newspaper=The New York Times|date=January 13, 1999| archive-url= https://web.archive.org/web/20110612014930/http://partners.nytimes.com/library/sports/basketball/011399bkn-jordan.html| archive-date= June 12, 2011 | url-status= live}}</ref> he would come out of retirement for the second and final time in [[2001–02 NBA season|2001]] with the [[Washington Wizards]] and played two seasons with the team. However, neither season ended with a playoff appearance.<ref>{{cite web|title=Report: Michael Jordan To Come Back|url=https://www.cbsnews.com/news/report-michael-jordan-to-come-back/|work=CBSNews.com|agency=Associated Press|access-date=June 20, 2011|date=September 10, 2001}}</ref><ref>{{cite web|title=Jordan finishes with 15 points in final NBA game|url=http://espn.go.com/nba/recap?id=230416020|archive-url=https://web.archive.org/web/20121106230542/http://espn.go.com/nba/recap?id=230416020|url-status=dead|archive-date=November 6, 2012|work=ESPN.com|agency=Associated Press|access-date=June 20, 2011|date=April 16, 2003}}</ref> [[Scottie Pippen]] was traded to the [[Houston Rockets]] during the offseason and played his last season (2003–04) with the Bulls and also played for the 
+[[Portland Trail Blazers]]. [[Dennis Rodman]], released by the Bulls in the offseason, signed with the Lakers mid-season, playing only 23 games before being released. In January 1999, the Bulls re-signed [[Steve Kerr]] and traded him to the [[San Antonio Spurs]],<ref>{{cite web|title=Deals, deals, deals: Spree and McDyess return, but Gugliotta still looking|url=http://sportsillustrated.cnn.com/basketball/nba/news/1999/01/22/roundup_nbasignings/|archive-url=https://archive.today/20120718055314/http://sportsillustrated.cnn.com/basketball/nba/news/1999/01/22/roundup_nbasignings/|url-status=dead|archive-date=July 18, 2012|work=CNN/SI|agency=Associated Press|access-date=June 21, 2011|date=January 22, 1999}}</ref> where he would win two more championships in [[1999 NBA Finals|1999]] and [[2003 NBA Finals|2003]], his last year in the NBA.<ref>{{cite web|title=Kerr leaves as NBA's most accurate 3-point shooter|url=https://www.espn.com/nba/story?id=1592318|work=ESPN.com|agency=Associated Press|access-date=June 21, 2011|date=August 7, 2003}}</ref>  After turning down Phil Jackson's offer to coach the [[New York Knicks]] (Jackson was the president of basketball operations of the team),<ref>{{Cite web |last=O'Connor |first=Ian |date=2014-04-22 |title=Careful what you wish for, Steve Kerr |url=https://www.espn.com/nba/story/_/id/10817047/specter-phil-jackson |access-date=2026-02-06 |website=ESPN.com |language=en}}</ref><ref>{{Cite web |last= |first= |date=2014-05-15 |title=Steve Kerr takes Warriors' job |url=https://www.espn.com/nba/story/_/id/10933515/steve-kerr-accepts-golden-state-warriors-coaching-position |access-date=2026-02-06 |website=ESPN.com |language=en}}</ref> Kerr would go on to win four championships as head coach of the [[Golden State Warriors]] in [[2015 NBA Finals|2015]], [[2017 NBA Finals|2017]], [[2018 NBA Finals|2018]], and [[2022 NBA Finals|2022]].<ref>{{Cite web |title=Warriors Head Coach Steve Kerr Becomes Winningest Coach in Franchise History |url=https://www.nba.com/warriors/news/warriors-head-coach-steve-kerr-becomes-winningest-coach-in-franchise-history-20250315 |access-date=2026-02-06 |website=Nba.com |language=en}}</ref> Both Pippen and Kerr played opposite of former coach Phil Jackson's Lakers in multiple playoff series in the early 2000s.<ref>{{Cite web |title=Playoffs 2000:Gamesmanship begins three days before series |url=https://www.espn.com/nba/playoffs00/s/2000/0518/538510.html |access-date=2026-02-06 |website=Espn.com}}</ref><ref>{{Cite web |last=Villanueva |first=Virgil |date=2025-12-06 |title="I thought it was more his offense than his defense" - Phil Jackson was surprised that Pippen became an offensive player for the Blazers |url=https://sports.yahoo.com/articles/thought-more-offense-defense-phil-195800045.html |access-date=2026-02-06 |website=Yahoo Sports |language=en-US}}</ref><ref>{{Cite web |last=STEWART |first=LARRY |date=2004-05-14 |title=Kerr's Joy Tinged by Sadness |url=https://www.latimes.com/archives/la-xpm-2004-may-14-sp-tvcol14-story.html |access-date=2026-02-06 |website=Los Angeles Times |language=en-US}}</ref>
+
+[[John Stockton]] and [[Karl Malone]] led the Jazz to playoff appearances each season through [[2003 NBA playoffs|2003]], however each season featured a loss in the first or second round.  During the 2003 off-season, Stockton retired and Malone joined the [[Los Angeles Lakers]]. Malone returned to the NBA Finals in [[2004 NBA Finals|2004]] where he would lose to the [[Detroit Pistons]] in 5 games. [[Jerry Sloan]] would coach the Jazz until his retirement in 2011.
+
+The Jazz were the last non [[California]] or [[Texas]] Western Conference NBA Finals team until the [[2011–12 Oklahoma City Thunder season|2012 Oklahoma City Thunder]], a span of 14 years.<ref>{{Cite web |last=Almanza |first=Clemente |title=On this day: Thunder made 2012 NBA Finals by winning Western Conference finals |url=https://okcthunderwire.usatoday.com/story/sports/nba/thunder/2022/06/06/on-this-day-thunder-made-2012-nba-finals-by-winning-western-conference-finals/77343647007/ |access-date=2026-06-22 |website=OKC Thunder Wire}}</ref>
+
+Michael Jordan's 1998 NBA Finals ‘The Last Dance’ game worn jersey sold for $10,091,000 in 2022, a record for an NBA jersey.<ref>{{cite web |title=Jordan 'Last Dance' jersey sells for record $10.1M |url=https://www.espn.com/nba/story/_/id/34598807/michael-jordan-last-dance-jersey-1998-nba-finals-sells-record-101-million-auction |website=ESPN.com |access-date=6 May 2025 |language=en |date=15 September 2022}}</ref>
+
+== The Last Dance documentary ==
+In 2020, ''[[The Last Dance (miniseries)|The Last Dance]]'' was a documentary miniseries co-produced by [[ESPN Films]] and [[Netflix]]; a series that revolved around Michael Jordan's career, with particular focus on the 1997–98 season, his final season with the Chicago Bulls. The series was met with critical acclaim, with praise for its directing and editing, and also for the timing of the release - during the initial weeks of [[quarantine]] during the [[COVID-19 pandemic]] when viewers were struggling to find entertainment.<ref>{{cite web |date=May 19, 2020 |title='The Last Dance' - The untold story of Michael Jordan's Chicago Bulls |url=https://www.espn.com/nba/story/_/id/28973557/the-last-dance-updates-untold-story-michael-jordan-chicago-bulls%3fplatform=amp}}</ref><ref>{{cite web |date=April 14, 2020 |title=ESPN's New Michael Jordan Documentary Is Exactly What We Need Right Now. Here's How They Made It |url=https://time.com/5820473/michael-jordan-the-last-dance-espn/}}</ref> ''The Last Dance'' won the [[Primetime Emmy Award for Outstanding Documentary or Nonfiction Series]] at the [[72nd Primetime Emmy Awards]].
+
+Additionally, a cinematic presentation of [[Game 6 of the 1998 NBA Finals|Game 6]] was released by ESPN after the final episode.<ref>{{Cite web |last=Casselberry |first=Ian |date=2020-05-18 |title=ESPN's 'Game 6: The Movie' will show new presentation of 1998 NBA Finals clincher, Michael Jordan's final championship |url=https://awfulannouncing.com/espn/espn-game-6-movie-new-presentation-1998-nba-finals-clincher-michael-jordan-final-championship.html |access-date=2025-12-20 |website=Awful Announcing |language=en-US}}</ref><ref>{{Cite AV media |url=https://www.youtube.com/watch?v=lyJ6GyC4Yng |title=Cinematic View of Game 6 of the 1998 NBA Finals - FULL GAME 4K HDR |date=2024-08-30 |last=PSV4K |access-date=2025-12-20 |via=YouTube}}</ref>
+
+==See also==
+*[[1998 NBA playoffs]]
+*[[Game 6 of the 1998 NBA Finals|The Last Shot]]
+*[[The Last Dance (miniseries)|The Last Dance]]
+
+==References==
+{{reflist}}
+
+==External links==
+
+===From NBA official site===
+* [https://web.archive.org/web/20100523151701/http://www.nba.com/history/playoffs/19971998.html 1998 Playoff Results]
+* [https://web.archive.org/web/20120222153354/http://www.nba.com/history/finals/19971998.html 1998 NBA Finals Recap]
+* {{webarchive |url=https://web.archive.org/web/19990117033600/http://www.nba.com/finals98/index.html |date=January 17, 1999 |title=Official Website on NBA.com }}
+* [https://web.archive.org/web/20181129125302/http://www.nba.com/history/98jordan_moments.html Michael Jordan's Shot in Game 6]
+
+===Other sites on the internet===
+* [https://web.archive.org/web/20050214092320/http://internetfm.com/srn/finals98.htm 1998 NBA Finals Summary and Linescores]
+* [https://web.archive.org/web/20130411073901/http://www.nba.com/playoffs2004/greatest_finals_moments.html Greatest Finals Moments]
+* [https://nypost.com/2007/08/17/former-nba-ref-blasts-officiating/ Former NBA official's take on Jordan's series-winning shot]
+* {{Cite web |title=Jordan's iconic final shot as a Bull requires a deep rewind |date=May 8, 2018 |work=[[SB Nation]] |url=https://www.youtube.com/watch?v=JyBLgr6uBas  |archive-url=https://ghostarchive.org/varchive/youtube/20211213/JyBLgr6uBas |archive-date=December 13, 2021 |url-status=live|via=[[YouTube]] }}{{cbignore}}
+
+{{NBA Finals}}
+{{Chicago Bulls 1997–98 NBA champions}}
+{{Chicago Bulls}}
+{{Utah Jazz}}
+{{1997–98 NBA season by team}}
+{{NBA on NBC}}
+{{NBA on ESPN Radio}}
+
+[[Category:NBA Finals]]
+[[Category:1997–98 NBA season|Finals]]
+[[Category:Basketball competitions in Salt Lake City]]
+[[Category:1998 in sports in Utah|NBA Finals]]
+[[Category:1998 in Chicago]]
+[[Category:1990s in Salt Lake City]]
+[[Category:Chicago Bulls games|NBA Finals]]
+[[Category:Utah Jazz games|NBA Finals]]
+[[Category:June 1998 sports events in the United States]]
+[[Category:Basketball competitions in Chicago]]
+[[Category:1998 in sports in Illinois]]
+[[Category:Events at United Center]]

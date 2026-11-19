@@ -77,6 +77,11 @@ class UI(Protocol):
     def println(self, msg: str) -> None: ...
     def error(self, msg: str) -> None: ...
 
+    # 剪贴板
+    def copy_text(self, text: str) -> None: ...
+    def last_assistant_message(self) -> str: ...
+    def log_text(self) -> str: ...
+
     # 权限模式
     def mode(self) -> Mode: ...
     def set_mode(self, m: Mode) -> None: ...
@@ -131,6 +136,8 @@ class NopUI:
     def __init__(self) -> None:
         self.printed: list[str] = []
         self.errors: list[str] = []
+        self.copied: list[str] = []
+        self._log_text = ""
         self.mode_value: Mode = Mode.DEFAULT
         self.injected: list[tuple[str, str]] = []
         self._memory_files: list[str] = []
@@ -150,6 +157,18 @@ class NopUI:
 
     def error(self, msg: str) -> None:
         self.errors.append(msg)
+
+    def copy_text(self, text: str) -> None:
+        self.copied.append(text)
+
+    def last_assistant_message(self) -> str:
+        for msg in reversed(self._history):
+            if msg.role == "assistant" and msg.content:
+                return msg.content
+        return ""
+
+    def log_text(self) -> str:
+        return self._log_text
 
     def mode(self) -> Mode:
         return self.mode_value

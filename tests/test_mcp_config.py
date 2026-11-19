@@ -56,6 +56,26 @@ def test_env_expansion(tmp_path, monkeypatch):
     assert cfg.servers["s"].headers["Authorization"] == "Bearer secret123"
 
 
+def test_command_and_args_expansion(tmp_path, monkeypatch):
+    monkeypatch.setenv("PY", "C:/venv/python.exe")
+    monkeypatch.setattr("pathlib.Path.home", lambda: tmp_path)
+    _write(
+        tmp_path / ".mewcode.yaml",
+        {
+            "mcp_servers": {
+                "s": {
+                    "type": "stdio",
+                    "command": "${PY}",
+                    "args": ["-m", "pkg.${PY}"],
+                }
+            }
+        },
+    )
+    cfg = load_config(str(tmp_path))
+    assert cfg.servers["s"].command == "C:/venv/python.exe"
+    assert cfg.servers["s"].args == ["-m", "pkg.C:/venv/python.exe"]
+
+
 def test_undefined_var_expands_empty(tmp_path, monkeypatch, capsys):
     monkeypatch.delenv("MISSING", raising=False)
     monkeypatch.setattr("pathlib.Path.home", lambda: tmp_path)

@@ -18,6 +18,7 @@ from mewcode.tui.resume import select_session
 BUILTIN_NAMES = {
     "clear",
     "compact",
+    "copy",
     "do",
     "exit",
     "help",
@@ -203,7 +204,7 @@ async def test_tui_completion_filters_and_keys(tmp_path):
     async with app.run_test() as pilot:
         await pilot.press("/")
         assert app.completion.active
-        assert len(app.completion.items) == 16  # 15 builtins + /skill
+        assert len(app.completion.items) == 17  # 16 builtins + /skill
         assert {
             "help",
             "status",
@@ -279,7 +280,7 @@ async def test_completion_menu_render_limits_rows():
     text = menu.render(80)
     assert text.plain.count("\n") <= MAX_ROWS + 1
     assert "help" in text.plain
-    assert "↓ 7 more" in text.plain
+    assert "↓ 8 more" in text.plain
 
     for _ in range(9):
         menu.move_down()

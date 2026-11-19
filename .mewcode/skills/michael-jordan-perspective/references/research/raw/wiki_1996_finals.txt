@@ -1,0 +1,386 @@
+SOURCE: https://en.wikipedia.org/w/index.php?title=1996_NBA_Finals&action=raw
+
+{{short description|1996 basketball championship series}}
+{{Use mdy dates|date=February 2024}}
+{{NBA Finals summary
+| image = 1996nbafinals.jpg
+| caption =
+| league = NBA
+| year = 1996
+| runnerup = [[1995–96 Seattle SuperSonics season|Seattle SuperSonics]]
+| runnerup_coach = [[George Karl]]
+| runnerup_games = 2
+| champion = [[1995–96 Chicago Bulls season|Chicago Bulls]]
+| champion_coach = [[Phil Jackson]]
+| champion_games = 4
+| date = June 5–16
+| MVP = [[Michael Jordan]]<br />(Chicago Bulls)
+| HOFers = '''Bulls:'''<br />[[Michael Jordan]] (2009)<br />[[Toni Kukoc]] (2021)<br />[[Scottie Pippen]] (2010)<br />[[Dennis Rodman]] (2011)<br />'''SuperSonics:'''<br />[[Gary Payton]] (2013)<br />'''Coaches:'''<br />[[Phil Jackson]] (2007)<br />[[George Karl]] (2022)<br />[[Tex Winter]] (2011)<br />'''Officials:'''<br />[[Dick Bavetta]] (2015)<br />[[Danny Crawford]] (2025)<br />[[Hugh Evans (basketball)|Hugh Evans]] (2022)
+| ECF result = [[1995–96 Chicago Bulls season|Bulls]] defeated [[1995–96 Orlando Magic season|Magic]], 4–0
+| WCF result = [[1995–96 Seattle SuperSonics season|SuperSonics]] defeated [[1995–96 Utah Jazz season|Jazz]], 4–3
+}}
+The '''1996 NBA Finals''' was the [[NBA Finals|championship series]] of the [[National Basketball Association]]'s (NBA) [[1995–96 NBA season|1995–96]] season, and the culmination of the [[1996 NBA playoffs|season's playoffs]]. The [[Western Conference (NBA)|Western Conference]] champion [[1995–96 Seattle SuperSonics season|Seattle SuperSonics]] (64–18) played the [[Eastern Conference (NBA)|Eastern Conference]] champion [[1995–96 Chicago Bulls season|Chicago Bulls]] (72–10), with the Bulls holding [[home team|home court advantage]]. The teams' 136 combined regular season wins shattered the previous record of 125, set in [[1985 NBA Finals|1985]] between the [[Los Angeles Lakers]] who won 62 games and the [[Boston Celtics]] who won 63 games in the past regular season. The series, the 50th NBA finals in league history, was played under a [[Playoff format#Best-of-seven playoff|best-of-seven format]]. This was the first championship in the Chicago Bulls' second [[three-peat]].<ref>{{Cite web |url=http://www.nba.com/history/bulls_dynasty.html |title=NBA.com: The Bulls Dynasty |website=[[NBA.com]] |access-date=September 13, 2018 |archive-url=https://web.archive.org/web/20131209024614/http://www.nba.com/history/bulls_dynasty.html |archive-date=December 9, 2013 |url-status=dead }}</ref>
+
+Chicago won the series 4 games to 2. [[Michael Jordan]] was named [[Bill Russell NBA Finals Most Valuable Player Award|NBA Finals MVP]], his fourth time winning the award.
+
+==Background==
+
+===Chicago Bulls===
+{{Main|1995–96 Chicago Bulls season}}
+The Bulls were coming off a season where they lost in the second round of the playoffs to the [[1994–95 Orlando Magic season|Orlando Magic]]. Heading into the upcoming season, Chicago was no longer the same team as they were in their most recent championship season of {{nbafy|1993}}, having lost key members of their first three-peat core in [[John Paxson]] and Bill Cartwright, both of whom retired, while  [[Horace Grant]], [[B. J. Armstrong]], [[Stacey King]], [[Will Perdue]], and [[Scott Williams (basketball)|Scott Williams]] all left via free agency.
+
+In their place was a new core of players such as [[Luc Longley]], [[Toni Kukoč]], [[Steve Kerr]], [[Ron Harper]], [[Jud Buechler]], [[Bill Wennington]], and [[Randy Brown (basketball)|Randy Brown]]. A  notable addition to the team was [[Dennis Rodman]], a nine-year veteran and four year rebounding champion.  However, his addition to the team was slightly panned due to his unpredictability and controversial actions on and off the court.<ref>{{Cite web |last=Isaacson |first=Melissa |date=August 11, 2011 |title=Bulls had right chemistry for Rodman |url=https://www.espn.com/chicago/nba/story/_/id/6854942/dennis-rodman-addition-put-bulls-top |access-date=2026-06-12 |website=espn.com}}</ref>
+
+The result of this ensemble was perhaps the greatest regular season of any team in NBA history at the time, as the Bulls won a record-high 72 games, which would be broken by the [[2015–16 Golden State Warriors season|Golden State Warriors in the 2015–16 season]].<ref>{{Cite AV media |url=https://www.youtube.com/watch?v=4ihXJ85MNak |title=The Warriors RECORD-BREAKING 73 Win Season Was Legendary |date=2026-04-13 |last=Golden State Warriors |access-date=2026-06-22 |via=YouTube}}</ref> They continued to gain momentum in the playoffs, beginning with a sweep of the [[1995–96 Miami Heat season|Miami Heat]] in the first round, followed by a five-game defeat of the [[1995–96 New York Knicks season|New York Knicks]] in the second round. The conference finals was a rematch of the previous season's series with the [[1995–96 Orlando Magic season|Orlando Magic]], but it was a no-contest, as the Bulls swept the Magic to gain entry into the Finals.<ref>{{Cite web |title=1995-96 Chicago Bulls Schedule |url=https://www.basketball-reference.com/teams/CHI/1996_games.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref>
+
+Due to the win-loss record, Jordan's first full season back from baseball, and the star power of Dennis Rodman, arguably the most well-known player in the NBA outside of Jordan due to his romantic relationship with global [[Pop icon|pop star]] [[Madonna]], the Bulls began to be treated like global rock stars.<ref>{{Cite web |last=Page 2 |date=June 21, 2008 |title=Bandwagons that even you may have jumped on |url=http://www.espn.com/espn/page2/story?page=bandwagonhistory/080619 |access-date=2026-06-12}}</ref> This created an unprecedented frenzy among away fans in opposing cities. Rather than animosity, their road trips triggered massive fanfare, ticket sellouts, and cultural pandemonium wherever they played, which had not occurred before then with any other NBA team.<ref>{{Cite web |last=Pickman |first=Ben |date=2020-04-30 |title=Tales from the Bench of the 1990s Chicago Bulls |url=https://www.si.com/nba/2020/04/30/1990s-bulls-bench-players-rockstar-treatment |access-date=2026-06-12 |website=SI |language=en-US}}</ref>
+
+===Seattle SuperSonics===
+{{Main|1995–96 Seattle SuperSonics season}}
+
+The SuperSonics were led by [[Gary Payton]] and [[Shawn Kemp]], with [[George Karl]] as head coach. The team was considered a perennial title contender throughout the mid-1990s, but the closest they came to reaching the finals was in [[1993 NBA Playoffs|1993]], when they lost to the [[1992–93 Phoenix Suns season|Phoenix Suns]] in seven games in the Western Conference finals.<ref>{{Cite AV media |url=https://www.youtube.com/watch?v=yzz8X3mFkc8 |title=Sonics @ Suns 1993 WCF Deciding Game 7 (NBA On NBC) |date=2025-02-04 |last=MDBBall |access-date=2026-06-22 |via=YouTube}}</ref>
+
+Two straight first-round exits followed, including the stunning [[1994 NBA Playoffs|1994]] loss to the eighth-seeded [[1993–94 Denver Nuggets season|Denver Nuggets]] (the Sonics were the first seed in that playoffs).<ref>{{Cite web |last=Spyropoulos |first=Eric |date=May 7, 2020 |title=Denver Nuggets Legendary Moments: 1994 upset of Seattle SuperSonics {{!}} Denver Nuggets |url=https://www.nba.com/nuggets/news/nuggets-legendary-moment-1994-sonics-050720 |access-date=2026-06-22 |website=NBA.com}}</ref> Motivated by a successive string of early playoff losses, Seattle finished the 1996 regular season with a franchise-record 64 wins.
+
+Seattle began its playoff run with a four-game win over the [[1995–96 Sacramento Kings season|Sacramento Kings]], followed by a dominant sweep of the defending champion [[1995–96 Houston Rockets season|Houston Rockets]], headed by a 33-point win in Game 1 where they held [[Hakeem Olajuwon]] to 5 points.<ref>{{Cite web |last=Staff |first=SI |date=2016-08-01 |title=Teams That Had A Chance To Three-Peat And Failed |url=https://www.si.com/extra-mustard/2016/08/01/teams-had-chance-three-peat-and-failed |access-date=2026-06-22 |website=SI |language=en-US}}</ref> They then beat the [[1995–96 Utah Jazz season|Utah Jazz]] in seven games in the western finals to advance to its first NBA championship round since {{nbafy|1979}}.
+
+===Road to the Finals===
+{{Main|1996 NBA playoffs}}
+
+{| style="width:100%; font-size:79%" class="wikitable"
+|- valign=top
+! colspan="2" style="width:45%;"|[[Seattle SuperSonics]] ([[Western Conference (NBA)|Western Conference]] champion) !! !! colspan="2" style="width:45%;"|[[Chicago Bulls]] ([[Eastern Conference (NBA)|Eastern Conference]] champion)
+|-
+|align=right|
+{{1995–96 NBA West standings|team=SEA}}1st seed in the West, 2nd best league record
+!colspan=2|[[1995–96 NBA season|Regular season]]
+|
+{{1995–96 NBA East standings|team=CHI}}1st seed in the East, best league record
+|-
+|align=right|Defeated the (8) [[1995–96 Sacramento Kings season|Sacramento Kings]], 3–1
+!colspan=2|First round
+|Defeated the (8) [[1995–96 Miami Heat season|Miami Heat]], 3–0
+|-
+|align=right|Defeated the (5) [[1995–96 Houston Rockets season|Houston Rockets]], 4–0
+!colspan=2|Conference semifinals
+|Defeated the (5) [[1995–96 New York Knicks season|New York Knicks]], 4–1
+|-
+|align=right|Defeated the (3) [[1995–96 Utah Jazz season|Utah Jazz]], 4–3
+!colspan=2|Conference finals
+|Defeated the (2) [[1995–96 Orlando Magic season|Orlando Magic]], 4–0
+|}
+
+===Regular season series===
+The teams split their two meetings, each game won by the home team:
+{{basketballbox
+ | bg=#fff
+ | date = November 26, 1995
+| team1 = [[Chicago Bulls]] |score1=92
+ | team2 = '''[[Seattle SuperSonics]] |score2=97'''
+ | place = [[KeyArena]], [[Seattle]], [[Washington (state)|Washington]]
+ }}
+{{basketballbox
+ | date = January 10, 1996
+| team1 = [[Seattle SuperSonics]] |score1=87
+ | team2 = '''[[Chicago Bulls]] |score2=113'''
+ | place = [[United Center]], [[Chicago]], [[Illinois]]
+}}As Chicago went on to break the win-loss record with 72 wins and just 10 losses, the SuperSonics were one of nine teams to defeat the Bulls in the regular-season on November 26, 1995, in Seattle (Indiana defeated Chicago twice). In the game, [[Gary Payton]] stole the ball from Jordan with 20 seconds left in the game, with Seattle up, 94–92. [[Sam Perkins]] and [[Detlef Schrempf]] added free throws in the remaining seconds that iced the game.<ref>{{Cite news |last=Press |first=Associated |date=1995-11-27 |title=IN RETRO PERFORMANCE, MILLS'S 3 ROCKS ROCKETS |url=https://www.washingtonpost.com/archive/sports/1995/11/27/in-retro-performance-millss-3-rocks-rockets/15d96dc2-a1bd-4d6b-b0c3-bd7545af4442/ |access-date=2026-04-22 |work=The Washington Post |language=en-US |issn=0190-8286}}</ref>
+
+==1996 NBA Finals rosters==
+
+===Chicago Bulls===
+{{NBA roster header|team=Chicago Bulls|season=1995–96}}
+<!-- begin player list -->
+{{player2 | num = 0 | first = Randy | last = Brown | dab = basketball |  pos = G | ft = 6 | in = 2 | lbs = 190 | DOB = 1968–05–22 | college = New Mexico State}}
+{{player2 | num = 30 | first = Jud | last = Buechler | pos = G/F | ft = 6 | in = 6 | lbs = 220 | DOB = 1968–06–19 | college = Arizona}}
+{{player2 | num = 35 | first = Jason | last = Caffey | pos = F | ft = 6 | in = 8 | lbs = 255 | DOB = 1973–06–12 | college = Alabama}}
+{{player2 | num = 53 | first = James | last = Edwards | dab = basketball | pos = C | ft = 7 | in = 0 | lbs = 225 | DOB = 1955–11–22 | college = Washington}}
+{{player2 | num = 54 | first = Jack | last = Haley | dab = basketball | pos = F | ft = 6 | in = 10 | lbs = 240 | DOB = 1964–01–27 | college = UCLA}}
+{{player2 | num = 9 | first = Ron | last = Harper | pos = G | ft = 6 | in = 6 | lbs = 185 | DOB = 1964–01–20 | college = Miami (OH)}}
+{{player2 | num = 23 | first = Michael | last = Jordan | pos = G | ft = 6 | in = 6 | lbs = 215 | DOB = 1963–02–17 | college = North Carolina }}
+{{player2 | num = 25 | first = Steve | last = Kerr | pos = G | ft = 6 | in = 3 | lbs = 175 | DOB = 1965–09–27 | college = Arizona}}
+{{player2 | num = 7 | first = Toni | last = Kukoc | pos = F | ft = 6 | in = 11 | lbs = 220 | DOB = 1968–09–18 | from = Croatia}}
+{{player2 | num = 13 | first = Luc | last = Longley | pos = C | ft = 7 | in = 2 | lbs = 265 | DOB = 1969–01–19 | college = New Mexico}}
+{{player2 | num = 33 | first = Scottie | last = Pippen | pos = F | ft = 6 | in = 8 | lbs = 218 | DOB = 1965–09–25 | college = Central Arkansas }}
+{{player2 | num = 91 | first = Dennis | last = Rodman | pos = F | ft = 6 | in = 6 | lbs = 220 | DOB = 1961–05–13 | college = Southeastern Oklahoma State}}
+{{player2 | num = 22 | first = John | last = Salley | pos = F | ft = 6 | in = 11 | lbs = 230 | DOB = 1964–05–16 | college = Georgia Tech}}
+{{player2 | num = 8 | first = Dickey | last = Simpkins | pos = F | ft = 6 | in = 9 | lbs = 248 | DOB = 1972–04–06 | college = Providence}}
+{{player2 | num = 34 | first = Bill | last = Wennington | pos = C | ft = 7 | in = 0 | lbs = 245 | DOB = 1963–04–26 | college = St. John's}}
+{{NBA roster footer
+| head_coach =
+* [[Phil Jackson]]
+| asst_coach =
+* [[Jim Cleamons]]
+* [[Jimmy Rodgers (basketball)|Jim Rodgers]]
+* [[John Paxson]]
+* [[Tex Winter]]
+}}
+
+===Seattle SuperSonics===
+{{NBA roster header|team=Seattle SuperSonics|season=1995–96
+| bg1 = #004725 | color1 = #FFFFFF
+| bg2 = #A71B28 | color2 = #FFFFFF
+}}
+<!-- begin player list -->
+{{player2 | num = 2 | first = Vincent | last = Askew | pos = F/G | ft = 6 | in = 6 | lbs = 210 | DOB = 1966–02–28 | college = Memphis}}
+{{player2 | num = 34 | first = Frank | last = Brickowski | pos = F/C | ft = 6 | in = 9 | lbs = 240 | DOB = 1959–08–14 | college = Penn State}}
+{{player2 | num = 1 | first = Sherell | last = Ford | pos = F | ft = 6 | in = 7 | lbs = 210 | DOB = 1972–08–26 | college = UIC}}
+{{player2 | num = 33 | first = Hersey | last = Hawkins | pos = G | ft = 6 | in = 3 | lbs = 190 | DOB = 1966–09–29 | college = Bradley}}
+{{player2 | num = 50 | first = Ervin | last = Johnson | pos = C | ft = 6 | in = 11 | lbs = 245 | DOB = 1967–12–21 | college = New Orleans}}
+{{player2 | num = 40 | first = Shawn | last = Kemp | pos = F/C | ft = 6 | in = 10 | lbs = 230 | DOB = 1969–11–26 | college = Trinity Valley CC}}
+{{player2 | num = 10 | first = Nate | last = McMillan | pos = F/G | ft = 6 | in = 5 | lbs = 195 | DOB = 1964–08–03 | college = North Carolina State}}
+{{player2 | num = 20 | first = Gary | last = Payton | pos = G | ft = 6 | in = 4 | lbs = 180 | DOB = 1968–07–23 | college = Oregon State}}
+{{player2 | num = 14 | first = Sam | last = Perkins | pos = F/C | ft = 6 | in = 9 | lbs = 235 | DOB = 1961–06–14 | college = North Carolina}}
+{{player2 | num = 55 | first = Steve | last = Scheffler | pos = F/C | ft = 6 | in = 9 | lbs = 250 | DOB = 1967–09–03 | college = Purdue}}
+{{player2 | num = 11 | first = Detlef | last = Schrempf | pos = F/C | ft = 6 | in = 9 | lbs = 214 | DOB = 1963–01–21 | college = Washington}}
+{{player2 | num = 3 | first = Eric | last = Snow | pos = G | ft = 6 | in = 3 | lbs = 190 | DOB = 1973–04–04 | college = Michigan State}}
+{{player2 | num = 25 | first = David | last = Wingate | dab = basketball | pos = F/G | ft = 6 | in = 5 | lbs = 185 | DOB = 1963–12–15 | college = Georgetown}}
+<!-- end player list -->
+{{NBA roster footer
+| head_coach =
+* [[George Karl]]
+| asst_coach =
+* [[Dwane Casey]]
+* [[Tim Grgurich]]
+* [[Terry Stotts]]
+* [[Bob Weiss]]
+}}
+
+==Series summary==
+{| class="wikitable"
+|-
+! Game !! Date !! Road team !! Result !! Home team
+|-
+| Game 1 || June 5 || Seattle SuperSonics || 90–107 (0–1) || '''Chicago Bulls'''
+|-
+| Game 2 || June 7 || Seattle SuperSonics || 88–92 (0–2) || '''Chicago Bulls'''
+|-
+| Game 3 || June 9 || '''Chicago Bulls''' || 108–86 (3–0) || Seattle SuperSonics
+|-
+| Game 4 || June 12 || Chicago Bulls || 86–107 (3–1) || '''Seattle SuperSonics'''
+|-
+| Game 5 || June 14 || Chicago Bulls || 78–89 (3–2) || '''Seattle SuperSonics'''
+|-
+| Game 6 || June 16 || Seattle SuperSonics || 75–87 (2–4) || '''Chicago Bulls'''
+|}
+
+:''All times are in [[Eastern Time Zone|Eastern Daylight Time]] ([[UTC−4]]).''
+
+===Game 1===
+{{Basketballbox|bg=#eee |date=June 5 |time=9:00 et |place=[[United Center]], [[Chicago]], [[Illinois]] |TV=[[NBA on NBC|NBC]]
+|team1=[[Seattle SuperSonics]] |score1=90
+|team2='''[[Chicago Bulls]] |score2=107'''
+|report={{webarchive |url=https://web.archive.org/web/19961027101941/http://www.nba.com/finals96/game1_story.html |date=October 27, 1996 |title=Recap }}
+|Q1=18–'''24''' |Q2='''30'''–29 |Q3='''29'''–26 |Q4=13–'''28'''
+|points1=[[Shawn Kemp]] 32 |points2=[[Michael Jordan]] 28
+|rebounds1=[[Gary Payton]] 10 |rebounds2=[[Dennis Rodman]] 13
+|assist1=[[Gary Payton]] 6 |assist2=[[Ron Harper]] 7
+|attendance=24,544
+|referee=<br />
+* No. 43 Danny Crawford
+* No. 17 Joey Crawford
+* No. 15 Bennett Salvatore
+|series=Chicago leads the series, 1–0
+}}
+Although Chicago was not playing well offensively, they were able to compensate with superb defense. Frustration set in for Seattle when Frank Brickowski was ejected after committing a flagrant foul against Dennis Rodman, then promptly getting charged with two consecutive technical fouls. Chicago was leading by only 2 at the end of the third quarter, but in the final quarter, shots by [[Toni Kukoč]] and 2 key steals by [[Ron Harper]] clinched the Bulls' Game 1 win. Shawn Kemp was a bright spot for Seattle, scoring 32 points, but ended up fouling out midway through the fourth quarter. Michael Jordan led the way for the Bulls with 28 points, while Scottie Pippen chipped in with 21 points. Seattle captain Nate McMillan ended up leaving the game due to a debilitating back injury in the 2nd quarter. Dennis Rodman pulled down 13 rebounds for the Bulls, while Toni Kukoč chipped in off the bench with 18 points.<ref>{{Cite web |title=1996 NBA Finals Game 1: SuperSonics vs Bulls, June 5, 1996 |url=https://www.basketball-reference.com/boxscores/199606050CHI.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref>
+
+===Game 2===
+{{Basketballbox|bg=#eee |date=June 7 |time=9:00 et |place=[[United Center]], [[Chicago]], [[Illinois]] |TV=[[NBA on NBC|NBC]]
+|team1=[[Seattle SuperSonics]] |score1=88
+|team2='''[[Chicago Bulls]] |score2=92'''
+|report={{webarchive |url=https://web.archive.org/web/19961027101953/http://www.nba.com/finals96/game2_story.html |date=October 27, 1996 |title=Recap }}
+|Q1='''27'''–23 |Q2=18–'''23''' |Q3=20–'''30''' |Q4='''23'''–16
+|points1=[[Shawn Kemp]] 29 |points2=[[Michael Jordan]] 29
+|rebounds1=[[Shawn Kemp]] 13 |rebounds2=[[Dennis Rodman]] 20
+|assist1=[[Gary Payton|Payton]], [[Detlef Schrempf|Schrempf]] 3 each |assist2=[[Michael Jordan]] 8
+|attendance=24,544
+|referee=<br />
+* No. 42 Hue Hollins
+* No. 20 Jess Kersey
+* No. 4 Ed T. Rush
+|series=Chicago leads the series, 2–0
+}}
+Game 2 started well for Seattle with a 27–23 first quarter lead. However, Seattle would once again lose the lead before halftime. Despite Shawn Kemp's 29 points and 13 rebounds, Chicago triumphed with a final score of 92 to 88. In the victory, Dennis Rodman tied an NBA Finals record with 11 offensive rebounds and made a clutch free throw near the end of the game to seal the Bulls victory. Michael Jordan once again led the Bulls with 29 points, while Shawn Kemp continued his strong play by scoring 29 points for Seattle.<ref>{{Cite web |title=1996 NBA Finals Game 2: SuperSonics vs Bulls, June 7, 1996 |url=https://www.basketball-reference.com/boxscores/199606070CHI.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref>
+
+===Game 3===
+{{Basketballbox|bg=#eee |date=June 9 |time=7:30 et |place=[[KeyArena]], [[Seattle]], [[Washington (state)|Washington]] |TV=[[NBA on NBC|NBC]]
+|team1='''[[Chicago Bulls]] |score1=108'''
+|team2=[[Seattle SuperSonics]] |score2=86
+|report={{webarchive |url=https://web.archive.org/web/19961027102005/http://www.nba.com/finals96/game3_story.html |date=October 27, 1996 |title=Recap }}
+|Q1='''34'''–16 |Q2='''28'''–22 |Q3=13–'''23''' |Q4='''33'''–25
+|points1=[[Michael Jordan]] 36 |points2=[[Detlef Schrempf]] 20
+|rebounds1=[[Dennis Rodman]] 10 |rebounds2=[[Frank Brickowski|Brickowski]], [[Gary Payton|Payton]] 7 each
+|assist1=[[Scottie Pippen]] 9 |assist2=[[Gary Payton]] 9
+|attendance=17,072
+|referee=<br />
+* No. 27 Dick Bavetta
+* No. 25 Hugh Evans
+* No. 29 Steve Javie
+|series=Chicago leads the series, 3–0
+}}
+The Sonics, owners of a 44–5 home record (including playoffs),<ref>Archived at [https://ghostarchive.org/varchive/youtube/20211205/VvISgDdoiEc Ghostarchive]{{cbignore}} and the [https://web.archive.org/web/20210326082828/https://www.youtube.com/watch?v=VvISgDdoiEc Wayback Machine]{{cbignore}}: {{cite web| url = https://www.youtube.com/watch?v=VvISgDdoiEc| title = SuperSonics x Bulls 1996 Finals Game 3 | website=[[YouTube]]}}{{cbignore}}</ref> suffered a 22-point blow-out in their return to Seattle, giving the Bulls a seemingly insurmountable 3–0 series lead. Frustration would once again set in for the Sonics, as Frank Brickowski was ejected for committing a flagrant foul on Dennis Rodman. Michael Jordan led the way for the Bulls with 36 points.<ref>{{Cite web |title=1996 NBA Finals Game 3: Bulls vs SuperSonics, June 9, 1996 |url=https://www.basketball-reference.com/boxscores/199606090SEA.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref>
+
+===Game 4===
+{{Basketballbox|bg=#eee |date=June 12 |time=9:00 et |place=[[KeyArena]], [[Seattle]], [[Washington (state)|Washington]] |TV=[[NBA on NBC|NBC]]
+|team1=[[Chicago Bulls]] |score1=86
+|team2='''[[Seattle SuperSonics]] |score2=107'''
+|report={{webarchive |url=https://web.archive.org/web/19961027102027/http://www.nba.com/finals96/game4_story.html |date=October 27, 1996 |title=Recap }}
+|Q1=21–'''25''' |Q2=11–'''28''' |Q3=31–31 |Q4=23–23
+|points1=[[Michael Jordan]] 23 |points2=[[Shawn Kemp]] 25
+|rebounds1=[[Dennis Rodman]] 14 |rebounds2=[[Shawn Kemp]] 11
+|assist1=[[Scottie Pippen]] 8 |assist2=[[Gary Payton]] 11
+|attendance=17,072
+|referee=<br />
+* No. 17 Joey Crawford
+* No. 13 Mike Mathis
+* No. 21 Bill Oakes
+|series=Chicago leads the series, 3–1
+}}
+Seattle did not want to suffer the ignominy of a sweep. In an attempt to spark his team, Coach George Karl gave Jordan's defensive assignment to Gary Payton, a move which showed immediate results.<ref>{{cite news |title=How putting Gary Payton on Michael Jordan sooner could have changed the 1996 NBA Finals |url=https://www.washingtonpost.com/news/fancy-stats/wp/2014/08/21/how-putting-gary-payton-on-michael-jordan-sooner-could-have-changed-the-1996-nba-finals/ |newspaper=Washington Post}}</ref> Seattle succeeded with a 107–86 win over the Bulls, and Sonics fans taunted the Bulls players with homemade signs reading ''"Sweepless in Seattle".''<ref>{{cite web| url = https://www.orlandosentinel.com/news/os-xpm-1996-06-13-9606130215-story.html| title = SWEEPLESS IN SEATTLE – Orlando Sentinel| date = June 13, 1996}}</ref> The Sonics were helped by the return of team captain [[Nate McMillan]] whose presence entering the game brought the KeyArena crowd to its feet.
+
+Seattle's victory prevented the NBA Finals from being swept in two consecutive years (something which, as of 2026, has never occurred).<ref>{{Cite web|url=https://fansided.com/2021/07/06/complete-list-of-nba-finals-sweeps/|title = Complete list of NBA Finals sweeps|date = July 6, 2021}}</ref>
+
+===Game 5===
+{{Basketballbox|bg=#eee |date=June 14 |time=9:00 et |place=[[KeyArena]], [[Seattle]], [[Washington (state)|Washington]] |TV=[[NBA on NBC|NBC]]
+|team1=[[Chicago Bulls]] |score1=78
+|team2='''[[Seattle SuperSonics]] |score2=89'''
+|report={{webarchive |url=https://web.archive.org/web/19961027102040/http://www.nba.com/finals96/game5_story.html |date=October 27, 1996 |title=Recap }}
+|Q1=18–18 |Q2=24–'''25''' |Q3=18–'''19''' |Q4=18–'''27'''
+|points1=[[Michael Jordan]] 26 |points2=[[Gary Payton]] 23
+|rebounds1=[[Dennis Rodman]] 12 |rebounds2=[[Shawn Kemp]] 10
+|assist1=[[Scottie Pippen]] 5 |assist2=[[Gary Payton]] 6
+|attendance=17,072
+|referee=<br />
+* No. 42 Hue Hollins
+* No. 20 Jess Kersey
+* No. 4 Ed T. Rush
+|series=Chicago leads the series, 3–2
+}}
+Seattle would once again deny the Bulls the championship, stretching the series to six games. Payton had this to say: "We feel great. We knew we could play with this team. It just took too long. We should have come with this a little earlier."<ref>{{Cite web |url=http://www.nba.com/history/finals/19951996.html |title=NBA.com: Bulls' Record-Setting Season Ends in Victory |website=[[NBA.com]] |access-date=March 30, 2006 |archive-url=https://web.archive.org/web/20120222154955/http://www.nba.com/history/finals/19951996.html |archive-date=February 22, 2012 |url-status=dead }}</ref> Shawn Kemp's performance in this game was considered by many to be his best in a Seattle uniform.
+
+This game marked the last NBA Finals game played in [[Seattle]].
+
+===Game 6===
+{{Basketballbox|bg=#eee |date=June 16 |time=7:30 pm |place=[[United Center]], [[Chicago]], [[Illinois]] |TV=[[NBA on NBC|NBC]]
+|team1=[[Seattle SuperSonics]] |score1=75
+|team2='''[[Chicago Bulls]] |score2=87'''
+|report={{webarchive |url=https://web.archive.org/web/19961027102055/http://www.nba.com/finals96/game6_story.html |date=October 27, 1996 |title=Recap }}
+|Q1=18–'''24''' |Q2=20–'''21''' |Q3=20–'''22''' |Q4=17–'''20'''
+|points1=[[Detlef Schrempf]] 23 |points2=[[Michael Jordan]] 22
+|rebounds1=[[Shawn Kemp]] 14 |rebounds2=[[Dennis Rodman]] 19
+|assist1=[[Gary Payton]] 7 |assist2=[[Michael Jordan]] 7
+|attendance=24,544
+|referee=<br />
+* No. 27 Dick Bavetta
+* No. 25 Hugh Evans
+* No. 29 Steve Javie
+|series=Chicago wins the NBA Finals, 4–2
+}}
+Chicago won the series four games to two on [[Father's Day]], in what would be the last time the Sonics played a Finals game before relocating to Oklahoma City and being renamed the [[Oklahoma City Thunder|Thunder]]. The Bulls' victory was partly due to the stellar performance of [[power forward (basketball)|power forward]] [[Dennis Rodman]],<ref>{{Cite web |date=2 February 2025 |title=George Karl hinted that Dennis Rodman was the MVP of the 1996 NBA Finals |url=https://www.basketballnetwork.net/old-school/george-karl-hinted-that-dennis-rodman-was-the-mvp-of-1996-nba-finals |website=Basketball Network}}</ref> who delivered a repeat of his Game 2 performance with 19 rebounds, tying his own NBA Finals record. Bulls star [[Michael Jordan]] finished the game with 22 points and collected his fourth Finals MVP.<ref>{{Cite web |title=NBA FINALS 1996 |url=https://www.nba.com/watch/list/collection/1996-nba-finals-supersonics-vs-bulls |access-date=2026-06-22 |website=NBA.com}}</ref> An emotional Jordan clutched the game ball and broke down sobbing on the locker room floor, dedicating the win to [[James R. Jordan Sr.|his father]], who was murdered in 1993. It was Jordan's first title without his father present.<ref>{{Cite web |last=Young |first=Ryan |date=2020-05-11 |title='The Last Dance' ends fourth night with Michael Jordan's most human moment |url=https://sports.yahoo.com/the-last-dance-michael-jordan-crying-after-winning-1996-nba-finals-seattle-supersonics-dad-death-fathers-day-034218703.html |access-date=2026-06-22 |website=Yahoo Sports}}</ref>
+
+As of the conclusion of the 2026 playoffs, no NBA team has ever [[List of teams to overcome 3–0 series deficits#Key|overcome a 3–0 playoff series deficit]], and only four teams have forced a Game 7 after losing the first three contests: the New York Knicks (1951), Denver Nuggets (1994), Portland Trail Blazers (2003), and Boston Celtics (2023).<ref>{{Cite web|url=https://www.fanduel.com/theduel/posts/teams-to-come-back-from-3-1-and-3-0-series-deficits-in-nba-playoffs-01dd179xj6ya|title = Teams to Come Back from 3-1 and 3-0 Series Deficits in NBA Playoffs| date=June 10, 2019 }}</ref><ref>{{Cite web|url=https://www.boston.com/sports/boston-celtics/2023/05/27/celtics-heat-eastern-conference-finals-game-6-live-updates-score/?p1=hp_secondary|title=Derrick White's putback at the buzzer wins Game 6 for Celtics and forces Game 7|website=www.boston.com}}</ref> Sixteen teams, including the Sonics, have managed to extend a 3–0 series to a Game 6.<ref>{{Cite web | title=Stats of Playoff Series with a 3-0 Lead | url=https://www.landofbasketball.com/statistics/playoff_series_3_0.htm }}</ref>
+
+==Player statistics==
+{{NBA roster statistics legend}}
+
+;Chicago Bulls
+{{NBA roster statistics start|team=Chicago Bulls}}
+|-
+| align="left" | {{sortname|Randy|Brown|dab=basketball}} || 6 || 0 || 8.2 || .500 || '''.500''' || .500 || 0.3 || 0.9 || 0.7 || 0.0 || 2.8
+|-
+| align="left" | {{sortname|Jud|Buechler}} || 6 || 0 || 5.6 || .222 || .000 || .000 || 0.0 || 0.2 || 0.7 || 0.0 || 0.7
+|-
+| align="left" | {{sortname|Ron|Harper}} || 6 || 4 || 19.3 || .375 || .308 || '''.917''' || 2.3 || 1.7 || 0.7 || 0.3 || 6.5
+|-! style="background:#FDE910;"
+| align="left" | {{sortname|Michael|Jordan}} || 6 || 6 || '''42.0''' || .415 || .316 || .836 || 5.3 || 4.2 || 1.7 || 0.2 || '''27.3'''
+|-
+| align="left" | {{sortname|Steve|Kerr}} || 6 || 0 || 18.8 || .303 || .182 || .857 || 0.9 || 0.8 || 0.2 || 0.0 || 5.0
+|-
+| align="left" | {{sortname|Toni|Kukoč}} || 6 || 2 || 29.5 || .423 || .313 || .800 || 4.8 || 3.5 || 0.8 || 0.3 || 13.0
+|-
+| align="left" | {{sortname|Luc|Longley}} || 6 || 6 || 28.3 || .574 || .000 || .727 || 3.8|| 2.2 || 0.6 || '''1.8''' || 11.7
+|-
+| align="left" | {{sortname|Scottie|Pippen}} || 6 || 6 || 41.3 || .343 || .231 || .708 || 8.2 || '''5.3''' || '''2.3''' || 1.3 || 15.7
+|-
+| align="left" | {{sortname|Dennis|Rodman}} || 6 || 6 || 37.5 || .486 || .000 || .579 || '''14.7''' || 2.5 || 0.8 || 0.2 || 7.5
+|-
+| align="left" | {{sortname|John|Salley}} || 5 || 0 || 3.0 || .000 || .000 || .000 || 0.2 || 0.4 || 0.0 || 0.0 || 0.0
+|-
+| align="left" | {{sortname|Bill|Wennington}} || 6 || 0 || 7.0 || '''.667''' || .000 || .500 || 0.5 || 0.2 || 0.0 || 0.0 || 2.9
+{{s-end}}
+
+;Seattle SuperSonics
+{{NBA roster statistics start|team=Seattle SuperSonics}}
+|-
+| align="left" | {{sortname|Vincent|Askew}} || 4 || 0 || 15.5 || .222 || .200 || '''1.000''' || 2.5 || 0.5 || 0.5 || 0.0 || 1.8
+|-
+| align="left" | {{sortname|Frank|Brickowski}} || 6 || 3 || 11.3 || .222 || .200 || .000 || 2.0 || 0.5 || 0.2 || 0.2 || 0.8
+|-
+| align="left" | {{sortname|Hersey|Hawkins}} || 6 || 6 || 38.3 || .455 || .273 || .923 || 3.5 || 1.0 || 1.2 || 0.2 || 13.3
+|-
+| align="left" | {{sortname|Ervin|Johnson}} || 3 || 3 || 6.7 || .333 || .000 || .000 || 2.3 || 0.3 || 0.3 || 0.3 || 1.3
+|-
+| align="left" | {{sortname|Shawn|Kemp}} || 6 || 6 || 40.3 || '''.551''' || .000 || .857 || '''10.0''' || 2.2 || 1.3 || '''2.0''' || '''23.3'''
+|-
+| align="left" | {{sortname|Nate|McMillan}} || 4 || 0 || 12.8 || .429 || '''.600''' || '''1.000''' || 2.8 || 1.5 || 0.5 || 0.0 || 2.8
+|-
+| align="left" | {{sortname|Gary|Payton}} || 6 || 6 || '''45.7''' || .444 || .333 || .731 || 6.3 || '''7.0''' || '''1.5''' || 0.0 || 18.0
+|-
+| align="left" | {{sortname|Sam|Perkins}} || 6 || 0 || 31.7 || .377 || .235 || .810 || 4.7 || 2.0 || 0.5 || 0.0 || 11.2
+|-
+| align="left" | {{sortname|Steve|Scheffler}} || 4 || 0 || 2.0 || .000 || .000 || .000 || 0.5 || 0.0 || 0.0 || 0.0 || 0.0
+|-
+| align="left" | {{sortname|Detlef|Schrempf}} || 6 || 6 || 39.7 || .443 || .389 || .875 || 5.0 || 2.5 || 0.5 || 0.2 || 16.3
+|-
+| align="left" | {{sortname|Eric|Snow}} || 6 || 0 || 1.5 || .000 || .000 || .000 || 0.3 || 0.2 || 0.0 || 0.0 || 0.0
+|-
+| align="left" | {{sortname|David|Wingate|dab=basketball}} || 6 || 0 || 8.0 || .500 || .500 || '''1.000''' || 0.3 || 0.0 || 0.0 || 0.0 || 2.5
+{{s-end}}
+
+==Broadcasting==
+The Finals was aired in the United States on [[NBA on NBC|NBC]]. [[Bob Costas]] hosted the pre-game, halftime and post-game show with analysts [[Julius Erving]] and [[Peter Vecsey (sports columnist)|Peter Vecsey]]. Games were called by [[Marv Albert]], [[Matt Guokas]] and [[Bill Walton]], while [[Ahmad Rashad]] and [[Hannah Storm]] served as sideline reporters.
+
+The local NBC stations of the participants were [[WMAQ-TV]] (Chicago) and [[KING-TV]] (Seattle).
+
+==Aftermath==
+[[File:1996 Chicago Bulls with Bill Clinton 2.jpg|thumb|1996 Chicago Bulls in 1997 during their [[White House]] visit with President [[Bill Clinton]]]]
+This was the SuperSonics’ last Finals appearance during their time in Seattle, as the team [[Seattle SuperSonics relocation to Oklahoma City|moved]] to [[Oklahoma City]] in 2008 and became the [[Oklahoma City Thunder]]. They would make the finals [[2012 NBA Finals|four years later]] after the move, losing to the Big Three-led [[Miami Heat]] in five games. In [[2025 NBA Finals|2025]], the Thunder won their second championship over the [[Indiana Pacers]] in seven games. This was [[George Karl]]'s only Finals appearance in his entire 27-seasons as an NBA head coach.<ref>{{Cite web |title=George Karl |url=https://www.hoophall.com/hall-of-famers/george-karl |access-date=2026-06-22 |website=The Naismith Basketball Hall of Fame}}</ref>
+
+The Bulls came close to winning 70 games for the second straight year, but lost three of their last four games and instead settled for a 69-win campaign in 1997.<ref>{{Cite web |title=1996-97 Chicago Bulls Schedule |url=https://www.basketball-reference.com/teams/CHI/1997_games.html |access-date=2026-06-22 |website=Basketball-Reference.com}}</ref> Nonetheless, the Bulls [[1997 NBA Finals|repeated as champions]], defeating the [[Karl Malone]] and [[John Stockton]]-led [[Utah Jazz]] in six games in the first of [[1998 NBA Finals|two]] finals matches between Chicago and Utah. In the off-season that preceded [[Scottie Pippen]] became the first person to win the NBA championship and an Olympic gold medal in the same year twice, playing for [[United States men's national basketball team|Team USA]] at the [[Basketball at the 1996 Summer Olympics|Atlanta Olympics]].<ref>{{cite news|title=DREAM TEAM'S SLEEPWALK ENDS WITH GOLD MEDAL|date=August 4, 1996|first=Sam|last=Smith|newspaper=Chicago Tribune|page=1}}</ref>
+
+The Bulls' combined 87 wins in the regular season and postseason would stand as an NBA record until the [[2015-16 Golden State Warriors season|2015–16 Golden State Warriors]], coached by former Bull [[Steve Kerr]], broke it with 88 total wins (thanks to the first round using a best-of-7 format instead of the best-of-5 in 1996), including a 73–9 regular season mark. However, the Warriors lost to the [[2015-16 Cleveland Cavaliers season|Cleveland Cavaliers]] in the [[2016 NBA Finals]], failing to repeat as champions after beating the same Cavaliers in [[2015 NBA Finals|the previous Finals]].
+
+This was the first NBA Finals to feature a [[Larry O'Brien Championship Trophy]] patch on each team's uniforms. This would continue until the [[2009 NBA Finals]], though from [[1998 NBA Finals|1998]] to [[2001 NBA Finals|2001]], the uniform patch was of the NBA Finals logo itself. Starting with the [[2010 NBA Finals]], the patch would switch to a gold basketball containing the NBA logo and the Finals logo inside; this replaced the regular NBA logo on the team's uniforms.<ref>{{Cite web |date=2025-06-26 |title=NBA Finals Patch Guide (1990s–Now) — Read This Before You Add One to Your Jersey - Hoop Jersey Store |url=https://hoopjersey.com/blogs/nba-jersey-wiki/nba-finals-patch-guide-1990s-now-read-this-before-you-add-one-to-your-jersey/ |access-date=2026-06-22 |website=hoopjersey.com}}</ref>
+
+==See also==
+*[[1996 NBA playoffs]]
+*[[The Last Dance (miniseries)]]
+
+==Notes and references==
+{{reflist}}
+
+==External links==
+*{{cite web|url=http://www.nba.com/finals96/ |title=Official website of the 1996 NBA Finals |website=[[NBA.com]] |access-date=June 13, 2011 |url-status=bot: unknown |archive-url=https://web.archive.org/web/19961027084008/http://www.nba.com/finals96/ |archive-date=October 27, 1996 }}
+*[https://web.archive.org/web/20120222154955/http://www.nba.com/history/finals/19951996.html NBA.com's History of 1996 NBA Finals]
+
+{{NBA Finals}}
+{{Chicago Bulls 1995–96 NBA champions}}
+{{Chicago Bulls}}
+{{Oklahoma City Thunder}}
+{{1995–96 NBA season by team}}
+{{NBA on NBC}}
+{{NBA on ESPN Radio}}
+
+{{DEFAULTSORT:1996 Nba Finals}}
+[[Category:NBA Finals]]
+[[Category:1995–96 NBA season|Finals]]
+[[Category:Chicago Bulls games|NBA Finals]]
+[[Category:Seattle SuperSonics games|NBA Finals]]
+[[Category:1996 in sports in Illinois|NBA Finals]]
+[[Category:1996 in Chicago|NBA Finals]]
+[[Category:1996 in sports in Washington (state)|NBA Finals]]
+[[Category:1996 in Seattle|NBA Finals]]
+[[Category:Basketball competitions in Seattle]]
+[[Category:Basketball competitions in Chicago]]
+[[Category:June 1996 sports events in the United States|NBA Finals]]
+[[Category:Events at United Center]]

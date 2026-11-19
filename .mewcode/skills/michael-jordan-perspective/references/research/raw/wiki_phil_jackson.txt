@@ -1,0 +1,538 @@
+SOURCE: https://en.wikipedia.org/w/index.php?title=Phil_Jackson&action=raw
+
+{{Short description|American basketball player, coach and executive (born 1945)}}
+{{About|the basketball coach|other people with the same name|Philip Jackson (disambiguation)}}
+{{pp-pc}}
+{{Use American English|date=January 2026}}
+{{Use mdy dates|date=December 2025}}
+{{Infobox basketball biography
+| name = Phil Jackson
+| image = Phil Jackson 3 cropped.jpg
+| caption = Jackson in 2009
+| birth_date = {{birth date and age|1945|9|17|mf=y}}
+| birth_place = [[Deer Lodge, Montana]], U.S.
+| height_ft = 6
+| height_in = 8
+| weight_lb = 220
+| high_school = {{nowrap|[[Williston High School (North Dakota)|Williston]] ([[Williston, North Dakota]])}}
+| college = [[North Dakota Fighting Hawks men's basketball|North Dakota]] (1964–1967)
+| draft_year = 1967
+| draft_round = 2
+| draft_pick = 17
+| draft_team = [[New York Knicks]]
+| career_start = 1967
+| career_end = 1980
+| career_position = [[Power forward]]
+| career_number = 18, 17
+| coach_start = 1978
+| coach_end = 2011
+| years1 = {{nbay|1967|start}}–{{nbay|1977|end}}
+| team1 = [[New York Knicks]]
+| years2 = {{nbay|1978|start}}–{{nbay|1979|end}}
+| team2 = [[New Jersey Nets]]
+| coach_years1 = {{nbay|1978|start}}–{{nbay|1980|end}}
+| coach_team1 = [[New Jersey Nets]] (assistant)
+| coach_years2 = 1983–1987
+| coach_team2 = [[Albany Patroons]]
+| coach_years3 = 1984
+| coach_team3 = [[Piratas de Quebradillas]]
+| coach_years4 = 1984–1986
+| coach_team4 = [[Gallitos de Isabela]]
+| coach_years5 = 1987
+| coach_team5 = Piratas de Quebradillas
+| coach_years6 = {{nbay|1987|start}}–{{nbay|1988|end}}
+| coach_team6 = [[Chicago Bulls]] (assistant)
+| coach_years7 = {{nbay|1989|start}}–{{nbay|1997|end}}
+| coach_team7 = Chicago Bulls
+| coach_years8 = {{nbay|1999|start}}–{{nbay|2003|end}},<br />{{nbay|2005|start}}–{{nbay|2010|end}}
+| coach_team8 = [[Los Angeles Lakers]]
+| highlights = '''As player:'''
+* 2× [[List of NBA champions|NBA champion]] ({{nbafy|1970}}, {{nbafy|1973}})
+* [[NBA All-Rookie First Team]] ({{nbay|1967|end}})
+* 2× First-team [[NCAA Division II|Division II]] [[NCAA Men's Basketball All-Americans|All-American]] (1966, 1967)
+* 2× [[North Central Conference|NCC]] Player of the Year (1966, 1967)
+* 3× First-team All-NCC (1965–1967)
+'''As head coach:'''
+* 11× NBA champion ({{nbafy|1991}}–{{nbafy|1993}}, {{nbafy|1996}}–{{nbafy|1998}}, {{nbafy|2000}}–{{nbafy|2002}}, {{nbafy|2009}}, {{nbafy|2010}})
+* 4× [[NBA All-Star Game head coach]] ({{nasg|1992}}, {{nasg|1996}}, {{nasg|2000}}, {{nasg|2009}})
+* [[NBA Coach of the Year Award|NBA Coach of the Year]] ({{nbay|1995|end}})
+* [[Top 10 Coaches in NBA History]]
+* [[Top 15 Coaches in NBA History]]
+* [[List of Continental Basketball Association champions|CBA champion]] (1984)
+* [[Continental Basketball Association|CBA]] Coach of the Year (1985)
+| stats_league = NBA
+| stat_label1 = [[Point (basketball)|Points]]
+| stat_value1 = 5,428 (6.7 ppg)
+| stat_label2 = [[Rebound (basketball)|Rebounds]]
+| stat_value2 = 3,454 (4.3 rpg)
+| stat_label3 = [[Assist (basketball)|Assists]]
+| stat_value3 = 898 (1.1 apg)
+| coach_stats_league1 = NBA
+| coach_win1 = 1,155
+| coach_loss1 = 485
+| hof_coach = phil-jackson
+}}
+'''Philip Douglas Jackson''' (born September 17, 1945) is an American former professional [[basketball]] player, coach, and executive in the [[National Basketball Association]] (NBA). Jackson is a 13-time [[List of NBA champions|NBA champion]], having won two as a player and eleven as a head coach.<ref>{{cite web|url=https://www.espn.com/los-angeles/nba/columns/story?id=6517140|title=Tense moments in Lakers' last stand|work=ESPN|author=Ramona Shelburne|access-date=January 4, 2013|date=May 10, 2011}}</ref> His eleven [[List of NBA championship head coaches|championships as a head coach]] are the most in NBA history. In 2007, Jackson was inducted into the [[Basketball Hall of Fame]],<ref>{{cite web|url=http://www.realgm.com/src_wiretap_archives/45442/20070402/jackson_and_williams_lead_hof_class/|title=RealGM: Wiretap Archives: Jackson And Williams Lead HOF Class|url-status=dead|archive-url=https://web.archive.org/web/20070428040335/http://www.realgm.com/src_wiretap_archives/45442/20070402/jackson_and_williams_lead_hof_class/|archive-date=April 28, 2007}}</ref> and was named one of the ten greatest coaches in league history in 1996.<ref name="50th">{{cite web|url=http://www.nba.com/history/top_10_coaches.html|title=Top 10 Coaches in NBA History|work=NBA.com|access-date=August 29, 2009}}</ref><ref>Broussard, Chris. (June 16, 2009). [https://www.espn.com/nba/playoffs/2009/columns/story?page=philjax-090615 "X marks the spot of greatest NBA coach"]. ''[[ESPN]]''. Retrieved July 31, 2015.</ref><ref name="Dan Callagy">{{cite web|url=https://bleacherreport.com/articles/198121-auerbach-vs-jackson-who-is-the-best-nba-coach-of-all-time|title=Red Auerbach-Phil Jackson: Who's the Best NBA Coach of All Time?|author=Dan Callagy|work=Bleacher Report|access-date=December 20, 2014}}</ref> He holds numerous other records as a coach, including the most postseason wins (229), and most [[NBA Conference Finals|conference titles]] (13).<ref>{{Cite web |last=Kalbrosky |first=Bryan |date=2021-02-08 |title=Phil Jackson again has the best winning percentage in history among NBA coaches |url=https://hoopshype.com/2021/02/08/phil-jackson-best-all-time-regular-season-record-chicago-bulls-los-angeles-lakers/ |access-date=2023-11-25 |website=HoopsHype |language=en-US}}</ref>
+
+Jackson played [[college basketball]] for the [[North Dakota Fighting Hawks men's basketball|North Dakota Fighting Sioux]] (now known as the Fighting Hawks) for three years. He was selected in the [[1967 NBA draft]] by the [[New York Knicks]], with whom he won two NBA titles as a player. After playing thirteen seasons in the league, he began coaching in minor basketball leagues for five years before he was hired as the assistant coach for the [[Chicago Bulls]] in 1987. 
+
+Jackson was later promoted to head coach of the Bulls in 1989, and he helped the team win six championships ([[1991 NBA Finals|1991]]–[[1993 NBA Finals|1993]], [[1996 NBA Finals|1996]]–[[1998 NBA Finals|1998]]). In 1999, Jackson was hired as a head coach of the [[Los Angeles Lakers]], and he coached the team to three consecutive titles from [[2000 NBA Finals|2000]] to [[2002 NBA Finals|2002]]. Following the Lakers' loss to the [[Detroit Pistons]] in the [[2004 NBA Finals]], he took a season off from coaching and returned to the Lakers in 2005, winning two more championships ([[2009 NBA Finals|2009]], [[2010 NBA Finals|2010]]) before his retirement in 2011. He later was team president of the New York Knicks, where he began his playing career, from 2014 to 2017.
+
+Jackson is known for his use of [[Tex Winter]]'s [[triangle offense]] as well as a [[holistic]] approach to coaching that was influenced by [[Eastern philosophy]], garnering him the nickname "[[Zen master|Zen Master]]". Jackson cited [[Robert Pirsig]]'s book ''[[Zen and the Art of Motorcycle Maintenance]]'' as one of the major guiding forces in his life. He also applied Native American spiritual practices as documented in his book ''Sacred Hoops''.<ref>{{cite web|url=https://www.pbs.org/newshour/bb/sports/jan-june00/jackson_6-16.html|archive-url=https://web.archive.org/web/20000816155827/http://www.pbs.org/newshour/bb/sports/jan-june00/jackson_6-16.html|url-status=dead|archive-date=August 16, 2000|title=Basketball Court Zen|work=PBS NewsHour|access-date=August 1, 2015}}</ref> He is the author of several candid books about his teams and his basketball strategies.
+
+==Early life==
+Jackson was born in [[Deer Lodge, Montana]], on September 17, 1945. His parents, Charles and Elisabeth Funk<ref name=Halberstam>{{cite book |last=Halberstam |first=David |author-link=David Halberstam |title=Playing for Keeps: Michael Jordan and the World He Made |year=1999 |publisher=[[Random House]] |location=New York |isbn=0-679-41562-9 |pages=[https://archive.org/details/playingforkeepsm00halb/page/252 252–53] |url=https://archive.org/details/playingforkeepsm00halb/page/252 }}</ref> Jackson, were [[Assemblies of God USA|Assemblies of God]] ministers. Elisabeth came from a long line of German [[Mennonite]]s before her conversion to the Assemblies of God. In the churches that they served, his father, Charles, generally preached on Sunday mornings and his mother on Sunday evenings. Eventually, his father became a ministerial supervisor.<ref name=Halberstam/> Phil, his two brothers, and his half-sister grew up in a remote area of Montana in an austere environment, in which no dancing or television was allowed. Jackson did not see his first movie until he was a senior in high school, and went to a dance for the first time in college.<ref name=Halberstam /> Growing up, he assumed he would become a minister.
+
+Jackson attended high school in [[Williston, North Dakota]], where he played varsity basketball and led the team to a state title. He also played [[American football|football]], was a [[pitcher]] on the baseball team, and threw the [[discus]] in track and field competitions.<ref name=Halberstam/> The high school now has a sports complex named after him.<ref>Burnes, Jerry. (May 14, 2013). [http://m.willistonherald.com/news/phil-jackson-is-coming-home/article_6e7ad152-bcb1-11e2-afab-0019bb2963f4.html?mode=jqm "Phil Jackson is coming home"]{{Dead link|date=January 2026 |bot=InternetArchiveBot }}. ''Williston Herald''. Retrieved August 11, 2015.</ref> His brother Chuck speculated years later that the three Jackson sons threw themselves passionately into athletics because it was the only time they were allowed to do what other children were doing.<ref name=Halberstam/> Jackson attracted the attention of several baseball scouts. Their notes found their way to future NBA coach [[Bill Fitch]], who had previously coached baseball, and had been doing some scouting for the [[Milwaukee Braves]]. Fitch took over as head basketball coach at the [[University of North Dakota]] in the spring of 1962, during Jackson's junior year of high school.<ref name=Halberstam/>
+
+==College career==
+Bill Fitch successfully recruited Jackson to the [[University of North Dakota]], where he was a member of the [[Sigma Alpha Epsilon]] fraternity.<ref name=Halberstam/><ref name=SAE>[http://www.sae.net/index.asp?r=fraternity&sr=facts&ssr=facts Facts and History] {{webarchive|url=https://web.archive.org/web/20070106124035/http://www.sae.net/index.asp?r=fraternity&sr=facts&ssr=facts |date=January 6, 2007 }}, Sigma Alpha Epsilon.</ref> Jackson did well there, helping the [[North Dakota Fighting Hawks men's basketball|Fighting Sioux]] to third- and fourth-place finishes in the [[NCAA Men's Division II Basketball Championship|NCAA Division II tournament]] in his sophomore and junior years ([[1965 NCAA College Division basketball tournament|1965]] and [[1966 NCAA College Division basketball tournament|1966]]). Both years, they were beaten by the [[Southern Illinois Salukis men's basketball|Southern Illinois Salukis]].<ref name=Halberstam/> Jackson's future Knicks teammate [[Walt Frazier]] was the Salukis' biggest star, but the two only faced off in 1965, as Frazier was academically ineligible in 1966.
+
+==Professional playing career==
+===New York Knicks (1967–1978)=== 
+[[File:Phil jackson v don nelson knicks v celtcs 1972.jpg|thumb|left|230px|Jackson battling Celtics' Don Nelson for rebound at Boston Garden in 1972]]
+In [[1967 NBA draft|1967]], Jackson was drafted in the second round by the [[New York Knicks]]. While he was a good all-around athlete, with unusually long arms, he was limited offensively but compensated with intelligence and hard work on defense.<ref name=Halberstam/> Jackson eventually established himself as a fan favorite and one of the NBA's leading substitutes, although he had very little playing time. He was a top reserve on the Knicks team that won the NBA title in [[1972–73 NBA season|1973]]. Jackson did not play during New York's 1969–70 championship season due to [[spinal fusion]] surgery; however, he authored a book entitled ''Take It All'', a photo diary of the Knicks' 1970 championship run.
+
+Soon after the 1973 title, several key starters retired, creating an opening for Jackson in the starting lineup.<ref name=Halberstam/> In the [[1974–75 NBA season]], Jackson and the [[Milwaukee Bucks]]' [[Bob Dandridge]] shared the lead for total [[Personal foul (basketball)|personal fouls]], with 330 each.<ref>[https://www.basketball-reference.com/leagues/NBA_1975.html 1974–75 NBA Player Register], basketball-reference.com</ref> Jackson lived in [[Leonia, New Jersey]], during this time.<ref>{{cite news |last1=Adamek |first1=Steve |last2=Iannazzone |first2=Al |title=Lakers Notebook |work=[[The Record (Bergen County)]] |date=June 5, 2002 |access-date=March 30, 2011 |url=http://www.highbeam.com/doc/1P1-53411268.html |archive-url=https://web.archive.org/web/20121020031341/http://www.highbeam.com/doc/1P1-53411268.html |archive-date=October 20, 2012 |via=[[HighBeam Research]] |url-access=subscription |url-status=usurped |location=Bergen County, NJ |quote=Phil Jackson's memories of New Jersey are fond and forgetful. He finished his playing career with the Nets when they played their home games at Rutgers, about an hour trip from where he lived in Leonia.}}</ref>
+
+===New Jersey Nets (1978–1980)===
+After crossing the [[Hudson River|Hudson]] in [[1978–79 NBA season|1978]] to play two seasons for the [[New Jersey Nets]], Jackson retired as a player after the [[1979–80 NBA season]].
+
+==Coaching career==
+===CBA and Puerto Rico (1983–1987)===
+In the years following the end of his playing career, Jackson began his head coaching career in the [[Continental Basketball Association]] (CBA) and [[Puerto Rico]]'s [[Baloncesto Superior Nacional]] (BSN).
+
+After his playing retirement, Jackson moved to his summer home near [[Glacier National Park (U.S.)|Glacier National Park]] in [[Montana]].<ref name=doeden>{{cite news |last1=Doeden |first1=Dennis |title=Jackson starts second basketball life as pro coach in CBA |url=https://www.newspapers.com/article/the-forum-jackson-starts-second-basketba/187031606/ |access-date=December 18, 2025 |work=The Forum |date=January 27, 1983 |page=32 |via=[[Newspapers.com]]}}</ref> He was slated to lead the basketball program at nearby [[Flathead Valley Community College]] but it was dissolved due to a lack of funds.<ref name=doeden/> 
+
+On January 26, 1983, Jackson was appointed as head coach for the [[Albany Patroons]] of the CBA.<ref name=doeden/> He replaced [[Dean Meminger]], his former teammate on the Knicks.<ref name=doeden/> Jackson decided to coach in the CBA over college basketball because he considered it as better preparation for coaching in the NBA.<ref>{{cite news |last1=Salant |first1=Jonathan D. |title=Dreams of NBA thrive in CBA |url=https://www.newspapers.com/article/syracuse-herald-journal-dreams-of-nba-th/188476253/ |access-date=January 8, 2026 |work=Syracuse Herald-Journal |date=March 1, 1985 |page=31 |via=[[Newspapers.com]]}}</ref> Jackson won his first coaching championship with the Patroons, leading them to their first title in 1984. He was named the CBA Coach of the Year in 1985.<ref>{{cite web |title=EPBL/EBA/CBA Superlatives |url=https://www.apbr.org/cbahist.html |website=The Association for Professional Basketball Research |access-date=July 10, 2020}}</ref>
+
+In Puerto Rico, he coached the [[Piratas de Quebradillas]] (1984 and 1987) and the [[Gallitos de Isabela]] (1984–1986). He regularly sought NBA jobs, but was turned down. Jackson had acquired a reputation for being sympathetic to the [[counterculture]] during his playing years, which may have scared off potential NBA employers.<ref name="Halberstam"/>
+
+===Chicago Bulls (1987–1998)===
+On October 10, 1987, Jackson was hired as an assistant coach by the Chicago Bulls under [[Doug Collins (basketball)|Doug Collins]].<ref>{{cite news |title=Phil Jackson signs as Bulls' assistant |url=https://www.newspapers.com/article/chicago-tribune-phil-jackson-signs-as-bu/187031816/ |access-date=December 18, 2025 |work=Chicago Tribune |date=October 11, 1987 |page=53 |via=[[Newspapers.com]]}}</ref> He was promoted to [[head coach]] after Collins was fired in 1989. It was around this time that he met [[Tex Winter]] and became a devotee of Winter's [[triangle offense]].<ref>{{cite web|url=http://www.ktka.com/news/2007/feb/22/Former_K_State_basketball/|publisher=KTKA|work=ABC News|title=Former K-State basketball star dies at 72|date=February 22, 2007|access-date=October 2, 2007}}</ref><ref>{{cite web|url=http://www.basketball.ca/en/hm/inside.php?sid=87&id=1161&PHPSESSID=1f02554bda44c6de62046f6a3f345ec6|work=Canada Basketball|title=Candidates for the 2007 Class of the FIBA Hall of Fame announced|date=May 25, 2007|access-date=October 2, 2007|url-status=dead|archive-url=https://web.archive.org/web/20080212173724/http://www.basketball.ca/en/hm/inside.php?sid=87&id=1161&PHPSESSID=1f02554bda44c6de62046f6a3f345ec6|archive-date=February 12, 2008}}</ref> 
+
+Over nine seasons, Jackson and the Bulls made the playoffs every year and won six championships, winning three straight championships over separate three-year periods. 
+
+After losing to the [[Detroit Pistons]] in the 1990 conference finals, Jackson convinced [[Michael Jordan]] to adopt Winter's triangle offense in order to counter the Pistons' [[Jordan Rules]] defensive strategy, and the Bulls swept the Pistons in the 1991 conference finals, enroute to defeating the [[Los Angeles Lakers]] in the NBA Finals.<ref>{{cite web |author= |date=January 18, 2019 |title=Lakers x Bulls 1991 Finals Game 5 |url=https://youtube.com/watch?v=S-drsM6ULVk |access-date=November 25, 2021 |via=[[YouTube]]}}</ref> Two more championships followed, against the Portland Trail Blazers in 1992 and Phoenix Suns in 1993.<ref name="auto1">{{cite web |last=Araton |first=Harvey |date=June 19, 1993 |title=PRO BASKETBALL; Suns Shake and Roll; Bulls Rattle |url=https://www.nytimes.com/1993/06/19/sports/pro-basketball-suns-shake-and-roll-bulls-rattle.html |url-access=subscription |url-status=live |archive-url=https://web.archive.org/web/20110213104120/http://www.nytimes.com/1993/06/19/sports/pro-basketball-suns-shake-and-roll-bulls-rattle.html |archive-date=February 13, 2011 |access-date=May 25, 2009 |work=The New York Times}}</ref><ref name="auto">{{Cite web |title=Top NBA Finals moments: John Paxson's 3-pointer seals three-peat for Bulls |url=https://www.nba.com/news/history-finals-moments-john-paxson-3-pointer-1993 |access-date=February 25, 2022 |website=www.nba.com |language=en}}</ref> The "three-peat" was the first since the [[Boston Celtics]] won eight titles in a row from [[1959 NBA Finals|1959]] through [[1966 NBA Finals|1966]].<ref name="auto1"/><ref name="auto"/> Jordan's first retirement after the [[1992–93 NBA season|1992–1993 season]] marked the end of the first "three-peat". In 1994, Jackson's Bulls faced the New York Knicks in the playoffs for the fourth consecutive time (the third straight time that Jackson faced off against [[Pat Riley]] who had been Knicks head coach since the 1991-92 season); this time the Knicks won in seven games in the conference semi-finals. The physical defense of the Knicks against the Bulls' superstars Jordan and [[Scottie Pippen]] during the 1992 playoffs had led to a feud between Jackson and Riley regarding the officiating and the Knicks' rough style of play.
+
+Although Jordan returned just before the [[1995 NBA Playoffs|1995 playoffs]], it was not enough to prevent a playoff elimination by the [[1994–95 Orlando Magic season|Orlando Magic]] at the conference semi-finals. For 1995-96, the revamped Bulls featured only Jordan and [[Scottie Pippen]] as the returning players from the 1991-93 "three-peat", plus the controversial trade for [[Dennis Rodman]].<ref name="tradebulls">{{cite news |last1=Gano |first1=Rick |date=October 3, 1995 |title=Bulls acquire Rodman from Spurs |url=https://www.washingtonpost.com/archive/sports/1995/10/03/bulls-acquire-rodman-from-spurs/05ef2039-04da-4483-a7bd-84219c40417d/ |url-status=live |archive-url=https://web.archive.org/web/20200504082455/https://www.washingtonpost.com/archive/sports/1995/10/03/bulls-acquire-rodman-from-spurs/05ef2039-04da-4483-a7bd-84219c40417d/ |archive-date=May 4, 2020 |access-date=January 7, 2020 |newspaper=Washington Post}}</ref><ref>{{cite web |date=October 3, 1995 |title=Bulls Take a Chance on Rodman : Pro basketball: Controversial forward is traded from San Antonio for Will Perdue. |url=https://www.latimes.com/archives/la-xpm-1995-10-03-sp-52721-story.html |url-status=live |archive-url=https://web.archive.org/web/20200506125349/https://www.latimes.com/archives/la-xpm-1995-10-03-sp-52721-story.html |archive-date=May 6, 2020 |access-date=January 7, 2020 |website=Los Angeles Times}}</ref> Nonetheless, the Bulls set a regular season record of 72-10 before sweeping the Orlando Magic in the Eastern Conference Finals and then winning their fourth title over the [[Seattle SuperSonics]] in six games.<ref>{{cite web |title=1995–96 Chicago Bulls Schedule and Results |url=https://www.basketball-reference.com/teams/CHI/1996_games.html |access-date=December 12, 2009 |work=basketball-reference.com |publisher=Sports Reference LLC}}</ref><ref>{{Cite web |title=NBA.com: The Bulls Dynasty |url=http://www.nba.com/history/bulls_dynasty.html |url-status=dead |archive-url=https://web.archive.org/web/20131209024614/http://www.nba.com/history/bulls_dynasty.html |archive-date=December 9, 2013 |access-date=September 13, 2018 |website=[[NBA.com]]}}</ref> The Bulls won their fifth and sixth titles over the [[Utah Jazz]] in 1997 and 1998, respectively, although the 1997-98 roster was aging and plagued by injuries to starters Pippen and [[Steve Kerr]]. The Bulls also twice defeated the [[Miami Heat]] coached by Pat Riley, in 1996 first round playoffs and 1997 Eastern Conference Finals, en route to their championship wins. In the 1998 Eastern Conference Finals, the Bulls needed seven games to overcome the [[Indiana Pacers]] led by first-year head coach [[Larry Bird]].
+
+[[File:Phil Jackson Lipofsky.JPG|thumb|180px|[[Michael Jordan]] and Jackson in 1997]] 
+Despite the Bulls' success, tension between Jackson and Bulls general manager [[Jerry Krause]] grew. Some believed that Krause felt under-recognized for building a championship team and believed that Jackson was indebted to him for giving him his first NBA coaching job. In the summer of 1997, Jackson was not invited to the wedding of Krause's stepdaughter, although all of the Bulls' assistant coaches were, as was [[Tim Floyd]], then head coach at [[Iowa State Cyclones men's basketball|Iowa State]], Jackson's eventual successor.<ref name=Halberstam/> After contentious negotiations, in which Jordan intervened saying that he would not play for any other head coach, Jackson received a one-year contract extension only for the 1997–98 season.<ref name=Halberstam/> Krause publicly portrayed Jackson as a two-faced character who had very little regard for his assistant coaches. Ultimately the final decision was up to team owner [[Jerry Reinsdorf]], who offered Jackson the opportunity to return as head coach for 1998-99, but made it clear that the team would have to go into a rebuild because other than Jordan, the rest of the players were at the end of the productive years and they would be too expensive to re-sign. Jackson refused by saying that he didn't want to coach a bad team and left after his contract expired.<ref>{{Cite web |date=1998-06-23 |title=A MOVING DAY FOR JACKSON |url=https://www.chicagotribune.com/1998/06/23/a-moving-day-for-jackson/ |access-date=2025-10-28 |website=Chicago Tribune |language=en-US}}</ref> After the Bulls' final title of the [[Michael Jordan|Jordan]] era in 1998, Jackson left the team vowing never to coach again.<ref>{{cite news|title=The head Bull rides off into the sunset|url=http://sportsillustrated.cnn.com/basketball/nba/news/1998/06/22/jackson_update/|work=CNN/Sports Illustrated|agency=Associated Press|access-date=July 9, 2011|date=June 22, 1998|archive-url=https://web.archive.org/web/20010708131953/http://sportsillustrated.cnn.com/basketball/nba/news/1998/06/22/jackson_update/|archive-date=July 8, 2001}}</ref>
+
+===Los Angeles Lakers (1999–2004, 2005–2011)===
+After taking a year off, Jackson decided to give coaching another chance with the [[1999–2000 Los Angeles Lakers season|Los Angeles Lakers]] in 1999, taking over as head coach from [[Kurt Rambis]] who stayed on as assistant coach and assistant general manager.
+
+Jackson took over a talented Lakers team and immediately produced results as he had done in Chicago. In his first year in Los Angeles, the Lakers went 67–15 during the regular season to top the league. Reaching the conference finals, they eliminated the [[1999–2000 Portland Trail Blazers season|Portland Trail Blazers]] in a tough seven-game series and then won the [[2000 NBA Finals|2000 NBA championship]] by beating the [[1999–2000 Indiana Pacers season|Indiana Pacers]], the latter coached by Larry Bird who would step down after that series.<ref>{{Cite web |last=Smith |first=Sam |date=June 1, 2000 |title=Phil Vs. Scottie As Entertaining As Blazers Vs. Lakers |url=https://www.chicagotribune.com/2000/06/01/phil-vs-scottie-as-entertaining-as-blazers-vs-lakers/ |access-date=January 30, 2016 |website=The Chicago Tribune}}</ref><ref>{{Cite web |date=May 27, 2010 |title=Top 10 Lakers playoffs moments: Kobe-to-Shaq cements Game 7 comeback against Portland |url=https://www.espn.com/blog/los-angeles/lakers/post/_/id/7507/top-10-lakers-playoffs-moments-kobe-to-shaq-cements-game-7-comeback-against-portland |access-date=January 30, 2016 |website=ESPN.com}}</ref><ref>{{Cite news |last=Babb |first=Kent |date=June 13, 2015 |title=That time when Shaquille O'Neal turned in the most dominant NBA Finals performance ever |url=https://www.washingtonpost.com/news/sports/wp/2015/06/13/that-time-when-shaquille-oneal-turned-in-the-most-dominant-nba-finals-performance-ever/ |access-date=January 30, 2016 |newspaper=The Washington Post |language=en-US |issn=0190-8286}}</ref><ref name="lakers_history">{{cite web |title=History of the Lakers |url=http://www.nba.com/lakers/history/lakers_history_new.html |access-date=July 17, 2010 |website=[[NBA.com]] |quote=The arrival of Shaquille O'Neal necessitated the trading of longtime center Vlade Divac, and the trading or renouncement of several other veterans}}</ref>
+
+With the duo of [[Shaquille O'Neal]] and [[Kobe Bryant]], the supporting cast of [[Glen Rice]], [[Derek Fisher]], [[Rick Fox]], [[Devean George]], [[A.C. Green]], [[Robert Horry]], and [[Brian Shaw (basketball)|Brian Shaw]], and the assistance of former Bulls [[Horace Grant]], [[Ron Harper]], and [[John Salley]], Jackson led the Lakers to two additional titles in [[2001 NBA Finals|2001]] and [[2002 NBA Finals|2002]], against the [[2000–01 Philadelphia 76ers season|Philadelphia 76ers]] and [[2001–02 New Jersey Nets season|New Jersey Nets]], adding up to his third [[three-peat]] as head coach.<ref name="latimes 2012">{{cite news|last=Heisler|first=Mark|title=Phil Jackson's tenure produced the most success and fun we've ever seen|date=November 10, 2012|newspaper=Los Angeles Times|url=https://www.latimes.com/sports/la-xpm-2011-may-11-la-sp-heisler-lakers-20110512-story.html|archive-url=https://web.archive.org/web/20121107141029/http://articles.latimes.com/2011/may/11/sports/la-sp-heisler-lakers-20110512|archive-date=November 7, 2012|url-status=live}}</ref> The main challenge the Lakers faced was from their conference rival, the [[2001–02 Sacramento Kings season|Sacramento Kings]].
+
+<imagemap>
+File:Phil Jackson coaching LAL.jpg|thumb|Phil Jackson coaching the Lakers
+rect 147 167 372 485 [[Andrew Bynum]]
+rect 415 217 527 412 [[Pau Gasol]]
+rect 642 155 847 472 [[Lamar Odom]]
+rect 745 567 900 820 [[Derek Fisher]]
+rect 920 442 1103 740 [[Kobe Bryant]]
+rect 1215 340 1493 623 [[Phil Jackson]]
+# Image Source Fallback
+rect 0 0 1500 1000 [[:File:Phil Jackson coaching LAL.jpg]]
+desc top-left
+</imagemap>
+
+However, injuries, weak bench play, and [[Shaq–Kobe feud|public tension between Bryant and O'Neal]] slowed the team down, and they were beaten in the second round of the [[2002–03 NBA season|2003]] NBA Playoffs by the eventual champion [[2002–03 San Antonio Spurs season|San Antonio Spurs]]. Afterward, Jackson clashed frequently with Bryant. While remarkably efficient in Jackson's "triangle offense", Bryant had a personal distaste for Jackson's brand of basketball and subsequently called it "boring".<ref name="ESPN">{{cite web |title=Who Is Lucky Enough To Make Phil Jackson's All-Insult Team? |url=https://www.espn.com/blog/sportscenter/post/_/id/52082/who-is-lucky-enough-to-make-phil-jacksons-all-insult-team |website=ESPN|date=May 17, 2010 }}</ref> In games, Bryant would often disregard the set offense completely to experiment with his own one-on-one moves, infuriating the normally calm Jackson.<ref name="ESPN"/> Bryant managed to test Jackson's patience enough that the "Zen Master" even demanded that Bryant be traded, although Lakers management rejected the request.<ref name="ESPN"/>
+
+Prior to the [[2003–04 NBA season|2003–04 season]], the Lakers signed NBA star veterans [[Karl Malone]] and [[Gary Payton]], who had been franchise players for the [[Utah Jazz]] and the [[Seattle SuperSonics]], respectively, leading to predictions by some that the team would finish with the best record in NBA history.<ref>{{cite web |date=July 16, 2003 |title=Lakers Sign Free Agents Gary Payton and Karl Malone |url=http://www.nba.com/lakers/news/payton_malone_030716.html |access-date=April 20, 2011 |work=NBA.com |publisher=Turner Sports Interactive, Inc}}</ref><ref name="ReferenceC">[[Shaq–Kobe feud#lazenby2006|Lazenby 2006]], p.422</ref> But from the first day of training camp, the Lakers were beset by distractions. Bryant's [[Kobe Bryant sexual assault case|trial for sexual assault]], continued public sniping between O'Neal and Bryant, and repeated disputes between Jackson and Bryant all affected the team during the season.<ref>{{cite news |date=July 18, 2003 |title=Kobe Bryant charged with sexual assault |url=http://www.cnn.com/2003/LAW/07/18/kobe.bryant/ |work=CNN}}</ref> Despite these distractions, the Lakers beat the defending champion Spurs en route to advancing to the [[2004 NBA Finals]] and were heavy favorites to regain the title.<ref name="UDPistons">{{cite web |date=June 5, 2004 |title=Detroit believes in upset of Lakers |url=https://www.espn.com/nba/playoffs2004/news/story?id=1816507 |access-date=May 26, 2021 |website=ESPN.com |publisher=[[Associated Press]]}}</ref><ref>{{cite web |last=May |first=Peter |date=October 28, 2003 |title=Lakers are a lock – for turmoil |url=http://archive.boston.com/sports/basketball/articles/2003/10/28/lakers_are_a_lock____for_turmoil/ |access-date=April 20, 2011 |work=The Boston Globe}}</ref> However, they were upset by the [[2003–04 Detroit Pistons season|Detroit Pistons]], who used their strong defense to dominate the Lakers, winning the title four games to one. This marked the first time in ten attempts as head coach that Jackson had lost in the [[NBA Finals]].
+
+On June 18, 2004, three days after the loss to the Pistons, the Lakers announced that Jackson would leave his position as Lakers coach. Jackson was seeking to double his salary from $6&nbsp;million to $12&nbsp;million on his expiring contract. He had a contract offer outstanding from the Lakers, but he had not acted on it.<ref name=lazenby2006_p423>[[#lazenby2006|Lazenby 2006]], p.423</ref> Winter said Jackson announced at the [[NBA All-Star Game|All-Star]] break that he would not want to return to the Lakers if Bryant returned.<ref name=lazenby2006_p423/> Many fans attributed Jackson's departure directly to the wishes of Bryant, as Lakers owner [[Jerry Buss]] reportedly sided with Bryant. Jackson, Bryant, and Buss all denied that Bryant had made any explicit demand regarding Jackson. However, O'Neal, upon hearing General Manager [[Mitch Kupchak]]'s announcement of the team's willingness to trade O'Neal and its intention to keep Bryant, indicated that he felt the franchise was indeed pandering to Bryant's wishes with the departure of Jackson. O'Neal's trade to the [[2004–05 Miami Heat season|Miami Heat]] was the end of the "Trifecta" that had led the Lakers to three championship titles.
+
+That fall, Jackson released ''[[The Last Season: A Team in Search of Its Soul|The Last Season]]'', a book that describes his point of view of the tensions that surrounded the 2003–04 Lakers team. The book was pointedly critical of [[Kobe Bryant]].
+
+Without Jackson and O'Neal, the Lakers were forced to become a faster-paced team on the court. Though they achieved some success in the first half of the season, injuries to several players including Kobe Bryant and [[Lamar Odom]] forced the team out of contention, going 34–48 in [[2004–05 NBA season|2004–05]] and missing the playoffs for the first time in 11 years. [[Rudy Tomjanovich]], Jackson's successor as coach,<ref name="truth">{{cite news |date=May 13, 2005 |title=NBA Truth & Rumors: May 12, 2005 |url=http://sportsillustrated.cnn.com/2005/scorecard/05/13/truth.rumors.nba/ |access-date=February 20, 2013 |work=Sports Illustrated}}</ref>{{New archival link needed|date=April 2026}} resigned midway through the season after coaching just 41 games, citing health issues not related to his past bout with [[bladder]] cancer, which immediately led to speculation that the Lakers might bring Jackson back.<ref>{{cite book |last=Lazenby |first=Roland |author-link=Roland Lazenby |url=https://archive.org/details/showinsidestoryo00laze |title=The Show: The Inside Story of the Spectacular Los Angeles Lakers in the Words of Those Who Lived It |publisher=McGraw-Hill Professional |year=2006 |isbn=978-0-07-143034-0 |location=New York City |page=[https://archive.org/details/showinsidestoryo00laze/page/n465 436] |ref=lazenby2006 |access-date=February 20, 2013 |url-access=registration}}</ref>
+
+On June 15, 2005, preceding the [[2005–06 Los Angeles Lakers season|2005–06 season]], the Lakers rehired Jackson. Jackson subsequently led the Lakers to a seventh-seed playoff berth for the [[2006 NBA playoffs|2006 playoffs]]. Once again promoting the notion of selfless team play embodied by the triangle offense, the team achieved substantial results, especially in the last month of the season. Jackson also worked very seamlessly with Bryant, who had earlier shown his desire to bring Jackson back to the bench. Bryant's regular-season performance won him the league scoring title and made him a finalist in MVP voting. However, the Lakers faced a tough 2006 first-round matchup against the second-seeded [[2005–06 Phoenix Suns season|Phoenix Suns]], who were led by eventual MVP winner [[Steve Nash]].<ref>[http://www.nba.com/news/nash_mvp_05-06.html Suns' Steve Nash Wins Second Consecutive MVP Award], National Basketball Association, 7 May 2006. Retrieved 26 September 2007.</ref> The Lakers jumped out to a 3–1 lead following a dramatic last-second shot by Bryant in overtime to win game four, but the Suns recovered to win the last three and take the series.<ref>{{cite web |title=Phoenix Clinches Series Over Lakers |url=http://www.nba.com/playoffs2006/series_phxlal.html |url-status=dead |archive-url=https://web.archive.org/web/20080724154728/http://www.nba.com/playoffs2006/series_phxlal.html |archive-date=2008-07-24 |access-date=2016-02-25 |publisher=NBA}}</ref> It was the first time that a Jackson-coached team had failed to reach the second round of the playoffs.
+
+[[File:Phil Jackson 08.jpg|thumb|230px|Jackson (right) in 2008, standing next to Lakers assistant coach [[Frank Hamblen]] (left)]]
+On January 7, 2007, Jackson won his 900th game, then placing him 9th on the all-time win list for NBA coaches. With this win, Jackson became the fastest to reach 900 career wins, doing so in only 1,264 games and beating [[Pat Riley]]'s previous record of 900 in 1,278 games.
+
+On December 12, 2007, after announcing he would return to his position as coach just a few days prior, Jackson inked a 2-year contract extension to continue his tenure with the [[Los Angeles Lakers]] through the end of the 2009–2010 season.
+
+During the 2007–08 season, the Lakers were able to obtain [[Pau Gasol]] in a trade with the [[2007–08 Memphis Grizzlies season|Memphis Grizzlies]]. With another star to pair with Bryant, Jackson coached the Lakers to an appearance in the [[2008 NBA Finals]] against the [[2007–08 Boston Celtics season|Boston Celtics]].<ref name="cnnsi-20082">{{cite news |date=June 17, 2008 |title=Celtics Seize First NBA Title In 22 Years |url=https://www.cbsnews.com/news/celtics-seize-first-nba-title-in-22-years/ |access-date=June 18, 2008 |work=CBS News |agency=Associated Press}}</ref> Boston went on to win the series 4–2, in the process handing Jackson and the Lakers their worst playoff loss ever in Game 6, a 39-point defeat.<ref>{{cite web |title=Largest margins of victory in NBA Finals |url=http://nbcsports.msnbc.com/id/25227077/ |url-status=dead |archive-url=https://web.archive.org/web/20081205181257/http://nbcsports.msnbc.com/id/25227077/ |archive-date=December 5, 2008 |access-date=June 19, 2008 <!--DASHBot--> |publisher=NBCSports.com}}</ref><ref>{{Cite web |title=1998 NBA Finals<!-- Bot generated title --> |url=http://www.internetfm.com/srn/finals98.htm |url-status=dead |archive-url=https://web.archive.org/web/20080605185029/http://www.internetfm.com/srn/finals98.htm |archive-date=June 5, 2008}}</ref><ref>{{cite news |last=Bucher |first=Ric |date=June 8, 1998 |title=Bulls Roll to Game 3 Victory, 96–54 |url=https://www.washingtonpost.com/wp-srv/sports/nba/longterm/1998/finals/articles/nba8.htm |access-date=October 1, 2009 |newspaper=The Washington Post}}</ref> It was only the second time in 11 appearances that Jackson had lost an NBA Finals.
+
+On December 25, 2008, Jackson became the sixth coach to win 1,000 games, with the Lakers defeating the Celtics in their first matchup since the last year's finals. He was the fastest to win 1,000 games, surpassing Riley, who had taken 11 more games than Jackson.
+
+Jackson again coached the Lakers to the NBA Finals in [[2009 NBA Finals|2009]], defeating the [[2008–09 Utah Jazz season|Utah Jazz]], [[2008–09 Houston Rockets season|Houston Rockets]], and [[2008–09 Denver Nuggets season|Denver Nuggets]] in the process.<ref>{{cite web |title=2009 NBA Playoffs Series Prices |url=https://www.sportsoddshistory.com/nba-playoffs-series/?y=2009&o=s&fv=&hv=&fd=&rd= |access-date=May 28, 2021 |publisher=Sports Odds History}}</ref><ref>{{cite web |last=Withers |first=Tom |date=June 14, 2009 |title=Bryant, Lakers reign once more |url=http://www.nba.com/games/20090614/LALORL/recap.html |url-status=dead |archive-url=https://web.archive.org/web/20090618135606/http://www.nba.com/games/20090614/LALORL/recap.html |archive-date=June 18, 2009 |access-date=June 15, 2009 |publisher=[[National Basketball Association]]}}</ref> In the Finals, the Lakers defeated the [[2008–09 Orlando Magic season|Orlando Magic]] 4–1, clinching Jackson's 10th NBA championship as head coach and surpassing the record for most championships won by a head coach previously held by him and [[Red Auerbach]].
+[[File:Phil Jackson Lakers 2010 White House.png|thumb|Jackson at the exterior of the White House, following the Lakers' 2009 NBA Championship, January 26, 2010]]
+
+On February 3, 2010, Jackson recorded his 534th win as Lakers head coach, surpassing Pat Riley to become the most successful coach in franchise history. The Lakers would go on to a fifth consecutive playoff berth in [[2010 NBA Playoffs|2010]]. They defeated the [[2009–10 Oklahoma City Thunder season|Oklahoma City Thunder]], Jazz, and Suns in the playoffs before defeating the Celtics in the [[2010 NBA Finals]], earning Jackson his 11th NBA championship as head coach and his fifth with the Lakers.<ref>{{cite web|url=https://www.espn.com/nba/recap?gameId=300617013|archive-url=https://web.archive.org/web/20171203175325/http://www.espn.com/nba/recap?gameId=300617013|url-status=dead|archive-date=December 3, 2017|title=Bryant, Artest rally Lakers to 16th championship |date=June 17, 2010|work=ESPN|access-date=June 17, 2010}}</ref>
+
+On July 1, 2010, Jackson, after giving it tremendous thought and consulting with his doctors over health concerns, announced that he would return to coach the Lakers for the 2010–11 season.<ref>[https://sports.yahoo.com/nba/news;_ylt=AgEulkIpjiJ1N3Saog.Z3rzYrYZ4?slug=ap-lakers-jackson Phil Jackson returning to coach Lakers next season] Yahoo! Sports. July 1, 2010. Accessed July 5, 2010.</ref> On August 2, 2010, Jackson signed a new contract with the Lakers to return for what he mentioned was "his last stand", meaning the 2010–11 season would be his last. In January 2011, he reiterated that it would be his final season, explaining that in the past there was the possibility that maybe he would reconsider. "This year, there's no maybe", said Jackson.<ref>{{cite news |last=McMenamin |first=Dave |title=Phil Jackson still plans to retire |date=February 28, 2011 |work=ESPNLosAngeles.com |url=https://www.espn.com/los-angeles/nba/news/story?id=6066049 |archive-url=https://web.archive.org/web/20110130064337/http://sports.espn.go.com/los-angeles/nba/news/story?id=6066049 |archive-date=January 30, 2011 |url-status=live}}</ref> He retired after the Lakers were swept out of the playoffs in the conference semifinals by that season's [[2010–11 Dallas Mavericks season|eventual NBA champions, the Dallas Mavericks]], meaning that he would not get a fourth three-peat (after previously achieving that feat in 1993, 1998 and 2002).<ref>{{cite web|last=Howard-Cooper|first=Scott|title=Phil Jackson is Retired ... Maybe|url=http://hangtime.blogs.nba.com/2011/05/11/phil-jackson-is-retired-maybe/|publisher=NBA|access-date=May 15, 2011|date=May 11, 2011|archive-url=https://web.archive.org/web/20190527153551/http://hangtime.blogs.nba.com/2011/05/11/phil-jackson-is-retired-maybe/|archive-date=May 27, 2019|url-status=dead}}</ref><ref>{{cite news|last=Kotloff|first=Brian|title=Report: Phil Jackson was diagnosed with prostate cancer in March 2011|date=April 28, 2013|work=SI.com|url=http://tracking.si.com/2013/04/28/phil-jackson-prostate-cancer/|archive-url=https://web.archive.org/web/20130603042431/http://tracking.si.com/2013/04/28/phil-jackson-prostate-cancer/|archive-date=June 3, 2013|url-status=live}}</ref> In his final news conference that season, he noted that he did not have much of a relationship with Jerry or [[Jim Buss]], and said, "When I leave here, I don't anticipate Lakers management will call me up and ask my advice."<ref name="latimes 2012"/>
+
+After the Lakers fired Jackson's successor, [[Mike Brown (basketball, born 1970)|Mike Brown]], early in the [[2012–13 Los Angeles Lakers season|2012–13 season]], they first approached Jackson to replace Brown. Jackson requested two days to consider the opening. He believed the Lakers would wait for his response, but the Lakers thought it was understood they would continue their search. The next day, the team talked with [[Mike D'Antoni]] and hired him in a unanimous decision by the front office.<ref name=breshnahan_11132012>{{cite news|last=Bresnahan|first=Mike|title=Kupchak: If Phil Jackson hadn't hesitated he might be Lakers coach|date=November 13, 2012|newspaper=Los Angeles Times|url=https://latimes.com/sports/basketball/nba/lakers/la-sp-lakers-kupchak-20121114,0,1350996,full.story|archive-url=https://web.archive.org/web/20121114201231/http://www.latimes.com/sports/basketball/nba/lakers/la-sp-lakers-kupchak-20121114,0,1350996,full.story|archive-date=November 14, 2012|url-status=dead}}</ref><ref name=mcmenamin_11132012>{{cite news|last=McMenamin|first=Dave|title=Kupchak: Mike D'Antoni a better fit|date=November 13, 2012|publisher=ESPN|url=https://www.espn.com/los-angeles/nba/story/_/id/8628871/mitch-kupchak-los-angeles-lakers-explains-decision-hire-mike-dantoni|archive-url=https://web.archive.org/web/20121114055456/http://espn.go.com/los-angeles/nba/story/_/id/8628871/mitch-kupchak-los-angeles-lakers-explains-decision-hire-mike-dantoni|archive-date=November 14, 2012|url-status=live}}</ref><ref name=breshnahan_11122012>{{cite news|last=Bresnahan|first=Mike|title=Mike D'Antoni to be next coach of the Lakers|date=November 12, 2012|newspaper=Los Angeles Times|url=https://latimes.com/sports/lakersnow/la-sp-ln-lakers-hire-mike-dantoni-20121112,0,7850509.story?track=rss|archive-url=https://web.archive.org/web/20121112131321/http://www.latimes.com/sports/lakersnow/la-sp-ln-lakers-hire-mike-dantoni-20121112,0,7850509.story?track=rss|archive-date=November 12, 2012|url-status=live}}</ref><ref name=beck_11122012>{{cite news|last=Beck|first=Howard|title=The Lakers Change Direction and Hire D'Antoni as Coach|date=November 12, 2012|newspaper=The New York Times|url=https://www.nytimes.com/2012/11/13/sports/the-lakers-change-direction-and-hire-mike-dantoni-as-coach.html?ref=sports&_r=0}}</ref>{{New archival link needed|date=April 2026}} They felt D'Antoni's fast-paced style of play made him a "great fit" for the team, more suitable than Jackson's structured triangle offense.<ref name=breshnahan_11132012/><ref name=mcmenamin_11132012/><ref>{{cite news|last=Bresnahan|first=Mike|title=Phil Jackson gets call from Lakers and it's not what he expected|date=November 12, 2012|newspaper=Los Angeles Times|url=https://latimes.com/sports/basketball/nba/lakers/la-sp-lakers-coach-jackson-20121113,0,2707499,full.story|archive-url=https://web.archive.org/web/20121113132503/http://www.latimes.com/sports/basketball/nba/lakers/la-sp-lakers-coach-jackson-20121113,0,2707499,full.story|archive-date=November 13, 2012|url-status=dead}}</ref><ref>{{cite news|last=Ding|first=Kevin|title=Lakers' fast break away from Jackson opens door for D'Antoni|date=November 12, 2012|newspaper=Orange County Register|url=http://www.ocregister.com/sports/lakers-377569-jackson-antoni.html|archive-url=https://web.archive.org/web/20121115061652/http://www.ocregister.com/sports/lakers-377569-jackson-antoni.html|archive-date=November 15, 2012|url-status=live}}</ref> Jerry Buss' preference has always been for the Lakers to have a wide-open offense.<ref name=breshnahan_11132012/> In the two games leading up to D'Antoni's signing, Lakers fans at [[Staples Center]] had chanted "We Want Phil!"<ref name=breshnahan_11132012/>
+
+==Executive career==
+===New York Knicks (2014–2017)===
+In 2014, Jackson was in discussions for months with the [[New York Knicks]] regarding an executive position with the team.<ref>{{cite news|last1=Shelburne|first1=Ramona|first2=Chris|last2=Broussard|title=Phil Jackson signs with Knicks|date=March 14, 2014|publisher=ESPN|url=https://www.espn.com/new-york/nba/story/_/id/10607795/phil-jackson-deal-new-york-knicks-finalized|archive-url=https://web.archive.org/web/20140314234512/http://espn.go.com/new-york/nba/story/_/id/10607795/phil-jackson-deal-new-york-knicks-finalized|archive-date=March 14, 2014|url-status=live}}</ref> On March 18, he was introduced as the president of the Knicks after signing a five-year, $60 million contract.<ref>{{cite web|url=http://knicksnow.com/posts/5430/phil-jackson-named-president-of-new-york-knicks|title=Phil Jackson Named President of New York Knicks|work=NBA.com|publisher=Turner Sports Interactive, Inc|date=March 18, 2014|access-date=March 18, 2014|url-status=dead|archive-url=https://web.archive.org/web/20140318210300/http://knicksnow.com/posts/5430/phil-jackson-named-president-of-new-york-knicks|archive-date=March 18, 2014}}</ref><ref>{{cite news|title=Zen Era: Phil Jackson Introduced As Knicks President At MSG|date=March 18, 2014|work=newyork.cbslocal.com/|url=http://newyork.cbslocal.com/2014/03/18/zen-era-begins-phil-jackson-set-for-knicks-introduction-at-msg/|archive-url=https://web.archive.org/web/20140318210007/http://newyork.cbslocal.com/2014/03/18/zen-era-begins-phil-jackson-set-for-knicks-introduction-at-msg/|archive-date=March 18, 2014|url-status=live}}</ref>
+
+On April 21, 2014, over one week after the conclusion of the season, Mike Woodson and his entire staff were fired by Jackson.<ref>{{cite web|last=Begley|first=Ian|title=Knicks fire entire coaching staff|url=https://www.espn.com/new-york/nba/story/_/id/10815529/mike-woodson-fired-new-york-knicks-coach|work=Article|date=April 21, 2014 |publisher=ESPN|access-date=April 21, 2014}}</ref> The Knicks finished the season with a 37–45 record and finished 9th in the Eastern Conference standings.
+
+On June 9, 2014, the Knicks hired Derek Fisher as the head coach. Fisher had played under Phil Jackson as a Laker and won five championships together.
+
+On June 25, 2014, the Knicks traded guard [[Raymond Felton]] along with former [[NBA Defensive Player of the Year Award|NBA Defensive Player of the Year]] [[Tyson Chandler]] to the [[Dallas Mavericks]]. In return, the Knicks received [[Shane Larkin]], [[José Calderón (basketball)|José Calderón]], [[Samuel Dalembert]], and [[Wayne Ellington]] along with two picks for the following day's draft. The trade was the first one that he executed as a front office executive. On June 26, as part of the 2014 NBA draft, the Knicks selected [[Cleanthony Early]] as the 34th overall pick and [[Thanasis Antetokounmpo]] as the 51st overall pick, using the draft picks received in the trade from the Mavericks. The Knicks also acquired [[Louis Labeyrie]], an additional second-round draft pick, after he was traded by the Pacers.
+
+On January 7, 2015, the Knicks set a franchise record with 13 straight losses. The Knicks fell 101–91 to the Washington Wizards, giving New York its longest losing streak in the franchise's 69-year history.<ref>[https://www.nba.com/games/20150107/NYKWAS/gameinfo.html] {{dead link|date=June 2026}}</ref> This record was extended to 16 straight losses after the [[NBA Global Games]] loss against the [[Milwaukee Bucks]] in London. They ended the [[2014–15 New York Knicks season|season]] with a franchise-worst record of 17–65.
+
+On June 25, 2015, the Knicks drafted Latvian [[Kristaps Porziņģis]] with the fourth overall pick in the [[2015 NBA draft]];<ref>{{cite web|url=https://www.nba.com/knicks/draft/no.-4-pick-knicks-select|title=With The No. 4 Pick, The Knicks Select Kristaps Porzingis|date=June 25, 2015|work=NBA.com|access-date=June 26, 2015}}</ref><ref>{{cite news|last1=Berman|first1=Marc|title=Knicks take Euro stud Kristaps Porzingis with No. 4 pick|url=https://nypost.com/2015/06/25/knicks-take-euro-stud-kristaps-porzingis-with-no-4-pick/|access-date=June 26, 2015|work=nypost.com|date=June 26, 2015}}</ref> he signed his rookie-scale contract with the Knicks on July 30, 2015.<ref>{{cite web|url=https://www.nba.com/knicks/knicks-sign-kristaps-porzingis-and-jerian-grant|title=Knicks Sign Kristaps Porzingis and Jerian Grant|date=July 30, 2015|work=NBA.com|access-date=July 30, 2015}}</ref> On that same night, the Knicks traded [[Tim Hardaway Jr.]] for the 19th pick in the draft, which would become [[Jerian Grant]].<ref>{{cite web|last1=Begley|first1=Ian|title=Knicks ship Tim Hardaway Jr. to Hawks for Jerian Grant rights|url=https://www.espn.com/new-york/nba/story/_/id/13150961/new-york-knicks-trade-tim-hardaway-jr-atlanta-hawks-jerian-grant-draft-rights|website=ESPN|date=June 26, 2015 }}</ref> Porziņģis was an NBA All-Rookie First Team selection for the 2016 season.
+
+On November 14, 2016, Jackson was criticized for using the word "[[Posse (disambiguation)|posse]]" to describe [[Cleveland Cavaliers]] [[small forward]] [[LeBron James]] and his business associates during a situation that occurred during James' tenure with the [[Miami Heat]], via [[ESPN]]'s [[Jackie MacMullan]].<ref>{{Cite web|url=https://www.nba.com/news/phil-jackson-sticking-new-york-knicks-plan|title=Defiant Phil Jackson sticking to Knicks' plan|website=NBA.com|access-date=June 9, 2026}}</ref><ref>{{cite web | url=https://www.espn.com/nba/story/_/id/18050497/maverick-carter-responds-phil-jackson-posse-reference-lebron-james-business-partners | title=Maverick Carter responds to Phil Jackson 'posse' reference | date=November 15, 2016 }}</ref><ref>{{Cite web |last=McMenamin |first=Dave  |date=November 15, 2016 |title=LeBron James slams Phil Jackson for referring to business partners as 'posse' |url=https://www.espn.com/nba/story/_/id/18055626/lebron-james-cleveland-cavaliers-slams-phil-jackson-referring-business-partners-posse |access-date=2026-05-31 |website=ESPN.com}}</ref>
+
+On June 28, 2017, the Knicks officially announced a mutual decision to part ways with Jackson.<ref>{{cite web|title=Phil Jackson, New York Knicks Agree to Part Company|url=https://www.nba.com/knicks/philjacksonknicks|website=NBA.com|access-date=June 28, 2017|date=June 28, 2017}}</ref> The speculated reasoning for the parting of ways was Jackson's attempted buying-out of [[Carmelo Anthony]] and his very public strife with Porziņģis.<ref>[https://www.si.com/nba/2017/06/28/phil-jackson-fired-new-york-knicks-james-dolan-kristaps-porzingis-carmelo-anthony "The Knicks Finally Give Up On Phil Jackson"].</ref> Jackson was replaced by his former subordinate [[Steve Mills (sports executive)|Steve Mills]], who had previously served as interim president.
+
+==Awards==
+Jackson won the 1996 [[NBA Coach of the Year Award]]. In the same year, he was named one of the ten greatest NBA coaches of all time by vote in an unranked compilation.<ref name="Dan Callagy"/><ref name="Top 10 NBA coaches of all time">{{Cite web|url=http://www.foxsports.com/nba/lists/Top_10_NBA_coaches_of_all_time#photo-title=Doing+a+tough+job+well&photo=11356904|title=Top 10 NBA coaches of all time|date=February 10, 2011|work=[[Fox Sports]]|access-date=July 31, 2015}}</ref> At the time he was in his 8th year coaching; in the seven years prior he coached 574 games and won 414, with only 160 losses, and had a win–loss percentage of 72.1% – the highest of any coach on the list at that time. He continued his success in his later career; cumulative careers in perspective, he retains the highest win–loss percentage of any coach on this list at 70.4% (1155 wins, 485 losses).<ref name="50th"/>
+
+In 1994, Jackson was inducted into the [[National High School Hall of Fame]].<ref>{{Cite web |title=National High School Hall of Fame |url=https://assets.nfhs.org/umbraco/media/9697/hall-of-fame-30-year-anniversary-book.pdf |access-date=September 19, 2026 |website=National Federation of State High School Associations}}</ref>
+
+In 2002 and 2010 the [[United States Sports Academy]] awarded Jackson the [[Amos Alonzo Stagg Coaching Award#Amos Alonzo Stagg Coaching Award|Amos Alonzo Stagg Coaching Award]].<ref>{{cite web |url=http://www.gatorzone.com/story.php?id=12389&html=basketball/men/news/20070717060100.html&sport=baskm |title=Donovan Presented With United States Sports Academy Coaching Award |publisher=GatorZone.com |date=July 17, 2007 |access-date=September 6, 2012 |archive-url=https://web.archive.org/web/20140222165557/http://www.gatorzone.com/story.php?id=12389&html=basketball%2Fmen%2Fnews%2F20070717060100.html&sport=baskm |archive-date=February 22, 2014 |url-status=dead}}</ref><ref name="Stagg Award">{{cite web|title=Amos Alonzo Stagg Coaching Award|url=http://www.asama.org/awards-of-sport/medallion-series/coaching-male/|publisher=ASAMA – The American Sport Art Museum and Archives|access-date=October 6, 2012|url-status=dead|archive-url=https://web.archive.org/web/20100503043252/http://asama.org/awards-of-sport/medallion-series/coaching-male/|archive-date=May 3, 2010}}</ref>
+
+Jackson is a recipient of the state of [[North Dakota]]'s [[Roughrider Award]].
+
+==Personal life==
+Jackson has five children and eight grandchildren.<ref name="Family">{{cite news |url=https://blogs.forbes.com/jennagoudreau/2011/01/24/la-lakers-jeanie-buss-doesnt-play-by-the-rules-gayle-king-phil-jackson-boy-toy-playboy |title=LA Lakers' Jeanie Buss Doesn't Play By The Rules | work=Forbes | first=Jenna | last=Goudreau}}</ref><ref>{{cite news|last1=MacMullan|first1=Jackie|title=Phil Jackson: 'I'm going to follow the plan, and if it doesn't work out, it will be evident'|url=https://www.espn.com/nba/story/_/id/18043923/truehoop-presents-new-york-knicks-president-phil-jackson-qa-nba|access-date=December 28, 2016|publisher=ESPN|date=November 14, 2016}}</ref> He married his first wife, Maxine, in 1967. They divorced in 1972. He married his second wife, June, in 1974, but they divorced in 2000.<ref>David L. Porter. ''[https://books.google.com/books?id=DDO3sdV6ytsC&dq=%22phil+jackson%22+maxine+june&pg=PA231 Basketball: A Biographical Dictionary]''. Greenwood, 2005. 231.</ref> He dated [[Jeanie Buss]], the daughter of Lakers owner [[Jerry Buss]], whom he met in 1999.<ref>{{cite web|url=https://www.usatoday.com/story/gameon/2013/01/03/jennie-buss-phil-jackson/1808075/|title=Phil Jackson and Jeanie Buss getting married?|work=USA Today|date=January 4, 2013|access-date=March 3, 2013}}</ref> The two became engaged in 2013.<ref>{{cite news| url=http://deadspin.com/5973010/phil-jackson-has-put-a-ginormous-diamond-engagement-ring-on-jeanie-buss-hand |title=Phil Jackson Has Put A Ginormous Diamond Engagement Ring On Jeanie Buss' Hand | work=Deadspin | first=Erik | last = Malinowski}}</ref> On December 27, 2016, they announced the termination of their engagement in a joint statement on Twitter.{{Citation needed|date=May 2026}}
+
+While he was the coach of the Chicago Bulls, he lived in [[Bannockburn, Illinois]].<ref>[https://virtualglobetrotting.com/map/phil-jacksons-house-former/view/google/ Phil Jackson's house (former) in Bannockburn, IL (Google Maps) – Virtual Globetrotting] Retrieved February 25, 2017.</ref> He lived in [[Playa del Rey, Los Angeles]] when he was the coach of the [[Los Angeles Lakers]]. While he was the president of basketball operations of the [[New York Knicks]], he lived in [[Midtown Manhattan]], [[New York City]].<ref>{{cite web|author=Neal J. Leitereg|url=https://www.sun-sentinel.com/la-fi-hotprop-phil-jackson-apartment-20140814-story.html?outputType=amp|title=Phil Jackson buys $4.85 million apartment in midtown New York|publisher=[[Sun-Sentinel]]|date=August 14, 2014|access-date=January 19, 2022}}</ref><ref>{{cite web|author=Zoe Rosenberg|url=https://ny.curbed.com/2017/9/18/16328776/phil-jackson-lakers-knicks-apartment-nyc|archive-url=https://web.archive.org/web/20170918220438/https://ny.curbed.com/2017/9/18/16328776/phil-jackson-lakers-knicks-apartment-nyc|url-status=dead|archive-date=September 18, 2017|title=Former Lakers coach Phil Jackson lists Billionaires' Row pad for $4.95M|publisher=[[Curbed]]|date=September 18, 2017|access-date=January 19, 2022}}</ref> He currently resides in [[Flathead Lake]], [[Montana]].<ref>{{cite web|author=Carolyn Hidy|url=https://leaderadvertiser.com/news/2021/aug/26/flathead-lakers-stand-tall-conservation-annual-mee/|title=Flathead Lakers stand tall for conservation at annual meeting|publisher=Lake County Leader|date=August 26, 2021|access-date=January 18, 2022}}</ref>
+
+He has 26 hours of graduate study in psychology.<ref>[https://www.espn.ph/nba/story/_/id/29177216/phil-jackson-jordan-one-infamous-finals-distraction-death-dynasty From the archives: Phil Jackson on Jordan, one infamous Finals distraction and the death of a dynasty] Retrieved 19 May 2020.</ref>
+
+Jackson said he has used [[marijuana]] and [[LSD]] in the past.<ref>{{cite book|last=Lazenby|first=Roland|title=Mindgames: Phil Jackson's Long Strange Journey|page=6|publisher=U of Nebraska Press|year=2007|url=https://books.google.com/books?id=TYMBsJ_GbEYC&q=%22phil+jackson%22+lsd+marijuana&pg=PA6|isbn=9780803259980|access-date=September 6, 2012}}</ref> In 2010, he said he did not believe that prisons should be filled with people prosecuted for marijuana, but called [[California Proposition 19 (2010)|California's Proposition 19]], which would have legalized marijuana, poorly written.<ref>{{cite web|url=http://www.slamonline.com/online/nba/2010/11/phil-jackson-on-prop-19-legislation-poorly-written/ |title=Phil Jackson on Prop. 19: Legislation 'Poorly Written' |publisher=Slam Online |date=November 3, 2010 |access-date=September 6, 2012}}</ref> 
+
+Jackson is a [[Deadhead]], a fan of the Grateful Dead, and attended some of their concerts in the 1970s and 1990s.<ref>{{cite web | title=Inside Phil Jackson's special bond with the Grateful Dead | website=New York Post | date=May 11, 2015 | url=https://nypost.com/2015/05/11/inside-phil-jacksons-special-bond-with-the-grateful-dead/ | access-date=May 17, 2020}}</ref>
+
+In a 1990 interview with the ''[[Chicago Tribune]]'', Jackson said that he did not care for preachers who browbeat the audience, describing his religious views thusly: "I've always liked the concept of God being beyond anything that the human mind can conceive. I think there is a [[Pandeism|pantheistic-deistic]]-[[Native American religion|American Indian combination religion]] out there for Americans. That rings true to me."<ref>Phil Jackson interviewed on religion by Michael Hirsley for the ''[[Chicago Tribune]]'', "For Bulls coach, God is no game," April 27, 1990, Section 2, Page 8.</ref>
+
+Jackson was diagnosed with prostate cancer in March 2011. He informed the Lakers players of this in May, when they were involved in a second-round playoff series against the Mavericks. Jackson decided to delay his surgery until after the playoffs.<ref>{{cite web|url=https://sports.yahoo.com/news/phil-jackson-had-cancer-during-2011-playoffs-195022348.html |title=Phil Jackson had cancer during 2011 playoffs |publisher=Yahoo! Sports |date=April 28, 2013 |access-date=April 28, 2013}}</ref>
+
+In 2020, he was a subject of the [[Television documentary|documentary]] [[miniseries]] ''[[The Last Dance (miniseries)|The Last Dance]]'', alongside [[Michael Jordan]], [[Scottie Pippen]], [[Steve Kerr]] and [[Dennis Rodman]].<ref>{{cite web|url=https://www.nytimes.com/2020/04/22/sports/basketball/phil-jackson-michael-jordan-last-danc.html |title=Why Phil Jackson Needs 'The Last Dance' |work=[[The New York Times]] |first=Marc |last=Stein |date=May 10, 2020 |access-date=May 25, 2020}}</ref><ref>{{cite magazine|url=https://www.si.com/nba/lakers/news/the-last-dance-shows-phil-jackson-coaching-bulls-through-tricky-incidents |title='The Last Dance' Shows Phil Jackson Coaching Bulls Through Tricky Incidents |date=May 11, 2020 |first=Jill |last=Painter Lopez |magazine=[[Sports Illustrated|si.com/nba]] |access-date=May 25, 2020}}</ref>
+
+In April 2023, Jackson stated that he no longer watches the NBA, saying that it had become too political, saying, "People want to see sports as non-political."<ref name="Sforza 2023 k048">{{cite web | last=Sforza | first=Lauren | title=NBA champion coach Phil Jackson says he doesn't watch basketball anymore because it got too political | website=The Hill | date=2023-04-23 | url=https://thehill.com/blogs/blog-briefing-room/3965389-nba-champion-coach-phil-jackson-says-he-doesnt-watch-basketball-anymore-because-it-got-too-political/ | access-date=2023-08-07}}</ref>
+
+==Career statistics==
+===Playing career===
+{{NBA player statistics legend|leader=y|champion=y}}
+
+====NBA====
+Source<ref>{{cite web|url=https://www.basketball-reference.com/players/j/jacksph01.html|title=Phil Jackson (Playing stats)|website=[[Basketball Reference]]|publisher=Sports Reference LLC|access-date=16 April 2023}}</ref>
+
+=====Regular season=====
+{{NBA player statistics start}}
+|-
+| style="text-align:left;"|[[1967–68 NBA season|1967–68]]
+| style="text-align:left;"|[[1967-68 New York Knicks season|New York]]
+| 75 || 5 || 14.6 || .400 || – || .589 || 4.5 || .7 || – || – || 6.2
+|-
+| style="text-align:left;"|[[1968–69 NBA season|1968–69]]
+| style="text-align:left;"|[[1968-69 New York Knicks season|New York]]
+| 47 || 4 || 19.7 || .429 || – || .672 || 5.2 || .9 || – || – || 7.1
+|-
+| style="text-align:left;"|[[1970–71 NBA season|1970–71]]
+| style="text-align:left;"|[[1970-71 New York Knicks season|New York]]
+| 71 || 7 || 10.8 || .449 || – || .714 || 3.4 || .4 || – || – || 4.7
+|-
+| style="text-align:left;"|[[1971–72 NBA season|1971–72]]
+| style="text-align:left;"|[[1971-72 New York Knicks season|New York]]
+| 80 || 6 || 15.9 || .440 || – || .732 || 4.1 || .9 || – || – || 7.2
+|-
+| style="text-align:left; background:#afe6ba;"| [[1972–73 NBA season|1972–73]]†
+| style="text-align:left;"|[[1972-73 New York Knicks season|New York]]
+| 80 || 4 || 17.4 || .443 || – || .790 || 4.3 || 1.2 || – || – || 8.1
+|-
+| style="text-align:left;"|[[1973–74 NBA season|1973–74]]
+| style="text-align:left;"|[[1973-74 New York Knicks season|New York]]
+| style="background:#cfecec;" |'''82'''* || 21 || 25.0 || .477 || – || .776 || 5.8 || 1.6 || .5 || '''.8''' || '''11.1'''
+|-
+| style="text-align:left;"|[[1974–75 NBA season|1974–75]]
+| style="text-align:left;"|[[1974-75 New York Knicks season|New York]]
+| 78 || '''61''' || '''29.3''' || .455 || – || .763 || '''7.7''' || '''1.7''' || '''1.1''' || .7 || 10.8
+|-
+| style="text-align:left;"|[[1975–76 NBA season|1975–76]]
+| style="text-align:left;"|[[1975-76 New York Knicks season|New York]]
+| 80 || 3 || 18.3 || .478 || – || .733 || 4.3 || 1.3 || .5 || .3 || 6.0
+|-
+| style="text-align:left;"| [[1976–77 NBA season|1976–77]]
+| style="text-align:left;"| [[1976-77 New York Knicks season|New York]]
+| 76 || 2 || 13.6 || .440 || – || .718 || 3.0 || 1.1 || .4 || .2 || 3.4
+|-
+| style="text-align:left;"| [[1977–78 NBA season|1977–78]]
+| style="text-align:left;"| [[1977-78 New York Knicks season|New York]]
+| 63 || 0 || 10.4 || .478 || – || .768 || 1.7 || .7 || .5 || .4 || 2.4
+|-
+| style="text-align:left;"| [[1978–79 NBA season|1978–79]]
+| style="text-align:left;"| [[1978-79 New Jersey Nets season|New Jersey]]
+| 59 || – || 18.1 || .475 || – || '''.819''' || 3.0 || 1.4 || .8 || .4 || 6.3
+|-
+| style="text-align:left;"|[[1979–80 NBA season|1979–80]]
+| style="text-align:left;"|[[1979-80 New Jersey Nets season|New Jersey]]
+| 16 || – || 12.1 || '''.630''' || .000 || .700 || 1.5 || .8 || .3 || .3 || 4.1
+|- class="sortbottom"
+| style="text-align:center;" colspan="2"| Career
+| 807 || 113 || 17.6 || .453 || .000 || .736 || 4.3 || 1.1 || .6 || .4 || 6.7
+|}
+
+=====Playoffs=====
+{{NBA player statistics start}}
+|-
+| style="text-align:left;"| [[1968 NBA playoffs|1968]]
+| style="text-align:left;"| [[1967-68 New York Knicks season|New York]]
+| 6 || – || 15.0 || .286 || – || .800 || 4.2 || .3 || – || – || 4.0
+|-
+| style="text-align:left;"| [[1971 NBA playoffs|1971]]
+| style="text-align:left;"| [[1970-71 New York Knicks season|New York]]
+| 5 || – || 6.0 || .286 || – || '''1.000''' || 2.0 || .4 || – || – || 1.8
+|-
+| style="text-align:left;"| [[1972 NBA playoffs|1972]]
+| style="text-align:left;"| [[1971-72 New York Knicks season|New York]]
+| style="background:#cfecec;" |16* || – || 20.0 || .475 || – || .737 || 5.1 || .9 || – || – || 9.8
+|-
+| style="text-align:left; background:#afe6ba;"| [[1973 NBA playoffs|1973]]†
+| style="text-align:left;"| [[1972-73 New York Knicks season|New York]]
+| style="background:#cfecec;" |'''17'''* || – || 19.9 || '''.500''' || – || .737 || 4.2 || '''1.4''' || – || – || 8.7
+|-
+| style="text-align:left;"| [[1974 NBA playoffs|1974]]
+| style="text-align:left;"| [[1973-74 New York Knicks season|New York]]
+| 12 || – || 24.8 || .466 || – || .900 || 4.8 || 1.3 || .8 || .4 || '''11.3'''
+|-
+| style="text-align:left;"| [[1975 NBA playoffs|1975]]
+| style="text-align:left;"| [[1974-75 New York Knicks season|New York]]
+| 3 || – || '''26.0''' || .476 || – || .875 || '''8.3''' || .7 || '''1.3''' || '''1.0''' || 9.0
+|-
+| style="text-align:left;"| [[1978 NBA playoffs|1978]]
+| style="text-align:left;"| [[1977-78 New York Knicks season|New York]]
+| 6 || – || 8.3 || '''.500''' || – || .667 || 1.7 || .5 || .5 || .0 || 2.0
+|-
+| style="text-align:left;"| [[1979 NBA playoffs|1979]]
+| style="text-align:left;"| [[1978-79 New Jersey Nets season|New Jersey]]
+| 2 || – || 10.0 || .333 || – || '''1.000''' || 1.5 || .0 || .5 || .0 || 2.0
+|- class="sortbottom"
+| style="text-align:center;" colspan="2"| Career
+| 67 || – || 18.3 || .458 || – || .782 || 4.2 || .9 || .8 || .3 || 7.7
+|}
+
+===Head coaching record===
+Jackson has had a winning record every year as a head coach, and currently has the highest winning percentage of any Hall of Fame coach, and the highest of any NBA coach coaching 500 games or more. Along with his NBA-record 11 championships, he is the only coach to win at least 10 championships in any of North America's major professional sports: the records are respectively 8 titles in the [[NFL]],<ref>{{Cite web |last=Sutelan |first=Edward |date=2024-02-12 |title=Most Super Bowl wins by a coach: Chiefs' Andy Reid joins NFL royalty with third ring |url=https://www.sportingnews.com/ca/nfl/news/super-bowl-wins-coach-record-andy-reid-chiefs/71b2040f617b7d32af273592 |access-date=2024-06-16 |website=Sporting News |language=en-ca}}</ref> 9 titles in the [[NHL]]<ref>{{Cite web |title=NHL Records |url=https://records.nhl.com/records/playoff-coach-records/stanley-cups/coach-most-stanley-cups-career |access-date=2024-06-16 |website=records.nhl.com}}</ref> and 7 titles in [[MLB]].<ref>{{Cite web |last=Murphy |first=Brian  |date=November 2, 2025 |title=Bochy one of just 6 skippers to guide 4 World Series winners |url=https://www.mlb.com/news/managers-with-most-world-series-titles-in-mlb-history |access-date=October 21, 2026 |website=MLB.com |language=en}}</ref>
+
+At the end of the 2010 season he had the fifth-most wins of any NBA coach, and was one of only six to have over 1,000 wins. Of those six he was the only one who had not coached over 1,900 games, and the only one not included in the top 10 total games coached.<ref>{{cite web|url=http://www.nba.com/history/records/victories_coaches.html|title=NBA.com: All-Time Regular Season Victories-Coaches|work=Nba.com|access-date=December 20, 2014}}</ref>
+{| class="wikitable"
+|-
+|style="background:#E0CEF2; width:3em"|*
+|Record
+|-
+|}
+{{NBA coach statistics legend}}
+{{NBA coach statistics start}}
+|-
+| style="text-align:left;"|[[1989–90 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1989}}
+|82||55||27||.671|| style="text-align:center;"|2nd in Central||16||10||6||.625
+| style="text-align:center;"|Lost in [[1990 NBA Playoffs|Conf. Finals]]
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[1990–91 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1990}}
+|82||61||21||.744|| style="text-align:center;"|1st in Central||17||15||2||.882
+| style="text-align:center;"|'''Won [[1991 NBA Finals|NBA Championship]]'''
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[1991–92 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1991}}
+|82||67||15||.817|| style="text-align:center;"|1st in Central||22||15||7||.682
+| style="text-align:center;"|'''Won [[1992 NBA Finals|NBA Championship]]'''
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[1992–93 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1992}}
+|82||57||25||.695|| style="text-align:center;"|1st in Central||19||15||4||.789
+| style="text-align:center;"|'''Won [[1993 NBA Finals|NBA Championship]]'''
+|-
+| style="text-align:left;"|[[1993–94 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1993}}
+|82||55||27||.671|| style="text-align:center;"|2nd in Central||10||6||4||.600
+| style="text-align:center;"|Lost in [[1994 NBA Playoffs|Conf. Semifinals]]
+|-
+| style="text-align:left;"|[[1994–95 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1994}}
+|82||47||35||.573|| style="text-align:center;"|3rd in Central||10||5||5||.500
+| style="text-align:center;"|Lost in [[1995 NBA Playoffs|Conf. Semifinals]]
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[1995–96 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1995}}
+|82||72||10||.878|| style="text-align:center;"|1st in Central||18||15||3||.833
+| style="text-align:center;"|'''Won [[1996 NBA Finals|NBA Championship]]'''
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[1996–97 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1996}}
+|82||69||13||.841|| style="text-align:center;"|1st in Central||19||15||4||.789
+| style="text-align:center;"|'''Won [[1997 NBA Finals|NBA Championship]]'''
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[1997–98 Chicago Bulls season|Chicago]]
+| style="text-align:left;"|{{nbay|1997}}
+|82||62||20||.756|| style="text-align:center;"|1st in Central||21||15||6||.714
+| style="text-align:center;"|'''Won [[1998 NBA Finals|NBA Championship]]'''
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[1999–2000 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|1999|trunc=y}}
+|82||67||15||.817|| style="text-align:center;"|1st in Pacific||23||15||8||.652
+| style="text-align:center;"|'''Won [[2000 NBA Finals|NBA Championship]]'''
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[2000–01 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2000}}
+|82||56||26||.683|| style="text-align:center;"|1st in Pacific||16||15||1||.938
+| style="text-align:center;"|'''Won [[2001 NBA Finals|NBA Championship]]'''
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[2001–02 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2001}}
+|82||58||24||.707|| style="text-align:center;"|2nd in Pacific||19||15||4||.789
+| style="text-align:center;"|'''Won [[2002 NBA Finals|NBA Championship]]'''
+|-
+| style="text-align:left;"|[[2002–03 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2002}}
+|82||50||32||.610|| style="text-align:center;"|2nd in Pacific||12||6||6||.500
+| style="text-align:center;"|Lost in [[2003 NBA Playoffs|Conf. Semifinals]]
+|-
+| style="text-align:left;"|[[2003–04 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2003}}
+|82||56||26||.683|| style="text-align:center;"|1st in Pacific||22||13||9||.591
+| style="text-align:center;"|Lost in [[2004 NBA Finals|NBA Finals]]
+|-
+| style="text-align:left;"|[[2005–06 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2005}}
+|82||45||37||.549|| style="text-align:center;"|3rd in Pacific||7||3||4||.429
+| style="text-align:center;"|Lost in [[2006 NBA Playoffs|first round]]
+|-
+| style="text-align:left;"|[[2006–07 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2006}}
+|82||42||40||.512|| style="text-align:center;"|2nd in Pacific||5||1||4||.200
+| style="text-align:center;"|Lost in [[2007 NBA Playoffs|first round]]
+|-
+| style="text-align:left;"|[[2007–08 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2007}}
+|82||57||25||.695|| style="text-align:center;"|1st in Pacific||21||14||7||.667
+| style="text-align:center;"|Lost in [[2008 NBA Finals|NBA Finals]]
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[2008–09 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2008}}
+|82||65||17||.793|| style="text-align:center;"|1st in Pacific||23||16||7||.696
+| style="text-align:center;"|'''Won [[2009 NBA Finals|NBA Championship]]'''
+|- ! style="background:#FDE910;"
+| style="text-align:left;"|[[2009–10 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2009}}
+|82||57||25||.695|| style="text-align:center;"|1st in Pacific||23||16||7||.696
+| style="text-align:center;"|'''Won [[2010 NBA Finals|NBA Championship]]'''
+|-
+| style="text-align:left;"|[[2010–11 Los Angeles Lakers season|L.A. Lakers]]
+| style="text-align:left;"|{{nbay|2010}}
+|82||57||25||.695|| style="text-align:center;"|1st in Pacific||10||4||6||.400
+| style="text-align:center;"|Lost in [[2011 NBA Playoffs|Conf. Semifinals]]
+|- class="sortbottom"
+| style="text-align:left;"|'''Career'''
+| ||1,640||1,155||485||style="background:#E0CEF2;"|.704*|| ||style="background:#E0CEF2;"|333*||style="background:#E0CEF2;"|229*||104||.688||
+{{s-end}}
+
+==Books==
+* {{Cite book |author=Jackson, Phil |author2=George Kalinsky |year=1970 |title=Take It All! |location=New York |publisher=[[Macmillan Publishers|Macmillan]] |isbn=0020291906}}
+* {{Cite book |author=Jackson, Phil |author2=Charley Rosen |author2-link=Charley Rosen |year=1975 |title=Maverick: More Than a Game |location=Chicago |publisher=[[Playboy Press]] |isbn=0872234398 |url-access=registration |url=https://archive.org/details/maverickmorethan0000unse}}
+* {{Cite book |author=Jackson, Phil |author2=Hugh Delehanty |year=1995 |title=Sacred Hoops: Spiritual Lessons of a Hardwood Warrior |url=https://archive.org/details/sacredhoopsspiri00jack |url-access=registration |location=New York |publisher=[[Hachette Books#Hyperion Books|Hyperion]] |isbn=0786862068}}
+* {{Cite book |last1=Jackson |first1=Phil |last2=Rosen |first2=Charley |date=2001 |title=More Than a Game |location=New York |publisher=[[Seven Stories Press]] |isbn=9781583220603}}
+* {{Cite book |author=Jackson, Phil |author2=Michael Arkush |year=2004 |title=The Last Season: A Team in Search of Its Soul |title-link=The Last Season: A Team in Search of Its Soul |location=New York |publisher=[[Penguin Press]] |isbn=1594200351}}
+* {{Cite book |author=Jackson, Phil |year=2009 |title=The Los Angeles Lakers: 50 Amazing Years in the City of Angels |location=San Leandro |publisher=Time Capsule Press |isbn=978-0982324202}}
+* {{Cite book |author=Jackson, Phil |year=2010 |title=Journey to the Ring: Behind the Scenes with the 2010 NBA Champion Lakers |location=San Leandro |publisher=Time Capsule Press |isbn=978-0982324226}}
+* {{Cite book |author=Jackson, Phil |year=2013 |title=Eleven Rings: The Soul of Success |publisher=[[Penguin Press]] |location=New York |isbn=9781594205118}}
+* {{Cite book |author1=Jackson, Phil |author2=Smith, Sam |author-link2=Sam Smith (sportswriter) |year=2025 |title=Masters of the Game: A Conversational History of the NBA in 75 Legendary Players |location=New York |publisher=[[Penguin Press]] |isbn=9798217060719}}
+
+==See also==
+*[[List of NBA championship head coaches]]
+
+==References==
+
+{{Reflist|colwidth=30em}}
+
+==Further reading==
+*{{cite book |last=Lazenby |first=Roland |author-link=Roland Lazenby |title=The Show: The Inside Story of the Spectacular Los Angeles Lakers in the Words of Those Who Lived It |year=2006 |publisher=[[McGraw-Hill Professional]] |location=New York City |isbn=978-0-07-143034-0 |url=https://archive.org/details/showinsidestoryo00laze |url-access=registration |quote= |ref=lazenby2006 |access-date=April 18, 2011}}
+
+==External links==
+{{wikiquote}}
+{{commons}}
+
+* {{Basketballhof|phil-jackson|Phil Jackson}}
+* {{webarchive |url=https://web.archive.org/web/20101202225337/http://www.nba.com/historical/playerfile/index.html?player=action_jackson |date=December 2, 2010 |title=Phil Jackson player file }} at NBA.com
+* {{webarchive |url=https://web.archive.org/web/20101201035612/http://www.nba.com/coachfile/phil_jackson/ |date=December 1, 2010 |title=Phil Jackson coach profile }} at NBA.com
+* [https://www.basketball-reference.com/coaches/jacksph01c.html NBA career stats as a coach] at Basketball-Reference
+* [https://www.basketball-reference.com/players/j/jacksph01.html NBA career stats as a player] at Basketball-Reference
+* {{IMDb name|0413944}}
+
+{{Navboxes
+| list1 =
+{{Chicago Bulls coach navbox}}
+{{Los Angeles Lakers coach navbox}}
+{{New York Knicks general manager navbox}}
+{{1967 NBA draft}}
+{{New York Knicks 1969–70 NBA champions}}
+{{New York Knicks 1972–73 NBA champions}}
+{{Chicago Bulls 1990–91 NBA champions}}
+{{Chicago Bulls 1991–92 NBA champions}}
+{{Chicago Bulls 1992–93 NBA champions}}
+{{Chicago Bulls 1995–96 NBA champions}}
+{{Chicago Bulls 1996–97 NBA champions}}
+{{Chicago Bulls 1997–98 NBA champions}}
+{{Los Angeles Lakers 1999–2000 NBA champions}}
+{{Los Angeles Lakers 2000–01 NBA champions}}
+{{Los Angeles Lakers 2001–02 NBA champions}}
+{{Los Angeles Lakers 2008–09 NBA champions}}
+{{Los Angeles Lakers 2009–10 NBA champions}}
+{{NBA Coaches of the Year}}
+{{NBA10C}}
+{{NBA15C}}
+{{2007 Basketball HOF}}
+{{Basketball Hall of Fame coaches}}
+}}
+{{Portal bar|Basketball|Biography|Sports}}
+{{Authority control}}
+
+{{DEFAULTSORT:Jackson, Phil}}
+[[Category:1945 births]]
+[[Category:Living people]]
+[[Category:20th-century American non-fiction writers]]
+[[Category:20th-century American sportsmen]]
+[[Category:21st-century American non-fiction writers]]
+[[Category:21st-century American sportsmen]]
+[[Category:Albany Patroons coaches]]
+[[Category:American memoirists]]
+[[Category:American men's basketball coaches]]
+[[Category:American men's basketball players]]
+[[Category:American people of German descent]]
+[[Category:Basketball coaches from Montana]]
+[[Category:Basketball coaches from North Dakota]]
+[[Category:Basketball players from Bergen County, New Jersey]]
+[[Category:Basketball players from Lake County, Illinois]]
+[[Category:Basketball players from Montana]]
+[[Category:Basketball players from North Dakota]]
+[[Category:Baloncesto Superior Nacional coaches]]
+[[Category:Centers (basketball)]]
+[[Category:Chicago Bulls assistant coaches]]
+[[Category:Chicago Bulls head coaches]]
+[[Category:Los Angeles Lakers head coaches]]
+[[Category:Minnesota Muskies draft picks]]<!--1967 ABA draft-->
+[[Category:Naismith Memorial Basketball Hall of Fame inductees]]
+[[Category:NBA championship–winning head coaches]]
+[[Category:New Jersey Nets assistant coaches]]
+[[Category:New Jersey Nets announcers]]
+[[Category:New Jersey Nets players]]
+[[Category:New York Knicks draft picks]]
+[[Category:New York Knicks executives]]
+[[Category:New York Knicks players]]
+[[Category:North Dakota Fighting Hawks men's basketball players]]
+[[Category:People from Bannockburn, Illinois]]
+[[Category:People from Flathead County, Montana]]
+[[Category:People from Powell County, Montana]]
+[[Category:People from Williston, North Dakota]]
+[[Category:Power forwards]]
+[[Category:Williston High School (North Dakota) alumni]]
+[[Category:Writers from Leonia, New Jersey]]
+[[Category:Writers from Montana]]
+[[Category:Writers from North Dakota]]

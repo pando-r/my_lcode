@@ -105,19 +105,32 @@ def _str_map(value) -> dict[str, str]:
 
 
 def _apply_expansion(name: str, srv: _RawServer) -> None:
+    # command / args / env / headers 都支持 ${VAR}，undefined 的变量展开为空串并告警一次。
     warned: set[str] = set()
+
+    if srv.command is not None:
+        srv.command, undefined = _expand_vars(srv.command)
+        warned.update(undefined)
+    if srv.args:
+        expanded_args: list[str] = []
+        for arg in srv.args:
+            value, undefined = _expand_vars(arg)
+            expanded_args.append(value)
+            warned.update(undefined)
+        srv.args = expanded_args
+
     for mapping in (srv.env, srv.headers):
         for key in list(mapping.keys()):
             value = mapping[key]
             expanded, undefined = _expand_vars(value)
             mapping[key] = expanded
-            for var in undefined:
-                if var not in warned:
-                    warned.add(var)
-                    print(
-                        f"[mcp] warn: undefined env var ${{{var}}} referenced by server {name}",
-                        file=sys.stderr,
-                    )
+            warned.update(undefined)
+
+    for var in sorted(warned):
+        print(
+            f"[mcp] warn: undefined env var ${{{var}}} referenced by server {name}",
+            file=sys.stderr,
+        )
 
 
 def _expand_vars(s: str) -> tuple[str, list[str]]:

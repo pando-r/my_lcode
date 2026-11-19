@@ -6,7 +6,6 @@ import asyncio
 import time
 
 from rich.text import Text
-from textual.widgets import RichLog
 
 from mewcode.command import (
     HookSummary,
@@ -26,6 +25,7 @@ from mewcode.llm import Message
 from mewcode.permission import Mode
 from mewcode.prompt import render_banner
 from mewcode.session import open_writer
+from mewcode.tui.logview import LogView
 from mewcode.tui.view import error_block, render_markdown, user_block
 
 UNKNOWN_COMMAND_HINT = "未知命令{name}。输入 /help 查看可用命令"
@@ -56,13 +56,20 @@ class CommandMixin:
     def error(self, msg: str) -> None:
         self._pending_println.append(("error", msg))
 
+    def log_text(self) -> str:
+        # /copy all：屏幕上的纯文本（LogView 自己维护 strips，不含样式）。
+        try:
+            return self.query_one("#log", LogView).plain_text()
+        except Exception:  # noqa: BLE001 - not mounted yet
+            return ""
+
     def flush_prints(self) -> None:
         pending = self._pending_println
         self._pending_println = []
         if not pending:
             return
         try:
-            log = self.query_one("#log", RichLog)
+            log = self.query_one("#log", LogView)
         except Exception:  # noqa: BLE001 - not mounted yet
             return
         for kind, msg in pending:
@@ -151,7 +158,7 @@ class CommandMixin:
             return
         self.conv.add_assistant(text)
         try:
-            self.query_one("#log", RichLog).write(render_markdown(text))
+            self.query_one("#log", LogView).write(render_markdown(text))
         except Exception:  # noqa: BLE001 - not mounted yet
             pass
 
@@ -241,7 +248,7 @@ class CommandMixin:
     def inject_and_send(self, display_label: str, preset_prompt: str) -> None:
         self.conv.add_user(preset_prompt)
         try:
-            self.query_one("#log", RichLog).write(user_block(display_label))
+            self.query_one("#log", LogView).write(user_block(display_label))
         except Exception:  # noqa: BLE001
             pass
         self._begin_turn()
@@ -312,7 +319,7 @@ class CommandMixin:
 
     def _clear_log(self) -> None:
         try:
-            log = self.query_one("#log", RichLog)
+            log = self.query_one("#log", LogView)
             log.clear()
             log.write(Text(render_banner(self._version, self.workspace)))
             self._update_statusbar()

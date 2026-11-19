@@ -1,0 +1,519 @@
+SOURCE: https://en.wikipedia.org/w/index.php?title=1992_United_States_men%27s_Olympic_basketball_team&action=raw
+
+{{short description|U.S. Olympic team (1992)}}
+{{protection padlock|small=yes}}
+{{redirect|Dream Team}}
+{{Use American English|date=September 2026}}
+{{Use mdy dates|date=March 2026}}
+{{Infobox basketball club season
+| club = 1992 United States men's Olympic basketball team
+| season =
+| image = 
+| image_size = 
+| alt = 
+| caption = 
+| manager = [[Chuck Daly]]
+| stadium = 
+| league = [[Basketball at the 1992 Summer Olympics – Men's tournament|1992 Summer Olympics]]
+| league result = [[File:Gold medal.svg|16px]] 
+| PIR_leader = 
+| pir_n = 
+| pir = 
+| top_scorer = {{flagicon|USA}} [[Charles Barkley]]<ref>{{Cite web|url=https://archive.fiba.com/pages/eng/fa/team/p/sid/2943/tid/379/_/1992_Olympic_Games_Tournament_for_Men/accumulated-statistics.html|title=USA accumulated statistics {{pipe}} 1992 Olympic Games : Tournament for Men {{pipe}} ARCHIVE.FIBA.COM|website=archive.fiba.com|access-date=August 27, 2019|archive-date=April 9, 2023|archive-url=https://web.archive.org/web/20230409020932/https://archive.fiba.com/pages/eng/fa/team/p/sid/2943/tid/379/_/1992_Olympic_Games_Tournament_for_Men/accumulated-statistics.html|url-status=dead}}</ref>
+| ppg_n = 
+| ppg = 18.0
+| rebounds_leader = {{flagicon|USA}} [[Karl Malone]] 5.3 <br/> {{flagicon|USA}} [[Patrick Ewing]]
+| rpg_n = 
+| rpg = 5.3
+| assists_leader = {{flagicon|USA}} [[Scottie Pippen]] 
+| apg_n = 
+| apg = 5.9
+| highest attendance = 
+| lowest attendance = 
+| average attendance = 
+| largest win = 
+| largest loss = 
+| h_title = 
+| h_body = 
+| h_pattern_b = 
+| h_shorts = 
+| h_pattern_s = 
+| a_title = 
+| a_body = 
+| a_pattern_b = 
+| a_shorts = 
+| a_pattern_s = 
+| 3_title = 
+| 3_body = 
+| 3_pattern_b = 
+| 3_shorts = 
+| 3_pattern_s = 
+| prevseason = [[1988 United States men's Olympic basketball team|1988]]
+| nextseason = [[1996 United States men's Olympic basketball team|1996]]
+}}
+
+The [[United States men's national basketball team|men's national basketball team]] of the [[United States at the 1992 Summer Olympics|United States]] competed at the [[Basketball at the 1992 Summer Olympics|1992 Summer Olympics]] in [[Barcelona]], Spain, and won the gold medal. Nicknamed the "'''Dream Team'''", it was the first American Olympic team to include active [[professional sports|professional]] players from the [[National Basketball Association]] (NBA). Team USA defeated its opponents by an average of 44 points during the tournament.<ref>[http://www.nba.com/history/dreamT_moments.html The Original Dream Team] {{Webarchive|url=https://web.archive.org/web/20120516085220/http://www.nba.com/history/dreamT_moments.html |date=May 16, 2012 }}. nba.com. Retrieved August 12, 2010.</ref><ref name="auto">{{cite web|url=https://www.usab.com/history/national-team-mens/games-of-the-xxvth-olympiad-1992.aspx|archive-url=https://web.archive.org/web/20150429183112/http://www.usab.com/history/national-team-mens/games-of-the-xxvth-olympiad-1992.aspx|url-status=dead|archive-date=April 29, 2015|title=Games of the XXVth Olympiad -- 1992|publisher=USA Basketball}}</ref> The team has often been described as the greatest sports team ever assembled.<ref>{{cite book |last1=McCallum |first1=Jack |title=Dream Team: How Michael, Magic, Larry, Charles, and the Greatest Team of All Time Conquered the World and Changed the Game of Basketball Forever |date=2013 |publisher=Random House Publishing Group |isbn=9780345520494 |page=313 |url=https://books.google.com/books?id=-8KJGlUvrPYC&pg=PA313 |access-date=July 31, 2020 |archive-date=April 8, 2023 |archive-url=https://web.archive.org/web/20230408065758/https://books.google.com/books?id=-8KJGlUvrPYC&pg=PA313 |url-status=live }}</ref><ref>"[https://www.espn.com/blog/sportscenter/post/_/id/71610/this-day-in-sports-the-dream-team-takes-gold-in-barcelona This Day in Sports: The Dream Team Takes Gold in Barcelona] ". ESPN. August 8, 2010. Retrieved May 5, 2012.</ref>{{r|nbc20120731}}
+
+The team was collectively inducted into the [[U.S. Olympic Hall of Fame]] in 2009, the [[Naismith Memorial Basketball Hall of Fame]] in 2010, and the [[FIBA Hall of Fame]] in 2017. The Naismith Hall of Fame calls the team "the greatest collection of basketball talent on the planet".<ref>{{cite web|url=https://www.hoophall.com/hall-of-famers/1992-united-states-olympic-team/ |title=1992 United States Olympic Team |access-date=August 14, 2010 |work=Naismith Memorial Basketball Hall of Fame |publisher=CBS Interactive |url-status=dead |archive-url=https://web.archive.org/web/20100818075707/http://www.hoophall.com/hall-of-famers/tag/1992-united-states-olympic-team |archive-date=August 18, 2010 }}</ref> In addition to the team induction, 11 players and three coaches have been inducted individually into the Naismith Hall of Fame.
+
+==Forming the team==
+
+===Background===
+Before the 1992 Olympics, [[FIBA]] rules barred players from the United States' [[National Basketball Association]] from participating in Olympic tournaments, and only amateurs were eligible for the U.S. Olympic teams, which were composed of collegiate and, especially in the 1950s, [[Amateur Athletic Union|AAU players]]. Other countries used their best players from their domestic professional leagues.{{r|gq}} In the [[Basketball at the 1988 Summer Olympics – Men's tournament|1988 Summer Olympics]], the Americans lost to the [[Soviet Union|USSR]] and settled for bronze, their worst finish in the history of the Games.<ref>{{cite news |title=Soviets Roll Past Yugoslavs for the Gold |url=https://www.nytimes.com/1988/09/30/sports/the-seoul-olympics-men-s-basketball-soviets-roll-past-yugoslavs-for-the-gold.html |access-date=May 8, 2020 |work=[[The New York Times]] |agency=Associated Press |date=September 30, 1988 |archive-date=January 10, 2018 |archive-url=https://web.archive.org/web/20180110201120/http://www.nytimes.com/1988/09/30/sports/the-seoul-olympics-men-s-basketball-soviets-roll-past-yugoslavs-for-the-gold.html |url-status=live }}</ref>
+
+On April 7, 1989, at a special congress in Munich after the [[1988–89 FIBA European Champions Cup]] finals, FIBA delegates voted, 56-13, to allow professional basketball players to participate in its international events, including the World Cup and the Olympics. The [[USA Basketball|Amateur Basketball Association of the United States of America]] (ABAUSA, renamed USA Basketball after the vote) voted against the move due to "colleges and high schools that make up most of [ABAUSA's] constituency [opposing] it." A Soviet proposal to limit the national teams to only two NBA players for the first few years was unanimously rejected.<ref>{{cite web |last1=Hubbard |first1=Jan |title=The Vote That Cleared the Way for NBA Players to Play in FIBA Competitions |url=https://www.usab.com/news-events/news/2020/04/fiba-votes-for-open-competition.aspx |archive-url=https://web.archive.org/web/20200411114729/https://www.usab.com/news-events/news/2020/04/fiba-votes-for-open-competition.aspx |url-status=dead |archive-date=April 11, 2020 |publisher=USA Basketball |access-date=May 5, 2020 |date=April 8, 2020}}</ref><ref>{{cite news|title=Federation Rule Change Opens Olympics to N.B.A. Players|url=https://www.nytimes.com/1989/04/08/sports/federation-rule-change-opens-olympics-to-nba-players.html|work=[[The New York Times]]|access-date=August 5, 2020|date=April 8, 1989|archive-date=September 20, 2023|archive-url=https://web.archive.org/web/20230920065103/https://www.nytimes.com/1989/04/08/sports/federation-rule-change-opens-olympics-to-nba-players.html|url-status=live}}</ref>
+
+The decision led to professional players, particularly those from the NBA, dominating the sport at the highest levels of international competition. The change also warded off competition from the [[Goodwill Games]], the biggest rival of the Olympics at the time, which was seeking to bring professional players into its basketball events.<ref>[https://www.newspapers.com/clip/145635763/ "Basketball federation will allow NBA players in Olympics"], ''[[The Washington Post]]'' News Service, via ''[[The Olympian]]'', April 8, 1989, page 2C.</ref><ref>{{cite book |last1=Kalb |first1=Elliott |url=https://books.google.com/books?id=1715slX-OrEC&pg=PA71 |title=The 30 Greatest Sports Conspiracy Theories of All-Time |last2=Weinstein |first2=Mark |date=2009 |publisher=Skyhorse |isbn=9781602396784 |page=71 |access-date=May 5, 2020 |archive-url=https://web.archive.org/web/20230408065800/https://books.google.com/books?id=1715slX-OrEC&pg=PA71 |archive-date=April 8, 2023 |url-status=live}}</ref><ref>{{cite book |last1=Freedman |first1=Lew |url=https://books.google.com/books?id=OgjHCgAAQBAJ&pg=PA121 |title=The 100 Most Important Sporting Events in American History |date=2015 |publisher=ABC-CLIO |isbn=9781440835759 |page=121 |access-date=May 5, 2020 |archive-url=https://web.archive.org/web/20230408104641/https://books.google.com/books?id=OgjHCgAAQBAJ&pg=PA121 |archive-date=April 8, 2023 |url-status=live}}</ref>
+
+===Selections===
+USA Basketball asked the NBA to supply players for its 1992 roster;<ref name="mccallum19910218">{{cite magazine |last1=McCallum |first1=Jack |date=February 19, 1991 |title=Lords of the Rings |url=https://vault.si.com/vault/1991/02/18/lords-of-the-rings-with-nba-players-eligible-for-olympic-action-in-92-si-picks-a-powerhouse-five-from-left-michael-jordan-patrick-ewing-magic-johnson-karl-malone-and-charles-barkley |url-status=dead |archive-url=https://web.archive.org/web/20230113024606/https://vault.si.com/vault/1991/02/18/lords-of-the-rings-with-nba-players-eligible-for-olympic-action-in-92-si-picks-a-powerhouse-five-from-left-michael-jordan-patrick-ewing-magic-johnson-karl-malone-and-charles-barkley |archive-date=January 13, 2023 |access-date=August 1, 2020 |magazine=Sports Illustrated}}</ref> the league was initially unenthusiastic about this idea.{{r|gq}} <small>{{Blockquote|
+text=The notion that the NBA wanted to redeem the 1988 loss? Patently wrong. From our view, we were stuck with playing in the Olympics. We didn't see it becoming the phenomenon that it became.{{r|gq}}
+|author=NBA Commissioner [[David Stern]] on the NBA's initial lack of enthusiasm for playing the Olympics
+}}</small>[[File:Cazzaro Jordan.jpg|alt=Jordan receiving a ball from a referee|thumb|Michael Jordan was offered a co-captainship but he deferred to Bird and Johnson]]
+The first ten players for the team were selected on September 21, 1991: [[Michael Jordan]] and [[Scottie Pippen]] of the [[Chicago Bulls]], [[John Stockton]] and [[Karl Malone]] of the [[Utah Jazz]], [[Magic Johnson]] of the [[Los Angeles Lakers]], [[Larry Bird]] of the [[Boston Celtics]], [[Patrick Ewing]] of the [[New York Knicks]], [[Chris Mullin]] of the [[Golden State Warriors]], [[David Robinson]] of the [[San Antonio Spurs]], and [[Charles Barkley]] of the [[Philadelphia 76ers]].<ref>Sam Smith. "Olympian Jordan: 'We'll kill 'em.'" ''Chicago Tribune''. September 22, 1991. 13.</ref>
+
+On the cover of its issue of February 18, 1991, ''[[Sports Illustrated]]'' labeled the forthcoming American roster as the "Dream Team".<ref name="nbc20120810">{{cite episode |title=Dream Team |series=XXX Summer Olympics |network=NBC |airdate=August 10, 2012}}</ref>{{r|mccallum19910218}}
+
+On May 12, 1992, [[Clyde Drexler]] of the [[Portland Trail Blazers]] was chosen over [[Isiah Thomas]] of the [[Detroit Pistons]] for the final professional roster spot.<ref name="gq">{{Cite magazine |last=Whitaker |first=Lang |date=July 2012 |title=The Dream Will Never Die: An Oral History of the Dream Team |url=https://www.gq.com/sports/profiles/201207/dream-team-20th-anniversary-1992-olympics-usa-basketball?printable=true |magazine=[[GQ]] |archive-url=https://web.archive.org/web/20120616015700/https://www.gq.com/sports/profiles/201207/dream-team-20th-anniversary-1992-olympics-usa-basketball?printable=true |archive-date=June 16, 2012 |access-date=June 12, 2012}}</ref> As an acknowledgment to the previous amateur system, the U.S. basketball committee decided to include one collegiate player on the team:<ref>{{cite news|title=Pros, college players combine|url=https://news.google.com/newspapers?nid=860&dat=19900914&id=wHhUAAAAIBAJ&sjid=e48DAAAAIBAJ&pg=6727,2166056|newspaper=Ellensburg Daily Record|access-date=September 23, 2014|archive-date=November 19, 2021|archive-url=https://web.archive.org/web/20211119193750/https://news.google.com/newspapers?nid=860&dat=19900914&id=wHhUAAAAIBAJ&sjid=e48DAAAAIBAJ&pg=6727%2C2166056|url-status=live}}</ref><ref>{{cite web|last1=Mccallum|first1=Jack|title=BEHIND THE INTERVIEWS: LAETTNER|url=http://www.jackmccallum.net/2012/06/10/behind-the-interviews-laettner/#.VCFXyWTF_wN|website=Jack Mccallum|access-date=September 23, 2014|archive-url=https://web.archive.org/web/20150413223117/http://www.jackmccallum.net/2012/06/10/behind-the-interviews-laettner/#.VCFXyWTF_wN|archive-date=April 13, 2015|url-status=dead}}</ref> [[Christian Laettner]] of [[Duke Blue Devils men's basketball|Duke University]] was added on May 12, 1992, chosen over [[LSU Tigers basketball|Louisiana State University]]'s [[Shaquille O'Neal]].<ref>"[https://news.google.com/newspapers?id=I7UxAAAAIBAJ&sjid=OuIFAAAAIBAJ&pg=5497,8535804&dq=drexler-laettner-join&hl=en Drexler, Laettner join Olympic team] {{Webarchive|url=https://web.archive.org/web/20211120032011/https://news.google.com/newspapers?id=I7UxAAAAIBAJ&sjid=OuIFAAAAIBAJ&pg=5497,8535804&dq=drexler-laettner-join&hl=en |date=November 20, 2021 }}". ''Reading Eagle''. May 13, 1992. Retrieved August 12, 2010.</ref>
+
+Most of the players on the team were at or near the peaks of their NBA careers.{{r|mccallum20120702}} Bird had back trouble, but was selected due to the team's historic nature. Robinson had played with the [[1988 United States men's Olympic basketball team|1988 Olympic team]] and was eager to earn a gold medal at Barcelona.<ref name=drob>Tim Povtak. "[https://www.orlandosentinel.com/1992/06/30/robinson-is-riveted-on-gold/ Robinson is riveted on gold] ". ''Orlando Sentinel''. June 30, 1992. Retrieved August 13, 2010.</ref>
+
+Johnson had retired from the Lakers in November 1991 after testing positive for [[HIV]], the virus that causes AIDS. His teammates expected Johnson to die from the disease, and he later described his selection for the Olympics as "almost like a life saver", evidence that he could still overcome the illness and live a productive life.{{r|nbc20120810}} The Australian Olympic delegation threatened to boycott the games in protest of Johnson's presence, fearing that he might infect other athletes. Their threats backfired, however, as Johnson received even more public support.<ref>[https://apnews.com/0852574637126f349d914ebaa1b6a337 Olympic Support Overflows for Magic Johnson After Australian Complaints] {{Webarchive|url=https://web.archive.org/web/20200106220200/https://apnews.com/0852574637126f349d914ebaa1b6a337 |date=January 6, 2020 }} apnews.com, Mike Harris, January 24, 1992</ref> Ewing, Jordan, and Mullin had won gold at the 1984 games; Malone had not made the team and saw his non-selection in 1984 as a challenge.{{r|gq}}
+
+Jordan declined head coach [[Chuck Daly]]'s suggestion that Jordan serve as the public face of the team, and Bird and Johnson were selected as co-captains.{{r|nbc20120810}} Over the previous 13 NBA seasons leading up to the 1992 Olympics, these three superstars had won 10 NBA championships and received seven [[NBA Finals Most Valuable Player]] (MVP) awards and nine [[NBA Most Valuable Player Award|regular-season MVP awards]].
+
+====Isiah Thomas left off team====
+There was speculation that Isiah Thomas was not part of the team because Jordan would participate only if Thomas was not on the roster. At the time, it was widely believed that Jordan did not like Thomas because he was seen as the "ring leader" of the Detroit Pistons of the late 1980s and early 1990s; nicknamed the "[[Detroit Pistons#1986–1992: The Bad Boys|Bad Boys]]", the team employed [[Jordan Rules|overtly physical tactics]] against Jordan in the [[NBA Playoffs]]. In his 2012 book ''Dream Team'', author [[Jack McCallum]] quotes Jordan as saying to Team USA selection committee member [[Rod Thorn]], "Rod, I don't want to play if Isiah Thomas is on the team".<ref>{{cite book|last=McCallum|first=Jack|title=Dream Team: How Michael, Magic, Larry, Charles, and the Greatest Team of All Time Conquered the World and Changed the Game of Basketball Forever |page=82 |publisher=Ballantine Books |year=2012 |url=https://archive.org/stream/dreamteamhowmich00mcca#page/82/mode/1up|isbn=9780345520487 |url-access=registration|via=[[Internet Archive]] |access-date=May 13, 2020}}</ref> In 2020, Thorn and Jordan denied directly mentioning Thomas's name in discussions.<ref name=oshaughnessy_05032020>{{cite news|last=O'Shaughnessy|first=Haley|title='The Last Dance' Details the Grudges and Grievances of Michael Jordan|date=May 3, 2020|work=The Ringer|url=https://www.theringer.com/nba/2020/5/3/21245917/michael-jordan-the-last-dance-episodes-5-6|access-date=May 13, 2020|archive-date=May 10, 2020|archive-url=https://web.archive.org/web/20200510133951/https://www.theringer.com/nba/2020/5/3/21245917/michael-jordan-the-last-dance-episodes-5-6|url-status=live}}</ref><ref>{{Cite news|url=https://www.espn.com/nba/story/_/id/29112818/dream-team-architect-rod-thorn-michael-jordan-never-discussed-isiah-thomas/|title=Dream Team architect Rod Thorn: Michael Jordan never discussed Isiah Thomas|date=April 29, 2020|work=ESPN|access-date=April 29, 2020|language=en-US|archive-date=April 30, 2020|archive-url=https://web.archive.org/web/20200430071817/https://www.espn.com/nba/story/_/id/29112818/dream-team-architect-rod-thorn-michael-jordan-never-discussed-isiah-thomas|url-status=live}}</ref> According to Jordan in the documentary series ''[[The Last Dance (TV series)|The Last Dance]]'', he asked Thorn, "Who's all playing?"<ref name=oshaughnessy_05032020/> to which Thorn responded, "The guy you're thinking about is not going to be playing."<ref name=oshaughnessy_05032020/>
+
+After the selection of the first ten members of the team, Johnson released an official statement in support of Thomas, but years later it was discovered that his support was less than enthusiastic. In the book ''When the Game Was Ours'', Johnson said, "Isiah killed his own chances when it came to the Olympics. Nobody on that team wanted to play with him."<ref>{{cite book |last1=MacMullan |first1=Jackie |last2=Johnson |first2=Magic |last3=Bird |first3=Larry |title=When the Game Was Ours |url=https://archive.org/details/whengamewasours00bird |url-access=registration |date=2009 |publisher=Houghton Mifflin Harcourt Publishing Company |page=[https://archive.org/details/whengamewasours00bird/page/262 262]|isbn=978-0-547-22547-0 }}</ref>
+
+====Laettner's selection over O'Neal====
+[[File:Christian Laettner at Yahoo event.jpg|thumb|upright=0.7|alt=|Christian Laettner (pictured in 2014) was chosen to represent college athletics.]]
+
+The selection committee considered several college players, including [[Harold Miner]], [[Jim Jackson (basketball)|Jimmy Jackson]], and [[Alonzo Mourning]] in addition to [[Shaquille O'Neal]] and [[Christian Laettner]].<ref>{{cite news|title=Drexler, Laettner complete U.S. Olympic team roster|url=https://news.google.com/newspapers?nid=861&dat=19920513&id=EBtIAAAAIBAJ&sjid=HoEMAAAAIBAJ&pg=5610,3957459|access-date=September 26, 2014|newspaper=The Victoria Advocate|archive-date=April 8, 2023|archive-url=https://web.archive.org/web/20230408065802/https://news.google.com/newspapers?nid=861&dat=19920513&id=EBtIAAAAIBAJ&sjid=HoEMAAAAIBAJ&pg=5610,3957459|url-status=live}}</ref> O'Neal was the number-one pick in the [[1992 NBA draft]], but Laettner's [[Duke Blue Devils]] teams won consecutive National Championships in 1991 and 1992. Coached by [[Mike Krzyzewski]], who also was a first-time assistant coach for the Olympic program, Laettner was the [[Naismith College Player of the Year]] and scored [[The Shot (Duke–Kentucky)|the game-winning basket]] as time expired in the 1992 NCAA Eastern Regional final. Although O'Neal was a two-time Consensus NCAA First Team All-American in 1991 and 1992, his team lost in the second round of the [[1992 NCAA Men's Division I Basketball Tournament|1992 NCAA men's tournament]]. Laettner's college success and coach's endorsement ultimately secured his position on the team.<ref>McCallum, Jack (2012). ''Dream Team: How Michael, Magic, Larry, Charles, and the Greatest Team of All Time Conquered the World and Changed the Game of Basketball Forever''. Random House Publishing Group. Chapter 17.</ref>
+
+==Success on the court==
+
+===Early scrimmages===
+To help the team prepare for the Olympics, a squad of the best [[National Collegiate Athletic Association|NCAA]] college players was formed to scrimmage them. USA Basketball selected players whose style of play, it hoped, would resemble that of the Europeans the Dream Team would face. Members included the penetrating guard [[Bobby Hurley]], all-around players [[Grant Hill]] and [[Penny Hardaway]], outside shooter [[Allan Houston]], and the tough [[Chris Webber]] and [[Eric Montross]].{{r|nbc20120810}} Hill and Hardaway would play for the [[1996 United States men's Olympic basketball team|1996 national team]], and Houston on the [[2000 United States men's Olympic basketball team|2000 team]].<ref>"[http://www.usabasketball.com/news.php?news_page=moly_1996 1996 USA Men's Olympic Games Roster] {{webarchive|url=https://web.archive.org/web/20081006084324/http://www.usabasketball.com/news.php?news_page=moly_1996 |date=October 6, 2008 }}." ''usabasketball.com.'' Retrieved on April 23, 2014.</ref><ref>"[http://www.usabasketball.com/news.php?news_page=moly_2000 2000 USA Men's Olympic Games Roster] {{webarchive|url=https://web.archive.org/web/20100103175710/http://usabasketball.com/news.php?news_page=moly_2000 |date=January 3, 2010 }}." ''usabasketball.com.'' Retrieved on April 23, 2014.</ref>
+
+The Dream Team first gathered at Main Gym on the campus of the [[University of California, San Diego]], in late June, astounding and intimidating the collegians who watched them practice. However, on June 24, the Dream Team lost to the NCAA team, 62–54, after underestimating the opposition.{{r|gq}} Daly intentionally limited Jordan's playing time and made non-optimal substitutions; assistant coach [[Mike Krzyzewski]] later said that the head coach "threw the game" to teach the NBA players that they could be beaten. The teams played again the following day, with the Olympians winning decisively in the rematch.<ref name="sandomir20120509">Richard Sandomir. "[http://offthedribble.blogs.nytimes.com/2012/05/09/the-dream-teams-very-bad-day/ The Dream Team's Very Bad Day] {{Webarchive|url=https://web.archive.org/web/20120808021406/http://offthedribble.blogs.nytimes.com/2012/05/09/the-dream-teams-very-bad-day/ |date=August 8, 2012 }}". ''The New York Times''. May 9, 2012.</ref> Some of the college players visited Jordan's hotel room afterward and asked their hero for his personal items as souvenirs.{{r|gq}}
+
+===Tournament of the Americas===
+The Dream Team made its international debut on June 28 at the [[1992 Tournament of the Americas|Tournament of the Americas]], an Olympic qualifying event in [[Portland, Oregon]].{{r|gq}} The team defeated [[Cuba national basketball team|Cuba]] 136–57, prompting Cuban coach [[Miguel Calderón Gómez]] to say, "You can't cover the sun with your finger."<ref>Tim Povtak. "[https://www.orlandosentinel.com/1992/06/29/dream-team-dazzles-in-laugher/ Dream Team dazzles in laugher] ". ''Orlando Sentinel''. June 29, 1992. Retrieved August 13, 2010.</ref> [[Marv Albert]], who announced the game, recalled that "it was as if [the Americans] were playing a high school team, or grade school team. They were so overwhelming...a blowout after blowout."{{r|nbc20120810}} The Cubans were the first of many opponents who were more interested in taking photos with the Americans than playing them.{{r|gq}} The next five games were also easy victories for Team USA, which ended the tournament on July 5 with a 127–80 victory over [[Venezuela national basketball team|Venezuela]] in the championship game to win the tournament and be one of four Americas squads to qualify for the Olympics.<ref>"[https://news.google.com/newspapers?id=AA8wAAAAIBAJ&sjid=TwMEAAAAIBAJ&pg=6822,1672263&dq=dream-team+tournament+of+the+americas+venezuela&hl=en From Rip City to Barcelona] {{Webarchive|url=https://web.archive.org/web/20151223115847/https://news.google.com/newspapers?id=AA8wAAAAIBAJ&sjid=TwMEAAAAIBAJ&pg=6822,1672263&dq=dream-team+tournament+of+the+americas+venezuela&hl=en |date=December 23, 2015 }}". Associated Press. ''Toledo Blade''. July 6, 1992. Retrieved August 13, 2010.</ref>
+
+===Olympics===
+[[File:Dream Team at the 1992 Summer Olympics.JPEG|alt=Robinson taking a shot|thumb|David Robinson taking a free throw]]
+The team trained for the [[Basketball at the 1992 Summer Olympics – Men's tournament|Olympics]] in [[Monaco]] for six days, practicing two hours a day and playing exhibition games against other national teams. During their time away from the court, the squad spent time enjoying the [[nude beach]]es, [[Monte Carlo]]'s casinos,{{r|mccallum20120702}} and dining with royalty.{{r|gq}} There was no curfew; as Daly stated, "I'm not putting in a curfew because I'd have to adhere to it, and Jimmy'z [a noted Monte Carlo nightclub] doesn't open until midnight."{{r|mccallum20120702}}
+
+For one scrimmage, the group divided into two teams: Blue (led by Johnson, with Barkley, Robinson, Mullin, and Laettner) and White (led by Jordan, with Malone, Ewing, Pippen, and Bird). Drexler and Stockton did not play because of injuries.{{efn|A 2012 [[NBA TV]] documentary covers this scrimmage, but the segment mixes video clips from other scrimmages as well.<ref>{{cite web|last=McCallum|first=Jack|title=25 Years Later: THE 'MYSTICAL' DREAM TEAM SCRIMMAGE|date=July 23, 2017|website=JackMccallum.net|url=https://jackmccallum.net/2017/07/23/25-years-later-the-mystical-dream-team-scrimmage/|access-date=November 7, 2018|archive-date=November 7, 2018|archive-url=https://web.archive.org/web/20181107145157/https://jackmccallum.net/2017/07/23/25-years-later-the-mystical-dream-team-scrimmage/|url-status=dead}}</ref>}}<ref name="mccallum20120702"/><ref>{{cite news|last=Adams|first=Micah|title=The Dream Team scrimmage in Monte Carlo|date=July 23, 2017|work=ESPN.com|url=http://www.espn.com/blog/statsinfo/post/_/id/133080/the-scrimmage-in-monte-carlo|access-date=November 7, 2018|archive-date=November 7, 2018|archive-url=https://web.archive.org/web/20181107145349/http://www.espn.com/blog/statsinfo/post/_/id/133080/the-scrimmage-in-monte-carlo|url-status=live}}</ref> Daly told the teams to play "All you got now. All you got." White won, 40 to 36, in what Jordan recalled as "the best game I was ever in" and ''Sports Illustrated'' later called "the Greatest Game Nobody Ever Saw".<ref name="mccallum20120702">{{cite magazine|url=https://www.si.com/more-sports/2012/07/24/usa-basketball-game-nobody-saw |title=The Greatest Game Nobody Ever Saw |magazine=Sports Illustrated |date=July 2, 2012 |author=McCallum, Jack |archive-url=https://web.archive.org/web/20150412081817/http://www.si.com/more-sports/2012/07/24/usa-basketball-game-nobody-saw |archive-date=April 12, 2015 |url-status=live }}</ref>
+
+Because of security concerns due to the team's celebrity, the Dream Team did not stay in the [[Olympic Village]].<ref name="Greenberg">{{cite web |last1=Greenberg |first1=Alan |title=U.S. Team: All-Stars to All-World |url=https://www.courant.com/news/connecticut/hc-xpm-1992-07-26-0000114550-story.html |work=Hartford Courant |access-date=May 20, 2020 |date=July 26, 1992 |archive-date=November 24, 2020 |archive-url=https://web.archive.org/web/20201124072306/https://www.courant.com/news/connecticut/hc-xpm-1992-07-26-0000114550-story.html |url-status=live }}</ref> The Olympic Village had only four guards at the gate when the team arrived to pick up their credentials; one of the guards, upon seeing the Dream Team, grabbed his camera and his child while the team members were mobbed by other Olympic athletes. Daly also stated that the beds in the Village were too short to allow his tall players to get proper rest.<ref name="MCall">{{cite web |last1=Richardson |first1=Steve |title=Dream Team Besieged by Everyone, Defends Staying Outside Village |url=https://www.mcall.com/news/mc-xpm-1992-07-26-2875102-story.html |publisher=Dallas Morning News |access-date=May 20, 2020 |date=July 26, 1992 |archive-date=November 24, 2020 |archive-url=https://web.archive.org/web/20201124124603/https://www.mcall.com/news/mc-xpm-1992-07-26-2875102-story.html |url-status=live }}</ref>
+
+As a result, the team stayed at Barcelona's Hotel Ambassador, where USA Basketball occupied 80 of the hotel's 98 rooms.<ref name="Greenberg" /> Fans were not allowed to enter the lobby, but did gather outside the hotel, hoping to see their favorite players. "It was like [[Elvis Presley|Elvis]] and [[the Beatles]] put together," Daly said.<ref>Alex Sachare. ''When Seconds Count''. Sports Publishing LLC, 1999. 192. {{ISBN|1-58382-015-9}}.</ref> Opposing basketball players and athletes from other sports often asked to have photographs taken with the players.<ref name=buzz>Bryan Burwell. ''At the Buzzer!'' Doubleday, 2001. 150. {{ISBN|0-385-50145-5}}.</ref>{{r|mccallum20120702}}
+
+In an interview years later, Charles Barkley recounted that "we got death threats".<ref>{{cite web |last1=Sheridan |first1=Chris |title=Charles Barkley relives Dream Team |url=https://www.espn.com/nba/halloffame10/columns/story?columnist=sheridan_chris&page=100812-dreamteam |access-date=May 20, 2020 |date=August 10, 2010 |archive-date=March 24, 2020 |archive-url=https://web.archive.org/web/20200324143640/https://www.espn.com/nba/halloffame10/columns/story?columnist=sheridan_chris&page=100812-dreamteam |url-status=live }}</ref> Despite that assertion, Barkley walked around the city alone. When asked where his bodyguards were, he held up his fists and answered, "This is my security."{{r|gq}}
+
+[[File:Barkley Lipofsky.jpg|alt=|thumb|Charles Barkley proved controversial due to his aggressive gameplay and trash talking. He ended up being the highest-scoring member of the team.]]
+
+Jordan was the only player who studied the opposition, carefully watching game tapes.{{r|gq}} He and the other Americans enjoyed the opportunity to get to know each other in a casual setting, often playing cards all night and, for Jordan, playing several rounds of golf daily with little rest.{{r|nbc20120810}}
+
+Opposing teams were overwhelmed by the Americans, losing by an average of 43.8 points per game. This was the second-largest Olympic Games point differential, surpassed only by the 53.5 point-per-game margin achieved by the [[1956 United States men's Olympic basketball team|1956 US Men's Basketball Team]]. The Dream Team was the first to score more than 100 points in every game. Its 117.3 average was more than 15 points higher than that of the 1960 US team.<ref name=re19920809>"[https://news.google.com/newspapers?id=9LorAAAAIBAJ&sjid=-KIFAAAAIBAJ&pg=1651,4643303&dq=team-usa+43.8&hl=en Nightmare is over for U.S.] {{Webarchive|url=https://web.archive.org/web/20211118205851/https://news.google.com/newspapers?id=9LorAAAAIBAJ&sjid=-KIFAAAAIBAJ&pg=1651%2C4643303&dq=team-usa+43.8&hl=en |date=November 18, 2021 }}" ''Reading Eagle''. August 9, 1992. Retrieved August 14, 2010.</ref> Johnson later recalled, "I look to my right, there's Michael Jordan...I look to my left, there's Charles Barkley or Larry Bird...I didn't know who to throw the ball to!"{{r|nbc20120810}}<ref name="nbc20120731">{{cite episode | series=30 Greatest NBC Olympic Moments | credits=Costas, Bob (host) | network=NBC | airdate=July 31, 2012}}</ref>
+
+In a press conference before the team's first Olympic game against [[Angola national basketball team|Angola]], Barkley quipped, "I don't know anything about Angola. But Angola's in trouble."<ref>{{cite book |last1=Casstevens |first1=David |title=Somebody's Gotta be Me" The Wide, Wide World of the One and Only Charles Barkley |date=1994 |publisher=Andrews and McMeel |isbn=9780836280746 |page=5 |url=https://books.google.com/books?id=EYnMIItWYh0C |access-date=May 18, 2020 |archive-date=April 8, 2023 |archive-url=https://web.archive.org/web/20230408065801/https://books.google.com/books?id=EYnMIItWYh0C |url-status=live }}</ref> [[Herlander Coimbra]] of Angola recalled that "those guys were on another level—a galaxy far, far away".{{r|gq}} During the game, Barkley elbowed Coimbra in the chest and was unapologetic after the game, claiming he was hit first. Barkley was called for an intentional foul on the play. Coimbra's resulting free throw was the only point scored by Angola during a 46–1 run by the US.<ref>{{cite news|last1=Cook|first1=Byron|title=Barkley sarcastic after easy win|url=https://news.google.com/newspapers?nid=1350&dat=19920727&id=FQ8wAAAAIBAJ&sjid=TwMEAAAAIBAJ&pg=6788,7328159|newspaper=Toledo Blade|date=July 27, 1992|access-date=September 19, 2016|archive-date=August 26, 2021|archive-url=https://web.archive.org/web/20210826135545/https://news.google.com/newspapers?nid=1350&dat=19920727&id=FQ8wAAAAIBAJ&sjid=TwMEAAAAIBAJ&pg=6788,7328159|url-status=live}}</ref>
+
+The U.S. team won, 116–48, but its global reputation was damaged by Barkley's elbow. After the game, Jordan said, "There just wasn't any place for it. We were dominating the game. It created mixed feelings, it caused a mixed reaction about the U.S. There's already some negative feelings about us." The incident changed the narrative; instead of the Americans being viewed as a highly skilled team beating an underdog, some viewed them as bullies.<ref>{{cite news|title=Barley's elbow taints U.S. win|url=https://news.google.com/newspapers?nid=2457&dat=19920727&id=36lJAAAAIBAJ&sjid=VQ4NAAAAIBAJ&pg=1544,3336682|newspaper=Bangor Daily News|date=July 27, 1992|access-date=September 19, 2016|archive-date=April 8, 2023|archive-url=https://web.archive.org/web/20230408065804/https://news.google.com/newspapers?nid=2457&dat=19920727&id=36lJAAAAIBAJ&sjid=VQ4NAAAAIBAJ&pg=1544,3336682|url-status=live}}</ref><ref>{{cite news|last1=Sansevere|first1=Bob|title=The Ugly American? His name is Barkley|url=https://news.google.com/newspapers?nid=1914&dat=19920725&id=yAogAAAAIBAJ&sjid=X2UFAAAAIBAJ&pg=2601,5252758|newspaper=Sun Journal|date=July 25, 1992|access-date=September 19, 2016|archive-date=November 5, 2021|archive-url=https://web.archive.org/web/20211105024141/https://news.google.com/newspapers?nid=1914&dat=19920725&id=yAogAAAAIBAJ&sjid=X2UFAAAAIBAJ&pg=2601%2C5252758|url-status=live}}</ref>
+
+Daly started Jordan in every game, and Johnson started in five of the six games he played, missing two games because of knee problems.<ref name=knee>[https://news.google.com/newspapers?nid=1243&dat=19920729&id=TV4PAAAAIBAJ&sjid=kYYDAAAAIBAJ&pg=3579,2868782 Barnard, Bill. "Knee injury knocks Magic out of Dream Team lineup against Germany."] {{Webarchive|url=https://web.archive.org/web/20210721125810/https://news.google.com/newspapers?nid=1243&dat=19920729&id=TV4PAAAAIBAJ&sjid=kYYDAAAAIBAJ&pg=3579,2868782 |date=July 21, 2021 }} ''The Bulletin [Bend, Oregon]'', July 29, 1992. Retrieved May 15, 2013.</ref> Pippen, Bird, Mullin, Robinson, Ewing, Malone, and Barkley rotated in the other starting spots.{{r|gq}} Barkley was the Dream Team's leading scorer during the Olympics, averaging 18.0 points per game.<ref name=Barkley>{{cite web|url=https://www.espn.com/nba/halloffame10/columns/story?columnist=sheridan_chris&page=100812-dreamteam |title=Charles Barkley relives Dream Team |first=Chris |last=Sheridan |work=ESPN.com |date=August 13, 2010 |access-date=August 15, 2010| archive-url= https://web.archive.org/web/20100818015619/http://sports.espn.go.com/nba/halloffame10/columns/story?columnist=sheridan_chris&page=100812-dreamteam| archive-date= August 18, 2010 | url-status= live}}</ref> The player-selection committee had been unsure about including him, worried that he would not represent the United States well.{{r|gq}}
+
+The closest of the eight matches was Team USA's 117–85 victory over [[Croatia national basketball team|Croatia]] in the gold medal game. Croatia, participating as an independent nation in the Olympics for the first time since its separation from the former [[Yugoslavia]], briefly led the Dream Team by a score of 25–23 in the first half.{{r|re19920809}}<ref>FIBA. "[https://archive.fiba.com/pages/eng/fa/game/p/gid/A/grid/4/rid/1063/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html USA-Croatia Box Score] {{Webarchive|url=https://web.archive.org/web/20201119163754/http://archive.fiba.com/pages/eng/fa/game/p/gid/A/grid/4/rid/1063/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html |date=November 19, 2020 }}". ''FIBA Archives''. 2009. Retrieved July 12, 2012.</ref> By the end of the game, Team USA had pulled away and Stockton agreed to a Croatian player's plea not to shoot.<ref name="thomsen19920810">{{cite news | url=https://www.nytimes.com/1992/08/10/sports/10iht-hoop_6.html | title=The Dream Team Is Finished, but Its Legacy Will Linger | work=The New York Times | date=August 10, 1992 | access-date=August 12, 2012 | author=Thomsen, Ian | archive-date=June 1, 2013 | archive-url=https://web.archive.org/web/20130601131631/http://www.nytimes.com/1992/08/10/sports/10iht-hoop_6.html | url-status=live }}</ref> Pippen and Jordan aggressively sought the opportunity to guard [[Toni Kukoč]] of Croatia. He had just signed a contract with the Bulls for more money than Pippen, who believed that the team's negotiation with the Croatian had delayed his own contract. Tired of hearing about Kukoč's talent, Pippen and Jordan agreed to, as Jordan later said, "not...let this guy do ''anything'' against us." McCallum described the two Bulls as "rabid dogs" against Kukoč.{{r|gq}}{{r|nbc20120810}} Croatia had lost to the Dream Team 103–70 in their first game. The only team besides Croatia to hold the margin under 40 points was [[Puerto Rico national basketball team|Puerto Rico]], which lost 115–77 in the quarterfinals.
+
+==Legacy==
+[[File:Krzyzewski at Pentagon cropped.JPG|alt=|thumb|Mike Krzyzewski returned to coach the United States men's basketball several times after the 1992 Olympics.]]
+
+''Sports Illustrated'' later stated that the Dream Team was "arguably the most dominant squad ever assembled in any sport" and compared it to "[[At Folsom Prison|Johnny Cash at Folsom Prison]], the [[At Fillmore East|Allman Brothers at the Fillmore East]], [[Santana (band)|Santana]] at [[Woodstock]]."{{r|mccallum20120702}} In 2009, the team was elected to the [[United States Olympic & Paralympic Hall of Fame|U.S. Olympic & Paralympic Hall of Fame]]. The following year, the team was elected to the [[List of members of the Naismith Memorial Basketball Hall of Fame|Naismith Memorial Basketball Hall of Fame]].<ref>[https://www.espn.com/nba/news/story?id=5057001 1992 Olympic champs into Hall of Fame] . Associated Press. ESPN. August 3, 2010. Retrieved August 12, 2010.</ref> It was elected to the [[FIBA Hall of Fame]] in 2017.<ref>{{Cite web|url=http://www.fiba.basketball/news/dream-team-shaq-and-kukoc-headline-2017-class-of-fiba-hall-of-fame-inductees|title=Dream Team, Shaq and Kukoc headline 2017 Class of FIBA Hall of Fame Inductees|website=FIBA.basketball|date=August 23, 2017 |access-date=September 1, 2017|archive-date=March 12, 2018|archive-url=https://web.archive.org/web/20180312015928/http://www.fiba.basketball/news/dream-team-shaq-and-kukoc-headline-2017-class-of-fiba-hall-of-fame-inductees|url-status=live}}</ref>
+
+Barkley later said, "I don't think there's anything better to representing your country. I don't think anything in my life can come close to that." Bird called the medal ceremony and the playing of "[[The Star-Spangled Banner]]" "the ultimate experience". Johnson said, "The 92 Dream Team was the greatest moment of my life in terms of basketball, bar none." Jordan said that the biggest benefit for him from the Olympics was that he learned more about his teammates' weaknesses. His Chicago Bulls teams later defeated Barkley, Malone, and Stockton's teams in three NBA finals.{{r|nbc20120810}} As of 2014, 11 of the 12 players on the roster (all except Laettner)<ref>{{cite news|last=Levin |first=Josh |title=What's the Difference Between the 1992 and 2012 Dream Teams? Kevin Durant and LeBron James Played Tougher Competition. |date=August 12, 2012 |magazine=Slate |url=http://www.slate.com/blogs/five_ring_circus/2012/08/12/_2012_u_s_olympic_basketball_team_the_original_dream_team_was_great_but_lebron_james_and_kevin_durant_played_tougher_competition_.html |archive-url=https://web.archive.org/web/20120817000155/http://www.slate.com/blogs/five_ring_circus/2012/08/12/_2012_u_s_olympic_basketball_team_the_original_dream_team_was_great_but_lebron_james_and_kevin_durant_played_tougher_competition_.html |archive-date=August 17, 2012 |url-status=live }}</ref> and three of the four coaches (all except Carlesimo) have been elected to the Hall of Fame as individuals.
+
+Global interest in basketball soared due to the Dream Team.{{r|nbc20120810}} [[President of the International Olympic Committee|International Olympic Committee president]] [[Juan Antonio Samaranch]] stated that "the most important aspect of the [Barcelona] Games has been the resounding success of the basketball tournament, as we've witnessed the best basketball in the world."{{r|thomsen19920810}} Daly said of the opposing teams "They'll go home and for the rest of their lives be able to tell their kids, 'I played against Michael Jordan and Magic Johnson and Larry Bird.' And the more they play against our best players, the more confident they're going to get".<ref>{{cite web |title=Top Moments: Dream Team takes world by storm in 1992 |url=http://www.nba.com/history/top-moments/1992-dream-team-usa-basketball |website=NBA.com |access-date=May 31, 2018 |archive-date=June 5, 2018 |archive-url=https://web.archive.org/web/20180605053054/http://www.nba.com/history/top-moments/1992-dream-team-usa-basketball |url-status=live }}</ref> Subsequently, the number of [[List of foreign NBA players|international players in the NBA]] rose. On opening day of the [[1991-92 NBA season|1991–92 season]], NBA rosters included 23 international players from 18 countries. At the start of the [[2011–12 NBA season|2011–12 season]], there were 74 players from 35 countries.<ref>{{cite news |last=Longman |first=Jere |title=N.B.A. Looks to Wake Up From 20-Year Dream |date=July 28, 2012 |newspaper=The New York Times |url=https://www.nytimes.com/2012/07/29/sports/olympics/nba-reassesses-its-olympic-involvement.html?pagewanted=all |archive-url=https://web.archive.org/web/20121103101136/http://www.nytimes.com/2012/07/29/sports/olympics/nba-reassesses-its-olympic-involvement.html?_r=1&pagewanted=all |archive-date=November 3, 2012 |url-status=live |access-date=February 14, 2017 }}</ref><ref>{{Cite web|url=https://www.thenationalnews.com/the-92-dream-team-paved-the-way-for-global-players-to-make-mark-in-nba-1.375766|title=The '92 Dream Team paved the way for global players to make mark in NBA|website=The National|date=May 25, 2011 |access-date=August 4, 2019|archive-date=August 4, 2019|archive-url=https://web.archive.org/web/20190804143759/https://www.thenational.ae/the-92-dream-team-paved-the-way-for-global-players-to-make-mark-in-nba-1.375766|url-status=live}}</ref>
+
+==Roster==
+{| class="toccolours" style="font-size: 95%; "
+|+colspan="2" style="background-color: #002B54; color: #FFFFFF; text-align: center;" | USA Basketball Men's National Team roster
+|- style="background-color: #E31937; color: #FFFFFF; text-align: center;"
+! Players !! Coaches
+|-
+| valign="top" |
+{| class="sortable" style="background:transparent; margin:0px; width:100%;"
+! Pos. !! # !! Name !! Age !! Height !! Weight !! From
+|-
+| style="text-align:center;" | [[Power forward (basketball)|PF]] || style="text-align:center;" | 4 || [[Christian Laettner|Laettner, Christian]] || 22 || {{sort|83|{{convert|6|ft|11|in|m|abbr=on}}}} || {{convert|235|lb|kg|abbr=on}} || [[Duke Blue Devils men's basketball|Duke Blue Devils]]
+|-
+| style="text-align:center;" | [[Center (basketball)|C]] || style="text-align:center;" | 5 || [[David Robinson|Robinson, David]] || 26 || {{sort|85|{{convert|7|ft|1|in|m|abbr=on}}}} || {{convert|235|lb|kg|abbr=on}} || [[San Antonio Spurs]]
+|-
+| style="text-align:center;" | [[Center (basketball)|C]] || style="text-align:center;" | 6 || [[Patrick Ewing|Ewing, Patrick]] || 29 || {{sort|84|{{convert|7|ft|0|in|m|abbr=on}}}} || {{convert|240|lb|kg|abbr=on}} || [[New York Knicks]]
+|-
+| style="text-align:center;" | [[Small forward|SF]] || style="text-align:center;" | 7 || [[Larry Bird|Bird, Larry]] || 35 || {{sort|81|{{convert|6|ft|9|in|m|abbr=on}}}} || {{convert|220|lb|kg|abbr=on}} || [[Boston Celtics]]
+|-
+| style="text-align:center;" | [[Small forward|SF]] || style="text-align:center;" | 8 || [[Scottie Pippen|Pippen, Scottie]] || 26 || {{sort|79|{{convert|6|ft|8|in|m|abbr=on}}}} || {{convert|210|lb|kg|abbr=on}} || [[Chicago Bulls]]
+|-
+| style="text-align:center;" | [[Shooting guard|SG]] || style="text-align:center;" | 9 || [[Michael Jordan|Jordan, Michael]] || 29 || {{sort|78|{{convert|6|ft|6|in|m|abbr=on}}}} || {{convert|198|lb|kg|abbr=on}} || [[Chicago Bulls]]
+|-
+| style="text-align:center;" | [[Shooting guard|SG]] || style="text-align:center;" | 10 || [[Clyde Drexler|Drexler, Clyde]] || 30 || {{sort|79|{{convert|6|ft|7|in|m|abbr=on}}}} || {{convert|222|lb|kg|abbr=on}} || [[Portland Trail Blazers]]
+|-
+| style="text-align:center;" | [[Power forward (basketball)|PF]] || style="text-align:center;" | 11 || [[Karl Malone|Malone, Karl]] || 28 || {{sort|83|{{convert|6|ft|9|in|m|abbr=on}}}} || {{convert|256|lb|kg|abbr=on}} || [[Utah Jazz]]
+|-
+| style="text-align:center;" | [[Point guard|PG]] || style="text-align:center;" | 12 || [[John Stockton|Stockton, John]] || 30 || {{sort|73|{{convert|6|ft|1|in|m|abbr=on}}}} || {{convert|175|lb|kg|abbr=on}} || [[Utah Jazz]]
+|-
+| style="text-align:center;" | [[Small forward|SF]] || style="text-align:center;" | 13 || [[Chris Mullin|Mullin, Chris]] || 28 || {{sort|79|{{convert|6|ft|7|in|m|abbr=on}}}} || {{convert|215|lb|kg|abbr=on}} || [[Golden State Warriors]]
+|-
+| style="text-align:center;" | [[Power forward (basketball)|PF]] || style="text-align:center;" | 14 || [[Charles Barkley|Barkley, Charles]] || 29 || {{sort|78|{{convert|6|ft|6|in|m|abbr=on}}}} || {{convert|250|lb|kg|abbr=on}} || [[Phoenix Suns]]<!-- Barkley is listed as a member of the Suns on http://www.usabasketball.com/mens/national/moly_1992.html. He was traded from the 76ers to the Suns on June 18, 1992.-->
+|-
+| style="text-align:center;" | [[Point guard|PG]] || style="text-align:center;" | 15 || [[Magic Johnson|Johnson, Magic]] || 32 || {{sort|81|{{convert|6|ft|9|in|m|abbr=on}}}} || {{convert|220|lb|kg|abbr=on}} || [[Los Angeles Lakers]]{{efn-lr|By the time the roster was announced, Johnson had already retired from professional basketball.}}
+|}
+
+| valign="top" |
+'''Head coach'''
+*[[Chuck Daly]]
+'''Assistant coach(es)'''
+*[[P. J. Carlesimo]]
+*[[Mike Krzyzewski]]
+*[[Lenny Wilkens]]
+----
+'''Legend:'''
+*'''From''' – describes teams affiliated<br>during the Olympics
+|}
+{{notelist-lr}}
+
+==Tournament of the Americas results==
+
+The team was undefeated, with their closest margin of victory being 38&nbsp;points over Puerto Rico.<ref>{{cite web|url=https://www.usab.com/history/national-team-mens/mens-tournament-of-the-americas-1992.aspx|archive-url=https://web.archive.org/web/20150429204708/http://www.usab.com/history/national-team-mens/mens-tournament-of-the-americas-1992.aspx|url-status=dead|archive-date=April 29, 2015|title=MEN'S TOURNAMENT OF THE AMERICAS -- 1992|publisher=USA Basketball}}</ref>
+{| class="wikitable sortable"
+|+Tournament of the Americas results
+|-
+!Game
+!Date
+!USA points
+!Opponent <br> points
+!Opponent
+!Point <br> differential
+|-
+|1 ||June 28, 1992 ||136 ||57 ||{{Bk|CUB}} ||79
+|-
+|2 ||June 29, 1992 ||105 ||61 ||{{Bk|CAN}} ||44
+|-
+|3 ||June 30, 1992 ||112 ||52 ||{{Bk|PAN}} ||60
+|-
+|4 ||July 1, 1992 ||128 ||87 ||{{Bk|ARG}} ||41
+|-
+|5 ||July 3, 1992 ||119 ||81 ||{{Bk|PUR}} ||38
+|-
+|6 ||July 5, 1992 ||127 ||80 ||{{Bk|VEN}}<br>(gold medal game) ||47
+|- 
+|}
+
+===Tournament statistics===
+{{clear}}
+{|class="wikitable sortable" style="text-align:center"
+|+Player tournament statistics
+|-
+! Player
+! GP
+! FGM
+! FGA
+! FG%
+! 3PM
+! 3PA
+! 3P%
+! FTM
+! FTA
+! FT%
+! REB/AVG
+! PTS/AVG
+! AST
+! BLK
+! STL
+|-
+|{{sortname|Charles|Barkley}} || 6 || 34 || 58 || .586 || 2 || 5 || .400 || 28 || 33 || .848 || 40/6.7 || 98/16.3|| 10 || 1 || 12
+|-
+|{{sortname|Larry|Bird}} || 2 || 8 || 11 || .727 || 3 || 4 || .750 || 0 || 0 || .000 || 7/3.5 || 19/9.5 || 2 || 0 || 3
+|-
+|{{sortname|Clyde|Drexler}} || 5 || 27 || 39 || .692 || 5 || 11 || .455 || 10 || 12 || .833 || 13/2.6 || 69/13.8 || 33 || 2 || 5
+|-
+|{{sortname|Patrick|Ewing}} || 5 || 27 || 43 || .628 || 0 || 0 || .000 || 5 || 8 || .625 || 26/5.2 || 59/11.8 || 2 || 10 || 6
+|-
+|{{sortname|Magic|Johnson}} || 6 || 19 || 34 || .559 || 3 || 9 || .333 || 17 || 20 || .850 || 25/4.2 || 58/9.7 || 54 || 0 || 7
+|-
+|{{sortname|Michael|Jordan}} || 6 || 29 || 53 || .547 || 9 || 23 || .391 || 9 || 12 || .750 || 23/3.8 || 76/12.7 || 30 || 5 || 11
+|-
+|{{sortname|Christian|Laettner}} || 6 || 18 || 31 || .581 || 3 || 7 || .429 || 5 || 8 || .625 || 16/2.7 || 44/7.3 || 2 || 0 || 3
+|-
+|{{sortname|Karl|Malone}} || 6 || 33 || 53 || .623 || 0 || 0 || .000 || 23 || 39 || .590 || 35/5.8 || 89/14.8 || 9 || 4 || 5
+|-
+|{{sortname|Chris|Mullin}} || 6 || 31 || 49 || .633 || 15 || 30 || .500 || 9 || 14 || .643 || 18/3.0 || 86/14.3 || 14 || 1 || 9
+|-
+|{{sortname|Scottie|Pippen}} || 6 || 20 || 30 || .667 || 2 || 6 || .333 || 6 || 9 || .667 || 26/4.3 || 48/8.0 || 37 || 2 || 8
+|-
+|{{sortname|David|Robinson|dab=basketball}} || 6 || 32 || 42 || .762 || 0 || 0 || .000 || 7 || 13 || .538 || 32/5.3 || 71/11.8 || 5 || 11 || 5
+|-
+|{{sortname|John|Stockton}} || 2 || 5 || 6 || .833 || 0 || 1 || .000 || 0 || 0 || .000 || 1/0.5 || 10/5.0 || 12 || 0 || 1
+|-
+|}
+
+==Olympics results==
+The team was again undefeated, with their closest outing being the 32-point victory over Croatia for the gold medal.<ref name="auto"/>
+{{basketballbox collapsible
+|date = {{Start date|1992|7|26}}
+|time = 16:30 ([[Central European Summer Time|CEST]])
+|round = Group A, Game 1
+|report = https://archive.fiba.com/pages/eng/fa/game/p/gid/1/grid/A/rid/1059/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html
+|teamA = {{bk-rt|ANG}}
+|scoreA = 48
+|scoreB = '''116'''
+|teamB = {{bk|USA}}
+|place = [[Barcelona]], [[Spain]]
+|arena = [[Palau Municipal d'Esports de Badalona|Pavelló Olímpic de Badalona]]
+|note = Point differential: 68, tournament largest
+|H1 = 16–64
+|H2 = 32–52
+|points1 = [[Paulo Macedo (basketball)|Macedo]], 10
+|rebounds1 = [[Jean-Jacques Conceição|Conceição]], 7
+|assist1 = [[Jean-Jacques Conceição|Conceição]], 2
+|points2 = [[Charles Barkley|Barkley]], 24
+|rebounds2 = [[Charles Barkley|Barkley]], 6
+|assist2 = [[Magic Johnson|Johnson]], 10
+|result = W
+}}
+{{basketballbox collapsible
+|date = {{Start date|1992|7|27}}
+|time = 20:30 ([[Central European Summer Time|CEST]])
+|round = Group A, Game 2
+|report = https://archive.fiba.com/pages/eng/fa/game/p/gid/5/grid/A/rid/1059/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html
+|teamA = {{bk-rt|CRO}}
+|scoreA = 70
+|scoreB = '''103'''
+|teamB = {{bk|USA}}
+|place = [[Barcelona]], [[Spain]]
+|arena = [[Palau Municipal d'Esports de Badalona|Pavelló Olímpic de Badalona]]
+|note = Point differential: 33
+|H1 = 37–54
+|H2 = 33–49
+|points1 = [[Dražen Petrović|Petrović]], 19
+|rebounds1 = [[Dino Rađa|Rađa]], 8
+|assist1 = [[Toni Kukoč|Kukoč]], 5
+|points2 = [[Michael Jordan|Jordan]], 21
+|rebounds2 = [[Karl Malone|Malone]], 5
+|assist2 = [[Scottie Pippen|Pippen]], 9
+|result = W
+}}
+{{basketballbox collapsible
+|date ={{Start date|1992|7|29}}
+|time = 20:30 ([[Central European Summer Time|CEST]])
+|round = Group A, Game 3
+|report = https://archive.fiba.com/pages/eng/fa/game/p/gid/8/grid/A/rid/1059/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html
+|teamA = {{bk-rt|USA}}
+|scoreA = '''111'''
+|scoreB = 68
+|teamB = {{bk|GER}}
+|place = [[Barcelona]], [[Spain]]
+|arena = [[Palau Municipal d'Esports de Badalona|Pavelló Olímpic de Badalona]]
+|note = Point differential: 43
+|H1 = 58–23
+|H2 = 53–45
+|points1 = [[Larry Bird|Bird]], 19
+|rebounds1 = [[Karl Malone|Malone]], 5
+|assist1 = [[Michael Jordan|Jordan]], 12
+|points2 = [[Detlef Schrempf|Schrempf]], 15
+|rebounds2 = [[Detlef Schrempf|Schrempf]], 8
+|assist2 = [[Henrik Rödl|Rödl]], 2
+|result = W
+}}
+{{basketballbox collapsible
+|date = {{Start date|1992|7|31}}
+|time = 22:30 ([[Central European Summer Time|CEST]])
+|round = Group A, Game 4
+|report = https://archive.fiba.com/pages/eng/fa/game/p/gid/12/grid/A/rid/1059/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html
+|teamA = {{bk-rt|USA}}
+|scoreA = '''127'''
+|scoreB = 83
+|teamB = {{bk|BRA}}
+|place = [[Barcelona]], [[Spain]]
+|arena = [[Palau Municipal d'Esports de Badalona|Pavelló Olímpic de Badalona]]
+|note = Point differential: 44
+|H1 = 60–41
+|H2 = 67–42
+|points1 = [[Charles Barkley|Barkley]], 30
+|rebounds1 = [[Patrick Ewing|Ewing]], 9
+|assist1 = [[Clyde Drexler|Drexler]], 10
+|points2 = [[Oscar Schmidt|Schmidt]], 24
+|rebounds2 = [[Aristides Josuel dos Santos|dos Santos]], 9
+|assist2 = [[Maury Ponikwar de Souza|Ponikwar de Souza]], 7
+|result = W
+}}
+{{basketballbox collapsible
+|date = {{Start date|1992|8|2}}
+|time = 22:30 ([[Central European Summer Time|CEST]])
+|round = Group A, Game 5
+|report = https://archive.fiba.com/pages/eng/fa/game/p/gid/15/grid/A/rid/1059/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html
+|teamA = {{bk-rt|ESP}}
+|scoreA = 81
+|scoreB = '''122'''
+|teamB = {{bk|USA}}
+|place = [[Barcelona]], [[Spain]]
+|arena = [[Palau Municipal d'Esports de Badalona|Pavelló Olímpic de Badalona]]
+|note = Point differential: 41
+|H1 = 35–65
+|H2 = 46–57
+|points1 = [[Andrés Jiménez (basketball)|Jiménez]], 23
+|rebounds1 = [[Enrique Andreu|Andreu]], 7
+|assist1 = [[Andrés Jiménez (basketball)|Jiménez]], 6
+|points2 = [[Charles Barkley|Barkley]], 20
+|rebounds2 = [[Patrick Ewing|Ewing]], 10
+|assist2 = [[Scottie Pippen|Pippen]], 9
+|result = W
+}}
+{{basketballbox collapsible
+|date = {{Start date|1992|8|4}}
+|time = 22:30 ([[Central European Summer Time|CEST]])
+|round = Quarterfinals
+|report = https://archive.fiba.com/pages/eng/fa/game/p/gid/A/grid/4/rid/1061/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html
+|teamA = {{bk-rt|USA}}
+|scoreA = '''115'''
+|scoreB = 77
+|teamB = {{bk|PUR}}
+|place = [[Barcelona]], [[Spain]]
+|arena = [[Palau Municipal d'Esports de Badalona|Pavelló Olímpic de Badalona]]
+|note = Point differential: 38
+|H1 = 67–40
+|H2 = 48–37
+|points1 = [[Chris Mullin|Mullin]], 21
+|rebounds1 = [[Christian Laettner|Laettner]], 8
+|assist1 = [[Scottie Pippen|Pippen]], 8
+|points2 = [[José Ortiz (basketball)|Ortiz]], 13
+|rebounds2 = [[José Ortiz (basketball)|Ortiz]], 8
+|assist2 = [[James Carter (basketball)|Carter]], 4
+|result = W
+}}
+{{basketballbox collapsible
+|date = {{Start date|1992|8|6}}
+|time = 22:30 ([[Central European Summer Time|CEST]])
+|round = Semifinals
+|report = https://archive.fiba.com/pages/eng/fa/game/p/gid/A/grid/4/rid/1062/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html
+|teamA = {{bk-rt|LTU}}
+|scoreA = 76
+|scoreB = '''127'''
+|teamB = {{bk|USA}}
+|place = [[Barcelona]], [[Spain]]
+|arena = [[Palau Municipal d'Esports de Badalona|Pavelló Olímpic de Badalona]]
+|note = Point differential: 51
+|H1 = 30–49
+|H2 = 46–78
+|points1 = [[Šarūnas Marčiulionis|Marčiulionis]], 20
+|rebounds1 = [[Arvydas Sabonis|Sabonis]], 8
+|assist1 = [[Šarūnas Marčiulionis|Marčiulionis]], 8
+|points2 = [[Michael Jordan|Jordan]], 21
+|rebounds2 = [[David Robinson|Robinson]], 8
+|assist2 = [[Magic Johnson|Johnson]], 8
+|result = W
+}}
+{{basketballbox collapsible
+|date = {{Start date|1992|8|8}}
+|time = 22:00 ([[Central European Summer Time|CEST]])
+|round = Gold medal game
+|report = https://archive.fiba.com/pages/eng/fa/game/p/gid/A/grid/4/rid/1063/sid/2943/_/1992_Olympic_Games_Tournament_for_Men/statistic.html
+|teamA = {{bk-rt|CRO}}
+|scoreA = 85
+|scoreB = '''117'''
+|teamB = {{bk|USA}}
+|place = [[Barcelona]], [[Spain]]
+|arena = [[Palau Municipal d'Esports de Badalona|Pavelló Olímpic de Badalona]]
+|note = Point differential: 32, tournament closest
+|H1 = 42–56
+|H2 = 43–61
+|points1 = [[Dražen Petrović|Petrović]], 24
+|rebounds1 = [[Dino Rađa|Rađa]], 6
+|assist1 = [[Toni Kukoč|Kukoč]], 9
+|points2 = [[Michael Jordan|Jordan]], 22
+|rebounds2 = [[Patrick Ewing|Ewing]], 6
+|assist2 = [[Magic Johnson|Johnson]], 6
+|result = W
+}}
+
+===Olympic statistics===
+{|class="wikitable sortable" style="text-align:center"
+|+Olympic player statistics
+|-
+! Player
+! GP
+! GS
+! FGM
+! FGA
+! FG%
+! 3PM
+! 3PA
+! 3P%
+! FTM
+! FTA
+! FT%
+! PPG
+! RPG
+! APG
+|-
+|{{sortname|Charles|Barkley}} || 8 || 4 || 59 || 83 || .711 || 7 || 8 || .875 || 19 || 26 || .731 || 18.0 || 4.1 || 2.4
+|-
+|{{sortname|Larry|Bird}} || 8 || 3 || 25 || 48 || .521 || 9 || 27 || .333 || 8 || 10 || .800 || 8.4 || 3.8 || 1.8
+|-
+|{{sortname|Clyde|Drexler}} || 8 || 3 || 37 || 64 || .578 || 6 || 21 || .286 || 4 || 10 || .400 || 10.5 || 3.0 || 3.6
+|-
+|{{sortname|Patrick|Ewing}} || 8 || 4 || 33 || 53 || .623 || 0 || 0 || .000 || 10 || 16 || .625 || 9.5 || 5.3 || 0.4
+|-
+|{{sortname|Magic|Johnson}} || 6 || 5 || 17 || 30 || .567 || 6 || 13 || .462 || 8 || 10 || .800 || 8.0 || 2.3 || 5.5
+|-
+|{{sortname|Michael|Jordan}} || 8 || 8 || 51 || 113 || .451 || 4 || 19 || .211 || 13 || 19 || .684 || 14.9 || 2.4 || 4.8
+|-
+|{{sortname|Christian|Laettner}} || 8 || 0 || 9 || 20 || .450 || 2 || 6 || .333 || 18 || 20 || .900 || 4.8 || 2.5 || 0.4
+|-
+|{{sortname|Karl|Malone}} || 8 || 4 || 40 || 62 || .645 || 0 || 0 || .000 || 24 || 32 || .750 || 13.0 || 5.3 || 1.1
+|-
+|{{sortname|Chris|Mullin}} || 8 || 2 || 39 || 63 || .619 || 14 || 26 || .538 || 11 || 14 || .786 || 12.9 || 1.6 || 3.6
+|-
+|{{sortname|Scottie|Pippen}} || 8 || 3 || 28 || 47 || .596 || 5 || 13 || .385 || 11 || 15 || .733 || 9.0 || 2.1 || 5.9
+|-
+|{{sortname|David|Robinson|dab=basketball}} || 8 || 4 || 27 || 47 || .574 || 0 || 0 || .000 || 18 || 26 || .692 || 9.0 || 4.1 || 0.9
+|-
+|{{sortname|John|Stockton}} || 4 || 0 || 4 || 8 || .500 || 1 || 2 || .500 || 2 || 3 || .667 || 2.8 || 0.3 || 2.0
+|-
+|}
+
+==See also==
+{{Portal|Sports|Olympic Games}}
+*[[Team USA Basketball (video game)|''Team USA Basketball'' (video game)]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{reflist}}
+
+==External links==
+*[https://www.fiba.basketball/en/history/320-mens-olympic-basketball-tournament/2539/teams/united-states-of-america#statistics Olympics statistics] at FIBA.com
+*[http://sportsillustrated.cnn.com/multimedia/photo_gallery/1001/dream.team.1992.classic.photos/content.1.html 1992 Dream Team: Classic Photos] {{Webarchive|url=https://web.archive.org/web/20140212014709/http://sportsillustrated.cnn.com/multimedia/photo_gallery/1001/dream.team.1992.classic.photos/content.1.html |date=February 12, 2014 }}
+
+{{United States men's national basketball team}}
+{{navboxes
+|titlestyle = background:#002B54; color:#FFFFFF; {{box-shadow border|a|#E31937|2px}}; 
+|list=
+{{Footer 1992 Olympic Champions Basketball Men}}
+{{Summer Olympics basketball tournament winners}}
+{{USA Basketball Male Athlete of the Year}}
+{{2010 Basketball HOF}}
+{{Basketball Hall of Fame}}
+{{FIBA Hall of Fame}}
+{{Michael Jordan}}
+}}
+
+[[Category:United States at the Olympic men's basketball tournament]]
+[[Category:Basketball at the 1992 Summer Olympics|United States]]
+[[Category:1992–93 in American basketball|Olympics]]
+[[Category:FIBA Hall of Fame inductees]]
+[[Category:Naismith Memorial Basketball Hall of Fame inductees]]

@@ -14,6 +14,7 @@ from mewcode.command.builtin_team import handle_team
 from mewcode.command.builtin_ui import (
     handle_clear,
     handle_compact,
+    handle_copy,
     handle_exit,
     handle_plan,
     handle_resume,
@@ -26,6 +27,7 @@ from mewcode.command.registry import Registry
 BUILTIN_COMMAND_NAMES = (
     "clear",
     "compact",
+    "copy",
     "do",
     "exit",
     "help",
@@ -49,6 +51,15 @@ def register_builtins(reg: Registry) -> None:
     # 名字/别名的冲突检测在 Registry.register 内完成，启动期即终止。
     reg.register(Command("clear", "清空当前会话并新建会话", Kind.UI, handle_clear))
     reg.register(Command("compact", "手动压缩上下文", Kind.UI, handle_compact))
+    reg.register(
+        Command(
+            "copy",
+            "把最近回复/整个屏幕复制到剪贴板",
+            Kind.LOCAL,  # 只读对话 + 写剪贴板：流式回答过程中也允许用
+            handle_copy,
+            accepts_args=True,
+        )
+    )
     reg.register(Command("do", "执行当前计划", Kind.PROMPT, handle_do))
     reg.register(Command("exit", "退出 MewCode", Kind.UI, handle_exit))
     reg.register(Command("help", "列出所有可用命令", Kind.LOCAL, make_help_handler(reg)))

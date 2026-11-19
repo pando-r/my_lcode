@@ -79,6 +79,54 @@ pipx upgrade mewcode        # 或 pip install --user --upgrade <上面的地址>
 - 启动时支持多 provider 选择（方向键列表）。
 - 响应计时（"Imagining… (Ns)"）与可恢复的错误反馈。
 - 多行输入：`Alt+Enter` 换行，`Enter` 提交；`/exit` 或 `Ctrl+C` 退出。
+- 输出可鼠标拖选，`Ctrl+C` 复制到系统剪贴板；`/copy` 一键复制最近回复或整屏。
+
+## 复制文本
+
+对话区的输出（含网址、代码块）可以直接复制出来：
+
+| 操作 | 效果 |
+| --- | --- |
+| 鼠标拖选 → `Ctrl+C` | 复制选中文本（中文/emoji 按显示宽度对齐，不会切半） |
+| 双击某个组件 / 三击整块 | Textual 原生全选，再 `Ctrl+C` |
+| `/copy` | 复制最近一条助手回复 |
+| `/copy all` | 复制整个屏幕的纯文本 |
+| `/copy code` | 复制最近回复里的所有代码块内容 |
+
+已经选中文本时，空闲状态下的 `Ctrl+C` 是"复制"（复制后选区自动清掉，再按一次才是退出）；
+回答仍在流式输出或等待审批时，`Ctrl+C` 仍然优先中断本轮，避免手滑丢回答。
+
+复制同时走两条路：Textual 的 OSC 52（SSH / 远程终端也有效）＋ 平台原生剪贴板
+（Windows `CF_UNICODETEXT`、macOS `pbcopy`、Linux `wl-copy`/`xclip`/`xsel`）。
+终端不支持 OSC 52 时靠后者兜底，失败也只是静默降级，不影响对话。
+
+> tmux 里想用 OSC 52 需要在 `~/.tmux.conf` 打开 `set -g set-clipboard on`；
+> 原生剪贴板路径在本地终端里不需要任何配置。
+
+## 网页搜索（MCP）
+
+mewcode 自带一个零依赖的 MCP server `mewcode.mcp_servers.web_search`：cli 启动时按
+`.mewcode.yaml` 的配置以 stdio 方式拉起它，把 `search_web` 工具注册进工具表
+（完整工具名 `mcp__web__search_web`）。
+
+```yaml
+# .mewcode.yaml
+mcp_servers:
+  web:
+    type: stdio
+    command: "${MEWCODE_PYTHON}"          # cli 注入 = 当前运行 mewcode 的解释器
+    args: ["-m", "mewcode.mcp_servers.web_search"]
+```
+
+- 后端直接解析 DuckDuckGo 的结果页，**不需要 API key**；html 端点被拦或改版时自动退回
+  lite 端点，两个端点用同一个解析器（按文档顺序配对标题与摘要）。
+- 参数：`query`（支持 `site:` 等语法）、`max_results`（1–10，默认 5）；返回标题 / URL / 摘要。
+- 工具声明了 `read_only_hint`，因此按 READ 类处理：Plan 模式下也可用、可与其它只读调用并发，
+  后台子 Agent 同样适用（`mcp__` 前缀本来就在后台白名单里）。
+- 配置里的 `${VAR}` 不只作用于 `env` / `headers`，`command` 与 `args` 也会展开，所以换解释器、
+  换脚本路径都不用把绝对路径写死。
+- 想换成搜索质量更好的 Tavily 之类，按同样格式再加一个 `type: http` 的 server 即可，
+  合并规则（项目级覆盖用户级）不变。
 
 ## Skill 系统
 

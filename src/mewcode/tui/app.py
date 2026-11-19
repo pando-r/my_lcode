@@ -15,7 +15,7 @@ from textual import events
 from textual.app import App, ComposeResult
 from textual.containers import Horizontal
 from textual.timer import Timer
-from textual.widgets import OptionList, RichLog, Static
+from textual.widgets import OptionList, Static
 
 from mewcode import coordinator
 from mewcode.agent import Agent, ApprovalRequest, Phase
@@ -34,8 +34,10 @@ from mewcode.task import Manager as TaskManager
 from mewcode.tool import Registry
 from mewcode.tool.ctx import with_cwd
 from mewcode.tool.filter import TEAM_ONLY_TOOLS
+from mewcode.tui.clipboard import set_clipboard
 from mewcode.tui.commands import CommandMixin
 from mewcode.tui.complete import CompletionMenu, CompletionMixin
+from mewcode.tui.logview import LogView
 from mewcode.tui.resume import (
     begin_resume,
     handle_resume_key,
@@ -247,7 +249,7 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
     # ── composition ──────────────────────────────────────────────────────
 
     def compose(self) -> ComposeResult:
-        yield RichLog(id="log", wrap=True, markup=True, highlight=True)
+        yield LogView(id="log", wrap=True, markup=True, highlight=True)
         yield Static("", id="streaming")
         yield Static("", id="resume-query")
         yield OptionList(id="select")
@@ -258,7 +260,7 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
         yield Static("", id="statusbar")
 
     async def on_mount(self) -> None:
-        log = self.query_one("#log", RichLog)
+        log = self.query_one("#log", LogView)
         log.write(Text(render_banner(self._version, self.workspace)))
 
         if self.task_mgr is not None:
@@ -345,9 +347,12 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
         key = event.key
         if key == "ctrl+c":
             if self.state in (SessionState.STREAMING, SessionState.APPROVING):
+                # 正在回答/等待审批时，Ctrl+C 永远是"中断"，避免手滑丢内容。
                 self._cancel_turn()
-            else:
-                await self.action_quit()
+                return
+            if self._copy_selected_text():
+                return
+            await self.action_quit()
             return
         if self.state is SessionState.RESUMING:
             handle_resume_key(self, event)
@@ -360,7 +365,7 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
             if self.state is SessionState.IDLE:
                 self._mode = Mode((int(self._mode) + 1) % 4)
                 self._update_statusbar()
-                self.query_one("#log", RichLog).write(
+                self.query_one("#log", LogView).write(
                     Text(f"已切换到 {self._mode} 权限模式", style="dim")
                 )
             return
@@ -482,6 +487,41 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
             )
         )
 
+    # ── clipboard ────────────────────────────────────────────────────────
+
+    def copy_text(self, text: str) -> None:
+        # 双保险：OSC 52 覆盖 SSH/远程终端，平台原生写入覆盖屏蔽 OSC 52 的终端。
+        if not text:
+            return
+        self.copy_to_clipboard(text)
+        set_clipboard(text)
+
+    def _copy_selected_text(self) -> bool:
+        # 返回 True 表示这次 Ctrl+C 被当作"复制"消费掉了。
+        try:
+            text = self.screen.get_selected_text()
+        except Exception:  # noqa: BLE001 - 选区状态异常不该阻断按键
+            return False
+        if not text:
+            return False
+        self.copy_text(text)
+        try:
+            self.notify(f"已复制 {len(text)} 字符", timeout=2)
+        except Exception:  # noqa: BLE001 - 通知失败不影响复制
+            pass
+        # 复制后清掉选区：下一次 Ctrl+C 仍能中断/退出，不会一直"只复制"。
+        self.clear_selection()
+        return True
+
+    def last_assistant_message(self) -> str:
+        # 流式输出的内容还没落进 conv，优先返回它，这样回答到一半也能复制。
+        if self.cur_reply.strip():
+            return self.cur_reply
+        for msg in reversed(self.conv.messages()):
+            if msg.role == "assistant" and msg.content:
+                return msg.content
+        return ""
+
     # ── input submission ─────────────────────────────────────────────────
 
     async def on_chat_input_submitted(self, event: ChatInput.Submitted) -> None:
@@ -506,7 +546,7 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
         if pre.blocked:
             name = pre.blocking_hook_name
             reason = pre.reason or "blocked"
-            self.query_one("#log", RichLog).write(error_block(f"[hook {name}] {reason}"))
+            self.query_one("#log", LogView).write(error_block(f"[hook {name}] {reason}"))
             return
         await self._start_turn(text)
 
@@ -520,11 +560,11 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
         await self._start_turn(EXECUTE_DIRECTIVE)
 
     def notify_system(self, text: str) -> None:
-        self.query_one("#log", RichLog).write(Text(text, style="dim"))
+        self.query_one("#log", LogView).write(Text(text, style="dim"))
 
     async def _start_turn(self, user_text: str) -> None:
         self.conv.add_user(user_text)
-        self.query_one("#log", RichLog).write(user_block(user_text))
+        self.query_one("#log", LogView).write(user_block(user_text))
         self.query_one("#input", ChatInput).load_text("")
 
         self.cur_reply = ""
@@ -613,7 +653,7 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
                         self._usage_out += ev.usage.output
                         self._update_statusbar()
                     if ev.notice:
-                        self.query_one("#log", RichLog).write(Text(ev.notice, style="dim"))
+                        self.query_one("#log", LogView).write(Text(ev.notice, style="dim"))
                     if ev.iter > 0:
                         self.iter = ev.iter
                     if ev.text:
@@ -635,7 +675,7 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
             self.cur_tools.append(ToolDisplay(name=tool_event.name, args=tool_event.args))
             self._refresh_streaming_view()
         else:
-            log = self.query_one("#log", RichLog)
+            log = self.query_one("#log", LogView)
             if self.cur_tools:
                 display = self.cur_tools.pop(0)
             else:
@@ -646,19 +686,19 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
 
     def _commit_preamble(self) -> None:
         if self.cur_reply:
-            self.query_one("#log", RichLog).write(render_markdown(self.cur_reply))
+            self.query_one("#log", LogView).write(render_markdown(self.cur_reply))
             self.cur_reply = ""
 
     def _commit_final(self) -> None:
         elapsed = time.monotonic() - self.turn_start
-        log = self.query_one("#log", RichLog)
+        log = self.query_one("#log", LogView)
         if self.cur_reply:
             log.write(render_markdown(self.cur_reply))
         log.write(Text(f"· {elapsed:.1f}s", style="dim"))
         self._reset_after_turn()
 
     def _finish_with_error(self, err: Exception) -> None:
-        self.query_one("#log", RichLog).write(error_block(err))
+        self.query_one("#log", LogView).write(error_block(err))
         self._reset_after_turn()
 
     def _reset_after_turn(self) -> None:
@@ -688,7 +728,7 @@ class MewCodeApp(CompletionMixin, CommandMixin, App):
 
     def _redraw_conversation(self) -> None:
         # 恢复会话后重绘最近的历史（只显示最近 30 条，避免刷屏）。
-        log = self.query_one("#log", RichLog)
+        log = self.query_one("#log", LogView)
         log.clear()
         log.write(Text(render_banner(self._version, self.workspace)))
         messages = self.conv.messages()

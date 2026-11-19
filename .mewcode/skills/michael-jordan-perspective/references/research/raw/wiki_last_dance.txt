@@ -1,0 +1,572 @@
+SOURCE: https://en.wikipedia.org/w/index.php?title=The_Last_Dance_(miniseries)&action=raw
+
+{{short description|2020 sports documentary miniseries}}
+{{Use American English|date=April 2020}}
+{{Use mdy dates|date=April 2020}}
+{{Infobox television
+| image              = The Last Dance 2020.jpg
+| caption            = Promotional poster
+| genre              = Television documentary<ref name="chicagotribune">{{cite news |last1=Rosenthal |first1=Phil |title=ESPN offers a peek at their '30 for 30' documentary on Dennis Rodman: 'A much more complex and nuanced picture emerges' |url=https://www.chicagotribune.com/sports/bulls/ct-bulls-espn-dennis-rodman-20190815-ae3a5lhsafax3fmxrco7pma55y-story.html |access-date=January 4, 2020 |publisher=[[Chicago Tribune]] |date=August 15, 2019 |archive-url=https://web.archive.org/web/20191202073630/https://www.chicagotribune.com/sports/bulls/ct-bulls-espn-dennis-rodman-20190815-ae3a5lhsafax3fmxrco7pma55y-story.html |archive-date=December 2, 2019 |url-status=live}}</ref><br />[[Miniseries]]
+| creator            =
+| developer          = 
+| writer             = 
+| story              = 
+| director           = [[Jason Hehir]]<ref name="SI">{{cite news |last1=Chavez |first1=Chris |title=ESPN's Latest Trailer for 'The Last Dance' Features Michael Jordan, Bulls Legends, President Obama |url=https://www.si.com/nba/2019/12/24/espn-last-dance-documentary-trailer-michael-jordan-chicago-bulls-1997-1998 |access-date=January 4, 2020 |publisher=[[Sports Illustrated]] |date=December 24, 2019 |archive-url=https://web.archive.org/web/20200209112620/https://www.si.com/nba/2019/12/24/espn-last-dance-documentary-trailer-michael-jordan-chicago-bulls-1997-1998 |archive-date=February 9, 2020 |url-status=live}}</ref>
+| creative_director  = 
+| presenter          = 
+| starring           = 
+| judges             = 
+| voices             = 
+| narrator           = 
+| country            = United States
+| language           = English
+| num_seasons        = 1
+| num_episodes       = 10
+| list_episodes      = 
+| executive_producer = 
+| producer           = {{Plainlist|
+* [[Michael Tollin]]
+* [[Jon Weinbach]]
+* [[Peter Guber]]
+* Curtis Polk
+* Estee Portnoy
+* Andy Thompson
+* Gregg Winik
+* Connor Schell
+* John Dahl
+* Jason Hehir
+* Nina Krstic
+* Matt Maxson
+* Jacob Rogal
+}}
+| cinematography     = {{Plainlist|
+* Thomas McCallum
+* Vincent Guglielmina
+* Michael Winik
+* Peter Winik
+}}
+| editor             = {{Plainlist|
+* Chad Beck
+* Devin Concannon
+* Abhay Sofsky
+* Ben Sozanski
+}}
+| composer           = Thomas Caffey
+| camera             = Single-camera
+| runtime            = 48–50 minutes
+| company            = {{Plainlist|
+* [[ESPN Films]]
+* [[Netflix]]
+* [[Mandalay Sports Entertainment|Mandalay Sports Media]]
+*[[Jump 23]]
+* [[NBA Entertainment]]
+}}
+| network            = [[ESPN]]
+| first_aired        = {{Start date|2020|04|19}}
+| last_aired         = {{End date|2020|05|17}}
+| related            =  
+}}
+
+'''''The Last Dance''''' is a 2020 American [[sports film|sports]] [[television documentary]] miniseries co-produced by [[ESPN Films]] and [[Netflix]]. Directed by [[Jason Hehir]], the series revolves around [[Michael Jordan]]'s career, with particular focus on the [[1997–98 Chicago Bulls season|1997–98 season]], his final season with the [[Chicago Bulls]]. The series features exclusive footage from a film crew with an all-access pass to the Bulls, and interviews of many [[National Basketball Association|NBA]] personalities, including Jordan's teammates ([[Scottie Pippen]], [[Dennis Rodman]], [[Steve Kerr]]) and then-Bulls head coach [[Phil Jackson]].
+
+''The Last Dance'' aired on [[ESPN]] from April 19 to May 17, 2020, in the United States, while its episodes were released on Netflix internationally the day after their American airings; beginning on May 23, two episodes were aired back-to-back on ESPN's corporate partner [[American Broadcasting Company|ABC]]. [[ESPN2]] aired an alternate version of the series intended for family viewing, which removed most of the profanity heard in the episodes. The series became available on Netflix in the United States on July 19, 2020.
+
+The series was met with critical acclaim, with praise for its directing and editing, and also for the timing of the release—during the initial weeks of [[quarantine]] during the [[COVID-19 pandemic]] when viewers were struggling to find entertainment.<ref>{{cite web| url = https://www.espn.com/nba/story/_/id/28973557/the-last-dance-updates-untold-story-michael-jordan-chicago-bulls%3fplatform=amp| title = 'The Last Dance' - The untold story of Michael Jordan's Chicago Bulls| date = May 19, 2020| access-date = August 3, 2020| archive-date = August 12, 2020| archive-url = https://web.archive.org/web/20200812204713/https://www.espn.com/nba/story/_/id/28973557/the-last-dance-updates-untold-story-michael-jordan-chicago-bulls?platform=amp| url-status = live}}</ref><ref>{{cite web| url = https://time.com/5820473/michael-jordan-the-last-dance-espn/| title = ESPN's New Michael Jordan Documentary Is Exactly What We Need Right Now. Here's How They Made It| date = April 14, 2020| access-date = January 2, 2024| archive-date = February 23, 2024| archive-url = https://web.archive.org/web/20240223013813/https://time.com/5820473/michael-jordan-the-last-dance-espn/| url-status = live}}</ref> ''The Last Dance'' won the [[Primetime Emmy Award for Outstanding Documentary or Nonfiction Series]] at the [[72nd Primetime Emmy Awards]].
+
+However, ''The Last Dance'' received heavy criticism from many of Jordan’s former Bulls teammates, who disputed the series's accuracy and focus on Jordan. Much of the hostility stemmed from the expectation that the documentary would center exclusively on the 1997–98 Bulls season rather than be an account of Jordan's life and career. The series's creators were also accused of portraying multiple key players of that era in an unfairly negative fashion while being excessively deferential to Jordan.<ref name="insider.com">{{cite web |url=https://www.insider.com/michael-jordan-ex-bulls-teammates-unhappy-with-the-last-dance-2020-5/| title ='The Last Dance' is over, and now Michael Jordan's ex-teammates are lining up to bash the documentary| website =[[Insider.com]]}}</ref>
+
+== Synopsis ==
+The docuseries gives an account of [[Michael Jordan]]'s career and the [[Chicago Bulls]], using never-before aired footage from the [[1997–98 Chicago Bulls season|1997–98 Bulls season]], his final season with the team.<ref name="espnpressrelease">{{cite press release |last=Christie |first=Jennifer |date=May 18, 2018 |title=ESPN Films, Netflix Announce Multi-Part Documentary The Last Dance featuring Michael Jordan |url=https://espnpressroom.com/us/press-releases/2018/05/espn-films-and-netflix-announce-multi-part-documentary-the-last-dance-featuring-michael-jordan/ |location=New York, New York |publisher=[[ESPN]] |access-date=January 4, 2020 |archive-url=https://web.archive.org/web/20191121121814/https://espnpressroom.com/us/press-releases/2018/05/espn-films-and-netflix-announce-multi-part-documentary-the-last-dance-featuring-michael-jordan/ |archive-date=November 21, 2019 |url-status=live}}</ref>
+
+==Interviews==
+This is the list of the 90 persons interviewed for the documentary, listed by air time.<ref>{{cite web |url=https://hoopshype.com/2020/05/19/michael-jordan-documentary-interviews/ |title=Who got the most air time in the Michael Jordan documentary? |date=May 19, 2020 |website=HoopsHype |access-date=August 27, 2026 |archive-url=https://web.archive.org/web/20200521184151/https://hoopshype.com/2020/05/19/michael-jordan-documentary-interviews/ |archive-date=May 21, 2020 |url-status=live}}</ref>
+{{columns-list|colwidth=15em|
+*[[Michael Jordan]]
+*[[Steve Kerr]]
+*[[Phil Jackson]]
+*[[Scottie Pippen]]
+*[[Jerry Reinsdorf]]
+*[[David Aldridge]]
+*[[Dennis Rodman]]
+*[[B. J. Armstrong]]
+*Mark Vancil
+*[[Reggie Miller]]
+*[[Michael Wilbon]]
+*[[Andrea Kremer]]
+*[[John Paxson]]
+*[[Sam Smith (sportswriter)|Sam Smith]]
+*[[Horace Grant]]
+*[[Rick Telander]]
+*[[Ahmad Rashad]]
+*[[Tim Grover]]
+*[[Rod Thorn]]
+*Deloris Jordan
+*[[Bill Wennington]]
+*[[Doug Collins (basketball)|Doug Collins]]
+*[[David Falk]]
+*[[Isiah Thomas]]
+*[[Magic Johnson]]
+*[[Toni Kukoč]]
+*[[Will Perdue]]
+*[[Barack Obama]] (as former Chicago resident)
+*[[J. A. Adande]]
+*George Koehler
+*Brian McIntyre
+*[[Bob Costas]]
+*[[Todd Boyd]]
+*[[Larry Bird]]
+*[[John Salley]]
+*[[Gary Payton]]
+*[[David Stern]]
+*Ann Kerr
+*[[James Worthy]]
+*Joe O'Neil
+*Roy Johnson
+*Chip Schaefer
+*[[Kobe Bryant]]
+*Tim Hallam
+*[[Jalen Rose]]
+*[[Charley Rosen]]
+*[[Charles Barkley]]
+*[[John Stockton]]
+*[[Roy Williams (basketball coach)|Roy Williams]]
+*Tisher Lett
+*[[Willow Bay]]
+*[[Carmen Electra]]
+*[[Bill Cartwright]]
+*[[Jud Buechler]]
+*[[Jim Stack]]
+*[[Mike Barnett (baseball)|Mike Barnett]]
+*[[Scott Burrell]]
+*[[Terry Francona]]
+*[[Brendan Malone]]
+*[[Danny Ainge]]
+*Howard White
+*Melissa Isaacson
+*Ronnie Martin
+*[[Rod Higgins]]
+*[[Glen Rice]]
+*[[Patrick Ewing]]
+*Ronnie Jordan
+*[[Hannah Storm]]
+*Steve East
+*[[Larry Jordan (basketball)|Larry Jordan]]
+*Billy Pippen
+*Fred Lynch
+*[[Buzz Peterson]]
+*[[Sidney Moncrief]]
+*[[Nas]]
+*[[Ron Harper]]
+*[[John A. Hefferon]]
+*[[Bill Clinton]] (as former Arkansas Governor)
+*[[Pat Riley]]
+*[[Adam Silver]]
+*[[Marcus Jordan]]
+*[[Joe Kleine]]
+*[[Charles Oakley]]
+*Jasmine Jordan
+*[[Justin Timberlake]]
+*[[Billy Packer]]
+*Ron Coley
+*[[Joe Pytka]]
+*[[Kevin Loughery]]
+*[[Jeffrey Jordan]]
+}}
+
+==Episodes==
+{{Episode table |show_caption=y |caption=Episodes of ''The Last Dance'' |background=8B0000 |overall=5 |title=23 |director=20 |airdate=18 |airdateR=<ref name="NBA.com" /> |viewers=10 |country=U.S. |episodes={{Episode list
+ |EpisodeNumber   = 1
+ |Title           = Episode I
+ |DirectedBy      = [[Jason Hehir]]
+ |OriginalAirDate = {{Start date|2020|4|19}}
+ |ShortSummary    = Flashbacks chronicle Michael Jordan's [[North Carolina Tar Heels men's basketball|college]] and early NBA days. The Bulls make a [[1997 McDonald's Championship|preseason trip]] to [[Paris]] amid tension with GM [[Jerry Krause]].
+ |LineColor       = 8B0000
+ |Viewers         = 5.73<ref name="Ep1&2" />
+}}
+{{Episode list
+ |EpisodeNumber   = 2
+ |Title           = Episode II
+ |DirectedBy      = Jason Hehir
+ |OriginalAirDate = {{Start date|2020|4|19}}
+ |ShortSummary    = [[Scottie Pippen]] rises to become one of the NBA's best players. An injury early in Jordan's career shows distrust with Bulls management.
+ |LineColor       = 8B0000
+ |Viewers         = 5.12<ref name="Ep1&2" />
+}}
+{{Episode list
+ |EpisodeNumber   = 3
+ |Title          = Episode III
+ |DirectedBy      = Jason Hehir 
+ |OriginalAirDate = {{Start date|2020|4|26}}
+ |ShortSummary    = [[Dennis Rodman]]'s attitude and energy help the team win, but bring the drama off the court. The Bulls struggle to overcome the [[Detroit Pistons|Pistons]] in the late '80s.
+ |LineColor       = 8B0000
+ |Viewers         = 5.31<ref name="Ep3&4"/>
+}}
+{{Episode list
+ |EpisodeNumber   = 4
+ |Title           = Episode IV
+ |DirectedBy      = Jason Hehir
+ |OriginalAirDate = {{Start date|2020|4|26}}
+ |ShortSummary    = [[Phil Jackson]]'s unique philosophy and demeanor take the Bulls to the next level. The team finally gets past Detroit and earns a shot at an NBA title, which is a [[1991 NBA Finals|dream matchup]] against [[Magic Johnson]] and the [[1990–91 Los Angeles Lakers season|Lakers]].
+ |LineColor       = 8B0000
+ |Viewers         = 4.86<ref name="Ep3&4"/>
+}}
+{{Episode list
+ |EpisodeNumber   = 5
+ |Title           = Episode V
+ |DirectedBy      = Jason Hehir
+ |OriginalAirDate = {{Start date|2020|5|3}}
+ |ShortSummary    = From [[Air Jordan]] and [[Be Like Mike]] to the [[1992 NBA Finals]] and the [[1992 United States men's Olympic basketball team|Olympic dream team]], Jordan becomes a global cultural icon unlike any other.<br> This episode was dedicated to [[Kobe Bryant]] as he was featured in the 1998 All-Star game. He [[2020 Calabasas helicopter crash|died in January 2020]].
+ |LineColor       = 8B0000
+ |Viewers         = 4.91<ref name="Ep5&6" />
+}}
+{{Episode list
+ |EpisodeNumber   = 6
+ |Title           = Episode VI
+ |DirectedBy      = Jason Hehir
+ |OriginalAirDate = {{Start date|2020|5|3}}
+ |ShortSummary    = A [[The Jordan Rules (book)|revealing book]] and scrutiny of his gambling put a dent in Jordan's reputation, but he remains focused on winning a third straight title in [[1993 NBA Finals|1993]]. 
+ |LineColor       = 8B0000
+ |Viewers         = 4.44<ref name="Ep5&6" />
+}}
+{{Episode list
+ |EpisodeNumber   = 7
+ |Title           = Episode VII
+ |DirectedBy      = Jason Hehir
+ |OriginalAirDate = {{Start date|2020|5|10}}
+ |ShortSummary    = Crushed by the death of [[James R. Jordan Sr.|his father]], a mentally exhausted Jordan retires in 1993 – to play baseball. The Bulls move on with Pippen in the lead role.
+ |LineColor       = 8B0000
+ |Viewers         = 4.41<ref name="Ep7&8" />
+}}     
+{{Episode list
+ |EpisodeNumber   = 8
+ |Title           = Episode VIII
+ |DirectedBy      = Jason Hehir
+ |OriginalAirDate = {{Start date|2020|5|10}}
+ |ShortSummary    = Jordan's [[1994–95 Chicago Bulls season|return]] energizes the Bulls, the city and the NBA, but a playoff loss in 1995 fuels him to work harder than ever to get back on top; this is rewarded with their fourth NBA championship over [[1995–96 Seattle SuperSonics season|Seattle]] in [[1996 NBA Finals|1996]], after a record-breaking [[1995–96 Chicago Bulls season|72-win season]].
+ |LineColor       = 8B0000
+ |Viewers         = 4.16<ref name="Ep7&8" />
+}}
+{{Episode list
+ |EpisodeNumber   = 9
+ |Title           = Episode IX
+ |DirectedBy      = Jason Hehir
+ |OriginalAirDate = {{Start date|2020|5|17}}
+ |ShortSummary    = The Bulls face stiff challenges to their reign in [[1996–97 Chicago Bulls season|1997]] against [[1996–97 Utah Jazz season|Utah]] and in [[1997–98 Chicago Bulls season|1998]] versus [[1997–98 Indiana Pacers season|Indiana]]. Role player [[Steve Kerr]] makes his mark on the dynasty. Jordan struggles as his bodyguard [[Gus Lett]] is diagnosed with cancer.
+ |LineColor       = 8B0000
+ |Viewers         = 5.02<ref name="Ep9&10" />
+}}     
+{{Episode list
+ |EpisodeNumber   = 10
+ |Title           = Episode X
+ |DirectedBy      = Jason Hehir
+ |OriginalAirDate = {{Start date|2020|5|17}}
+ |ShortSummary    = Battered and exhausted, the Bulls [[Game 6 of the 1998 NBA Finals|conclude]] their "Last Dance" with [[1998 NBA Finals|a sixth championship]]. Jordan, Jackson, and others reflect on the end of their dynasty.
+ |LineColor       = 8B0000
+ |Viewers         = 4.59<ref name="Ep9&10" />
+}}
+}}
+
+==Production and release==
+''The Last Dance'' features interviews and never-released footage from the [[1997–98 Chicago Bulls season]]. Over 500 hours of all-access footage was filmed and used to create the 10-part documentary series. According to [[Adam Silver]] (now NBA Commissioner, but then the head of NBA Entertainment), Jordan allowed the filming with the agreement that the footage would only be used with his direct permission. After many years, and many refusals from Jordan, he agreed in 2016 to a documentary proposal from Mike Tollin.<ref name="shelburne">{{cite web |title=An all-access Michael Jordan documentary? How 'The Last Dance' was made possible |url=http://www.espn.com/nba/story/_/id/29044827/an-all-access-michael-jordan-documentary-how-last-dance-was-made-possible |first=Ramona |last=Shelburne |date=April 18, 2020|access-date=April 20, 2020|archive-url=https://web.archive.org/web/20200420181610/https://www.espn.com/nba/story/_/id/29044827/an-all-access-michael-jordan-documentary-how-last-dance-was-made-possible|archive-date=April 20, 2020|url-status=live}}</ref>
+
+[[ESPN]] and [[Netflix]] announced their joint production of the 10-part documentary series in May 2018,<ref name="espnpressrelease" /> with the official teaser trailer being released on December 25, 2018.<ref name="complex2018">{{cite news |last1=Espinosa |first1=Joshua |title=Here's the Thrilling New Trailer for ESPN's Michael Jordan Documentary 'The Last Dance' |url=https://www.complex.com/sports/2018/12/michael-jordan-last-dance-documentary-trailer |access-date=January 4, 2020 |publisher=[[Complex (magazine)|Complex]] |date=December 25, 2018 |archive-url=https://web.archive.org/web/20181227131640/https://www.complex.com/sports/2018/12/michael-jordan-last-dance-documentary-trailer |archive-date=December 27, 2018 |url-status=live}}</ref><ref name="espnfirsttrailer">{{cite tweet |user=ESPNNBA |number=1077434223689113600 |date=December 25, 2018 |title=Cannot. Wait.}}</ref> The release date was pushed back to June 2020 after another trailer was released in December 2019.<ref name="complex2019">{{cite news |last1=Tigg |first1=FNR |title=Latest Trailer for Michael Jordan Doc 'The Last Dance' Features Barack Obama, Nas and More |url=https://www.complex.com/sports/2019/12/michael-jordan-documentary-the-last-dance-trailer |access-date=January 4, 2020 |publisher=[[Complex (magazine)|Complex]] |date=December 24, 2019 |archive-url=https://web.archive.org/web/20191225174301/https://www.complex.com/sports/2019/12/michael-jordan-documentary-the-last-dance-trailer |archive-date=December 25, 2019 |url-status=live}}</ref><ref name="maxim">{{cite news |title=ESPN Documentary 'The Last Dance' About Michael Jordan and the Chicago Bulls, Gets a New Trailer |url=https://www.maxim.com/sports/the-last-dance-michael-jackson-bulls-documentary-2019-12 |access-date=January 4, 2020 |publisher=[[Maxim (magazine)|Maxim]] |date=December 24, 2019 |archive-url=https://web.archive.org/web/20191228080305/https://www.maxim.com/sports/the-last-dance-michael-jackson-bulls-documentary-2019-12 |archive-date=December 28, 2019 |url-status=live}}</ref> However, because of the impact of the [[COVID-19 pandemic]], ESPN released the final trailer on March 31, 2020 and moved the premiere to April 19, 2020, releasing the following statement:<ref name="NBA.com">{{cite web |title='The Last Dance' documentary set to air April 19 on ESPN |url=https://www.nba.com/article/2020/03/31/last-dance-chicago-bulls-release-date-moved |access-date=March 31, 2020 |website=[[NBA.com]] |date=March 31, 2020 |archive-url=https://web.archive.org/web/20200331131255/https://www.nba.com/article/2020/03/31/last-dance-chicago-bulls-release-date-moved |archive-date=March 31, 2020 |url-status=live}}</ref>
+
+{{Blockquote|As society navigates this time without live sports, viewers are still looking to the sports world to escape and enjoy a collective experience. We've heard the calls from fans asking us to move up the release date for this series, and we’re happy to announce that we’ve been able to accelerate the production schedule to do just that. This project celebrates one of the greatest players and dynasties ever, and we hope it can serve as a unifying entertainment experience to fill the role that sports often play in our lives, telling a story that will captivate everyone, not just sports fans.}}
+
+The series was released weekly from April 19, 2020 to May 17, 2020, with two episodes airing each Sunday.<ref name="NBA.com" /> Outside of the United States, the episodes were released on [[Netflix]] the day after their ESPN airing.<ref name="NBA.com" /> [[ESPN2]] aired a censored version of the documentary alongside the ESPN broadcast.<ref>{{cite web |url=https://variety.com/2020/tv/news/espn-last-dance-michael-jordan-documentary-coronavirus-1234581163/ |title=ESPN Plans Two Versions of Much-Anticipated Michael Jordan Documentary (EXCLUSIVE) |last=Steinberg |first=Brian |website=[[Variety (magazine)|Variety]] |date=April 15, 2020 |access-date=April 21, 2020 |archive-url=https://web.archive.org/web/20200421034233/https://variety.com/2020/tv/news/espn-last-dance-michael-jordan-documentary-coronavirus-1234581163/|archive-date=April 21, 2020|url-status=live}}</ref> The censored version was also aired on ABC. Jordan made a $25 million donation to [[Friends of the Children]], a nonprofit organization, from funds raised based on the creation of the miniseries.<ref>{{cite news |last=Skiver |first=Kevin |title=Michael Jordan invests millions in Friends of the Children nonprofit to help break poverty cycle |url=https://www.cbssports.com/nba/news/michael-jordan-invests-millions-in-friends-of-the-children-nonprofit-to-help-break-poverty-cycle/ |work=CBS Sports |date=2 November 2018}}</ref>
+
+According to Hehir, Jordan refused to film interviews in his home to maintain privacy. The interviews were filmed in three houses, one rented by the production and two others which were homes of friends of the production.<ref>{{Cite web |last=Guerrasio |first=Jason |title=Michael Jordan refused to be filmed in his own home for 'The Last Dance' — here's where the basketball legend's interviews took place |url=https://www.insider.com/where-michael-jordan-was-interviewed-for-the-last-dance-house-2020-5 |access-date=2020-09-29 |website=Insider}}</ref> The fifth episode is dedicated to [[Kobe Bryant]], who died in a [[2020 Calabasas helicopter crash|helicopter crash]] on January 26, 2020. Bryant's interview was featured in the episode's opening.<ref>{{cite web |url=https://bleacherreport.com/articles/2889791-the-last-dance-episode-5-will-be-dedicated-to-kobe-bryant |title='The Last Dance' Episode 5 Will Be Dedicated to Kobe Bryant |last=Kasabian |first=Paul |website=[[Bleacher Report]] |date=May 2, 2020 |access-date=May 7, 2020 |archive-url=https://web.archive.org/web/20200502105258/https://bleacherreport.com/articles/2889791-the-last-dance-episode-5-will-be-dedicated-to-kobe-bryant |archive-date=May 2, 2020|url-status=live}}</ref>
+
+==Reception==
+===Critical response===
+On [[review aggregator]] [[Rotten Tomatoes]], the series holds an approval rating of 97% based on 62 reviews, with an average rating of 8.85/10. The website's critics consensus reads: "A compelling and comprehensive portrait of one of basketball's great teams, ''The Last Dance''{{'}}s blend of archival footage and candid interviews confirms there's nobody quite like Mike or the team he led to victory."<ref>{{cite web |url=https://www.rottentomatoes.com/tv/the_last_dance/s01 |title=The Last Dance (2020) |publisher=[[Fandango Media]] |website=[[Rotten Tomatoes]] |access-date=June 19, 2020 |archive-url=https://web.archive.org/web/20200420185453/https://www.rottentomatoes.com/tv/the_last_dance/s01 |archive-date=April 20, 2020 |url-status=live}}</ref> [[Metacritic]], which uses a weighted average, assigned the series a score of 91 out of 100 based on 12 critics, indicating "universal acclaim".<ref>{{cite web |url=https://www.metacritic.com/tv/the-last-dance |title=The Last Dance (2020) |publisher=[[CBS]] |website=[[Metacritic]] |access-date=June 19, 2020 |archive-url=https://web.archive.org/web/20200420185435/https://www.metacritic.com/tv/the-last-dance |archive-date=April 20, 2020 |url-status=live}}</ref>
+
+Writing for ''[[Consequence of Sound]]'', Robert Daniels gave ''The Last Dance'' a perfect score, calling the series "beautifully composed and edited together" and a "pulsating celebration of greatness."<ref>{{cite web |last=Daniels |first=Robert |url=https://consequence.net/2020/04/tv-review-the-last-dance-michael-jordan/ |title=TV Review: Michael Jordan Takes No Prisoners in ESPN's Incredible Docuseries The Last Dance |website=[[Consequence of Sound]] |date=April 18, 2020 |access-date=May 15, 2020 |archive-url=https://web.archive.org/web/20200422162307/https://consequenceofsound.net/2020/04/tv-review-the-last-dance-michael-jordan/ |archive-date=April 22, 2020 |url-status=live}}</ref> Similarly, Alex Pattle of ''[[The Independent]]'' praised director Jason Hehir, writing that "Hehir's fear of being formulaic fosters a compelling freshness, and his ability to subtly segue between tones ensures Jordan's auras of magnetism and intensity are highlighted at the appropriate moments",<ref>{{cite web |last=Pattle |first=Alex |url=https://www.independent.co.uk/arts-entertainment/tv/reviews/michael-jordan-documentary-the-last-dance-netflix-espn-series-release-date-a9470626.html |title=The Last Dance: Michael Jordan documentary is an enthralling piece of television |website=[[The Independent]] |date=April 20, 2020 |access-date=May 15, 2020 |archive-url=https://web.archive.org/web/20200420203644/https://www.independent.co.uk/arts-entertainment/tv/reviews/michael-jordan-documentary-the-last-dance-netflix-espn-series-release-date-a9470626.html |archive-date=April 20, 2020 |url-status=live}}</ref> while Brian Lowry of [[CNN]] gave the series five stars out of five, saying that "it's a very, very deep dive, but for fans who will eat this stuff up, it hits all the right notes."<ref>{{cite web |last=Lowry |first=Brian |url=https://edition.cnn.com/2020/04/17/entertainment/the-last-dance-review/index.html |title='The Last Dance' hits the right notes with its look back at Michael Jordan and the Bulls |website=[[CNN]] |date=April 17, 2020 |access-date=May 15, 2020 |archive-url=https://web.archive.org/web/20200417182651/https://edition.cnn.com/2020/04/17/entertainment/the-last-dance-review/index.html |archive-date=April 17, 2020 |url-status=live}}</ref>
+
+The ''[[Chicago Sun-Times]]''{{'}}s [[Richard Roeper]] gave the series three and a half stars out of four, writing that "while some might question whether even one of the great team sports dynasties of all time merits such a lengthy treatment, if anything each episode left me wanting more. Not only were the Bulls a team for the ages, they also gave us a sports soap opera for the ages."<ref>{{cite web |last=Roeper |first=Richard |author-link=Richard Roeper |url=https://chicago.suntimes.com/2020/4/15/21220771/last-dance-review-bulls-documentary-michael-jordan-chicago-90s-dynasty |title='The Last Dance' captures the dominance and the drama of '90s Bulls dynasty |website=[[Chicago Sun-Times]] |date=April 15, 2020 |access-date=May 15, 2020 |archive-url=https://web.archive.org/web/20200415065341/https://chicago.suntimes.com/2020/4/15/21220771/last-dance-review-bulls-documentary-michael-jordan-chicago-90s-dynasty |archive-date=April 15, 2020 |url-status=live}}</ref> Daniel Fienberg of ''[[The Hollywood Reporter]]'' gave the series a positive review, writing that "it's a tremendously engaging, ridiculously fun assemblage of spectacular basketball footage and reasonably introspective interviews with almost everybody you'd hope to hear from on the subject."<ref>{{cite web |last=Fienberg |first=Daniel |url=https://www.hollywoodreporter.com/review/last-dance-review-1290260 |title='The Last Dance': TV Review |website=[[The Hollywood Reporter]] |date=April 14, 2020 |access-date=May 15, 2020 |archive-url=https://web.archive.org/web/20200415094939/https://www.hollywoodreporter.com/review/last-dance-review-1290260 |archive-date=April 15, 2020 |url-status=live}}</ref> Writing for ''[[The New York Times]]'', [[Wesley Morris]] wrote that "Hehir has this trick where any time someone says something debatable or controversial or simply worthy of running by [Michael] Jordan, he hands him an [[iPad]] and makes him watch what was said. And every time Hehir does it, Jordan turns the reaction into gold. He's an incredulous [[Zeus]] in these moments, lightning bolts falling from his toga as he laughs, zapping lesser gods."<ref>{{cite web |last=Morris |first=Wesley |author-link=Wesley Morris |url=https://www.nytimes.com/article/the-last-dance-jordan.html |title=In 'The Last Dance', Michael Jordan and the Bulls Still Dominate |website=[[The New York Times]] |date=April 19, 2020 |access-date=May 15, 2020 |archive-url=https://web.archive.org/web/20200419092058/https://www.nytimes.com/article/the-last-dance-jordan.html |archive-date=April 19, 2020 |url-status=live}}</ref>
+
+Conversely, filmmaker [[Ken Burns]] criticized Michael Jordan's involvement in the production of the series, saying that "if you are there influencing the very fact of it getting made, it means that certain aspects that you don't necessarily want in aren't going to be in [...] and that's not the way you do good journalism." Specifically, Burns pointed to Jordan's production company, Jump 23, being listed as a partner in the series.<ref>{{cite web |last=Moreau |first=Jordan |url=https://variety.com/2020/tv/news/ken-burns-michael-jordan-the-last-dance-1234594868/ |title=Ken Burns Slams Michael Jordan Doc 'Last Dance': 'Not the Way You Do Good Journalism' |website=[[Variety (magazine)|Variety]] |date=April 30, 2020 |access-date=May 15, 2020 |archive-url=https://web.archive.org/web/20200501030500/https://variety.com/2020/tv/news/ken-burns-michael-jordan-the-last-dance-1234594868/ |archive-date=May 1, 2020 |url-status=live}}</ref> Hehir would respond to such speculations stating "I ran into zero stop signs in the editorial process. Michael was involved, but in a distant satellite-level while making it. He never came close to the editing room and only received cuts as they were about to go on air. I think Michael is above the fray when it comes to what he wants in and out.”<ref>{{Cite web|url=https://nbcsportsgrouppressbox.com/2020/05/18/kevin-harvick-on-winning-nascars-return-race-shaquille-oneal-on-the-last-dance-quotes-from-todays-lunch-talk-live-with-mike-tirico-and-the-rich-eisen-s/|title=Kevin Harvick on Winning Nascar's Return Race; Shaquille O'neal on "The Last Dance" - Quotes from Today's Lunch Talk Live with Mike Tirico and the Rich Eisen Show on NBCSN|date=May 18, 2020|access-date=May 7, 2021|archive-date=June 20, 2023|archive-url=https://web.archive.org/web/20230620125135/https://nbcsportsgrouppressbox.com/2020/05/18/kevin-harvick-on-winning-nascars-return-race-shaquille-oneal-on-the-last-dance-quotes-from-todays-lunch-talk-live-with-mike-tirico-and-the-rich-eisen-s/|url-status=live}}</ref>
+
+===Criticism by former teammates===
+''The Last Dance'' drew positive reactions from active NBA players, impressed by Jordan's accomplishments, and thankful for the series providing much-needed entertainment in the initial [[quarantine]] period of the [[COVID-19 pandemic]].<ref>{{cite web |url=https://www.newsweek.com/last-dance-nba-twitter-reacts-michael-jordan-documentary-1498857 |title='The Last Dance': Best Twitter Reactions as NBA Players Praise 'Fantastic' Michael Jordan ESPN Documentary |last=Cancian |first=Dan |date=April 20, 2020 |website=[[Newsweek]] |access-date=May 20, 2020 |archive-date=June 1, 2020 |archive-url=https://web.archive.org/web/20200601201201/https://www.newsweek.com/last-dance-nba-twitter-reacts-michael-jordan-documentary-1498857 |url-status=live }}</ref> However, the other [[Chicago Bulls]] players on the Last Dance team who personally experienced all of the events that took place in the docu-series publicly disagreed with much of the docu-series' version of events, and placed the blame on Jordan for molding questionable narratives.<ref name="insider.com"/>
+
+[[Scottie Pippen]] was reportedly "wounded and disappointed" by his portrayal in the series, although he did not make any public remarks during the documentary's airing.<ref>{{cite web |url=https://www.espn.com/nba/story/_/id/29143858/dennis-rodman-defends-scottie-pippen-last-dance-criticism |title=Dennis Rodman defends Scottie Pippen from 'Last Dance' criticism |last=MacMullan |first=Jackie |date=May 7, 2020 |website=[[ESPN]] |access-date=May 20, 2020 |archive-date=June 9, 2020 |archive-url=https://web.archive.org/web/20200609132656/https://www.espn.com/nba/story/_/id/29143858/dennis-rodman-defends-scottie-pippen-last-dance-criticism |url-status=live }}</ref> Pippen later denied any rift between himself and Jordan over the documentary;<ref>{{cite web |url=https://www.theguardian.com/sport/2020/jul/28/scottie-pippen-michael-jordan-rift-denial-chicago-bulls-last-dance |title=Scottie Pippen denies The Last Dance caused a rift with Michael Jordan |date=July 28, 2020 |website=[[The Guardian]] |access-date=July 28, 2020}}</ref> however, he told Jordan he was not pleased with the docuseries and considered it to be "about Michael trying to uplift himself”.<ref>{{Cite web |date=2020-12-06 |title=Scottie Pippen: 'I told Michael Jordan I wasn't too pleased with The Last Dance' |url=http://www.theguardian.com/world/2020/dec/06/scottie-pippen-the-last-dance-michael-jordan-chicago-bulls-faces-of-2020 |access-date=2021-01-07 |website=the Guardian |language=en |archive-date=January 5, 2021 |archive-url=https://web.archive.org/web/20210105035237/https://www.theguardian.com/world/2020/dec/06/scottie-pippen-the-last-dance-michael-jordan-chicago-bulls-faces-of-2020 |url-status=live }}</ref>
+
+Pippen would go on to aggressively criticize Jordan in the following years. In 2021, he wrote an autobiography, ''Unguarded'', which gives his own perspective on the Bulls' dynasty. In the book, he is highly critical of Jordan, calling him selfish, hypocritical and insensitive.<ref>{{cite web |url=https://www.nytimes.com/2021/11/03/sports/basketball/scottie-pippen-unguarded-book-michael-jordan.html |title='Scottie Pippen Takes Aim at Michael Jordan in New Book |date=Nov 3, 2021 |website=[[The New York Times]] |access-date=December 20, 2021 |archive-date=December 15, 2021 |archive-url=https://web.archive.org/web/20211215205931/https://www.nytimes.com/2021/11/03/sports/basketball/scottie-pippen-unguarded-book-michael-jordan.html |url-status=live }}</ref> In other interviews, Pippen also stated that he thought [[Kobe Bryant]] and [[LeBron James]] were greater basketball players than Jordan,<ref>{{cite web |url=https://www.sportscasting.com/scottie-pippen-explains-why-kobe-bryant-was-better-than-michael-jordan/ |title=Scottie Pippen Explains Why Kobe Bryant Was Better Than Michael Jordan |date=July 11, 2020 |access-date=January 2, 2024 |archive-date=January 2, 2024 |archive-url=https://web.archive.org/web/20240102042339/https://www.sportscasting.com/scottie-pippen-explains-why-kobe-bryant-was-better-than-michael-jordan/ |url-status=live }}</ref><ref>{{cite magazine |last1=Nelson |first1=Cory |title=Former NBA Player Scottie Pippen Puts LeBron James Ahead of Michael Jordan In G.O.A.T. Debate |url=https://www.si.com/nba/heat/miami-news/former-nba-player-scottie-pippen-puts-lebron-james-ahead-of-michael-jordan-in-g-o-a-t-debate |magazine=Sports Illustrated |language=en |date=27 May 2023 |access-date=September 8, 2024 |archive-date=September 8, 2024 |archive-url=https://web.archive.org/web/20240908222845/https://www.si.com/nba/heat/miami-news/former-nba-player-scottie-pippen-puts-lebron-james-ahead-of-michael-jordan-in-g-o-a-t-debate |url-status=live }}</ref> and said that when Jordan first played for the Bulls, he was a “horrible” player and had poor shot selection.<ref>{{cite web |url=https://www.nbcnews.com/news/us-news/scottie-pippen-says-michael-jordan-was-horrible-play-chicago-bulls-foc-rcna86905 |title=Scottie Pippen says Michael Jordan was 'horrible to play with' on Chicago Bulls, more focused on scoring over winning |website=[[NBC News]] |date=May 30, 2023 |access-date=January 2, 2024 |archive-date=January 2, 2024 |archive-url=https://web.archive.org/web/20240102042338/https://www.nbcnews.com/news/us-news/scottie-pippen-says-michael-jordan-was-horrible-play-chicago-bulls-foc-rcna86905 |url-status=live }}</ref>
+ 
+[[Horace Grant]] said that ''The Last Dance'' was edited to favor Jordan, remarking that the series was "entertaining, but we know [...] that about 90% of it [was] BS in terms of the realness of it"; he also denied Jordan's accusation that Grant was the source for ''[[The Jordan Rules (book)|The Jordan Rules]]'' and agreed that Pippen was portrayed unfairly.<ref>{{cite web |url=https://www.theguardian.com/sport/2020/may/19/horace-grant-michael-jordan-the-last-dance-documentary-espn |title='Lie, lie, lie': Former Jordan teammate gives withering assessment of The Last Dance |date=May 19, 2020 |website=[[The Guardian]] |access-date=May 20, 2020 |archive-date=June 9, 2020 |archive-url=https://web.archive.org/web/20200609132529/https://www.theguardian.com/sport/2020/may/19/horace-grant-michael-jordan-the-last-dance-documentary-espn |url-status=live }}</ref>
+
+Grant also explained on [[Bill Cartwright]]'s podcast that he initially planned to decline the interview offer, as he was not a member of the Last Dance team. However, after much persistence by the production crew, Grant finally "reluctantly" conceded to interview because he wanted to reminisce about his days as an NBA star. He then said he took an outspoken stance about his disdain for the documentary because he wanted to defend his character and did not agree with the veracity of Jordan's version of events.<ref>{{cite web |url=https://www.youtube.com/watch?v=RPrwXEWePHw |title=The Bill Cartwright Show EP8: Horace Grant |website=[[YouTube]] |date=December 29, 2020 |access-date=January 2, 2024 |archive-date=January 2, 2024 |archive-url=https://web.archive.org/web/20240102042341/https://www.youtube.com/watch?v=RPrwXEWePHw |url-status=live }}</ref> Grant then doubled down on Jordan by expressing his frustrations about Jordan and the docu-series in a lengthy phone call with [[Shannon Sharpe]].<ref>{{cite web |url=https://www.youtube.com/watch?v=qquXZj38EbU |title=Shannon reveals what Horace Grant told him on the phone about Michael Jordan|website=[[YouTube]] |date=May 8, 2020 }}</ref>
+
+Cartwright, an assistant coach on the Last Dance team, and also the starting center on the Bulls’ first three-peat team, was reportedly unimpressed with the series, dismissing it as pure entertainment,<ref>{{cite web |url=https://www.youtube.com/watch?v=6UmL8fUnjDM |title=The Final Dance - Former Bulls React to The Last Dance - BetOnline.ag |website=[[YouTube]] |date=May 21, 2020 |access-date=January 2, 2024 |archive-date=January 2, 2024 |archive-url=https://web.archive.org/web/20240102042340/https://www.youtube.com/watch?v=6UmL8fUnjDM |url-status=live }}</ref> and said that the series was "really one guy's perspective of what happened."<ref>{{cite web |url=https://www.insider.com/michael-jordan-ex-bulls-teammates-unhappy-with-the-last-dance-2020-5 |title='The Last Dance' is over, and now Michael Jordan's ex-teammates are lining up to bash the documentary|website=[[Insider.com]] }}</ref> Cartwright also explained in another interview that Jordan had been framing an inaccurate image to the public, and called his play-acting “silly.”<ref>{{cite web |url=https://www.youtube.com/watch?v=jvDeU5Tp0b4 |title=Former NBA player Bill Cartwright talks about what playing with Michael Jordan was really like |website=[[YouTube]] |date=May 13, 2020 |access-date=January 2, 2024 |archive-date=January 2, 2024 |archive-url=https://web.archive.org/web/20240102042338/https://www.youtube.com/watch?v=jvDeU5Tp0b4 |url-status=live }}</ref>
+
+[[Craig Hodges]], a member of the first two championship seasons with the Bulls, said he felt disappointed about not getting an opportunity to be interviewed for the documentary, and further criticized Jordan for discussing the team's use of [[cocaine]] during the 1980s, which was also another subject that was not related to the Last Dance season. On the issue of cocaine use, Hodges remarked, "I was thinking about the brothers who [were on the team] with you who have to explain [what happened] to their families”.<ref>{{cite web |url=https://www.nbcnews.com/pop-culture/pop-culture-news/michael-jordan-s-former-teammate-slams-basketball-star-s-cocaine-n1201241 |title=Michael Jordan's former teammate slams the basketball star's 'cocaine circus' comments in 'The Last Dance' |last=Aviles |first=Gwen |date=May 6, 2020 |website=[[NBC News]] |access-date=May 20, 2020 |archive-date=June 26, 2020 |archive-url=https://web.archive.org/web/20200626064435/https://www.nbcnews.com/pop-culture/pop-culture-news/michael-jordan-s-former-teammate-slams-basketball-star-s-cocaine-n1201241 |url-status=live }}</ref><ref>{{cite web |url=https://chicago.suntimes.com/the-last-dance/2020/5/6/21249300/craig-hodges-michael-jordan-last-dance-cocaine-comments-bulls |title=Craig Hodges blasts Michael Jordan for cocaine comments in 'The Last Dance' |date=May 6, 2020 |website=[[Chicago Sun-Times]] |access-date=May 20, 2020 |archive-date=May 20, 2020 |archive-url=https://web.archive.org/web/20200520110727/https://chicago.suntimes.com/the-last-dance/2020/5/6/21249300/craig-hodges-michael-jordan-last-dance-cocaine-comments-bulls |url-status=live }}</ref>
+
+Some expressed disappointment over the omission of starting center [[Luc Longley]] in the series, including Longley himself. In 2021, an episode of the documentary series ''[[Australian Story]]'', titled "Luc Longley and the missing chapter of ''The Last Dance''", was released with Longley's response, including interviews with ex-teammates such as Pippen and Jordan. The documentary was a success in its own right.<ref>{{cite web |url=https://www.abc.net.au/news/2021-08-02/luc-longleys-chicago-bulls-legacy/100256414 |title='Luc Longley's Chicago Bulls legacy |date=August 16, 2021 |website=ABC |access-date=January 13, 2022 |archive-date=January 12, 2022 |archive-url=https://web.archive.org/web/20220112230831/https://www.abc.net.au/news/2021-08-02/luc-longleys-chicago-bulls-legacy/100256414 |url-status=live }}</ref>
+
+Following the positive reception of Longley’s documentary, the Bulls organization released an additional feature documentary on a key member of the Last Dance team, [[sixth man]] [[Toni Kukoč]]. The documentary was titled “The Waiter”, paying tribute to Kukoč’s nickname acquired in his native country of [[Croatia]].<ref>{{cite web |url=https://www.youtube.com/watch?v=-lhHNMFamco |title="The Waiter" - A Toni Kukoč Story: Kukoč's role in the Last Dance and more! |website=[[YouTube]] |date=October 30, 2021 |access-date=January 2, 2024 |archive-date=January 2, 2024 |archive-url=https://web.archive.org/web/20240102042339/https://www.youtube.com/watch?v=-lhHNMFamco |url-status=live }}</ref>
+
+Others also expressed disappointment in the lack of coverage of another starter on the Last Dance team, [[point guard]] [[Ron Harper]].<ref name=nbcsportsbayarea>{{cite web | url=https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steve-kerr-a-little-disappointed-by-key-absences-in-the-last-dance/1364999/ | title='Steve Kerr 'a little' disappointed by key absences in 'The Last Dance' – NBC Sports Bay Area & California | date=August 7, 2020 | access-date=January 2, 2024 | archive-date=January 2, 2024 | archive-url=https://web.archive.org/web/20240102042338/https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steve-kerr-a-little-disappointed-by-key-absences-in-the-last-dance/1364999/ | url-status=live }}</ref> Harper was only included for a few seconds, talking about his time playing for the [[Cleveland Cavaliers]] in 1989 when he expressed disagreement with his coach for not assigning him to defend Jordan during [[The Shot (Bulls–Cavaliers)|The Shot]],<ref>{{cite web |url= https://www.sportskeeda.com/basketball/news-revisited-whatever-f-k-bulls-t-ron-harper-recalls-wanting-guard-michael-jordan-the-shot-1989-playoffs |title= Ron Harper recalls wanting to guard Michael Jordan on 'The Shot' in 1989 playoffs |date= July 28, 2022 |access-date= January 2, 2024 |archive-date= January 2, 2024 |archive-url= https://web.archive.org/web/20240102042338/https://www.sportskeeda.com/basketball/news-revisited-whatever-f-k-bulls-t-ron-harper-recalls-wanting-guard-michael-jordan-the-shot-1989-playoffs |url-status= live }}</ref> but never was shown discussing his role in the Bulls' second three-peat. Harper had started all 82 games during the Last Dance season.<ref>{{cite web |url= https://www.basketball-reference.com/players/h/harpero01.html |title= Ron Harper Stats, Height, Weight, Position, Draft Status and more |access-date= February 9, 2024 |archive-date= February 20, 2011 |archive-url= https://web.archive.org/web/20110220222003/http://www.basketball-reference.com/players/h/harpero01.html |url-status= live }}</ref>
+
+There was also criticism for the series' over-emphasis on [[Steve Kerr]], a minor player on the Bulls' last championship team. Those critics alleged that the reasoning behind Kerr's over-emphasis was linked to his recent success as the head coach of the [[Golden State Warriors]]. Some compared it to a scenario where ESPN did a documentary on the 1970s [[Pittsburgh Steelers]] and placed [[Tony Dungy]] (who like Kerr had a successful head coaching career but a lesser playing career) in the same company as [[Joe Greene]], [[Franco Harris]], and [[Jack Lambert (American football)|Jack Lambert]]. Kerr himself admitted that the series emphasized him more than what was needed, and also did not condone the absence of Longley and Harper in the series.<ref>{{cite web | url=https://www.cinemablend.com/television/2557705/why-michael-jordans-the-last-dance-was-slightly-embarrassing-for-nba-vet-steve-kerr | title=Why Michael Jordan's The Last Dance Was Slightly 'Embarrassing' for NBA Vet Steve Kerr | date=October 25, 2020 | access-date=December 31, 2022 | archive-date=December 31, 2022 | archive-url=https://web.archive.org/web/20221231131154/https://www.cinemablend.com/television/2557705/why-michael-jordans-the-last-dance-was-slightly-embarrassing-for-nba-vet-steve-kerr | url-status=live }}</ref><ref name=nbcsportsbayarea/>
+
+Some came to the defense of former Bulls general manager [[Jerry Krause]], accusing Jordan of intentionally delaying the start of the production until Krause died in 2017 in order to prevent him from being able to explain his own version of events. ''[[Sports Illustrated]]'' questioned Jordan's narrative expressed in the series, called him “cruel”, and said that Krause deserved better treatment.<ref>{{cite web |url=https://www.si.com/nba/2020/05/18/jerry-krause-chicago-bulls-crumbs-the-last-dance |title=Jerry Krause Deserved Better in 'The Last Dance' |date=May 18, 2020 |access-date=January 2, 2024 |archive-date=January 2, 2024 |archive-url=https://web.archive.org/web/20240102042338/https://www.si.com/nba/2020/05/18/jerry-krause-chicago-bulls-crumbs-the-last-dance |url-status=live }}</ref>
+
+===US ratings===
+For the [[2019–20 United States network television schedule|2019–20 television season]], the show tied for fifth among adults 18–49 in the [[Nielsen ratings]] with ''[[This Is Us]]'', averaging a 2.9 rating and 15 share. It also placed 55th in total viewership, averaging 6.71 million viewers. ''[[Variety (magazine)|Variety]]'' dubbed the show's performance a "consolation prize" for ESPN given the network's struggle to find live sports.<ref>{{cite web |url=https://variety.com/2020/tv/news/most-popular-tv-shows-highest-rated-2019-2020-season-masked-singer-last-dance-1234612885/ |title=100 Most-Watched TV Shows of 2019-20: Winners and Losers |last=Schneider |first=Michael |date=May 21, 2020 |website=[[Variety (magazine)|Variety]] |access-date=May 29, 2020 |archive-date=May 25, 2020 |archive-url=https://web.archive.org/web/20200525194319/https://variety.com/2020/tv/news/most-popular-tv-shows-highest-rated-2019-2020-season-masked-singer-last-dance-1234612885/ |url-status=live }}</ref> The series also became ESPN's most-watched documentary.<ref>{{cite web |url=https://variety.com/2020/tv/news/last-dance-michael-jordan-docuseries-espn-tv-ratings-1234610101/ |title='Last Dance': Michael Jordan Series Finishes as Most-Viewed ESPN Documentary Ever |last=Thorne |first=Will |date=May 18, 2020 |website=[[Variety (magazine)|Variety]] |access-date=May 25, 2021 |archive-date=May 26, 2021 |archive-url=https://web.archive.org/web/20210526032753/https://variety.com/2020/tv/news/last-dance-michael-jordan-docuseries-espn-tv-ratings-1234610101/ |url-status=live }}</ref>
+
+'''''The Last Dance : U.S. viewers per episode (millions)'''''
+{{Graph:Chart
+|type = stackedrect
+|linewidth=1
+|showSymbols=1
+|colors=#8B0000,#000000
+|width=400
+|height=250
+|xAxisTitle=Episode
+|xAxisAngle=0
+|x=1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+|yAxisTitle=U.S. viewers (millions)
+|legend=Legend
+|y1=1.512, 1.621, 1.676, 2.039, 1.781, 1.996, 1.882, 2.229, 1.751, 1.982
+|y1Title=DVR viewers
+|y2=5.733, 5.106, 5.313, 4.862, 4.906, 4.436, 4.411, 4.164, 5.021, 4.587
+|y2Title=Live viewers
+|yGrid= |xGrid=
+}}
+{{Television episode ratings
+|caption=Ratings for episodes of ''The Last Dance''
+| show_timeslot = y
+| noshare       = y
+| refs_col      = y
+| title1        = Episode I
+| date1         = April 19, 2020
+| timeslot1     = Sunday 9:00 p.m.
+| rs1           = 2.6
+| viewers1      = 5.73
+| dvr1          = 0.6
+| dvrv1         = 1.51
+| total1        = 3.2
+| totalv1       = 7.25
+| ref1          =<ref name="Ep1&2">{{cite web |url=https://programminginsider.com/live7-weekly-ratings-disney-family-singalong-leads-all-unscripted-offerings-in-raw-lifts/ |title=Live+7 Weekly Ratings: 'Disney Family Singalong' Leads All Unscripted Offerings in Raw Lifts |last=Pucci |first=Douglas |date=April 29, 2020 |website=Programming Insider |access-date=April 29, 2020 |archive-url=https://web.archive.org/web/20200429193657/https://programminginsider.com/live7-weekly-ratings-disney-family-singalong-leads-all-unscripted-offerings-in-raw-lifts/ |archive-date=April 29, 2020 |url-status=live}}</ref>
+
+| title2        = Episode II
+| date2         = April 19, 2020
+| timeslot2     = Sunday 10:00 p.m.
+| rs2           = 2.3
+| viewers2      = 5.17
+| dvr2          = 0.7
+| dvrv2         = 1.62
+| total2        = 3.0
+| totalv2       = 6.73
+| ref2          =<ref name="Ep1&2" />
+
+| title3        = Episode III
+| date3         = April 26, 2020
+| timeslot3     = Sunday 9:00 p.m.
+| rs3           = 2.3
+| viewers3      = 5.31
+| dvr3          = 0.8
+| dvrv3         = 1.68
+| total3        = 3.1
+| totalv3       = 6.99
+| ref3          =<ref name="Ep3&4">{{cite web |url=https://programminginsider.com/live7-weekly-ratings-will-grace-series-finale-tops-all-comedy-telecasts-in-overall-raw-gains/ |title=Live+7 Weekly Ratings: 'Will & Grace' Series Finale Tops All Comedy Telecasts in Overall Raw Gains |last=Pucci |first=Douglas |date=May 8, 2020 |website=Programming Insider |access-date=May 9, 2020 |archive-url=https://web.archive.org/web/20200509083056/https://programminginsider.com/live7-weekly-ratings-will-grace-series-finale-tops-all-comedy-telecasts-in-overall-raw-gains/ |archive-date=May 9, 2020 |url-status=live}}</ref>
+
+| title4        = Episode IV
+| date4         = April 26, 2020
+| timeslot4     = Sunday 10:00 p.m.
+| rs4           = 2.1
+| viewers4      = 4.86
+| dvr4          = 0.9
+| dvrv4         = 2.04
+| total4        = 3.1
+| totalv4       = 6.90
+| ref4          =<ref name="Ep3&4" />
+
+| title5        = Episode V
+| date5         = May 3, 2020
+| timeslot5     = Sunday 9:00 p.m.
+| rs5           = 2.1
+| viewers5      = 4.91
+| dvr5          = 0.8
+| dvrv5         = 1.78
+| total5        = 2.8
+| totalv5       = 6.68
+| ref5          =<ref name="Ep5&6">{{cite web |url=https://programminginsider.com/live7-weekly-ratings-blue-bloods-final-two-episodes-of-its-tenth-season-lead-in-raw-viewer-gains-for-each-respective-week/ |title=Live+7 Weekly Ratings: 'Blue Bloods' Final Two Episodes of its Tenth Season Lead in Raw Viewer Gains for Each Respective Week |last=Pucci |first=Douglas |date=May 15, 2020 |website=Programming Insider |access-date=May 16, 2020 |archive-url=https://web.archive.org/web/20200516105027/https://programminginsider.com/live7-weekly-ratings-blue-bloods-final-two-episodes-of-its-tenth-season-lead-in-raw-viewer-gains-for-each-respective-week/ |archive-date=May 16, 2020 |url-status=live}}</ref>
+
+| title6        = Episode VI
+| date6         = May 3, 2020
+| timeslot6     = Sunday 10:00 p.m.
+| rs6           = 1.9
+| viewers6      = 4.44
+| dvr6          = 0.9
+| dvrv6         = 2.00
+| total6        = 2.7
+| totalv6       = 6.43
+| ref6          =<ref name="Ep5&6" />
+
+| title7        = Episode VII
+| date7         = May 10, 2020
+| timeslot7     = Sunday 9:00 p.m.
+| rs7           = 1.9
+| viewers7      = 4.41
+| dvr7          = 0.9
+| dvrv7         = 1.88
+| total7        = 2.8
+| totalv7       = 6.29
+| ref7          =<ref name="Ep7&8">{{cite web |url=https://programminginsider.com/live7-weekly-ratings-the-rookie-tops-the-weeks-season-finale-telecasts-in-raw-adults-18-49-gains-more-than-doubling-its-same-day-demo-delivery/ |title=Live+7 Weekly Ratings: 'The Rookie' Tops the Week's Season Finale Telecasts in Raw Adults 18-49 Gains, More Than Doubling its Same-Day Demo Delivery |last=Pucci |first=Douglas |date=May 19, 2020 |website=Programming Insider |access-date=May 24, 2020 |archive-url=https://web.archive.org/web/20200524104338/https://programminginsider.com/live7-weekly-ratings-the-rookie-tops-the-weeks-season-finale-telecasts-in-raw-adults-18-49-gains-more-than-doubling-its-same-day-demo-delivery/ |archive-date=May 24, 2020 |url-status=live}}</ref>
+
+| title8        = Episode VIII
+| date8         = May 10, 2020
+| timeslot8     = Sunday 10:00 p.m.
+| rs8           = 1.8
+| viewers8      = 4.16
+| dvr8          = 1.0
+| dvrv8         = 2.23
+| total8        = 2.8
+| totalv8       = 6.39
+| ref8          =<ref name="Ep7&8" />
+
+| title9        = Episode IX
+| date9         = May 17, 2020
+| timeslot9     = Sunday 9:00 p.m.
+| rs9           = 2.1
+| viewers9      = 5.02
+| dvr9          = 0.8
+| dvrv9         = 1.75
+| total9        = 2.8
+| totalv9       = 6.77
+| ref9          =<ref name="Ep9&10">{{cite web |url=https://programminginsider.com/live7-weekly-ratings-9-1-1-third-season-finale-leads-all-telecasts-in-total-viewer-lifts/ |title=Live+7 Weekly Ratings: '9-1-1' Third Season Finale Leads All Telecasts in Total Viewer Lifts |last=Pucci |first=Douglas |date=May 29, 2020 |website=Programming Insider |access-date=May 29, 2020 |archive-url=https://web.archive.org/web/20200529213653/https://programminginsider.com/live7-weekly-ratings-9-1-1-third-season-finale-leads-all-telecasts-in-total-viewer-lifts/ |archive-date=May 29, 2020 |url-status=live}}</ref>
+
+| title10       = Episode X
+| date10        = May 17, 2020
+| timeslot10    = Sunday 10:00 p.m.
+| rs10          = 1.9
+| viewers10     = 4.59
+| dvr10         = 0.9
+| dvrv10        = 1.98
+| total10       = 2.7
+| totalv10      = 6.57
+| ref10         =<ref name="Ep9&10" />
+}}
+
+===Accolades===
+{| class="wikitable plainrowheaders sortable"
+|+Accolades for ''The Last Dance''
+|-
+! scope="col"| Award
+! scope="col"| Date of ceremony
+! scope="col"| Category
+! scope="col"| Recipient(s)
+! scope="col"| Result
+! scope="col" class="unsortable"| {{Abbr|Ref.|References}}
+|-<!--AWARDS CEREMONIES ARE IN ALPHABETICAL ORDER-->
+! scope="row"| [[African-American Film Critics Association|AAFCA Awards]]
+| August 22, 2020
+| Best Documentary
+| data-sort-value="Last Dance, The"| ''The Last Dance''
+| {{won}}{{efn|Tied with ''[[Atlanta murders of 1979–1981#Media coverage and adaptations|Atlanta’s Missing and Murdered: The Lost Children]]''}}
+| style="text-align:center;"|<ref>{{cite web |url=https://variety.com/2020/scene/news/janet-mock-kenya-barris-sterling-k-brown-viola-davis-2020-aafca-tv-honors-virtual-award-show-1234744820/ |title=Janet Mock, Kenya Barris, Sterling K. Brown and Viola Davis Accept 2020 AAFCA TV Honors |last=Jackson |first=Angelique |date=August 22, 2020 |website=[[Variety (magazine)|Variety]] |access-date=January 29, 2021 |archive-date=August 22, 2020 |archive-url=https://web.archive.org/web/20200822225629/https://variety.com/2020/scene/news/janet-mock-kenya-barris-sterling-k-brown-viola-davis-2020-aafca-tv-honors-virtual-award-show-1234744820/ |url-status=live }}</ref>
+|-
+! scope="row"| [[American Cinema Editors|American Cinema Editors Awards]]
+| [[American Cinema Editors Awards 2021|April 17, 2021]]
+| Best Edited Documentary (Non-Theatrical)
+| Chad Beck, Devin Concannon, Abhay Sofsky and Ben Sozanski <small>(for "Episode 1")</small>
+| {{won}}
+| style="text-align:center;"|<ref>{{cite web|url=https://www.hollywoodreporter.com/behind-screen/minari-trial-of-the-chicago-7-among-american-cinema-editors-eddie-awards-nominees|title='Minari,' 'Trial of the Chicago 7' Among American Cinema Editors' Eddie Awards Nominees|date=March 11, 2021|accessdate=March 11, 2021|work=[[The Hollywood Reporter]]|first=Carolyn|last=Giardina|archive-date=March 11, 2021|archive-url=https://web.archive.org/web/20210311160728/https://www.hollywoodreporter.com/behind-screen/minari-trial-of-the-chicago-7-among-american-cinema-editors-eddie-awards-nominees|url-status=live}}</ref>
+|-
+! scope="row" rowspan="2"| [[Cinema Eye Honors]]
+| rowspan="2"| March 9, 2021
+| Outstanding Broadcast Series
+| data-sort-value="Last Dance, The"| ''The Last Dance''
+| {{nom}}
+| style="text-align:center;" rowspan="2"|<ref>{{cite web |url=https://www.hollywoodreporter.com/race/cinema-eye-honors-announces-first-wave-of-noms-plans-to-highlight-films-hurt-by-pandemic |title=Cinema Eye Honors Announces First Wave of Noms, Plans to Highlight Films Hurt by Pandemic |last=Feinberg |first=Scott |date=November 24, 2020 |website=[[The Hollywood Reporter]] |access-date=January 29, 2021 |archive-date=January 17, 2021 |archive-url=https://web.archive.org/web/20210117184855/https://www.hollywoodreporter.com/race/cinema-eye-honors-announces-first-wave-of-noms-plans-to-highlight-films-hurt-by-pandemic |url-status=live }}</ref><ref>{{cite web |url=https://www.thewrap.com/collective-named-top-documentary-at-cinema-eye-honors/ |title='Collective' Named Top Documentary at Cinema Eye Honors |last=Pond |first=Steve |website=[[TheWrap]] |date=March 9, 2021 |access-date=April 15, 2021 |archive-date=March 10, 2021 |archive-url=https://web.archive.org/web/20210310093718/https://www.thewrap.com/collective-named-top-documentary-at-cinema-eye-honors/ |url-status=live }}</ref>
+|-
+| Outstanding Editing in a Broadcast Film or Series
+| data-sort-value="Beck, Chad, Devin Concannon, Abhay Sofsky, Ben Sozanski"| Chad Beck, Devin Concannon, Abhay Sofsky and Ben Sozanski
+| {{nom}}
+|-
+! scope="row" rowspan="3"| [[Creative Arts Emmy Award]]s
+| rowspan="3" | [[72nd Primetime Creative Arts Emmy Awards|September 14, 2020]]
+| [[Primetime Emmy Award for Outstanding Documentary or Nonfiction Series|Outstanding Documentary or Nonfiction Series]]
+| data-sort-value="Hehir, Jason, Mike Tollin, Estee Portnoy, Curtis Polk, Connor Schell, Gregg Winik and Andrew Thompson"| Jason Hehir, [[Michael Tollin]], [[Estee Portnoy]], Curtis Polk, [[Connor Schell]], Gregg Winik and Andrew Thompson
+| {{won}}
+| style="text-align:center;" rowspan="3"|<ref>{{cite web |url=https://www.nbcsports.com/chicago/bulls/last-dance-michael-jordan-documentary-pulls-three-2020-emmy-nominations |title='The Last Dance' Michael Jordan documentary pulls three 2020 Emmy nominations |last=Schaefer |first=Rob |date=July 28, 2020 |website=[[NBC Sports]] |access-date=July 29, 2020 |archive-url=https://web.archive.org/web/20200729095558/https://www.nbcsports.com/chicago/bulls/last-dance-michael-jordan-documentary-pulls-three-2020-emmy-nominations |archive-date=July 29, 2020 |url-status=dead}}</ref>
+|-
+| [[Primetime Emmy Award for Outstanding Directing for a Documentary/Nonfiction Program|Outstanding Directing for a Documentary/Nonfiction Program]]
+| data-sort-value="Hehir, Jason"| Jason Hehir <small>(for "Episode 7")</small>
+| {{nom}}
+|-
+| [[Primetime Emmy Award for Outstanding Picture Editing for a Nonfiction Program|Outstanding Picture Editing for a Nonfiction Program]]
+| data-sort-value="Beck, Chad, Devin Concannon, Abhay Sofsky, Ben Sozanski"| Chad Beck, Devin Concannon, Abhay Sofsky and Ben Sozanski <small>(for "Episode 1")</small>
+| {{nom}}
+|-
+! scope="row"| [[Golden Reel Award (Motion Picture Sound Editors)|Golden Reel Awards]]
+| April 16, 2021
+| Outstanding Achievement in Sound Editing – Non-Theatrical Documentary
+| Keith Hodne <small>(for "Episode 1")</small>
+| {{nom}}
+| style="text-align:center;"|<ref>{{Cite web|last=Pedersen|first=Erik|date=March 1, 2021|title=Sound Editors Nominate 'Wonder Woman', 'Sound Of Metal', 'Tenet' & Others For Golden Reel Awards – Full List|url=https://deadline.com/2021/03/golden-reel-awards-2021-nominations-sound-editors-mpse-1234704003/|access-date=March 30, 2021|website=[[Deadline Hollywood]]|language=en-US|archive-date=March 1, 2021|archive-url=https://web.archive.org/web/20210301182122/https://deadline.com/2021/03/golden-reel-awards-2021-nominations-sound-editors-mpse-1234704003/|url-status=live}}</ref>
+|-
+! scope="row"| [[NAACP Image Awards]]
+| [[52nd NAACP Image Awards|March 22–27, 2021]]
+| [[NAACP Image Award for Outstanding Documentary|Outstanding Documentary – Television]]
+| data-sort-value="Last Dance, The"| ''The Last Dance''
+| {{won}}
+| style="text-align:center;"|<ref>{{cite web |url=https://deadline.com/2021/02/naacp-image-awards-nominations-2021-1234685220/ |title=NAACP Image Awards Nominations: Netflix Tops List With 'Bridgerton', 'Ma Rainey's Black Bottom' & 'Da 5 Bloods' |last=Del Rosario |first=Alexandra |date=February 2, 2021 |website=[[Deadline Hollywood]] |access-date=February 3, 2021 |archive-date=February 5, 2021 |archive-url=https://web.archive.org/web/20210205171612/https://deadline.com/2021/02/naacp-image-awards-nominations-2021-1234685220/ |url-status=live }}</ref>
+|-
+! scope="row"| [[Producers Guild of America Award]]s
+| [[32nd Producers Guild of America Awards|March 24, 2021]]
+| [[Producers Guild of America Award for Best Non-Fiction Television|Outstanding Producer of Non-Fiction Television]]
+| data-sort-value="Last Dance, The"| ''The Last Dance''
+| {{won}}
+| style="text-align:center;"|<ref>{{cite web|url=https://www.indiewire.com/2021/03/pga-awards-nominations-tv-bridgerton-ted-lasso-1234621946/|title='Bridgerton' and 'Ted Lasso' Among PGA Awards TV Nominees|publisher=Indiewire|first=Libby|last=Hill|date=March 8, 2021|accessdate=March 8, 2021|archive-date=March 9, 2021|archive-url=https://web.archive.org/web/20210309160726/https://www.indiewire.com/2021/03/pga-awards-nominations-tv-bridgerton-ted-lasso-1234621946/|url-status=live}}</ref>
+|-
+! scope="row"| [[TCA Awards]]
+| [[36th TCA Awards|September 14, 2020]]
+| [[TCA Award for Outstanding Achievement in News and Information|Outstanding Achievement in News and Information]]
+| data-sort-value="Last Dance, The"| ''The Last Dance''
+| {{won}}
+| style="text-align:center;"|<ref>{{cite web |url=https://www.hollywoodreporter.com/live-feed/watchmen-rules-2020-tv-critic-awards-winners |title='Watchmen' Rules 2020 TV Critic Awards Winners |last=Goldberg |first=Lesley |date=September 14, 2020 |website=[[The Hollywood Reporter]] |access-date=September 14, 2020 |archive-date=September 20, 2020 |archive-url=https://web.archive.org/web/20200920120036/https://www.hollywoodreporter.com/live-feed/watchmen-rules-2020-tv-critic-awards-winners |url-status=live }}</ref>
+|}
+
+==See also==
+* [[Flu Game shoes]]
+* [[Last Dance shoes]]
+
+==Notes==
+{{Notelist}}
+
+== References ==
+
+{{reflist}}
+
+== External links ==
+* {{IMDb title|8420184}}
+* {{rotten-tomatoes|tv/the_last_dance}}
+
+{{Navboxes
+|title = Awards for ''The Last Dance''
+|list =
+{{Black Reel Award for Outstanding Television Documentary or Special}}
+{{EmmyAward Documentary Series}}
+{{NAACP Image Award for Outstanding Documentary}}
+{{Producers Guild of America Award for Best Non-Fiction Television}}
+{{TCA Award for Outstanding Achievement in News and Information}}
+}}
+{{Michael Jordan}}
+{{Chicago Bulls}}
+
+{{DEFAULTSORT:Last Dance (miniseries)}}
+[[Category:1997–98 NBA season]]
+[[Category:2020 American television series debuts]]
+[[Category:2020 English-language television series debuts]]
+[[Category:2020 American television series endings]]
+[[Category:2020 English-language television series endings]]
+[[Category:2020s American documentary television series]]
+[[Category:2020s American television miniseries]]
+[[Category:30 for 30]]
+[[Category:Basketball television series]]
+[[Category:History of the Chicago Bulls]]
+[[Category:Michael Jordan]]
+[[Category:Documentary television series about sports]]
