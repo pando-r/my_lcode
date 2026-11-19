@@ -1,5 +1,5 @@
 """In-memory single-session conversation history."""
-
+#会话历史记录
 from __future__ import annotations
 
 import copy
@@ -14,10 +14,11 @@ from mewcode.llm import (
     ToolCall,
     ToolResult,
 )
-
+#日志记录器
 logger = logging.getLogger(__name__)
-
+# 回调函数类型，消息接收器
 _OnAppend = Callable[[Message], None]
+# 回调函数类型，消息列表接收器
 _OnReplace = Callable[[list[Message]], None]
 
 
@@ -40,7 +41,7 @@ class Conversation:
         on_replace: _OnReplace | None = None,
     ) -> Conversation:
         # 从已有消息列表创建会话（恢复场景），不触发回调。
-        conv = cls(on_append=on_append, on_replace=on_replace)
+        conv = cls(on_append=on_append, on_replace=on_replace)  # 创建一个新的会话实例
         conv._messages = copy.deepcopy(list(msgs))
         return conv
 

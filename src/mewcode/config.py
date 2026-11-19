@@ -2,11 +2,15 @@
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Literal
 
 import yaml
+
+# 显式指定配置文件路径的环境变量（优先级最高）
+CONFIG_ENV = "MEWCODE_CONFIG"
 
 # 目前支持的两种LLM协议类型
 VALID_PROTOCOLS = ("anthropic", "openai")
@@ -15,7 +19,7 @@ VALID_PROTOCOLS = ("anthropic", "openai")
 DEFAULT_ANTHROPIC_CONTEXT_WINDOW = 200000
 DEFAULT_OPENAI_CONTEXT_WINDOW = 128000
 
-
+#LLM服务商的配置项
 @dataclass
 class ProviderConfig:
     name: str
@@ -26,7 +30,7 @@ class ProviderConfig:
     thinking: bool = False
     context_window: int = 0
 
-
+#上下文窗口大小
 def effective_context_window(p: ProviderConfig) -> int:
     if p.context_window > 0:
         return p.context_window
@@ -34,13 +38,13 @@ def effective_context_window(p: ProviderConfig) -> int:
         return DEFAULT_OPENAI_CONTEXT_WINDOW
     return DEFAULT_ANTHROPIC_CONTEXT_WINDOW
 
-
+#保存两个功能开关
 @dataclass
 class FeaturesConfig:
     coordinator_mode: bool = False
     fork_teammate: bool = False
 
-
+#配置根对象
 @dataclass
 class Config:
     providers: list[ProviderConfig] = field(default_factory=list)
@@ -59,12 +63,50 @@ class ConfigError(Exception):
     pass
 
 
-# 公开接口
-def load(path: str) -> Config:
+# ── 配置文件查找（让 uvx / uv tool 装好后在任意目录都能跑）──────────────────
+def user_config_path() -> Path:
+    # 用户级配置：~/.mewcode/config.yaml，任何目录下运行都生效。
+    return Path.home() / ".mewcode" / "config.yaml"
+
+
+def project_config_path(root: str | Path | None = None) -> Path:
+    # 项目级配置：<cwd>/.mewcode/config.yaml，优先级高于用户级。
+    base = Path(root) if root is not None else Path.cwd()
+    return base / ".mewcode" / "config.yaml"
+
+
+def search_paths(root: str | Path | None = None) -> list[Path]:
+    # 按优先级返回候选路径：环境变量 > 项目级 > 用户级。
+    paths: list[Path] = []
+    env = os.environ.get(CONFIG_ENV)
+    if env:
+        paths.append(Path(env).expanduser())
+    paths.append(project_config_path(root))
+    paths.append(user_config_path())
+    return paths
+
+
+def resolve(root: str | Path | None = None) -> Path | None:
+    # 返回第一个存在的配置文件；都不存在返回 None。
+    # 显式设置了 MEWCODE_CONFIG 却没文件时直接报错，避免静默回退到别的配置。
+    env = os.environ.get(CONFIG_ENV)
+    if env:
+        env_path = Path(env).expanduser()
+        if not env_path.is_file():
+            raise ConfigError(f"{CONFIG_ENV} 指向的配置文件不存在: {env_path}")
+        return env_path
+    for path in (project_config_path(root), user_config_path()):
+        if path.is_file():
+            return path
+    return None
+
+
+# 公开加载配置文件的函数
+def load(path: str | Path) -> Config:
     # Load and validate a YAML config file, returning a Config.
-    config_path = Path(path)
+    config_path = Path(path).expanduser()
     if not config_path.is_file():
-        raise ConfigError(f"配置文件不存在: {path}")
+        raise ConfigError(f"配置文件不存在: {config_path}")
 
     try:
         raw = yaml.safe_load(config_path.read_text(encoding="utf-8"))

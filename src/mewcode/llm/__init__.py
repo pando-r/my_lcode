@@ -14,6 +14,7 @@ ROLE_TOOL = "tool"
 
 
 class PromptTooLongError(Exception):
+    # 提示词过长错误
     """Provider reported the context window was exceeded."""
 
 
@@ -95,7 +96,7 @@ class StreamEvent:
 
 class Provider(Protocol):
     # A protocol-agnostic streaming LLM provider.
-
+    #适配器基类
     @property
     def name(self) -> str: ...
 

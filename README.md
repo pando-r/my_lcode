@@ -3,6 +3,44 @@
 一个多协议 LLM 终端对话客户端（Claude Code 风格）。第一块基石：在终端里与大模型进行
 流式多轮对话，同时支持 Anthropic 与 OpenAI 两种协议（含自定义兼容端点）。
 
+## 快速开始
+
+macOS / Linux：
+
+```bash
+curl -LsSf https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.sh | sh
+```
+
+Windows（PowerShell）：
+
+```powershell
+irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1 | iex
+```
+
+脚本会检测并自动安装 `uv`（**无需自己准备 Python**），把 mewcode 装进隔离环境，并生成
+`~/.mewcode/config.yaml`。之后只需要两步：
+
+```bash
+# 1) 把 providers[0].api_key 换成你的真实密钥
+$EDITOR ~/.mewcode/config.yaml     # Windows: notepad %USERPROFILE%\.mewcode\config.yaml
+
+# 2) 在任意项目目录启动
+mewcode
+```
+
+不想装到全局？临时跑一次：
+
+```bash
+uvx --from git+https://github.com/pando-r/my_mecode.git mewcode
+```
+
+配置查找优先级：`--config` > `MEWCODE_CONFIG` 环境变量 > `./.mewcode/config.yaml` >
+`~/.mewcode/config.yaml`。用户级放在前面那一条，保证装在任意目录都能直接跑；项目级方便
+不同项目用不同模型。`mewcode --init` 可重新生成模板，`mewcode --version` 查看版本。
+
+> 安全提示：mewcode 会调用 `bash` 执行命令并读写文件，所有写操作都会经过权限引擎。
+> 首次在陌生仓库里使用时，建议逐条确认权限弹窗，不要盲目选择"全部允许"。
+
 ## 特性
 
 - 流式逐字输出，结束后以 Markdown 美化定型。
@@ -179,23 +217,25 @@ MEWCODE_COORDINATOR_MODE=1 uv run mewcode
 引导 Research → Synthesis → Implementation → Verification 四阶段，并要求派完队员
 后停手等待汇报。收敛由 Lead 用 `bash git merge worktree-team-<team>+<member>` 完成。
 
-## 安装与运行
+## 从源码开发
 
 ```bash
 uv sync          # 安装依赖（含 dev 依赖）
+cp .mewcode/config.yaml.example .mewcode/config.yaml   # 编辑填入真实密钥
+uv run mewcode   # 或 uv run python -m mewcode
 ```
 
-准备配置：
+## 发布到 PyPI
 
 ```bash
-cp .mewcode/config.yaml.example .mewcode/config.yaml
-# 编辑 .mewcode/config.yaml，填入真实密钥
+uv build                 # 生成 dist/mewcode-<version>-*.whl
+uv publish               # 需要 UV_PUBLISH_TOKEN，或配置 Trusted Publishing
 ```
 
-运行：
+发布后安装脚本可切到 PyPI 渠道（默认仍走 GitHub 源码）：
 
 ```bash
-uv run mewcode        # 或 uv run python -m mewcode
+MEWCODE_CHANNEL=pypi curl -LsSf .../scripts/install.sh | sh
 ```
 
 ## 测试

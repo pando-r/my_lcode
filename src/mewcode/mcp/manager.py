@@ -81,11 +81,14 @@ async def _do_connect(mgr: Manager, name: str, srv: ServerConfig, version: str) 
         )
     else:  # http
         http_client = await mgr._stack.enter_async_context(httpx2.AsyncClient(headers=srv.headers))
-        streams = await mgr._stack.enter_async_context(
-            streamable_http_client(srv.url, http_client=http_client)
-        )
+        # mcp 2.x 的 Client 期望「transport 本身」（一个异步上下文管理器），
+        # 不是已进入的 (read_stream, write_stream) 元组；让它自己去 enter。
         client = await mgr._stack.enter_async_context(
-            Client(streams, mode="auto", client_info=client_info)
+            Client(
+                streamable_http_client(srv.url, http_client=http_client),
+                mode="auto",
+                client_info=client_info,
+            )
         )
 
     listed = await client.list_tools()

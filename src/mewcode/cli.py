@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from mewcode import __version__
+from mewcode import config as config_mod
 from mewcode import instructions as instructions_pkg
 from mewcode import memory as memory_pkg
 from mewcode import session as session_pkg
@@ -21,12 +22,55 @@ from mewcode.config import ConfigError, load
 from mewcode.permission import new_engine
 from mewcode.tool import new_default_registry
 
+# 配置准备结果
+STATUS_READY = "ready"
+STATUS_INIT = "init"
+STATUS_NEEDS_KEY = "needs_key"
+
+
+def _prepare_config(explicit: str | None, init_only: bool) -> tuple[Path | None, str]:
+    """决定本次运行用哪份配置；缺失时生成用户级模板。
+
+    优先级：--config > MEWCODE_CONFIG > ./.mewcode/config.yaml > ~/.mewcode/config.yaml。
+    都找不到时写一份模板到 ~/.mewcode/config.yaml，让「装完直接敲 mewcode」也能得到明确指引。
+    """
+    from mewcode import bootstrap
+
+    if explicit:
+        return Path(explicit).expanduser(), STATUS_READY
+
+    found = config_mod.resolve()
+    if found is not None:
+        return found, STATUS_READY
+
+    path, created = bootstrap.ensure_user_config()
+    if created:
+        print(bootstrap.banner(path), file=sys.stderr)
+    if init_only:
+        print(f"配置模板已就绪: {path}")
+        return None, STATUS_INIT
+    return path, STATUS_NEEDS_KEY
+
 
 async def _amain(member_args=None) -> int:
     if member_args is not None and getattr(member_args, "worktree", ""):
         os.chdir(member_args.worktree)
+
+    explicit = getattr(member_args, "config", "") or None
+    init_only = bool(getattr(member_args, "init", False))
     try:
-        cfg = load(".mewcode/config.yaml")
+        cfg_path, status = _prepare_config(explicit, init_only)
+    except ConfigError as exc:
+        print(str(exc), file=sys.stderr)
+        return 1
+    if status == STATUS_INIT:
+        return 0
+    if status == STATUS_NEEDS_KEY:
+        print(f'填入 api_key 后重新运行: mewcode --config "{cfg_path}"', file=sys.stderr)
+        return 1
+
+    try:
+        cfg = load(str(cfg_path))
     except ConfigError as exc:
         print(str(exc), file=sys.stderr)
         return 1
@@ -232,6 +276,11 @@ def _warn_missing_worktree_ignores(root: str) -> None:
 
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="mewcode", description="MewCode 终端 Agent")
+    parser.add_argument("--version", action="version", version=f"mewcode {__version__}")
+    parser.add_argument(
+        "--init", action="store_true", help="生成用户级配置模板 ~/.mewcode/config.yaml 后退出"
+    )
+    parser.add_argument("--config", default="", help="指定配置文件路径（覆盖自动查找）")
     parser.add_argument("--team-member", action="store_true", help="以 Team 队员模式运行")
     parser.add_argument("--team", default="", help="Team 名")
     parser.add_argument("--member", default="", help="队员名")

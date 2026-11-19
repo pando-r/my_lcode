@@ -1,0 +1,29 @@
+# mewcode 配置文件（首次运行自动生成）
+# 位置：~/.mewcode/config.yaml     —— 用户级，任何目录下运行 mewcode 都生效
+# 也可以在当前项目放一份 .mewcode/config.yaml，项目级优先（适合不同项目用不同模型）。
+# 把下面的 api_key 换成你的真实密钥即可运行；本文件不要提交到 git。
+
+providers:
+  - name: Claude
+    protocol: anthropic          # anthropic / openai
+    api_key: sk-ant-xxxx         # ← 换成你的密钥
+    model: claude-sonnet-4-5     # 模型名按服务商实际名称填写
+    base_url: null               # 可选：兼容端点（如中转服务），null 用官方默认
+    thinking: false              # anthropic 专属：扩展思考
+
+  # 取消注释可启用第二个 provider，启动时会先让你选：
+  # - name: GPT
+  #   protocol: openai
+  #   api_key: sk-xxxx
+  #   model: gpt-4o
+  #   base_url: null
+
+# mcp_servers:
+#   filesystem:
+#     type: stdio
+#     command: npx
+#     args: ["-y", "@modelcontextprotocol/server-filesystem", "."]
+
+# features:
+#   coordinator_mode: false
+#   fork_teammate: false

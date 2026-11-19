@@ -43,7 +43,7 @@ from mewcode.skills.adapter import to_prompt_entries, to_prompt_items
 from mewcode.tool import DEFAULT_TIMEOUT, Registry
 
 # 三层熔断机制
-MAX_ITERATIONS: int = 25
+MAX_ITERATIONS: int = 50
 MAX_UNKNOWN_RUN: int = 3
 PLAN_REMINDER_INTERVAL: int = 4
 
@@ -224,15 +224,15 @@ class Agent:
         self, conv: Conversation, mode: Mode, cancel: asyncio.Event
     ) -> AsyncIterator[Event]:
         if self._permission_mode is not None:
-            mode = self._permission_mode
-        env = gather_environment(self._version, self._provider.model)
-        sys = self._system_prompt()
-        defs = self._definitions(mode)
+            mode = self._permission_mode #子Agent的角色配置优先
+        env = gather_environment(self._version, self._provider.model) #环境信息
+        sys = self._system_prompt() #系统提示
+        defs = self._definitions(mode) #工具定义
         unknown_run = 0
         max_turns = self._max_turns or MAX_ITERATIONS
 
         for it in range(1, max_turns + 1):
-            yield Event(iter=it)
+            yield Event(iter=it) #TUI用它显示"第{it}轮"
             if cancel.is_set():
                 self._finish_cancelled(conv)
                 return

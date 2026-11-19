@@ -1,0 +1,6 @@
+- [project_knowledge] mewcode 项目核心架构 — mewcode 是终端 AI 编程助手，项目路径 D:\Project\AgentProject\my_mecode。主链路：tui/app.py 的 submit() -> agent/__init__.py 的 Agent.run() 
+- [reference_material] mewcode 中 dataclass field() 用法速查 — 项目中 field() 主要用于给 dataclass 字段补充配置，核心是 default_factory（可变默认值不能直接写 = []，会共享同一对象）。三种用法：
+- [project_knowledge] mewcode Conversation.from_messages 语义 — mewcode 中 Conversation.from_messages(msgs, on_append, on_replace) 是「静默装载」构造路径：先用 cls(...) 建空会话（挂好回调），再 conv._messages = 
+- [project_knowledge] mewcode 长期记忆存储布局 — 记忆分两级目录，由 cli.py:47-50 的 memory.Manager 构造：项目级 <cwd>/.mewcode/memory/（当前为 D:\Project\AgentProject\my_mecode\.mewcode\mem
+- [project_knowledge] mewcode Agent.run ReAct 循环关键设计 — mewcode/src/mewcode/agent/__init__.py 的 Agent.run() 是主 ReAct 循环（AsyncIterator[Event]），几个关键设计：
+- [reference_material] mewcode 中三处正则用法位置 — mewcode 源码中三处典型的 re.compile 正则，可作为讲解/参考示例：

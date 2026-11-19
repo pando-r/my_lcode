@@ -59,8 +59,8 @@ class Registry:
     # 注册/查找/导出/执行工具.
 
     def __init__(self) -> None:
-        self._order: list[str] = []
-        self._tools: dict[str, Tool] = {}
+        self._order: list[str] = []  # 注册顺序
+        self._tools: dict[str, Tool] = {}  # 工具字典，键为工具名称，值为工具实例
 
     def register(self, tool: Tool) -> None:
         name = tool.name()

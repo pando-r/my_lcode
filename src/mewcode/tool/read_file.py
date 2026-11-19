@@ -20,7 +20,7 @@ class ReadFileTool:
 
     def description(self) -> str:
         return "读取指定路径的文本文件内容（带行号）；文件不存在或不可读时返回错误。"
-
+    #参数定义
     def parameters(self) -> dict:
         return {
             "type": "object",
