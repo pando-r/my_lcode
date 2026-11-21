@@ -77,3 +77,29 @@ def test_ensure_user_config_overwrite(fake_home):
     path, created = bootstrap.ensure_user_config(overwrite=True)
     assert created is True
     assert "api_key" in path.read_text(encoding="utf-8")
+
+
+def test_init_only_generates_template_when_missing(fake_home):
+    from lcode.cli import STATUS_INIT, _prepare_config
+
+    path, status = _prepare_config(None, init_only=True)
+    assert path is None
+    assert status == STATUS_INIT
+    assert fake_home.is_file()
+
+
+def test_init_only_exits_when_config_already_exists(fake_home):
+    """--init 语义是「生成模板后退出」；配置已存在时必须退出，不能继续启动 TUI。
+
+    安装脚本最后一步会调 `lcode --init`，这里若退化成启动界面，
+    已装过的人重跑安装器就会被丢进全屏 TUI，看着像卡死。
+    """
+    from lcode.cli import STATUS_INIT, _prepare_config
+
+    _write(fake_home, "providers: [{name: mine}]\n")
+    path, status = _prepare_config(None, init_only=True)
+    assert path is None
+    assert status == STATUS_INIT
+    # 用户已有的配置不被覆盖
+    assert "mine" in fake_home.read_text(encoding="utf-8")
+

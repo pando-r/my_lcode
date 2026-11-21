@@ -41,6 +41,11 @@ def _prepare_config(explicit: str | None, init_only: bool) -> tuple[Path | None,
 
     found = config_mod.resolve()
     if found is not None:
+        if init_only:
+            # --init 的语义是「生成模板后退出」：配置已存在时必须直接退出，
+            # 否则会顺着后面的分支启动 TUI——安装脚本最后一步就会把人丢进全屏界面。
+            print(f"配置已存在，未做改动: {found}")
+            return None, STATUS_INIT
         return found, STATUS_READY
 
     path, created = bootstrap.ensure_user_config()

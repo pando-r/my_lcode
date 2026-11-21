@@ -8,13 +8,48 @@
 macOS / Linux：
 
 ```bash
-curl -LsSf https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.sh | sh
+curl -LsSf --max-time 30 https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.sh | sh
 ```
 
 Windows（PowerShell）：
 
 ```powershell
-irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1 | iex
+$ProgressPreference='SilentlyContinue'
+irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1 -TimeoutSec 30 | iex
+```
+
+> **一定要带 `--max-time` / `-TimeoutSec`。** 国内网络下 `raw.githubusercontent.com` 常见
+> 表现是「连不上也不报错」，TCP 一直重试；命令不带超时就会**卡住不动**，看起来像死机。
+> 加上超时后最多等 30 秒就会明确报错，而不是无限期挂起。
+
+国内网络下这两条命令的主机本身可能就不通，换镜像（内容一致）：
+
+```powershell
+# Windows：jsDelivr（国内一般可达）
+iex (iwr 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -UseBasicParsing -TimeoutSec 30).Content
+# Windows：ghfast 代理
+iex (iwr 'https://ghfast.top/https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1' -UseBasicParsing -TimeoutSec 30).Content
+```
+
+```bash
+# macOS / Linux
+curl -LsSf --max-time 30 https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.sh | sh
+```
+
+三个地址都不确定哪个通时，用这段自带回退的引导（每个地址都有超时，不会卡）：
+
+```powershell
+$ProgressPreference='SilentlyContinue'
+$urls=@(
+  'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1',
+  'https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1',
+  'https://ghfast.top/https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1')
+$code=$null
+foreach($u in $urls){
+  try{ Write-Host "尝试 $u"; $code=(iwr $u -UseBasicParsing -TimeoutSec 25).Content; break }
+  catch{ Write-Host "  失败：$($_.Exception.Message)" }
+}
+if($code){ iex $code } else { throw '三个地址都下载失败，请检查网络/代理' }
 ```
 
 脚本会自动挑安装器：有 `uv` 用 `uv`、有 `pipx` 用 `pipx`、否则用你已有的 **Python 3.12+**
@@ -28,6 +63,32 @@ $EDITOR ~/.lcode/config.yaml     # Windows: notepad %USERPROFILE%\.lcode\config.
 # 2) 在任意项目目录启动
 lcode
 ```
+
+### 装之前先体检（推荐，尤其在国内网络）
+
+装不上时不要反复重试，先让脚本自己报一下环境：
+
+```powershell
+# Windows：只体检，不安装
+$env:LCODE_DOCTOR='1'; irm https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1 -TimeoutSec 30 | iex
+```
+
+```bash
+# macOS / Linux
+LCODE_DOCTOR=1 curl -LsSf --max-time 30 https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.sh | sh
+```
+
+它会依次打印 git / python / uv / pipx 的位置、Python 版本，以及 `github.com`、
+`raw.githubusercontent.com`、`pypi.org`、`astral.sh`、`cdn.jsdelivr.net`、`ghfast.top`
+六个站点的连通性（**每个地址最长 8 秒，不会卡**），并给出对应的处理建议。
+
+
+> **`irm ... | iex` 只能在 PowerShell 里跑**。贴进 `cmd.exe` 会直接报
+> `'irm' 不是内部或外部命令`，那样一行脚本连执行都没开始。cmd 用户请用：
+>
+> ```powershell
+> powershell -ExecutionPolicy Bypass -Command "irm https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1 -TimeoutSec 30 | iex"
+> ```
 
 不想装到全局？临时跑一次（二选一，装了 pipx 的话不需要 uv）：
 
@@ -69,8 +130,63 @@ pipx upgrade lcode        # 或 pip install --user --upgrade <上面的地址>
 - Debian/Ubuntu 等的系统 Python 有 `externally-managed-environment` 保护，请改用 `pipx`，
   或建独立虚拟环境：
   `python3 -m venv ~/.lcode/venv && ~/.lcode/venv/bin/pip install "git+https://github.com/pando-r/my_mecode.git"`
-- 一行脚本也支持显式指定安装器：`LCODE_INSTALLER=pip curl -LsSf .../scripts/install.sh | sh`
-  （Windows：`$env:LCODE_INSTALLER='pip'; irm .../install.ps1 | iex`）。
+- 一行脚本也支持显式指定安装器：
+  `LCODE_INSTALLER=pip curl -LsSf --max-time 30 https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.sh | sh`
+  （Windows：`$env:LCODE_INSTALLER='pip'` 后重跑安装命令）。
+
+## 装不上怎么办
+
+**先跑一次体检**（`LCODE_DOCTOR=1`，见上文），它会直接指出是工具缺失还是网络不通，
+比逐条猜快得多。下面是几种最常见的情况：
+
+| 现象 | 原因 | 处理 |
+| --- | --- | --- |
+| **命令卡住不动，没有任何输出** | 域名被黑洞，TCP 一直重试；`irm`/`curl` 没设超时 | 命令加 `-TimeoutSec 30` / `--max-time 30`；换镜像地址；跑 `LCODE_DOCTOR=1` |
+| **卡在 `python` 那一步**（Windows） | `python` 是应用商店的 0 字节占位符（`WindowsApps\python.exe`），执行它会拉起商店并阻塞 | 脚本已自动跳过它并改用真解释器；仍不行就装 Python 3.12+，或 `LCODE_INSTALLER='uv'` 让 uv 自带解释器 |
+| 卡在 `git clone` / 要求输入用户名密码 | 仓库不可见（私有或改名），或被网络劫持 | 确认仓库公开可访问；`git` 已设 `GIT_TERMINAL_PROMPT=0` 会快速失败而不是等待输入 |
+| `'irm' 不是内部或外部命令` | 在 cmd 里跑了 PowerShell 命令 | 换 PowerShell，或用上面那条 `powershell -Command "..."` |
+| `未找到 Python 3.12+` | 系统 Python 太老或没装 | 装 Python 3.12+，或装 `uv`（自带解释器） |
+| `ReadTimeoutError` / `SSL` 错误 | 直连 pypi.org 或 GitHub 超时 | 加镜像：`LCODE_PIP_INDEX=...`、`LCODE_GH_PROXY=...`（见下） |
+| `uv` 下载失败 | 公司/校园网拦 astral.sh | 脚本会先用 `pip install uv` 走镜像；仍失败就 `LCODE_INSTALLER=pip` |
+| `--version` 输出不是 `Lcode` | 机器上有另一个同名包（PyPI 的 `lcode` 是等离子体仿真包） | `pip uninstall lcode` 后用 `pipx`/`uv` 隔离安装 |
+| 装完 `lcode` 找不到 | 用户脚本目录不在 PATH | 脚本会尝试写入用户 PATH，重开终端即可 |
+| `lcode --init` 报 `unrecognized arguments: - - i n i t` | 已修复（旧版脚本的单元素数组被 PowerShell 按字符拆开） | 更新到最新脚本重跑 |
+
+国内网络走镜像：
+
+```bash
+# macOS / Linux（管道形式：变量要放在 sh 这一侧）
+curl -LsSf --max-time 30 https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.sh \
+  | LCODE_PIP_INDEX=https://mirrors.aliyun.com/pypi/simple/ sh
+
+# Windows PowerShell（先设变量，再跑安装命令）
+$env:LCODE_PIP_INDEX='https://mirrors.aliyun.com/pypi/simple/'
+$ProgressPreference='SilentlyContinue'
+irm https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1 -TimeoutSec 30 | iex
+```
+
+安装脚本的环境变量：
+
+| 变量 | 默认 | 作用 |
+| --- | --- | --- |
+| `LCODE_REPO` | `https://github.com/pando-r/my_mecode` | 源码仓库（fork 后自建分发用） |
+| `LCODE_CHANNEL` | `git` | `git` 从仓库装，`pypi` 从 PyPI 装 |
+| `LCODE_INSTALLER` | `auto` | `auto` / `uv` / `pipx` / `pip` |
+| `LCODE_PIP_INDEX` | 空 | 自定义 PyPI 镜像，同时喂给 pip 与 uv |
+| `LCODE_GH_PROXY` | `ghfast.top` / `gh-proxy.com` / `ghproxy.net` | GitHub 代理前缀，直连不通时自动依次尝试；设 `none` 只用直连 |
+| `LCODE_SOURCE_URL` | 空 | 直接指定安装源，跳过所有探测（排查用） |
+| `LCODE_PYPI_NAME` | `lcode` | `pypi` 渠道使用的发行包名 |
+| `LCODE_NO_PATH` | 空 | Windows 下设 1 则不修改用户 PATH |
+| `LCODE_DRY_RUN` | 空 | 设 1 只打印命令不执行（排查用，不产生任何改动） |
+| `LCODE_DOCTOR` | 空 | 设 1 只做环境体检，不安装 |
+
+脚本的「不卡死」保证（都是这一版加的）：
+
+- 所有 HTTP 操作都带硬超时；探测单个地址最长 **8 秒**，`irm`/`curl` 建议外挂 30 秒。
+- `git` 设 `GIT_TERMINAL_PROMPT=0`，遇到私有库/凭据请求立即失败而不等待输入。
+- `pip` 带 `--timeout 30 --retries 2`，`uv` 设 `UV_HTTP_TIMEOUT=60`。
+- Windows 上自动识别并跳过应用商店的 0 字节 `python.exe` 占位符。
+- 失败时用 `throw` 而不是 `exit`：报错留在屏幕上，不会因为 `irm|iex` 而把窗口关掉。
 
 ## 特性
 
@@ -405,8 +521,26 @@ twine upload dist/*
 发布后安装脚本可切到 PyPI 渠道（默认仍走 GitHub 源码）：
 
 ```bash
-LCODE_CHANNEL=pypi curl -LsSf .../scripts/install.sh | sh
+LCODE_CHANNEL=pypi curl -LsSf --max-time 30 \
+  https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.sh | sh
 ```
+
+> **注意：PyPI 上的 `lcode` 名字不是本项目。** 那个 `lcode`（0.4.0）属于
+> lcodePy-team 的等离子体尾场加速仿真包，`pip install lcode` 会**静默装成一个
+> 完全无关的程序**。因此安装脚本在 `LCODE_CHANNEL=pypi` 时会先查 PyPI 元数据，
+> 发现名字不属于本项目就直接报错退出，不会继续装错包。
+>
+> 真要走 PyPI 渠道，需要先换一个没被占用的发行名（`lcode-cli` / `lcode-agent`
+> 也已被别的项目占用），然后：
+>
+> ```bash
+> LCODE_CHANNEL=pypi LCODE_PYPI_NAME=<你的发行名> \
+>   sh scripts/install.sh     # 或在安装命令前设这两个环境变量
+> ```
+>
+> 发行名与顶层包名可以不同：`pyproject.toml` 里 `project.name` 改成新名字，
+> `packages = ["src/lcode"]` 与 `[project.scripts] lcode = ...` 保持不变，
+> `import lcode` 不受影响。
 
 ## 测试
 
