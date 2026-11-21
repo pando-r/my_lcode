@@ -1,0 +1,36 @@
+# Lcode 收件箱配置
+#
+# 用邮件给 Lcode 派任务：主题以 [Lcode] 开头、发件人在白名单里的邮件
+# 会变成常驻任务，跑完自动回信。
+#
+# 用法：
+#   lcode --check-mail                    只拉信入队（适合任务计划程序每 5 分钟跑一次）
+#   lcode --resident --mail-watch         常驻：每轮先收信，跑完回信
+#
+# 安全：只收白名单 + 必须有主题前缀；邮件任务默认只读（allow_write: false）。
+# 想让它改文件必须显式打开 allow_write 或加 --mail-allow-write。
+
+enabled: true
+
+imap_host: imap.qq.com
+imap_port: 993
+folder: INBOX
+
+# 留空则继承 .lcode/notify.yaml 的 email 段（同一账号同一授权码）。
+user: ""
+auth_code: ""
+
+# 白名单：只有这些地址发来的邮件才会被处理。
+# 2987731879@qq.com 是日常发信地址；3952613547@qq.com 是收信/发信的托管邮箱本身。
+senders:
+  - 2987731879@qq.com
+  - 3952613547@qq.com
+
+# 主题前缀，例如「[Lcode] 今天有什么要紧事」。
+subject_prefix: "[Lcode]"
+
+# 邮件任务是否允许写文件 / 执行命令。默认关，见上面说明。
+allow_write: false
+
+max_per_poll: 5
+timeout: 15

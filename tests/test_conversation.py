@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from mewcode.conversation import Conversation
-from mewcode.llm import Message, ToolCall, ToolResult
+from lcode.conversation import Conversation
+from lcode.llm import Message, ToolCall, ToolResult
 
 
 def test_conversation_order():

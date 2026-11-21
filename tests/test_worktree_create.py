@@ -6,9 +6,9 @@ from pathlib import Path
 
 import pytest
 
-from mewcode.worktree import Manager
-from mewcode.worktree import create as create_module
-from mewcode.worktree.git import _run_git
+from lcode.worktree import Manager
+from lcode.worktree import create as create_module
+from lcode.worktree.git import _run_git
 
 
 async def test_create_nested_slug(git_repo):
@@ -43,12 +43,12 @@ async def test_fast_recovery_does_not_call_git(git_repo, monkeypatch):
 
 
 async def test_setup_copies_local_config(git_repo):
-    config_dir = Path(git_repo) / ".mewcode"
+    config_dir = Path(git_repo) / ".lcode"
     config_dir.mkdir()
     (config_dir / "settings.local.yaml").write_text("permissions: {}\n", encoding="utf-8")
     manager = Manager(str(git_repo))
     worktree = await manager.create("cfg", "HEAD", manual=True)
-    target = Path(worktree.path) / ".mewcode" / "settings.local.yaml"
+    target = Path(worktree.path) / ".lcode" / "settings.local.yaml"
     assert target.read_text(encoding="utf-8") == "permissions: {}\n"
 
 
@@ -92,5 +92,5 @@ async def test_worktree_is_inside_repo_and_branch_exists(git_repo):
         check=True,
     ).stdout
     assert worktree.branch in branches
-    # 目录在 .mewcode 下，应被 .gitignore 忽略（若项目配置了 ignore）
+    # 目录在 .lcode 下，应被 .gitignore 忽略（若项目配置了 ignore）
     assert os.path.isdir(worktree.path)

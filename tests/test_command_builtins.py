@@ -1,13 +1,14 @@
 from __future__ import annotations
 
-from mewcode.command import Kind, Registry, register_builtins
-from mewcode.command.builtin_local import handle_memory, handle_permission, handle_session
-from mewcode.command.builtin_prompt import REVIEW_DIRECTIVE
-from mewcode.command.ui import NopUI
-from mewcode.permission import Mode
-from mewcode.prompt import EXECUTE_DIRECTIVE
+from lcode.command import Kind, Registry, register_builtins
+from lcode.command.builtin_local import handle_memory, handle_permission, handle_session
+from lcode.command.builtin_prompt import REVIEW_DIRECTIVE
+from lcode.command.ui import NopUI
+from lcode.permission import Mode
+from lcode.prompt import EXECUTE_DIRECTIVE
 
 EXPECTED = {
+    "audio",
     "clear",
     "compact",
     "copy",
@@ -15,6 +16,7 @@ EXPECTED = {
     "exit",
     "help",
     "hooks",
+    "image",
     "memory",
     "permission",
     "plan",
@@ -70,11 +72,11 @@ def _registry() -> Registry:
 def test_register_builtins_all_registered():
     reg = _registry()
     visible = reg.visible()
-    assert len(visible) == 16
+    assert len(visible) == 18
     assert {c.name for c in visible} == EXPECTED
     assert [c.name for c in visible] == sorted(EXPECTED)
     assert all(c.name == c.name.lower() for c in visible)
-    assert len({c.name for c in visible}) == 16
+    assert len({c.name for c in visible}) == 18
 
 
 def test_register_builtins_no_collision():
@@ -85,9 +87,11 @@ def test_register_builtins_kinds():
     reg = _registry()
     kinds = {c.name: c.kind for c in reg.visible()}
     assert [n for n, k in kinds.items() if k is Kind.LOCAL] == [
+        "audio",
         "copy",
         "help",
         "hooks",
+        "image",
         "memory",
         "permission",
         "session",
@@ -178,7 +182,7 @@ async def test_memory_permission_session_outputs():
 
 
 async def test_handle_hooks_lists_summaries():
-    from mewcode.command.ui import HookSummary
+    from lcode.command.ui import HookSummary
 
     ui = RecordingUI()
     ui._hook_summaries = [

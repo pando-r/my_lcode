@@ -1,4 +1,4 @@
-# mewcode
+# Lcode
 
 一个多协议 LLM 终端对话客户端（Claude Code 风格）。第一块基石：在终端里与大模型进行
 流式多轮对话，同时支持 Anthropic 与 OpenAI 两种协议（含自定义兼容端点）。
@@ -19,33 +19,33 @@ irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1
 
 脚本会自动挑安装器：有 `uv` 用 `uv`、有 `pipx` 用 `pipx`、否则用你已有的 **Python 3.12+**
 的 `pip`（**不会强制下载 uv**）。只有机器上完全找不到 Python 时，才会安装 uv 来自带 Python。
-装好后会生成 `~/.mewcode/config.yaml`。之后只需要两步：
+装好后会生成 `~/.lcode/config.yaml`。之后只需要两步：
 
 ```bash
 # 1) 把 providers[0].api_key 换成你的真实密钥
-$EDITOR ~/.mewcode/config.yaml     # Windows: notepad %USERPROFILE%\.mewcode\config.yaml
+$EDITOR ~/.lcode/config.yaml     # Windows: notepad %USERPROFILE%\.lcode\config.yaml
 
 # 2) 在任意项目目录启动
-mewcode
+lcode
 ```
 
 不想装到全局？临时跑一次（二选一，装了 pipx 的话不需要 uv）：
 
 ```bash
-uvx --from git+https://github.com/pando-r/my_mecode.git mewcode
-pipx run --spec git+https://github.com/pando-r/my_mecode.git mewcode
+uvx --from git+https://github.com/pando-r/my_mecode.git lcode
+pipx run --spec git+https://github.com/pando-r/my_mecode.git lcode
 ```
 
-配置查找优先级：`--config` > `MEWCODE_CONFIG` 环境变量 > `./.mewcode/config.yaml` >
-`~/.mewcode/config.yaml`。用户级放在前面那一条，保证装在任意目录都能直接跑；项目级方便
-不同项目用不同模型。`mewcode --init` 可重新生成模板，`mewcode --version` 查看版本。
+配置查找优先级：`--config` > `LCODE_CONFIG` 环境变量 > `./.lcode/config.yaml` >
+`~/.lcode/config.yaml`。用户级放在前面那一条，保证装在任意目录都能直接跑；项目级方便
+不同项目用不同模型。`lcode --init` 可重新生成模板，`lcode --version` 查看版本。
 
-> 安全提示：mewcode 会调用 `bash` 执行命令并读写文件，所有写操作都会经过权限引擎。
+> 安全提示：Lcode 会调用 `bash` 执行命令并读写文件，所有写操作都会经过权限引擎。
 > 首次在陌生仓库里使用时，建议逐条确认权限弹窗，不要盲目选择"全部允许"。
 
 ## 不用 uv 的安装方式（pip / pipx）
 
-mewcode 是标准 PEP 517 包（hatchling 后端），`pip` 可以直接装，不需要 uv。
+Lcode 是标准 PEP 517 包（hatchling 后端），`pip` 可以直接装，不需要 uv。
 前提只有 **Python 3.12+**；`git` 可选（没有 git 时用 GitHub 的 zip 源码包）。
 
 ```bash
@@ -59,18 +59,18 @@ pip install --user "git+https://github.com/pando-r/my_mecode.git"
 pip install --user https://github.com/pando-r/my_mecode/archive/refs/heads/main.zip
 
 # 升级
-pipx upgrade mewcode        # 或 pip install --user --upgrade <上面的地址>
+pipx upgrade lcode        # 或 pip install --user --upgrade <上面的地址>
 ```
 
-装完执行 `mewcode --init` 生成配置模板，编辑好 api_key 后直接 `mewcode` 启动。
+装完执行 `lcode --init` 生成配置模板，编辑好 api_key 后直接 `lcode` 启动。
 
 - `pip install --user` 会把可执行文件放到用户脚本目录（Linux/macOS 一般是 `~/.local/bin`，
   Windows 是 `%APPDATA%\Python\Python3XX\Scripts`），首次可能需新开终端或手动加 PATH。
 - Debian/Ubuntu 等的系统 Python 有 `externally-managed-environment` 保护，请改用 `pipx`，
   或建独立虚拟环境：
-  `python3 -m venv ~/.mewcode/venv && ~/.mewcode/venv/bin/pip install "git+https://github.com/pando-r/my_mecode.git"`
-- 一行脚本也支持显式指定安装器：`MEWCODE_INSTALLER=pip curl -LsSf .../scripts/install.sh | sh`
-  （Windows：`$env:MEWCODE_INSTALLER='pip'; irm .../install.ps1 | iex`）。
+  `python3 -m venv ~/.lcode/venv && ~/.lcode/venv/bin/pip install "git+https://github.com/pando-r/my_mecode.git"`
+- 一行脚本也支持显式指定安装器：`LCODE_INSTALLER=pip curl -LsSf .../scripts/install.sh | sh`
+  （Windows：`$env:LCODE_INSTALLER='pip'; irm .../install.ps1 | iex`）。
 
 ## 特性
 
@@ -105,17 +105,17 @@ pipx upgrade mewcode        # 或 pip install --user --upgrade <上面的地址>
 
 ## 网页搜索（MCP）
 
-mewcode 自带一个零依赖的 MCP server `mewcode.mcp_servers.web_search`：cli 启动时按
-`.mewcode.yaml` 的配置以 stdio 方式拉起它，把 `search_web` 工具注册进工具表
+Lcode 自带一个零依赖的 MCP server `lcode.mcp_servers.web_search`：cli 启动时按
+`.lcode.yaml` 的配置以 stdio 方式拉起它，把 `search_web` 工具注册进工具表
 （完整工具名 `mcp__web__search_web`）。
 
 ```yaml
-# .mewcode.yaml
+# .lcode.yaml
 mcp_servers:
   web:
     type: stdio
-    command: "${MEWCODE_PYTHON}"          # cli 注入 = 当前运行 mewcode 的解释器
-    args: ["-m", "mewcode.mcp_servers.web_search"]
+    command: "${LCODE_PYTHON}"          # cli 注入 = 当前运行 lcode 的解释器
+    args: ["-m", "lcode.mcp_servers.web_search"]
 ```
 
 - 后端直接解析 DuckDuckGo 的结果页，**不需要 API key**；html 端点被拦或改版时自动退回
@@ -127,6 +127,79 @@ mcp_servers:
   换脚本路径都不用把绝对路径写死。
 - 想换成搜索质量更好的 Tavily 之类，按同样格式再加一个 `type: http` 的 server 即可，
   合并规则（项目级覆盖用户级）不变。
+
+## 常驻模式（无人值守）
+
+前面各节都是「你敲回车、它才动」的前台模式。常驻模式补上另一半：**任务排队在磁盘上，
+由外部触发执行，结果写成报告**。
+
+```bash
+# 1) 入队一条任务（不立刻执行）
+lcode --enqueue "统计 tests 目录的测试数量并列出最慢的三个测试文件"
+
+# 2) 查看队列
+lcode --tasks
+
+# 3) 立即处理一轮（供计划任务 / CI 调用）
+lcode --resident-once
+
+# 4) 或者前台常驻，每 5 分钟轮询一次
+lcode --resident --interval 300
+```
+
+**为什么是「落盘队列 + 外部触发」，而不是一直开着进程：**
+
+Windows 关机或休眠后长驻进程就没了。队列存在
+`.lcode/resident/queue.json`，所以任何一次 `--resident-once` 都能捡起
+**所有**待办任务。这比维护一个守护进程可靠得多，也让「每天跑一轮」变成一行计划任务。
+
+```powershell
+# 注册每天 09:00 自动跑一轮（不需要管理员权限）
+powershell -ExecutionPolicy Bypass -File scripts\resident_task.ps1 -Time 09:00
+
+# 立即跑一次 / 查看 / 删除
+Start-ScheduledTask -TaskName lcode-resident
+Get-ScheduledTaskInfo -TaskName lcode-resident
+powershell -ExecutionPolicy Bypass -File scripts\resident_task.ps1 -Remove
+```
+
+### 权限语义（重要）
+
+常驻模式**没有人在终端前审批**，所以默认收紧：
+
+| 模式 | 只读工具 | 写文件 | 执行命令 |
+| --- | --- | --- | --- |
+| `default`（默认） | ✅ 放行 | ❌ 自动拒绝 | ❌ 自动拒绝 |
+| `acceptEdits` | ✅ | ✅ | ❌ |
+| `bypassPermissions` | ✅ | ✅ | ✅ |
+
+```bash
+lcode --resident-once --resident-mode acceptEdits
+```
+
+黑名单（`rm -rf /`、`dd of=/dev/...`）与路径沙箱在**任何**模式下都照旧生效，常驻模式
+不能绕过它们。常驻模式还额外禁用了 `Agent` / `TeamCreate` / `SendMessage` 等需要人在场的
+工具，需要时用 `--resident-allow` 单独放开。
+
+由于没有人否决，「需要审批」的工具会被记成「用户拒绝执行」。Runner 会通过系统提示
+告诉模型真实原因，让它在报告里写明**还缺什么权限**，而不是反复重试或假装成功。
+
+### 落盘产物
+
+```
+.lcode/resident/
+├── queue.json          # 任务状态（原子写入，损坏自动隔离为 .corrupt-*）
+├── results/<id>.md     # 每轮完整报告
+├── daemon.log          # 运行日志（UTF-8，pythonw 下也照写）
+└── daemon.lock         # 单实例锁（记录 pid，僵尸锁自动接管）
+```
+
+- 任务严格 FIFO；单轮最多处理几条由 `--resident-batch`（默认 5），
+  单条任务内最多迭代几轮由 `--resident-turns`（默认 20）。
+- 进程被强杀时，`running` 状态会在下次启动时**自动放回待办**（`reset_running`）。
+- 单条任务超时 `--resident-timeout`（默认 900s）记为失败，不影响后续任务。
+- 同一时刻只允许一个常驻进程；锁文件里的 pid 已消失时会自动接管，
+  硬杀留下的残留锁不会导致「永远起不来」。
 
 ## Skill 系统
 
@@ -143,20 +216,20 @@ context: recent     # full | recent | none
 请审查以下代码并给出改进建议：$ARGUMENTS
 ```
 
-- 发现顺序：项目 `.mewcode/skills/` 优先于用户 `~/.mewcode/skills/`，同名以项目为准。
+- 发现顺序：项目 `.lcode/skills/` 优先于用户 `~/.lcode/skills/`，同名以项目为准。
   支持目录 `skill-name/SKILL.md` 与单文件 `skill-name.md`。
 - 启动时自动注册为 slash 命令（`/review`），并出现在补全菜单与 `/help` 中；
   `/skill list`、`/skill info <name>`、`/skill reload` 用于查看与热重载。
 - 修改 `SKILL.md` 后无需重启，下次执行时自动重读。
 - 也可以在对话里让模型调用 `LoadSkill` 激活 SOP，或用 `InstallSkill` 从
-  skills.sh / GitHub 安装到 `~/.mewcode/skills/`。
+  skills.sh / GitHub 安装到 `~/.lcode/skills/`。
 - inline 会把渲染后的 SOP 固定在环境上下文中并触发一轮主对话；fork 使用独立
   Conversation 执行，结果作为助手消息回流。`/clear` 会清除已激活的 Skill。
 
 ## Hook 生命周期挂钩
 
 Hook 允许在 Agent 生命周期的关键节点执行脚本、注入提醒或发送 HTTP 通知。规则写在
-项目级 `.mewcode/hooks.yaml` 或用户级 `~/.mewcode/hooks.yaml`，两者合并加载；
+项目级 `.lcode/hooks.yaml` 或用户级 `~/.lcode/hooks.yaml`，两者合并加载；
 同名规则以先加载的项目级为准。
 
 ```yaml
@@ -205,8 +278,8 @@ hooks:
   内置角色：`general-purpose`（全工具）、`Explore`（只读探索）、`Plan`（只读规划）。
 - **Fork 式**：不指定 `subagent_type`，深拷贝当前对话并注入 `<fork_boilerplate>`，
   首次请求复用父对话前缀以命中 prompt cache；Fork 路径强制后台执行。
-- 角色文件为 Markdown + YAML frontmatter，放在 `.mewcode/agents/*.md`
-  （项目级）或 `~/.mewcode/agents/*.md`（用户级），优先级：项目 > 用户 > 内置。
+- 角色文件为 Markdown + YAML frontmatter，放在 `.lcode/agents/*.md`
+  （项目级）或 `~/.lcode/agents/*.md`（用户级），优先级：项目 > 用户 > 内置。
 
 ```markdown
 ---
@@ -235,21 +308,21 @@ permissionMode: dontAsk       # default | acceptEdits | plan | bypassPermissions
 
 ## Worktree 隔离
 
-并行场景下，主 Agent 与后台子 Agent 共享同一工作目录会产生文件冲突。MewCode 用
+并行场景下，主 Agent 与后台子 Agent 共享同一工作目录会产生文件冲突。Lcode 用
 Git Worktree 做**空间维度**隔离：同一仓库多个工作目录、共享版本库、各自分支。
 
 - 定义式 SubAgent 在 frontmatter 加 `isolation: worktree`，启动时自动创建临时
   Worktree（`agent-a<7hex>`），注入 `<worktree-context>` 提示，工具调用以该目录为
   explicit cwd；任务结束后无变更自动删除，有变更保留路径与分支并写回结果。
-- Worktree 位于 `.mewcode/worktrees/<flat_slug>/`，分支 `worktree-<flat_slug>`
+- Worktree 位于 `.lcode/worktrees/<flat_slug>/`，分支 `worktree-<flat_slug>`
   （嵌套 slug 的 `/` 变为 `+`）。临时 Worktree 超过 24 小时会在启动时自动清理，
   有未提交修改或未推送 commit 的目录 fail-closed 保留。
 - 手动管理：`/worktree create <slug>`、`/worktree list`、`/worktree enter <slug>`、
   `/worktree exit [--remove] [--discard]`、`/worktree remove <slug> [--discard]`。
   进入后主 Agent 的后续工具调用以 Worktree 目录解析相对路径（进程 cwd 不变）。
-- 创建时 best-effort 复制 `.mewcode/config.yaml` / `settings.local.yaml`、配置
+- 创建时 best-effort 复制 `.lcode/config.yaml` / `settings.local.yaml`、配置
   git hooks、软链 `node_modules` / `.venv` / `vendor`，并按 `.worktreeinclude`
-  复制被忽略的运行文件。session 保存在 `.mewcode/worktree_session.json`。
+  复制被忽略的运行文件。session 保存在 `.lcode/worktree_session.json`。
 
 ```markdown
 ---
@@ -264,12 +337,12 @@ isolation: worktree
 
 ## Agent Team
 
-在 SubAgent / Worktree 之上，mewcode 支持把一个 Lead 与多个长期队员组成 Team：
+在 SubAgent / Worktree 之上，Lcode 支持把一个 Lead 与多个长期队员组成 Team：
 
 - 主 Agent 调 `TeamCreate(team_name=...)` 创建团队；后端按
   `tmux → iTerm2 → in-process` 一次性自动检测，不做运行时回退。
 - 用 `Agent(team_name=..., name="alice", subagent_type=...)` 派队员。每个队员有
-  独立 Worktree（`.mewcode/worktrees/team-<team>+<member>/`）与独立 session；
+  独立 Worktree（`.lcode/worktrees/team-<team>+<member>/`）与独立 session；
   队员之间通过共享任务（`TaskCreate` / `TaskGet` / `TaskList` / `TaskUpdate`）和
   文件邮箱（`SendMessage`）协作，不经过 Lead 中转。
 - 队员结束后自动把 `is_active=False` 与 `[idle]` 通知写入 Lead 邮箱；TUI 每秒
@@ -289,7 +362,7 @@ features:
 ```
 
 ```bash
-MEWCODE_COORDINATOR_MODE=1 uv run mewcode
+LCODE_COORDINATOR_MODE=1 uv run lcode
 ```
 
 开启后 Lead 工具集收窄为调度/只读/bash（无 `write_file` / `edit_file`），系统提示词
@@ -300,8 +373,8 @@ MEWCODE_COORDINATOR_MODE=1 uv run mewcode
 
 ```bash
 uv sync          # 安装依赖（含 dev 依赖）
-cp .mewcode/config.yaml.example .mewcode/config.yaml   # 编辑填入真实密钥
-uv run mewcode   # 或 uv run python -m mewcode
+cp .lcode/config.yaml.example .lcode/config.yaml   # 编辑填入真实密钥
+uv run lcode   # 或 uv run python -m lcode
 ```
 
 不用 uv 的等价做法（需要 Python 3.12+）：
@@ -309,15 +382,15 @@ uv run mewcode   # 或 uv run python -m mewcode
 ```bash
 python -m venv .venv
 . .venv/bin/activate                  # Windows: .venv\Scripts\activate
-pip install -e .                      # 装 mewcode 本体与运行依赖
+pip install -e .                      # 装 lcode 本体与运行依赖
 pip install pytest pytest-asyncio ruff mypy   # dev 依赖
-python -m mewcode
+python -m lcode
 ```
 
 ## 发布到 PyPI
 
 ```bash
-uv build                 # 生成 dist/mewcode-<version>-*.whl
+uv build                 # 生成 dist/lcode-<version>-*.whl
 uv publish               # 需要 UV_PUBLISH_TOKEN，或配置 Trusted Publishing
 ```
 
@@ -332,7 +405,7 @@ twine upload dist/*
 发布后安装脚本可切到 PyPI 渠道（默认仍走 GitHub 源码）：
 
 ```bash
-MEWCODE_CHANNEL=pypi curl -LsSf .../scripts/install.sh | sh
+LCODE_CHANNEL=pypi curl -LsSf .../scripts/install.sh | sh
 ```
 
 ## 测试

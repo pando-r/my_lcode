@@ -6,14 +6,14 @@ from pathlib import Path
 
 import pytest
 
-from mewcode.agent import Agent, Phase
-from mewcode.agent.runtime import SessionRuntime
-from mewcode.conversation import Conversation
-from mewcode.hook import load
-from mewcode.hook.executor import _find_sh
-from mewcode.llm import StreamEvent, ToolCall
-from mewcode.permission import Mode, Outcome, new_engine
-from mewcode.tool import Registry, Result
+from lcode.agent import Agent, Phase
+from lcode.agent.runtime import SessionRuntime
+from lcode.conversation import Conversation
+from lcode.hook import load
+from lcode.hook.executor import _find_sh
+from lcode.llm import StreamEvent, ToolCall
+from lcode.permission import Mode, Outcome, new_engine
+from lcode.tool import Registry, Result
 
 needs_sh = pytest.mark.skipif(_find_sh() is None, reason="no POSIX shell available")
 
@@ -83,7 +83,7 @@ def _hooks(tmp_path, monkeypatch, body: str):
     home = tmp_path / "home"
     home.mkdir(exist_ok=True)
     monkeypatch.setattr(Path, "home", lambda: home)
-    path = tmp_path / ".mewcode" / "hooks.yaml"
+    path = tmp_path / ".lcode" / "hooks.yaml"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(body, encoding="utf-8")
     return load(tmp_path)

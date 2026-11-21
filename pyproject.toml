@@ -1,5 +1,5 @@
 [project]
-name = "mewcode"
+name = "lcode"
 version = "0.1.0"
 description = "A multi-protocol LLM terminal chat client"
 readme = "README.md"
@@ -15,7 +15,11 @@ dependencies = [
 ]
 
 [project.scripts]
-mewcode = "mewcode.cli:main"
+lcode = "lcode.cli:main"
+
+[project.optional-dependencies]
+# 图片缩放/裁剪、语音转写等「媒体」能力；核心包不强制装，缺了只影响 view_image 的预处理。
+media = ["pillow>=10"]
 
 [project.urls]
 Homepage = "https://github.com/pando-r/my_mecode"
@@ -27,7 +31,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/mewcode"]
+packages = ["src/lcode"]
 
 [dependency-groups]
 dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.10", "pytest-asyncio>=0.23"]

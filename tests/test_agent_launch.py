@@ -1,13 +1,13 @@
 from __future__ import annotations
 
-from mewcode.agent.launch import ForkLaunchOpts, launch_fork
-from mewcode.agent.runtime import SessionRuntime
-from mewcode.conversation import Conversation
-from mewcode.llm import StreamEvent
-from mewcode.permission import new_engine
-from mewcode.skills import SkillExecutor, SkillLoader
-from mewcode.skills.parser import SkillDef
-from mewcode.tool import Registry
+from lcode.agent.launch import ForkLaunchOpts, launch_fork
+from lcode.agent.runtime import SessionRuntime
+from lcode.conversation import Conversation
+from lcode.llm import StreamEvent
+from lcode.permission import new_engine
+from lcode.skills import SkillExecutor, SkillLoader
+from lcode.skills.parser import SkillDef
+from lcode.tool import Registry
 
 
 class FakeProvider:
@@ -70,7 +70,7 @@ async def test_skill_fork_delegates_to_launch_fork(tmp_path, monkeypatch):
         captured["opts"] = opts
         return "forked text"
 
-    monkeypatch.setattr("mewcode.agent.launch.launch_fork", fake_launch)
+    monkeypatch.setattr("lcode.agent.launch.launch_fork", fake_launch)
     text = await executor.execute_fork(skill, "args", main_messages=[])
 
     assert text == "forked text"

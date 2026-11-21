@@ -2,10 +2,10 @@ from __future__ import annotations
 
 import asyncio
 
-from mewcode.agent import ApprovalRequest, Event
-from mewcode.conversation import Conversation
-from mewcode.permission import Outcome
-from mewcode.task import Manager, PartialState, Status
+from lcode.agent import ApprovalRequest, Event
+from lcode.conversation import Conversation
+from lcode.permission import Outcome
+from lcode.task import Manager, PartialState, Status
 
 
 class FakeAgent:
@@ -149,7 +149,7 @@ async def test_adopt_running_continues_and_copies_partial():
 
 
 async def test_name_registry_and_done_callback():
-    from mewcode.team.registry import AgentNameRegistry
+    from lcode.team.registry import AgentNameRegistry
 
     manager = Manager()
     registry = AgentNameRegistry()

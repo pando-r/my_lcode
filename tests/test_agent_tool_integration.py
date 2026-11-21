@@ -4,15 +4,15 @@ import asyncio
 import json
 from pathlib import Path
 
-from mewcode.agent import Agent
-from mewcode.agent.agent_tool import AgentTool
-from mewcode.conversation import Conversation
-from mewcode.hook import load as load_hooks
-from mewcode.llm import StreamEvent, ToolCall
-from mewcode.permission import Mode, Outcome, new_engine
-from mewcode.subagent import load_catalog
-from mewcode.task import Manager, Status
-from mewcode.tool import Registry, Result
+from lcode.agent import Agent
+from lcode.agent.agent_tool import AgentTool
+from lcode.conversation import Conversation
+from lcode.hook import load as load_hooks
+from lcode.llm import StreamEvent, ToolCall
+from lcode.permission import Mode, Outcome, new_engine
+from lcode.subagent import load_catalog
+from lcode.task import Manager, Status
+from lcode.tool import Registry, Result
 
 
 class ScriptedProvider:
@@ -60,7 +60,7 @@ def _isolate(tmp_path, monkeypatch) -> None:
 
 
 def _write_agent(tmp_path, name="demo") -> None:
-    path = tmp_path / ".mewcode" / "agents" / f"{name}.md"
+    path = tmp_path / ".lcode" / "agents" / f"{name}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         f"---\nname: {name}\ndescription: demo\nmaxTurns: 5\n---\nSUB SYSTEM",
@@ -176,7 +176,7 @@ async def test_fork_subagent_nested_agent_call_is_blocked(tmp_path, monkeypatch)
     parent = Agent(provider, registry, "dev", new_engine(str(tmp_path))[0])
     conv = Conversation()
     conv.add_user("parent")
-    from mewcode.agent.tool_context import ToolCallContext, bind_tool_context
+    from lcode.agent.tool_context import ToolCallContext, bind_tool_context
 
     ctx = ToolCallContext(parent, conv)
     with bind_tool_context(ctx):
@@ -193,7 +193,7 @@ async def test_fork_subagent_nested_agent_call_is_blocked(tmp_path, monkeypatch)
 async def test_hooks_apply_inside_subagent(tmp_path, monkeypatch):
     _isolate(tmp_path, monkeypatch)
     _write_agent(tmp_path)
-    hooks_path = tmp_path / ".mewcode" / "hooks.yaml"
+    hooks_path = tmp_path / ".lcode" / "hooks.yaml"
     hooks_path.write_text(
         """
 hooks:

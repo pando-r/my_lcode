@@ -6,8 +6,8 @@ import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from mewcode.worktree import Manager
-from mewcode.worktree.sweep import random_agent_name, sweep_stale
+from lcode.worktree import Manager
+from lcode.worktree.sweep import random_agent_name, sweep_stale
 
 
 def test_random_agent_name_pattern():

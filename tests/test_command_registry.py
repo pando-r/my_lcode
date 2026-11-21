@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import pytest
 
-from mewcode.command import Command, Kind, Registry
-from mewcode.command.ui import NopUI
+from lcode.command import Command, Kind, Registry
+from lcode.command.ui import NopUI
 
 
 def _cmd(name: str, aliases: list[str] | None = None, *, hidden: bool = False) -> Command:

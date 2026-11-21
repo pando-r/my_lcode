@@ -4,9 +4,9 @@ import asyncio
 import sys
 from pathlib import Path
 
-from mewcode.mcp.config import Config, ServerConfig
-from mewcode.mcp.manager import new_manager
-from mewcode.mcp.tool import McpTool
+from lcode.mcp.config import Config, ServerConfig
+from lcode.mcp.manager import new_manager
+from lcode.mcp.tool import McpTool
 
 SERVER_SCRIPT = str(Path(__file__).parent / "_mcp_test_server.py")
 
@@ -50,7 +50,7 @@ async def test_failure_isolation(monkeypatch):
         async with mgr._lock:
             mgr._tools.append(tool)
 
-    monkeypatch.setattr("mewcode.mcp.manager._do_connect", stub_connect)
+    monkeypatch.setattr("lcode.mcp.manager._do_connect", stub_connect)
     cfg = Config(
         servers={
             "bad": ServerConfig(type="stdio", command="/no/such"),
@@ -68,8 +68,8 @@ async def test_connect_timeout(monkeypatch, capsys):
     async def stub_block(mgr, name, srv, version):
         await asyncio.Event().wait()
 
-    monkeypatch.setattr("mewcode.mcp.manager._do_connect", stub_block)
-    monkeypatch.setattr("mewcode.mcp.manager.connect_timeout", 0.2)
+    monkeypatch.setattr("lcode.mcp.manager._do_connect", stub_block)
+    monkeypatch.setattr("lcode.mcp.manager.connect_timeout", 0.2)
     cfg = Config(servers={"s": ServerConfig(type="stdio", command="echo")})
     mgr = await new_manager(cfg, "0.1.0")
     try:

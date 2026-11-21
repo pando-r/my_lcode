@@ -5,8 +5,8 @@ from pathlib import Path
 
 import pytest
 
-from mewcode.worktree import Manager, WorktreeSession
-from mewcode.worktree.session import load_session, save_session
+from lcode.worktree import Manager, WorktreeSession
+from lcode.worktree.session import load_session, save_session
 
 
 def test_construct_creates_worktree_dir(git_repo):
@@ -25,7 +25,7 @@ def test_session_roundtrip_and_null(tmp_path):
     path = tmp_path / "session.json"
     session = WorktreeSession(
         original_cwd="/repo",
-        worktree_path="/repo/.mewcode/worktrees/a",
+        worktree_path="/repo/.lcode/worktrees/a",
         worktree_name="a",
         original_branch="main",
         original_head_commit="abc",
@@ -35,7 +35,7 @@ def test_session_roundtrip_and_null(tmp_path):
     data = json.loads(path.read_text(encoding="utf-8"))
     assert data == {
         "original_cwd": "/repo",
-        "worktree_path": "/repo/.mewcode/worktrees/a",
+        "worktree_path": "/repo/.lcode/worktrees/a",
         "worktree_name": "a",
         "original_branch": "main",
         "original_head_commit": "abc",

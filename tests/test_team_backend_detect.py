@@ -2,12 +2,12 @@ from __future__ import annotations
 
 import pytest
 
-from mewcode.team.backend import SpawnRequest, build_member_command
-from mewcode.team.backend.detect import detect
-from mewcode.team.backend.inprocess import InProcessBackend
-from mewcode.team.backend.iterm2 import Iterm2Backend
-from mewcode.team.backend.tmux import TmuxBackend
-from mewcode.team.types import BackendType
+from lcode.team.backend import SpawnRequest, build_member_command
+from lcode.team.backend.detect import detect
+from lcode.team.backend.inprocess import InProcessBackend
+from lcode.team.backend.iterm2 import Iterm2Backend
+from lcode.team.backend.tmux import TmuxBackend
+from lcode.team.types import BackendType
 
 
 @pytest.fixture(autouse=True)
@@ -44,8 +44,8 @@ def _request() -> SpawnRequest:
         team_name="demo",
         member_name="alice",
         agent_id="agent-a1b2c3d",
-        worktree_path="/repo/.mewcode/worktrees/team-demo+alice",
-        session_dir="/repo/.mewcode/sessions/s1",
+        worktree_path="/repo/.lcode/worktrees/team-demo+alice",
+        session_dir="/repo/.lcode/sessions/s1",
         agent_type="general-purpose",
         model="haiku",
         plan_mode_required=True,
@@ -58,8 +58,8 @@ def test_member_command_contains_required_flags():
     assert "--team demo" in command
     assert "--member alice" in command
     assert "--agent-id agent-a1b2c3d" in command
-    assert "--session-dir /repo/.mewcode/sessions/s1" in command
-    assert "--worktree /repo/.mewcode/worktrees/team-demo+alice" in command
+    assert "--session-dir /repo/.lcode/sessions/s1" in command
+    assert "--worktree /repo/.lcode/worktrees/team-demo+alice" in command
     assert "--agent-type general-purpose" in command
     assert "--model haiku" in command
     assert "--plan-mode" in command
@@ -72,7 +72,7 @@ async def test_tmux_backend_commands(monkeypatch):
         calls.append(args)
         return "%5"
 
-    monkeypatch.setattr("mewcode.team.backend.tmux._run_tmux", fake_run)
+    monkeypatch.setattr("lcode.team.backend.tmux._run_tmux", fake_run)
     monkeypatch.setenv("TMUX", "/tmp/tmux")
     backend = TmuxBackend()
     pane, agent_id = await backend.spawn(_request())
@@ -94,7 +94,7 @@ async def test_tmux_backend_new_session(monkeypatch):
         calls.append(args)
         return "%9"
 
-    monkeypatch.setattr("mewcode.team.backend.tmux._run_tmux", fake_run)
+    monkeypatch.setattr("lcode.team.backend.tmux._run_tmux", fake_run)
     backend = TmuxBackend()
     pane, _ = await backend.spawn(_request())
     assert pane == "%9"
@@ -108,7 +108,7 @@ async def test_iterm2_backend_commands(monkeypatch):
         calls.append(args)
         return "pane-1"
 
-    monkeypatch.setattr("mewcode.team.backend.iterm2._run_it2", fake_run)
+    monkeypatch.setattr("lcode.team.backend.iterm2._run_it2", fake_run)
     backend = Iterm2Backend()
     pane, agent_id = await backend.spawn(_request())
     assert pane == "pane-1" and agent_id == "agent-a1b2c3d"
@@ -141,7 +141,7 @@ async def test_inprocess_backend(monkeypatch):
     assert pane == ""
     assert agent_id == "agent-a1b2c3d"
     assert task_mgr.launched[4] == "agent-a1b2c3d"
-    assert task_mgr.launched[5] == "/repo/.mewcode/worktrees/team-demo+alice"
+    assert task_mgr.launched[5] == "/repo/.lcode/worktrees/team-demo+alice"
     await backend.wake("", agent_id)
     await backend.kill("", agent_id)
     assert task_mgr.stopped == agent_id

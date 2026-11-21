@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from mewcode.command import parse
+from lcode.command import parse
 
 
 @pytest.mark.parametrize(

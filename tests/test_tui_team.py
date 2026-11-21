@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from mewcode.config import ProviderConfig
-from mewcode.permission import Mode, new_engine
-from mewcode.team import Manager
-from mewcode.tool import new_default_registry
-from mewcode.tui.app import MewCodeApp
-from mewcode.tui.view import render_statusbar
+from lcode.config import ProviderConfig
+from lcode.permission import Mode, new_engine
+from lcode.team import Manager
+from lcode.tool import new_default_registry
+from lcode.tui.app import LcodeApp
+from lcode.tui.view import render_statusbar
 
 
 class ScriptedProvider:
@@ -18,15 +18,15 @@ class ScriptedProvider:
         return "fake-model"
 
     async def stream(self, req):
-        from mewcode.llm import StreamEvent
+        from lcode.llm import StreamEvent
 
         yield StreamEvent(text="ok")
         yield StreamEvent(done=True)
 
 
-def _app(repo, team_mgr=None, coordinator_mode=False) -> MewCodeApp:
+def _app(repo, team_mgr=None, coordinator_mode=False) -> LcodeApp:
     providers = [ProviderConfig(name="fake", protocol="openai", api_key="k", model="m")]
-    return MewCodeApp(
+    return LcodeApp(
         providers,
         "dev",
         new_default_registry(),
@@ -97,7 +97,7 @@ async def test_coordinator_mode_removes_write_tools(tmp_path):
             return "m"
 
         async def stream(self, req):
-            from mewcode.llm import StreamEvent
+            from lcode.llm import StreamEvent
 
             self.tools = [tool.name for tool in req.tools]
             yield StreamEvent(text="ok")
@@ -120,8 +120,8 @@ async def test_coordinator_mode_removes_write_tools(tmp_path):
 
 
 def test_build_team_update_reminder_truncates():
-    from mewcode.team import LeadMessage
-    from mewcode.tui.tasks import build_team_update_reminder
+    from lcode.team import LeadMessage
+    from lcode.tui.tasks import build_team_update_reminder
 
     message = LeadMessage(
         team_name="demo",

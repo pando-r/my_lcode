@@ -4,15 +4,15 @@ import asyncio
 import json
 from pathlib import Path
 
-from mewcode.agent import Agent
-from mewcode.agent.agent_tool import AgentTool
-from mewcode.agent.tool_context import ToolCallContext, bind_tool_context
-from mewcode.conversation import Conversation
-from mewcode.llm import StreamEvent
-from mewcode.permission import new_engine
-from mewcode.subagent import load_catalog
-from mewcode.task import Manager, Status
-from mewcode.tool import Registry, Result
+from lcode.agent import Agent
+from lcode.agent.agent_tool import AgentTool
+from lcode.agent.tool_context import ToolCallContext, bind_tool_context
+from lcode.conversation import Conversation
+from lcode.llm import StreamEvent
+from lcode.permission import new_engine
+from lcode.subagent import load_catalog
+from lcode.task import Manager, Status
+from lcode.tool import Registry, Result
 
 
 class ScriptedProvider:
@@ -76,7 +76,7 @@ def _isolate(tmp_path, monkeypatch) -> None:
 
 
 def _write_agent(tmp_path, name="demo", extra="") -> None:
-    path = tmp_path / ".mewcode" / "agents" / f"{name}.md"
+    path = tmp_path / ".lcode" / "agents" / f"{name}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         f"---\nname: {name}\ndescription: demo role\n{extra}---\nSUBAGENT SYSTEM",
@@ -181,7 +181,7 @@ async def test_nested_subagent_is_blocked(tmp_path, monkeypatch):
 
 
 async def test_fork_boilerplate_context_is_blocked(tmp_path, monkeypatch):
-    from mewcode.agent.fork import FORK_BOILERPLATE
+    from lcode.agent.fork import FORK_BOILERPLATE
 
     tool, *_rest = _setup(tmp_path, monkeypatch, ScriptedProvider([]))
     ctx = _rest[-1]
@@ -226,7 +226,7 @@ async def test_fork_path_clones_and_keeps_agent_tool(tmp_path, monkeypatch):
 
 
 async def test_inline_timeout_switches_to_background(tmp_path, monkeypatch):
-    import mewcode.agent.agent_tool as agent_tool_mod
+    import lcode.agent.agent_tool as agent_tool_mod
 
     monkeypatch.setattr(agent_tool_mod, "AUTO_BACKGROUND_SECONDS", 0.05)
     provider = ScriptedProvider(

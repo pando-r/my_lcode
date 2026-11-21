@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import math
 
-from mewcode.compact import (
+from lcode.compact import (
     CompactCircuitBreaker,
     ContentReplacementState,
     RecoveryState,
@@ -10,13 +10,13 @@ from mewcode.compact import (
     new_session_context,
     usage_anchor,
 )
-from mewcode.compact.layer1 import build_preview, offload_and_snip
-from mewcode.compact.recovery import build_recovery_attachment, render_file_block
-from mewcode.compact.state import FileReadRecord
-from mewcode.compact.summary_prompt import build_summary_prompt, extract_summary
-from mewcode.config import ProviderConfig, effective_context_window
-from mewcode.conversation import Conversation
-from mewcode.llm import Message, ToolDefinition, ToolResult, Usage
+from lcode.compact.layer1 import build_preview, offload_and_snip
+from lcode.compact.recovery import build_recovery_attachment, render_file_block
+from lcode.compact.state import FileReadRecord
+from lcode.compact.summary_prompt import build_summary_prompt, extract_summary
+from lcode.config import ProviderConfig, effective_context_window
+from lcode.conversation import Conversation
+from lcode.llm import Message, ToolDefinition, ToolResult, Usage
 
 # ── token ────────────────────────────────────────────────────────────────
 

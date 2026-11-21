@@ -4,8 +4,8 @@ import json
 
 import pytest
 
-from mewcode.hook.executor import Executor, _find_sh
-from mewcode.hook.rule import (
+from lcode.hook.executor import Executor, _find_sh
+from lcode.hook.rule import (
     Action,
     ActionType,
     HttpAction,

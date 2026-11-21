@@ -5,15 +5,15 @@ from pathlib import Path
 
 import pytest
 
-from mewcode.team import (
+from lcode.team import (
     AgentNameRegistry,
     BackendType,
     Manager,
     TeamHasActiveMembersError,
     TeammateInfo,
 )
-from mewcode.team.persistence import read_json
-from mewcode.team.types import Team
+from lcode.team.persistence import read_json
+from lcode.team.types import Team
 
 
 def _manager(tmp_path, git_repo):
@@ -92,7 +92,7 @@ async def test_cross_process_reload_before_set_active(tmp_path, git_repo):
 async def test_scan_restores_teams_and_skips_corrupt(tmp_path, git_repo):
     manager = _manager(tmp_path, git_repo)
     await manager.create("demo")
-    bad = Path(tmp_path / "home" / ".mewcode" / "teams" / "bad")
+    bad = Path(tmp_path / "home" / ".lcode" / "teams" / "bad")
     bad.mkdir()
     (bad / "config.json").write_text("{broken", encoding="utf-8")
 
@@ -112,7 +112,7 @@ async def test_handle_task_done_writes_idle(tmp_path, git_repo):
 
     reloaded = Team.from_dict(read_json(team.config_path), team.config_dir)
     assert reloaded.member_by_name("alice").is_active is False
-    from mewcode.team.mailbox import Box
+    from lcode.team.mailbox import Box
 
     messages = await Box(team.mailbox_dir).read("lead")
     assert any("[idle] alice" in message.text for message in messages)

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import yaml
 
-from mewcode.mcp.config import load_config
+from lcode.mcp.config import load_config
 
 
 def _write(path, data):
@@ -17,10 +17,10 @@ def test_empty(tmp_path, monkeypatch):
 
 
 def test_two_layer_merge(tmp_path, monkeypatch):
-    # user layer at ~/.mewcode/config.yaml, project layer at root/.mewcode.yaml
+    # user layer at ~/.lcode/config.yaml, project layer at root/.lcode.yaml
     monkeypatch.setattr("pathlib.Path.home", lambda: tmp_path)
     _write(
-        tmp_path / ".mewcode" / "config.yaml",
+        tmp_path / ".lcode" / "config.yaml",
         {
             "mcp_servers": {
                 "a": {"type": "stdio", "command": "user-a"},
@@ -29,7 +29,7 @@ def test_two_layer_merge(tmp_path, monkeypatch):
         },
     )
     _write(
-        tmp_path / ".mewcode.yaml",
+        tmp_path / ".lcode.yaml",
         {"mcp_servers": {"b": {"type": "stdio", "command": "project-b"}}},
     )
     cfg = load_config(str(tmp_path))
@@ -41,7 +41,7 @@ def test_env_expansion(tmp_path, monkeypatch):
     monkeypatch.setenv("TOKEN", "secret123")
     monkeypatch.setattr("pathlib.Path.home", lambda: tmp_path)
     _write(
-        tmp_path / ".mewcode.yaml",
+        tmp_path / ".lcode.yaml",
         {
             "mcp_servers": {
                 "s": {
@@ -60,7 +60,7 @@ def test_command_and_args_expansion(tmp_path, monkeypatch):
     monkeypatch.setenv("PY", "C:/venv/python.exe")
     monkeypatch.setattr("pathlib.Path.home", lambda: tmp_path)
     _write(
-        tmp_path / ".mewcode.yaml",
+        tmp_path / ".lcode.yaml",
         {
             "mcp_servers": {
                 "s": {
@@ -80,7 +80,7 @@ def test_undefined_var_expands_empty(tmp_path, monkeypatch, capsys):
     monkeypatch.delenv("MISSING", raising=False)
     monkeypatch.setattr("pathlib.Path.home", lambda: tmp_path)
     _write(
-        tmp_path / ".mewcode.yaml",
+        tmp_path / ".lcode.yaml",
         {"mcp_servers": {"s": {"type": "http", "url": "http://x", "headers": {"X": "${MISSING}"}}}},
     )
     cfg = load_config(str(tmp_path))
@@ -91,7 +91,7 @@ def test_undefined_var_expands_empty(tmp_path, monkeypatch, capsys):
 def test_validation_skip(tmp_path, monkeypatch, capsys):
     monkeypatch.setattr("pathlib.Path.home", lambda: tmp_path)
     _write(
-        tmp_path / ".mewcode.yaml",
+        tmp_path / ".lcode.yaml",
         {
             "mcp_servers": {
                 "no_type": {"command": "x"},
@@ -109,7 +109,7 @@ def test_validation_skip(tmp_path, monkeypatch, capsys):
 
 def test_invalid_yaml_degraded(tmp_path, monkeypatch, capsys):
     monkeypatch.setattr("pathlib.Path.home", lambda: tmp_path)
-    (tmp_path / ".mewcode.yaml").write_text("invalid: [unclosed\n", encoding="utf-8")
+    (tmp_path / ".lcode.yaml").write_text("invalid: [unclosed\n", encoding="utf-8")
     cfg = load_config(str(tmp_path))
     assert cfg.servers == {}
     assert "warn" in capsys.readouterr().err

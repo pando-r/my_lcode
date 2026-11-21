@@ -2,13 +2,13 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from mewcode.hook import Event
-from mewcode.hook.loader import load
-from mewcode.hook.rule import ActionType, CombineMode
+from lcode.hook import Event
+from lcode.hook.loader import load
+from lcode.hook.rule import ActionType, CombineMode
 
 
 def _project_file(tmp_path: Path, body: str) -> Path:
-    path = tmp_path / ".mewcode" / "hooks.yaml"
+    path = tmp_path / ".lcode" / "hooks.yaml"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(body, encoding="utf-8")
     return path
@@ -59,12 +59,12 @@ hooks:
     assert rule.timeout_s == 5.0
     assert rule.action.type is ActionType.SHELL
     assert rule.condition is not None and rule.condition.mode is CombineMode.ALL_OF
-    assert engine.sources == [str(tmp_path / ".mewcode" / "hooks.yaml")]
+    assert engine.sources == [str(tmp_path / ".lcode" / "hooks.yaml")]
 
 
 def test_project_and_user_files_merge_first_name_wins(tmp_path, monkeypatch, capsys):
     home = _isolate_home(tmp_path, monkeypatch)
-    user = home / ".mewcode" / "hooks.yaml"
+    user = home / ".lcode" / "hooks.yaml"
     user.parent.mkdir(parents=True)
     user.write_text(
         """
@@ -93,7 +93,7 @@ hooks:
     assert names == ["shared", "user-only"]
     assert engine.rules[0].action.prompt.text == "project"
     assert engine.sources == [
-        str(tmp_path / ".mewcode" / "hooks.yaml"),
+        str(tmp_path / ".lcode" / "hooks.yaml"),
         str(user),
     ]
     assert 'hook "shared": duplicate name, skipped' in capsys.readouterr().err

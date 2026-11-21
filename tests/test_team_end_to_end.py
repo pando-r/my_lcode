@@ -3,26 +3,26 @@ from __future__ import annotations
 import asyncio
 import json
 
-from mewcode.agent import Agent
-from mewcode.agent.agent_tool import AgentTool
-from mewcode.conversation import Conversation
-from mewcode.llm import StreamEvent, ToolCall
-from mewcode.permission import Mode, new_engine
-from mewcode.subagent import load_catalog
-from mewcode.task import Manager as TaskManager
-from mewcode.task import (
+from lcode.agent import Agent
+from lcode.agent.agent_tool import AgentTool
+from lcode.conversation import Conversation
+from lcode.llm import StreamEvent, ToolCall
+from lcode.permission import Mode, new_engine
+from lcode.subagent import load_catalog
+from lcode.task import Manager as TaskManager
+from lcode.task import (
     SendMessageTool as BackgroundSendTool,
 )
-from mewcode.task import (
+from lcode.task import (
     TaskGetTool as BackgroundGetTool,
 )
-from mewcode.task import (
+from lcode.task import (
     TaskListTool as BackgroundListTool,
 )
-from mewcode.team import AgentNameRegistry, BackendType, Manager
-from mewcode.team.tools import team_tools
-from mewcode.tool import new_default_registry
-from mewcode.worktree import Manager as WorktreeManager
+from lcode.team import AgentNameRegistry, BackendType, Manager
+from lcode.team.tools import team_tools
+from lcode.tool import new_default_registry
+from lcode.worktree import Manager as WorktreeManager
 
 
 class ScriptedProvider:
@@ -55,7 +55,7 @@ def _tool_call(name: str, args: dict, call_id: str = "c1"):
 
 
 async def test_main_agent_creates_team_and_spawns_member(git_repo, tmp_path, monkeypatch):
-    import mewcode.team.manager as team_manager_module
+    import lcode.team.manager as team_manager_module
 
     monkeypatch.setattr(team_manager_module, "detect", lambda: BackendType.IN_PROCESS)
     task_mgr = TaskManager()

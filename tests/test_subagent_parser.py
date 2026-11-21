@@ -4,9 +4,9 @@ from pathlib import Path
 
 import pytest
 
-from mewcode.permission import Mode
-from mewcode.subagent.definition import Definition, Source
-from mewcode.subagent.parser import AgentParseError, parse_definition, parse_file
+from lcode.permission import Mode
+from lcode.subagent.definition import Definition, Source
+from lcode.subagent.parser import AgentParseError, parse_definition, parse_file
 
 
 def _parse(text: str, source: Source = Source.PROJECT) -> Definition:

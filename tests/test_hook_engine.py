@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import asyncio
 
-from mewcode.hook import Engine, Event
-from mewcode.hook.executor import ExecutionResult
-from mewcode.hook.rule import (
+from lcode.hook import Engine, Event
+from lcode.hook.executor import ExecutionResult
+from lcode.hook.rule import (
     Action,
     ActionType,
     AtomCondition,
@@ -64,7 +64,7 @@ async def test_dispatch_filters_event_and_condition():
 
 
 async def test_condition_can_skip_rule():
-    from mewcode.permission.matcher import ExactMatcher
+    from lcode.permission.matcher import ExactMatcher
 
     condition = Condition(CombineMode.ALL_OF, [AtomCondition("tool_name", ExactMatcher("Bash"))])
     rule = _rule("bash-only", Event.PRE_TOOL_USE, condition=condition)

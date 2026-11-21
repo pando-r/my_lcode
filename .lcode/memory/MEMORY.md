@@ -1,0 +1,20 @@
+- [project_knowledge] lcode 项目核心架构 — lcode 是终端 AI 编程助手，项目路径 D:\Project\AgentProject\my_mecode。主链路：tui/app.py 的 submit() -> agent/__init__.py 的 Agent.run() 
+- [reference_material] lcode 中 dataclass field() 用法速查 — 项目中 field() 主要用于给 dataclass 字段补充配置，核心是 default_factory（可变默认值不能直接写 = []，会共享同一对象）。三种用法：
+- [project_knowledge] lcode Conversation.from_messages 语义 — lcode 中 Conversation.from_messages(msgs, on_append, on_replace) 是「静默装载」构造路径：先用 cls(...) 建空会话（挂好回调），再 conv._messages = 
+- [project_knowledge] lcode 长期记忆存储布局 — 记忆分两级目录，由 cli.py:47-50 的 memory.Manager 构造：项目级 <cwd>/.lcode/memory/（当前为 D:\Project\AgentProject\my_mecode\.lcode\mem
+- [project_knowledge] lcode Agent.run ReAct 循环关键设计 — lcode/src/lcode/agent/__init__.py 的 Agent.run() 是主 ReAct 循环（AsyncIterator[Event]），几个关键设计：
+- [reference_material] lcode 中三处正则用法位置 — lcode 源码中三处典型的 re.compile 正则，可作为讲解/参考示例：
+- [project_knowledge] lcode Skill 加载器需手动 reload — lcode 的 Skill 加载器在会话开始时扫描一次 skill 目录；会话进行中新安装的 skill 不会被自动识别，LoadSkill 会返回「未知 Skill: xxx」。解决：执行 `/skill reload` 重新扫描，之
+- [project_knowledge] lcode MCP 工具注册时机与可失败编排 — lcode 的 MCP server 只在 cli.py 启动时由 mcp/manager.py 注册一次，会话中新写的 tool 当轮无法调用，必须重启进程才能生效。
+- [project_knowledge] lcode MCP server 配置与工具命名规则 — lcode 的 MCP server 在 .lcode.yaml 的 mcp_servers 段配置：
+- [project_knowledge] lcode web_search MCP server 易被 DuckDuckGo 限流 — lcode 自带的 web_search MCP server（lcode/mcp_servers/web_search.py）底层走 DuckDuckGo 类搜索，连续请求会被限流：第一轮能返回结果，后续轮次直接返回「没有找到与「
+- [project_knowledge] lcode test_sandbox 在 Windows 必失败的原因 — tests/test_permission.py 的 test_sandbox 断言 sandbox_ok(root, "/tmp/lcode-sandbox-test.txt") 为真，这是 POSIX 专用断言，Windows 上必
+- [project_knowledge] lcode 常驻任务（resident）架构与用法 — lcode 常驻/离线任务功能：不维护长驻进程，状态全部落盘，由外部定时触发（Windows 关机即丢失进程）。
+- [project_knowledge] lcode Windows Toast 需自注册 AUMID — Windows Toast 通知走 CreateToastNotifier('lcode')，AUMID 未注册时 Show() 会静默丢弃（返回成功、注册表 LastNotificationAddedTime 也更新，但既不弹横幅也不
+- [project_knowledge] 当前解释器缺 pytest-asyncio 与 ruff — 这台机器默认的 python 是 C:\Users\29877\AppData\Local\Python\pythoncore-3.14-64，该环境里没装 pytest-asyncio 和 ruff。
+- [project_knowledge] lcode 改名 Lcode 的改动范围（仅用户可见层） — 项目对外显示名已从 Lcode 改为 Lcode，但只改了「用户看得见」的一层：prompt/modules.py 身份模块、prompt/__init__.py 的 render_banner、command/builtin_loca
+- [project_knowledge] lcode 邮件通道配置与收发流程 — lcode 邮件通道（.lcode/mail.yaml）：
+- [project_knowledge] lcode vision 模型选型与多图总大小闸门 — lcode 的 vision 模型（src/lcode/vision.py，配置 .lcode/config.yaml 的 vision 段）：
+- [project_knowledge] lcode 质量基线（ruff/mypy/测试/CI 现状） — lcode 质量现状（最近核查）：测试 814 passed / 2 skipped（约 84s），只能手动跑；仓库无 CI（无 .github 目录）；ruff 仅 1 个错误（conversation.py 导入排序，--fix 可修）
+- [project_knowledge] lcode 语音输入（ASR）通道与踩过的坑 — lcode 新增「耳朵」能力：语音走 qwen3-asr-flash，调用 OpenAI 风格端点 /audio/transcriptions（早期直接打这个路径返回 404，说明需要按 OpenAI 兼容的 base_url 拼接，而不是
+- [project_knowledge] lcode 视频附件抽帧链路（方案 B） — lcode 视频附件不再当音频处理，改为「抽帧 → view_image」：

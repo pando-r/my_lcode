@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from mewcode.config import ProviderConfig
-from mewcode.llm import Request, System
-from mewcode.llm.anthropic_provider import AnthropicProvider
+from lcode.config import ProviderConfig
+from lcode.llm import Request, System
+from lcode.llm.anthropic_provider import AnthropicProvider
 
 
 def _provider() -> AnthropicProvider:

@@ -7,9 +7,9 @@ from pathlib import Path
 
 import pytest
 
-from mewcode.agent import Agent
-from mewcode.agent.runtime import SessionRuntime
-from mewcode.command import (
+from lcode.agent import Agent
+from lcode.agent.runtime import SessionRuntime
+from lcode.command import (
     Kind,
     NopUI,
     Registry,
@@ -18,17 +18,17 @@ from mewcode.command import (
     register_skill_commands,
     register_skill_management,
 )
-from mewcode.command.skills import handle_skill
-from mewcode.conversation import Conversation
-from mewcode.llm import Message, StreamEvent, ToolCall
-from mewcode.permission import Mode, new_engine
-from mewcode.prompt import (
+from lcode.command.skills import handle_skill
+from lcode.conversation import Conversation
+from lcode.llm import Message, StreamEvent, ToolCall
+from lcode.permission import Mode, new_engine
+from lcode.prompt import (
     ActiveSkillEntry,
     SkillCatalogItem,
     render_active_skills_block,
     render_skills_catalog,
 )
-from mewcode.skills import (
+from lcode.skills import (
     ActiveSkills,
     InstallError,
     RuntimeSkillAgent,
@@ -45,10 +45,10 @@ from mewcode.skills import (
     render_body,
     substitute_arguments,
 )
-from mewcode.skills import install as install_mod
-from mewcode.tool import Registry as ToolRegistry
-from mewcode.tool.install_skill import InstallSkillTool
-from mewcode.tool.load_skill import LoadSkillTool
+from lcode.skills import install as install_mod
+from lcode.tool import Registry as ToolRegistry
+from lcode.tool.install_skill import InstallSkillTool
+from lcode.tool.load_skill import LoadSkillTool
 
 SKILL_TEXT = """---
 name: demo
@@ -60,7 +60,7 @@ Echo hello
 
 
 def _write_skill(root: Path, folder: str, text: str = SKILL_TEXT) -> Path:
-    path = root / ".mewcode" / "skills" / folder
+    path = root / ".lcode" / "skills" / folder
     path.mkdir(parents=True, exist_ok=True)
     skill_file = path / "SKILL.md"
     skill_file.write_text(text, encoding="utf-8")
@@ -68,7 +68,7 @@ def _write_skill(root: Path, folder: str, text: str = SKILL_TEXT) -> Path:
 
 
 def _user_dir(tmp_path: Path) -> Path:
-    # 隔离真实 ~/.mewcode/skills，避免测试相互影响。
+    # 隔离真实 ~/.lcode/skills，避免测试相互影响。
     return tmp_path / "user-skills"
 
 
@@ -103,7 +103,7 @@ def test_parse_skill_file_fields(tmp_path):
 
 def test_parse_skill_dir_and_missing(tmp_path):
     _write_skill(tmp_path, "demo")
-    skill = parse_skill_dir(tmp_path / ".mewcode" / "skills" / "demo")
+    skill = parse_skill_dir(tmp_path / ".lcode" / "skills" / "demo")
     assert skill.is_directory is True
     with pytest.raises(SkillParseError):
         parse_skill_dir(tmp_path / "nope")
@@ -235,7 +235,7 @@ def test_project_overrides_user(tmp_path):
 
 def test_loader_skips_bad_file(tmp_path, caplog):
     _write_skill(tmp_path, "demo")
-    (tmp_path / ".mewcode" / "skills" / "bad.md").write_text("---\nname: BAD!\n---\n", "utf-8")
+    (tmp_path / ".lcode" / "skills" / "bad.md").write_text("---\nname: BAD!\n---\n", "utf-8")
     loader = SkillLoader(tmp_path, user_dir=_user_dir(tmp_path))
     loader.load_all()
     assert loader.names() == ["demo"]
@@ -668,7 +668,7 @@ async def test_reload_restores_builtin_after_skill_removed(tmp_path):
     reg = _command_registry(loader, executor)
     assert "[skill]" in reg.lookup("status").description
 
-    shutil.rmtree(project / ".mewcode" / "skills" / "status")
+    shutil.rmtree(project / ".lcode" / "skills" / "status")
     ui = CapturingUI()
     ui.set_command_args("reload")
     await handle_skill(ui, reg, loader, executor)
@@ -863,7 +863,7 @@ async def test_install_skill_tool_reports_error(tmp_path, monkeypatch):
     async def boom(source, install_root=None, client=None):
         raise InstallError("nope")
 
-    monkeypatch.setattr("mewcode.tool.install_skill.install_from_url", boom)
+    monkeypatch.setattr("lcode.tool.install_skill.install_from_url", boom)
     loader = SkillLoader(tmp_path, user_dir=_user_dir(tmp_path))
     tool = InstallSkillTool(loader, install_root=_user_dir(tmp_path))
 

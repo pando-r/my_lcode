@@ -3,13 +3,13 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from mewcode.tool.bash import BashTool
-from mewcode.tool.ctx import cwd_from_ctx, resolve_path, with_cwd
-from mewcode.tool.edit_file import EditFileTool
-from mewcode.tool.glob_tool import GlobTool
-from mewcode.tool.grep_tool import GrepTool
-from mewcode.tool.read_file import ReadFileTool
-from mewcode.tool.write_file import WriteFileTool
+from lcode.tool.bash import BashTool
+from lcode.tool.ctx import cwd_from_ctx, resolve_path, with_cwd
+from lcode.tool.edit_file import EditFileTool
+from lcode.tool.glob_tool import GlobTool
+from lcode.tool.grep_tool import GrepTool
+from lcode.tool.read_file import ReadFileTool
+from lcode.tool.write_file import WriteFileTool
 
 
 def test_cwd_context_roundtrip(tmp_path):

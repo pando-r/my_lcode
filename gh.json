@@ -1,0 +1,498 @@
+{
+ "qwen2.5-vl": [
+  {
+   "full_name": "roboflow/maestro",
+   "stars": 2695,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "streamline the fine-tuning process for multimodal models: PaliGemma 2, Florence-2, and Qwen2.5-VL",
+   "url": "https://github.com/roboflow/maestro",
+   "pushed": "2026-11-16T17:58:20Z",
+   "homepage": "https://maestro.roboflow.com"
+  },
+  {
+   "full_name": "1038lab/ComfyUI-QwenVL",
+   "stars": 932,
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "desc": "ComfyUI-QwenVL custom node: Integrates the Qwen-VL series, including Qwen2.5-VL, Qwen3-VL, Qwen3.5-VL, Qwen3.6-VL (MoE), and Qwen3.8-VL, with GGUF support for advanced multimodal AI in text generation, image understanding, and video analysis.",
+   "url": "https://github.com/1038lab/ComfyUI-QwenVL",
+   "pushed": "2026-09-14T07:39:09Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "zjysteven/lmms-finetune",
+   "stars": 374,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "A minimal codebase for finetuning large multimodal models, supporting llava-1.5/1.6, llava-interleave, llava-next-video, llava-onevision, llama-3.2-vision, qwen-vl, qwen2-vl, phi3-v etc.",
+   "url": "https://github.com/zjysteven/lmms-finetune",
+   "pushed": "2026-02-28T02:54:35Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "phildougherty/qwen2.5-VL-inference-openai",
+   "stars": 210,
+   "lang": "Python",
+   "license": null,
+   "desc": "Inference service for Qwen2.5-VL-7b model",
+   "url": "https://github.com/phildougherty/qwen2.5-VL-inference-openai",
+   "pushed": "2025-03-24T15:12:27Z",
+   "homepage": null
+  },
+  {
+   "full_name": "amap-cvlab/AstraNav-Memory",
+   "stars": 177,
+   "lang": "Python",
+   "license": null,
+   "desc": "[Official] AstraNav-Memory: Contexts Compression for Long Memory. An image-centric memory framework for lifelong embodied navigation via visual context compression and Qwen2.5-VL. SOTA on GOAT-Bench & HM3D-OVON.",
+   "url": "https://github.com/amap-cvlab/AstraNav-Memory",
+   "pushed": "2026-01-21T03:55:59Z",
+   "homepage": "https://github.com/amap-cvlab/AstraNav-Memory"
+  },
+  {
+   "full_name": "sandy1990418/Finetune-Qwen2.5-VL",
+   "stars": 172,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "Fine-tuning Qwen2.5-VL for vision-language tasks | Optimized for Vision understanding | LoRA & PEFT support.",
+   "url": "https://github.com/sandy1990418/Finetune-Qwen2.5-VL",
+   "pushed": "2025-02-07T03:32:10Z",
+   "homepage": ""
+  }
+ ],
+ "minicpm-v": [
+  {
+   "full_name": "OpenBMB/MiniCPM-V",
+   "stars": 27170,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "See, hear, and interact on your local devices.",
+   "url": "https://github.com/OpenBMB/MiniCPM-V",
+   "pushed": "2026-11-09T07:37:30Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "intel/ipex-llm",
+   "stars": 8840,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "Accelerate local LLM inference and finetuning (LLaMA, Mistral, ChatGLM, Qwen, DeepSeek, Mixtral, Gemma, Phi, MiniCPM, Qwen-VL, MiniCPM-V, etc.) on Intel XPU (e.g., local PC with iGPU and NPU, discrete GPU such as Arc, Flex and Max); seamlessly integrate with llama.cpp, Ollama, HuggingFace, LangChain, LlamaIndex, vLLM, DeepSpeed, Axolotl, etc.",
+   "url": "https://github.com/intel/ipex-llm",
+   "pushed": "2026-01-28T17:32:40Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "simplexai-labs/PolyStrata",
+   "stars": 1280,
+   "lang": "C++",
+   "license": "MIT",
+   "desc": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, Tiel Coder and MiniCPM-V on a second engine written for PolyStrata. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost.",
+   "url": "https://github.com/simplexai-labs/PolyStrata",
+   "pushed": "2026-11-18T09:10:36Z",
+   "homepage": null
+  },
+  {
+   "full_name": "OpenBMB/MiniCPM-OCR",
+   "stars": 991,
+   "lang": "TypeScript",
+   "license": "Apache-2.0",
+   "desc": "Fast, accurate OCR with correctness assessment.",
+   "url": "https://github.com/OpenBMB/MiniCPM-OCR",
+   "pushed": "2026-11-19T14:58:22Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "PaddlePaddle/PaddleMIX",
+   "stars": 721,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "Paddle Multimodal Integration and eXploration, supporting mainstream multi-modal tasks, including end-to-end large-scale multi-modal pretrain models and diffusion model toolbox. Equipped with high performance and flexibility.",
+   "url": "https://github.com/PaddlePaddle/PaddleMIX",
+   "pushed": "2026-03-06T05:56:34Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "OpenSQZ/MiniCPM-V-CookBook",
+   "stars": 673,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "Cook up amazing AI applications effortlessly with MiniCPM / MiniCPM-V / MiniCPM-o",
+   "url": "https://github.com/OpenSQZ/MiniCPM-V-CookBook",
+   "pushed": "2026-11-20T06:40:09Z",
+   "homepage": "https://opensqz.github.io/MiniCPM-V-CookBook/"
+  }
+ ],
+ "image captioning cli": [
+  {
+   "full_name": "rmokady/CLIP_prefix_caption",
+   "stars": 1423,
+   "lang": "Jupyter Notebook",
+   "license": "MIT",
+   "desc": "Simple image captioning model",
+   "url": "https://github.com/rmokady/CLIP_prefix_caption",
+   "pushed": "2024-06-09T13:42:21Z",
+   "homepage": null
+  },
+  {
+   "full_name": "yangjianxin1/ClipCap-Chinese",
+   "stars": 324,
+   "lang": "Python",
+   "license": null,
+   "desc": "基于ClipCap的看图说话Image Caption模型",
+   "url": "https://github.com/yangjianxin1/ClipCap-Chinese",
+   "pushed": "2022-04-01T14:20:00Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "j-min/CLIP-Caption-Reward",
+   "stars": 247,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "desc": "PyTorch code for \"Fine-grained Image Captioning with CLIP Reward\" (Findings of NAACL 2022)",
+   "url": "https://github.com/j-min/CLIP-Caption-Reward",
+   "pushed": "2025-06-10T06:46:03Z",
+   "homepage": "https://arxiv.org/abs/2205.13115"
+  },
+  {
+   "full_name": "sarahESL/PubMedCLIP",
+   "stars": 183,
+   "lang": "Python",
+   "license": "MIT",
+   "desc": "Fine-tuning CLIP using ROCO dataset which contains image-caption pairs from PubMed articles.",
+   "url": "https://github.com/sarahESL/PubMedCLIP",
+   "pushed": "2024-08-13T13:36:21Z",
+   "homepage": null
+  },
+  {
+   "full_name": "DojoCodingLabs/remotion-superpowers",
+   "stars": 183,
+   "lang": "Shell",
+   "license": "MIT",
+   "desc": "🎬 Full video production studio for Remotion — for Claude Code, Codex, Gemini CLI & any Agent Skills agent. AI voiceovers, music, stock footage, image/video generation, TikTok captions, transitions & AI review loop. 15 skills, 5 MCP servers. Free & open source by Dojo Coding.",
+   "url": "https://github.com/DojoCodingLabs/remotion-superpowers",
+   "pushed": "2026-10-29T15:38:53Z",
+   "homepage": "https://github.com/DojoCodingLabs/remotion-superpowers"
+  },
+  {
+   "full_name": "galatolofederico/clip-glass",
+   "stars": 179,
+   "lang": "Python",
+   "license": "GPL-3.0",
+   "desc": "Repository for \"Generating images from caption and vice versa via CLIP-Guided Generative Latent Space Search\"",
+   "url": "https://github.com/galatolofederico/clip-glass",
+   "pushed": "2021-09-30T08:30:17Z",
+   "homepage": ""
+  }
+ ],
+ "video understanding": [
+  {
+   "full_name": "facebookresearch/SlowFast",
+   "stars": 7446,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "PySlowFast: video understanding codebase from FAIR for reproducing state-of-the-art video models.",
+   "url": "https://github.com/facebookresearch/SlowFast",
+   "pushed": "2026-03-16T11:07:10Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "open-mmlab/mmaction2",
+   "stars": 5201,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "OpenMMLab's Next Generation Video Understanding Toolbox and Benchmark",
+   "url": "https://github.com/open-mmlab/mmaction2",
+   "pushed": "2026-03-18T04:04:49Z",
+   "homepage": "https://mmaction2.readthedocs.io"
+  },
+  {
+   "full_name": "QwenLM/Qwen3-Omni",
+   "stars": 4120,
+   "lang": "Jupyter Notebook",
+   "license": "Apache-2.0",
+   "desc": "Qwen3-omni is a natively end-to-end, omni-modal LLM developed by the Qwen team at Alibaba Cloud, capable of understanding text, audio, images, and video, as well as generating speech in real time.",
+   "url": "https://github.com/QwenLM/Qwen3-Omni",
+   "pushed": "2026-04-23T10:58:01Z",
+   "homepage": null
+  },
+  {
+   "full_name": "QwenLM/Qwen2.5-Omni",
+   "stars": 4096,
+   "lang": "Jupyter Notebook",
+   "license": "Apache-2.0",
+   "desc": "Qwen2.5-Omni is an end-to-end multimodal model by Qwen team at Alibaba Cloud, capable of understanding text, audio, vision, video, and performing real-time speech generation.",
+   "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+   "pushed": "2025-06-12T11:03:07Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "facebookresearch/pytorchvideo",
+   "stars": 3568,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "A deep learning library for video understanding research.",
+   "url": "https://github.com/facebookresearch/pytorchvideo",
+   "pushed": "2026-10-16T17:09:48Z",
+   "homepage": "https://pytorchvideo.org/"
+  },
+  {
+   "full_name": "OpenGVLab/Ask-Anything",
+   "stars": 3361,
+   "lang": "Python",
+   "license": "MIT",
+   "desc": "[CVPR2024 Highlight][VideoChatGPT] ChatGPT with video understanding! And many more supported LMs such as miniGPT4, StableLM, and MOSS.",
+   "url": "https://github.com/OpenGVLab/Ask-Anything",
+   "pushed": "2026-07-17T10:31:09Z",
+   "homepage": "https://vchat.opengvlab.com/"
+  }
+ ],
+ "markitdown": [
+  {
+   "full_name": "microsoft/markitdown",
+   "stars": 197135,
+   "lang": "Python",
+   "license": "MIT",
+   "desc": "Python tool for converting files and office documents to Markdown.",
+   "url": "https://github.com/microsoft/markitdown",
+   "pushed": "2026-11-07T00:14:01Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "alchaincyf/huashu-md-html",
+   "stars": 947,
+   "lang": "CSS",
+   "license": "MIT",
+   "desc": "md/html 双向流水线 · 三个能力一站式：万物→md / md→精美html / html→md。封装 markitdown + Pandoc + html-to-markdown + trafilatura。4 套反 AI slop 主题。Claude Code skill.",
+   "url": "https://github.com/alchaincyf/huashu-md-html",
+   "pushed": "2026-11-15T07:22:29Z",
+   "homepage": null
+  },
+  {
+   "full_name": "DuanYan007/markitdown",
+   "stars": 869,
+   "lang": "Java",
+   "license": "MIT",
+   "desc": "markitdown：Cli；Lib; Java",
+   "url": "https://github.com/DuanYan007/markitdown",
+   "pushed": "2026-05-16T09:17:10Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "magicyuan876/mineru-tianshu",
+   "stars": 854,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "天枢 - 企业级 AI 一站式数据预处理平台 | PDF/Office转Markdown | 支持MCP协议AI助手集成 | Vue3+FastAPI全栈方案 | 文档解析 | 多模态信息提取",
+   "url": "https://github.com/magicyuan876/mineru-tianshu",
+   "pushed": "2026-10-16T01:47:45Z",
+   "homepage": "https://mineru-tianshu.vercel.app"
+  },
+  {
+   "full_name": "ibrahimqureshae/mdflux",
+   "stars": 589,
+   "lang": "Python",
+   "license": "MIT",
+   "desc": "Turn any document into clean, AI-ready Markdown. Local-first desktop app: reads scanned PDFs, batches folders, runs offline, and uses far fewer tokens than vision models.",
+   "url": "https://github.com/ibrahimqureshae/mdflux",
+   "pushed": "2026-11-16T15:04:35Z",
+   "homepage": "https://ibrahimqureshae.github.io/mdflux/"
+  },
+  {
+   "full_name": "AeternaLabsHQ/pullmd",
+   "stars": 527,
+   "lang": "JavaScript",
+   "license": "AGPL-3.0",
+   "desc": "Self-hosted URL- and file-to-Markdown service for humans and AI agents - web pages, documents, images, audio, YouTube. PWA + REST + MCP + Claude Code skill, Reddit-aware, refreshable share links.",
+   "url": "https://github.com/AeternaLabsHQ/pullmd",
+   "pushed": "2026-11-20T07:37:16Z",
+   "homepage": "https://aeternalabshq.github.io/pullmd/"
+  }
+ ],
+ "ollama vision": [
+  {
+   "full_name": "icereed/paperless-gpt",
+   "stars": 2846,
+   "lang": "Go",
+   "license": "MIT",
+   "desc": "Use LLMs and LLM Vision (OCR) to handle paperless-ngx - Document Digitalization powered by AI",
+   "url": "https://github.com/icereed/paperless-gpt",
+   "pushed": "2026-11-19T18:59:09Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "szczyglis-dev/py-gpt",
+   "stars": 2032,
+   "lang": "Python",
+   "license": "NOASSERTION",
+   "desc": "Desktop AI Assistant powered by GPT, Gemini, Claude, Grok, Ollama, DeepSeek, Perplexity, and more - chat, agents, tools, MCP, plugins, RAG, vision, voice, image and video generation, speech synthesis and speech recognition, web search, memory, presets, canvas, assistants, themes, computer use. Windows, Linux, and Mac.",
+   "url": "https://github.com/szczyglis-dev/py-gpt",
+   "pushed": "2026-10-06T02:37:46Z",
+   "homepage": "https://pygpt.net"
+  },
+  {
+   "full_name": "sh4den/Montscan",
+   "stars": 456,
+   "lang": "Rust",
+   "license": "MIT",
+   "desc": "🖨️ Self-hosted scanned document processor with AI-powered naming. Receives scans via FTP, SFTP, SCP, SMB or a watched folder, reads them with a local Ollama vision model, gives each file a dated, descriptive name, and delivers it to WebDAV (Nextcloud, ownCloud), an SMB share, or a local folder.",
+   "url": "https://github.com/sh4den/Montscan",
+   "pushed": "2026-11-13T22:48:33Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "mattt/ollama-swift",
+   "stars": 455,
+   "lang": "Swift",
+   "license": "MIT",
+   "desc": "A Swift client library for interacting with Ollama. Supports structured outputs, tool use, and vision models.",
+   "url": "https://github.com/mattt/ollama-swift",
+   "pushed": "2026-11-02T13:12:47Z",
+   "homepage": "https://ollama.com"
+  },
+  {
+   "full_name": "graniet/llm",
+   "stars": 368,
+   "lang": "Rust",
+   "license": "MIT",
+   "desc": "A powerful Rust library and CLI tool to unify and orchestrate multiple LLM, Agent and voice backends (OpenAI, Claude, Gemini, Ollama, ElevenLabs...) with a single, extensible API. Build, chain, evaluate, and serve complex multi-step AI workflows — including speech-to-text, text-to-speech, completions, vision, and reasoning.",
+   "url": "https://github.com/graniet/llm",
+   "pushed": "2026-06-06T05:46:15Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "harishdeivanayagam/rowfill",
+   "stars": 365,
+   "lang": "TypeScript",
+   "license": "NOASSERTION",
+   "desc": "Open-source spreadsheets platform for deep research and document processing",
+   "url": "https://github.com/harishdeivanayagam/rowfill",
+   "pushed": "2025-09-25T11:09:52Z",
+   "homepage": "https://www.rowfill.com"
+  }
+ ],
+ "whisper": [
+  {
+   "full_name": "openai/whisper",
+   "stars": 113151,
+   "lang": "Python",
+   "license": "MIT",
+   "desc": "Robust Speech Recognition via Large-Scale Weak Supervision",
+   "url": "https://github.com/openai/whisper",
+   "pushed": "2026-08-31T17:19:19Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "jamiepine/voicebox",
+   "stars": 60970,
+   "lang": "Python",
+   "license": "MIT",
+   "desc": "The open-source AI voice studio. Clone, dictate, create.",
+   "url": "https://github.com/jamiepine/voicebox",
+   "pushed": "2026-10-07T01:17:58Z",
+   "homepage": "https://voicebox.sh"
+  },
+  {
+   "full_name": "ggml-org/whisper.cpp",
+   "stars": 55358,
+   "lang": "C++",
+   "license": "MIT",
+   "desc": "Port of OpenAI's Whisper model in C/C++",
+   "url": "https://github.com/ggml-org/whisper.cpp",
+   "pushed": "2026-11-20T09:25:13Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "Zackriya-Solutions/meetily",
+   "stars": 32901,
+   "lang": "Rust",
+   "license": "MIT",
+   "desc": "Privacy-first AI meeting note taker for Windows, macOS and Linux. Free, open source (MIT). On-device Whisper/Parakeet transcription and speaker diarization, no meeting bot. Open-source alternative to Granola, Otter and Fireflies. https://meetily.ai",
+   "url": "https://github.com/Zackriya-Solutions/meetily",
+   "pushed": "2026-11-14T14:05:41Z",
+   "homepage": "https://meetily.ai"
+  },
+  {
+   "full_name": "SYSTRAN/faster-whisper",
+   "stars": 26886,
+   "lang": "Python",
+   "license": "MIT",
+   "desc": "Faster Whisper transcription with CTranslate2",
+   "url": "https://github.com/SYSTRAN/faster-whisper",
+   "pushed": "2026-11-12T09:05:56Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "m-bain/whisperX",
+   "stars": 25516,
+   "lang": "Python",
+   "license": "BSD-2-Clause",
+   "desc": "WhisperX:  Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
+   "url": "https://github.com/m-bain/whisperX",
+   "pushed": "2026-11-12T17:34:05Z",
+   "homepage": ""
+  }
+ ],
+ "paddleocr": [
+  {
+   "full_name": "PaddlePaddle/PaddleOCR",
+   "stars": 92940,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+   "url": "https://github.com/PaddlePaddle/PaddleOCR",
+   "pushed": "2026-09-16T03:31:50Z",
+   "homepage": "https://www.paddleocr.com"
+  },
+  {
+   "full_name": "hiroi-sora/Umi-OCR",
+   "stars": 48822,
+   "lang": "Python",
+   "license": "MIT",
+   "desc": "OCR software, free and offline. 开源、免费的离线OCR软件。支持截屏/批量导入图片，PDF文档识别，排除水印/页眉页脚，扫描/生成二维码。内置多国语言库。",
+   "url": "https://github.com/hiroi-sora/Umi-OCR",
+   "pushed": "2025-11-20T14:58:13Z",
+   "homepage": ""
+  },
+  {
+   "full_name": "RapidAI/RapidOCR",
+   "stars": 8583,
+   "lang": "Python",
+   "license": "Apache-2.0",
+   "desc": "📄 Awesome OCR multiple programing languages toolkits based on ONNX Runtime, OpenVINO, MNN, PaddlePaddle, TensorRT and PyTorch.",
+   "url": "https://github.com/RapidAI/RapidOCR",
+   "pushed": "2026-11-20T04:54:59Z",
+   "homepage": "https://rapidai.github.io/RapidOCRDocs"
+  },
+  {
+   "full_name": "xushengfeng/eSearch",
+   "stars": 7452,
+   "lang": "TypeScript",
+   "license": "GPL-3.0",
+   "desc": "截屏 离线OCR 搜索翻译 以图搜图 贴图 录屏 万向滚动截屏 屏幕翻译   Screenshot  Offline OCR   Search   Translate   Search for picture   Paste the picture on the screen   Screen recorder   Omnidirectional scrolling screenshot   Screen translator  支持Windows Linux macOS",
+   "url": "https://github.com/xushengfeng/eSearch",
+   "pushed": "2026-11-20T06:51:52Z",
+   "homepage": "https://esearch-app.netlify.app/"
+  },
+  {
+   "full_name": "clusterzx/paperless-ai",
+   "stars": 6139,
+   "lang": "TypeScript",
+   "license": "MIT",
+   "desc": "AI companion for Paperless-ngx: automatically titles, tags and files your documents, reads bad scans with local OCR (PaddleOCR, CPU/GPU) and answers questions about your whole archive with cited sources. Works with OpenAI, Claude, Ollama (fully local), Azure and any OpenAI-compatible API.",
+   "url": "https://github.com/clusterzx/paperless-ai",
+   "pushed": "2026-11-19T07:14:33Z",
+   "homepage": "https://clusterzx.github.io/paperless-ai/"
+  },
+  {
+   "full_name": "TimmyOVO/deepseek-ocr.rs",
+   "stars": 2186,
+   "lang": "Rust",
+   "license": "Apache-2.0",
+   "desc": "Rust multi‑backend OCR/VLM engine (DeepSeek‑OCR-1/2, PaddleOCR‑VL, DotsOCR) with DSQ quantization and an OpenAI‑compatible server & CLI – run locally without Python.",
+   "url": "https://github.com/TimmyOVO/deepseek-ocr.rs",
+   "pushed": "2026-02-21T12:21:10Z",
+   "homepage": ""
+  }
+ ]
+}

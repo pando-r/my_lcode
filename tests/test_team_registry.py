@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from mewcode.team.registry import AgentNameRegistry
+from lcode.team.registry import AgentNameRegistry
 
 
 def test_register_resolve_and_reverse():

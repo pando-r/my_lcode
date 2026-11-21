@@ -3,19 +3,19 @@ from __future__ import annotations
 import asyncio
 import json
 
-from mewcode.tool import Registry, Result, new_default_registry
-from mewcode.tool.bash import BashTool
-from mewcode.tool.edit_file import EditFileTool
-from mewcode.tool.glob_tool import GlobTool
-from mewcode.tool.grep_tool import GrepTool
-from mewcode.tool.read_file import ReadFileTool
-from mewcode.tool.write_file import WriteFileTool
+from lcode.tool import Registry, Result, new_default_registry
+from lcode.tool.bash import BashTool
+from lcode.tool.edit_file import EditFileTool
+from lcode.tool.glob_tool import GlobTool
+from lcode.tool.grep_tool import GrepTool
+from lcode.tool.read_file import ReadFileTool
+from lcode.tool.write_file import WriteFileTool
 
 
 def test_registry_definitions():
     reg = new_default_registry()
     defs = reg.definitions()
-    assert len(defs) == 6
+    assert len(defs) == 7
     assert [d.name for d in defs] == [
         "read_file",
         "write_file",
@@ -23,6 +23,7 @@ def test_registry_definitions():
         "bash",
         "glob",
         "grep",
+        "notify",
     ]
     assert reg.get("read_file") is not None
     assert reg.get("nope") is None
@@ -130,4 +131,4 @@ async def test_grep(tmp_path):
 
 def test_registry_count():
     assert Registry().count() == 0
-    assert new_default_registry().count() == 6
+    assert new_default_registry().count() == 7

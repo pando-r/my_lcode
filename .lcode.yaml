@@ -1,0 +1,16 @@
+# lcode MCP 服务器配置（项目级）
+# 同名 server 会覆盖用户级 ~/.lcode/config.yaml 里的定义。
+# command / args / env / headers 的值都支持 ${VAR} 从宿主环境变量展开（密钥不落盘）。
+
+mcp_servers:
+  # 网页搜索：引擎链 Tavily → Bing → DuckDuckGo，自带、无需另开进程。
+  # 工具名：mcp__web__search_web
+  #
+  # 想要 Tavily 的高质量结果，只需设环境变量（不用改这里，也不用重启配置）：
+  #   PowerShell:  $env:TAVILY_API_KEY = "tvly-..."     # 当前会话
+  #                setx TAVILY_API_KEY "tvly-..."       # 永久（新开终端生效）
+  # 没设 key 就自动跳过 Tavily，走 Bing/DuckDuckGo 抓 HTML。
+  web:
+    type: stdio
+    command: "${LCODE_PYTHON}"   # cli 启动时注入 = 当前运行 lcode 的解释器
+    args: ["-m", "lcode.mcp_servers.web_search"]

@@ -5,8 +5,8 @@ import os
 import time
 from pathlib import Path
 
-from mewcode.team.filelock import LOCK_STALE_AFTER, acquire
-from mewcode.team.mailbox import Box, Message, MessageType
+from lcode.team.filelock import LOCK_STALE_AFTER, acquire
+from lcode.team.mailbox import Box, Message, MessageType
 
 
 async def test_roundtrip(tmp_path):

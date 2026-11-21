@@ -2,16 +2,16 @@ from __future__ import annotations
 
 import json
 
-from mewcode.agent import Agent
-from mewcode.agent.agent_tool import AgentTool
-from mewcode.agent.team_hook import IncomingMessage, TeammateContext
-from mewcode.agent.tool_context import ToolCallContext, bind_tool_context
-from mewcode.conversation import Conversation
-from mewcode.llm import StreamEvent
-from mewcode.permission import Mode, new_engine
-from mewcode.subagent import load_catalog
-from mewcode.task import Manager as TaskManager
-from mewcode.tool import Registry
+from lcode.agent import Agent
+from lcode.agent.agent_tool import AgentTool
+from lcode.agent.team_hook import IncomingMessage, TeammateContext
+from lcode.agent.tool_context import ToolCallContext, bind_tool_context
+from lcode.conversation import Conversation
+from lcode.llm import StreamEvent
+from lcode.permission import Mode, new_engine
+from lcode.subagent import load_catalog
+from lcode.task import Manager as TaskManager
+from lcode.tool import Registry
 
 
 class ScriptedProvider:

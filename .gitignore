@@ -13,15 +13,25 @@ build/
 # Claude Code local settings
 .claude/settings.local.json
 
-# mewcode runtime config (contains real API keys)
-.mewcode/config.yaml
+# Lcode runtime config (contains real API keys)
+.lcode/config.yaml
 
-# mewcode local permission rules (human-in-the-loop "always allow" writes here)
-.mewcode/settings.local.yaml
+# Lcode local permission rules (human-in-the-loop "always allow" writes here)
+.lcode/settings.local.yaml
 
-# mewcode session archives (JSONL + tool-result spill files)
-.mewcode/sessions/
+# Lcode session archives (JSONL + tool-result spill files)
+.lcode/sessions/
 
 # ch14: Worktree 隔离副本（仅供 SubAgent 与手动管理使用）
-.mewcode/worktrees/
-.mewcode/worktree_session.json
+.lcode/worktrees/
+.lcode/worktree_session.json
+
+# 常驻模式运行态：队列 / 结果 / 日志 / 单实例锁（本地状态，不入库）
+.lcode/resident/
+
+# 通知通道配置（webhook URL 可能带 token / SMTP 授权码）与通知流水
+.lcode/notify.yaml
+.lcode/notifications.jsonl
+
+# 旧版目录名残留（重命名前的运行态，建议手工删除）
+.mewcode/

@@ -3,19 +3,20 @@ from __future__ import annotations
 import asyncio
 from pathlib import Path
 
-from mewcode.command import Registry, register_builtins
-from mewcode.compact import new_session_context
-from mewcode.config import ProviderConfig
-from mewcode.llm import Message, StreamEvent
-from mewcode.permission import Mode, new_engine
-from mewcode.prompt import EXECUTE_DIRECTIVE
-from mewcode.session import Writer, list_sessions
-from mewcode.tool import new_default_registry
-from mewcode.tui.app import MewCodeApp, SessionState
-from mewcode.tui.complete import MAX_ROWS, CompletionMenu
-from mewcode.tui.resume import select_session
+from lcode.command import Registry, register_builtins
+from lcode.compact import new_session_context
+from lcode.config import ProviderConfig
+from lcode.llm import Message, StreamEvent
+from lcode.permission import Mode, new_engine
+from lcode.prompt import EXECUTE_DIRECTIVE
+from lcode.session import Writer, list_sessions
+from lcode.tool import new_default_registry
+from lcode.tui.app import LcodeApp, SessionState
+from lcode.tui.complete import MAX_ROWS, CompletionMenu
+from lcode.tui.resume import select_session
 
 BUILTIN_NAMES = {
+    "audio",
     "clear",
     "compact",
     "copy",
@@ -23,6 +24,7 @@ BUILTIN_NAMES = {
     "exit",
     "help",
     "hooks",
+    "image",
     "memory",
     "permission",
     "plan",
@@ -57,7 +59,7 @@ class FakeProvider:
 
 def _app(
     tmp_path, writer=None, ses_ctx=None, mem_mgr=None, skill_loader=None, hook_engine=None
-) -> MewCodeApp:
+) -> LcodeApp:
     providers = [
         ProviderConfig(
             name="fake",
@@ -66,7 +68,7 @@ def _app(
             model="fake-model",
         )
     ]
-    return MewCodeApp(
+    return LcodeApp(
         providers,
         "dev",
         new_default_registry(),
@@ -81,7 +83,7 @@ def _app(
     )
 
 
-def _capture(app: MewCodeApp) -> list[tuple[str, str]]:
+def _capture(app: LcodeApp) -> list[tuple[str, str]]:
     captured: list[tuple[str, str]] = []
 
     def flush() -> None:
@@ -191,7 +193,7 @@ async def test_tui_handler_exception_is_reported(tmp_path):
         raise RuntimeError("boom")
 
     async with app.run_test():
-        from mewcode.command import Command, Kind
+        from lcode.command import Command, Kind
 
         app.cmd_registry.register(Command("boom", "boom", Kind.LOCAL, boom))
         captured = _capture(app)
@@ -204,7 +206,7 @@ async def test_tui_completion_filters_and_keys(tmp_path):
     async with app.run_test() as pilot:
         await pilot.press("/")
         assert app.completion.active
-        assert len(app.completion.items) == 17  # 16 builtins + /skill
+        assert len(app.completion.items) == 19  # 18 builtins + /skill
         assert {
             "help",
             "status",
@@ -280,7 +282,7 @@ async def test_completion_menu_render_limits_rows():
     text = menu.render(80)
     assert text.plain.count("\n") <= MAX_ROWS + 1
     assert "help" in text.plain
-    assert "↓ 8 more" in text.plain
+    assert "↓ 10 more" in text.plain
 
     for _ in range(9):
         menu.move_down()
@@ -300,7 +302,7 @@ async def test_tui_local_queries_use_live_state(tmp_path):
     mem_project = tmp_path / "mem"
     mem_project.mkdir()
     (mem_project / "MEMORY.md").write_text("", encoding="utf-8")
-    from mewcode.memory import Manager
+    from lcode.memory import Manager
 
     mem_mgr = Manager(str(mem_project), str(tmp_path / "user-mem"))
     ctx = new_session_context(str(tmp_path))
@@ -321,7 +323,9 @@ async def test_tui_local_queries_use_live_state(tmp_path):
         await app.dispatch_slash("/status")
         status_text = _text(captured)
         assert "Mode:" in status_text and "default" in status_text
-        assert "Tools:" in status_text and "6 enabled" in status_text
+        # 工具数量随默认注册表演进（notify 加入后是 7），断言用真实计数而不是硬编码。
+        assert "Tools:" in status_text and f"{app.tool_count()} enabled" in status_text
+        assert app.tool_count() == 7
         assert "Memories:" in status_text and "1 files" in status_text
         assert str(tmp_path) in status_text
 
@@ -401,9 +405,9 @@ async def test_tui_dispatch_non_slash_returns_false(tmp_path):
 
 
 def _skill_loader(tmp_path, name="demo", body="Echo hello"):
-    from mewcode.skills import SkillLoader
+    from lcode.skills import SkillLoader
 
-    path = tmp_path / ".mewcode" / "skills" / name
+    path = tmp_path / ".lcode" / "skills" / name
     path.mkdir(parents=True)
     (path / "SKILL.md").write_text(
         f"---\nname: {name}\ndescription: A {name} skill\n---\n{body}\n",
@@ -458,7 +462,7 @@ async def test_tui_skill_inline_execution_and_clear(tmp_path):
 async def test_tui_skill_reload_registers_hot_skill(tmp_path):
     loader = _skill_loader(tmp_path)
     app = _app(tmp_path, skill_loader=loader)
-    path = tmp_path / ".mewcode" / "skills" / "second"
+    path = tmp_path / ".lcode" / "skills" / "second"
     path.mkdir(parents=True)
     (path / "SKILL.md").write_text(
         "---\nname: second\ndescription: Second skill\n---\nbody\n", encoding="utf-8"
@@ -486,3 +490,266 @@ async def test_tui_quit_cancels_background_tasks(tmp_path):
                 break
             await asyncio.sleep(0)
         assert task.cancelled()
+
+
+async def test_tui_image_command_injects_vision_answer(tmp_path):
+    from lcode.config import VisionConfig
+    from lcode.tool.view_image import ViewImageTool
+
+    img = tmp_path / "shot.png"
+    img.write_bytes(_png(8, 8))
+
+    async def fake_asker(cfg, payloads, question, detail):
+        return "报错在 term.py 第 3 行"
+
+    app = _app(tmp_path)
+    app._tool_registry.register(
+        ViewImageTool(VisionConfig(api_key="k", model="qwen-vl-max"), asker=fake_asker)
+    )
+    async with app.run_test() as pilot:
+        app.provider = FakeProvider("我看过了")
+        captured = _capture(app)
+        app.view_image(str(img), "报错在哪？")
+        for _ in range(100):
+            if app.idle() and len(app.conv.messages()) >= 2:
+                break
+            await pilot.pause()
+
+        messages = app.conv.messages()
+        assert messages[0].role == "user"
+        assert "报错在 term.py 第 3 行" in messages[0].content
+        assert str(img) in messages[0].content
+        # 历史里只有文字：图片本体不进对话，JSONL 不会被 base64 撑大
+        assert "base64" not in messages[0].content
+        assert messages[-1].content == "我看过了"
+        assert any("正在看图" in msg for _, msg in captured)
+
+
+async def test_tui_image_command_without_vision_shows_hint(tmp_path):
+    from lcode.tool.view_image import VISION_SETUP_HINT
+
+    app = _app(tmp_path)
+    async with app.run_test():
+        captured = _capture(app)
+        app.view_image(str(tmp_path / "x.png"), "看图")
+        for _ in range(50):
+            if captured:
+                break
+            await asyncio.sleep(0)
+        assert VISION_SETUP_HINT in _text(captured)
+
+
+async def test_tui_audio_command_injects_transcript(tmp_path):
+    from lcode.audio import Segment, Transcript
+    from lcode.config import AudioConfig
+    from lcode.tool.transcribe_audio import TranscribeAudioTool
+
+    audio = tmp_path / "note.wav"
+    audio.write_bytes(_wav())
+
+    async def fake_transcriber(cfg, path, language="", prompt=""):
+        return Transcript(
+            [Segment(0, 3, "先做媒体层")], language="zh", model="whisper-1"
+        )
+
+    app = _app(tmp_path)
+    app._tool_registry.register(
+        TranscribeAudioTool(AudioConfig(api_key="k"), transcriber=fake_transcriber)
+    )
+    async with app.run_test() as pilot:
+        app.provider = FakeProvider("听完了")
+        captured = _capture(app)
+        app.transcribe_audio(str(audio), "关于重构")
+        for _ in range(100):
+            if app.idle() and len(app.conv.messages()) >= 2:
+                break
+            await pilot.pause()
+
+        messages = app.conv.messages()
+        assert "先做媒体层" in messages[0].content
+        assert "[00:00 → 00:03]" in messages[0].content
+        assert "关于重构" in messages[0].content
+        assert messages[-1].content == "听完了"
+        assert any("正在转写" in msg for _, msg in captured)
+
+
+async def test_tui_audio_command_without_config_shows_hint(tmp_path):
+    from lcode.tool.transcribe_audio import AUDIO_SETUP_HINT
+
+    app = _app(tmp_path)
+    async with app.run_test():
+        captured = _capture(app)
+        app.transcribe_audio(str(tmp_path / "x.wav"), "")
+        for _ in range(50):
+            if captured:
+                break
+            await asyncio.sleep(0)
+        assert AUDIO_SETUP_HINT in _text(captured)
+
+
+def _png(width: int = 8, height: int = 8) -> bytes:
+    import struct
+    import zlib
+
+    def chunk(tag: bytes, data: bytes) -> bytes:
+        crc = zlib.crc32(tag + data) & 0xFFFFFFFF
+        return struct.pack(">I", len(data)) + tag + data + struct.pack(">I", crc)
+
+    ihdr = struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0)
+    row = b"\x00" + b"\x90\x90\x90" * width
+    return (
+        b"\x89PNG\r\n\x1a\n"
+        + chunk(b"IHDR", ihdr)
+        + chunk(b"IDAT", zlib.compress(row * height))
+        + chunk(b"IEND", b"")
+    )
+
+
+def _wav() -> bytes:
+    import io
+    import wave
+
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(16000)
+        wf.writeframes(b"\x00\x00" * 1600)
+    return buf.getvalue()
+
+
+async def test_tui_attach_button_queues_files(tmp_path, monkeypatch):
+    from lcode.tui import attach as attach_mod
+
+    img = tmp_path / "shot.png"
+    img.write_bytes(_png())
+
+    async def fake_pick(title: str = "") -> list[str]:
+        return [str(img)]
+
+    monkeypatch.setattr(attach_mod, "pick_files", fake_pick)
+    app = _app(tmp_path)
+    async with app.run_test() as pilot:
+        await pilot.click("#attach-btn")
+        for _ in range(50):
+            if app.attachments:
+                break
+            await pilot.pause()
+
+        assert len(app.attachments) == 1
+        assert app.attachments[0].kind == "image"
+        bar = app.query_one("#attach-bar").render()
+        assert "shot.png(图)" in bar.plain
+
+
+async def test_tui_escape_clears_attachments(tmp_path):
+    img = tmp_path / "a.png"
+    img.write_bytes(_png())
+    app = _app(tmp_path)
+    async with app.run_test() as pilot:
+        app.add_attachments([str(img)])
+        assert app.attachments
+
+        await pilot.press("escape")
+        assert app.attachments == []
+
+
+async def test_tui_add_attachments_dedupes_and_caps(tmp_path):
+    paths = []
+    for i in range(8):
+        p = tmp_path / f"a{i}.png"
+        p.write_bytes(_png())
+        paths.append(str(p))
+    app = _app(tmp_path)
+    async with app.run_test():
+        app.add_attachments(paths + paths)  # 重复两次
+        assert len(app.attachments) == 6  # MAX_ATTACHMENTS
+
+
+async def test_tui_submit_expands_attachments(tmp_path):
+    from lcode.config import VisionConfig
+    from lcode.tool.view_image import ViewImageTool
+
+    img = tmp_path / "shot.png"
+    img.write_bytes(_png())
+
+    async def fake_asker(cfg, payloads, question, detail):
+        return "第 12 行 TypeError"
+
+    app = _app(tmp_path)
+    app._tool_registry.register(
+        ViewImageTool(VisionConfig(api_key="k", model="m"), asker=fake_asker)
+    )
+    async with app.run_test() as pilot:
+        app.provider = FakeProvider("看完了")
+        app.add_attachments([str(img)])
+        await app.submit("这个报错是什么")
+
+        for _ in range(100):
+            if app.idle() and len(app.conv.messages()) >= 2:
+                break
+            await pilot.pause()
+
+        first = app.conv.messages()[0]
+        assert first.role == "user"
+        assert "第 12 行 TypeError" in first.content
+        assert "用户的问题：这个报错是什么" in first.content
+        # 附件队列发送后清空，不会重复提交
+        assert app.attachments == []
+
+
+async def test_tui_submit_with_only_attachments(tmp_path):
+    # 只有附件、没打字的输入也要能发出去
+    from lcode.config import VisionConfig
+    from lcode.tool.view_image import ViewImageTool
+
+    img = tmp_path / "shot.png"
+    img.write_bytes(_png())
+
+    async def fake_asker(cfg, payloads, question, detail):
+        return "图里有三行字"
+
+    app = _app(tmp_path)
+    app._tool_registry.register(
+        ViewImageTool(VisionConfig(api_key="k", model="m"), asker=fake_asker)
+    )
+    async with app.run_test() as pilot:
+        app.provider = FakeProvider("好的")
+        app.add_attachments([str(img)])
+        await app.submit("")
+        for _ in range(100):
+            if app.idle() and len(app.conv.messages()) >= 2:
+                break
+            await pilot.pause()
+        assert "图里有三行字" in app.conv.messages()[0].content
+
+
+async def test_tui_submit_fails_gracefully_without_vision(tmp_path):
+    # 没配 vision：附件读不了，应该报错而不是把空内容发给模型
+    img = tmp_path / "a.png"
+    img.write_bytes(_png())
+    app = _app(tmp_path)
+    async with app.run_test() as pilot:
+        app.provider = FakeProvider("不该被调用")
+        app.add_attachments([str(img)])
+        await app.submit("看看这个")
+        for _ in range(50):
+            await pilot.pause()
+            if not app.attachments:
+                break
+        assert app.conv.messages() == []  # 没有发起对话
+        assert app.attachments == []
+
+
+async def test_tui_slash_command_does_not_consume_attachments(tmp_path):
+    img = tmp_path / "a.png"
+    img.write_bytes(_png())
+    app = _app(tmp_path)
+    async with app.run_test():
+        captured = _capture(app)
+        app.add_attachments([str(img)])
+        await app.dispatch_slash("/status")
+        # 斜杠命令不走模型，附件应保留待发送
+        assert len(app.attachments) == 1
+        assert any("Mode:" in msg for _, msg in captured)
+

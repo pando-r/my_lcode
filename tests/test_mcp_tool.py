@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import mcp.types as mtypes
 
-from mewcode.mcp.tool import adapt_tool
+from lcode.mcp.tool import adapt_tool
 
 
 class StubSession:

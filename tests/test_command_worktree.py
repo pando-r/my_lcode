@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from mewcode.command.builtin_worktree import handle_worktree
-from mewcode.command.ui import NopUI, WorktreeSummary
+from lcode.command.builtin_worktree import handle_worktree
+from lcode.command.ui import NopUI, WorktreeSummary
 
 
 class StubAccessor:
@@ -13,7 +13,7 @@ class StubAccessor:
         self.items = [
             WorktreeSummary(
                 name="alice",
-                path="/repo/.mewcode/worktrees/alice",
+                path="/repo/.lcode/worktrees/alice",
                 branch="worktree-alice",
                 active=True,
                 manual=True,
@@ -22,7 +22,7 @@ class StubAccessor:
 
     async def create(self, name: str) -> tuple[str, str]:
         self.created.append(name)
-        return f"/repo/.mewcode/worktrees/{name}", f"worktree-{name}"
+        return f"/repo/.lcode/worktrees/{name}", f"worktree-{name}"
 
     def list(self) -> list[WorktreeSummary]:
         return list(self.items)

@@ -6,17 +6,17 @@ from pathlib import Path
 import pytest
 from textual.widgets import RichLog
 
-from mewcode.compact import new_session_context
-from mewcode.config import ProviderConfig
-from mewcode.hook import load
-from mewcode.hook.executor import _find_sh
-from mewcode.llm import Message, StreamEvent
-from mewcode.permission import new_engine
-from mewcode.session import Writer
-from mewcode.tool import new_default_registry
-from mewcode.tui.app import MewCodeApp
-from mewcode.tui.resume import select_session
-from mewcode.tui.stream import ChatInput
+from lcode.compact import new_session_context
+from lcode.config import ProviderConfig
+from lcode.hook import load
+from lcode.hook.executor import _find_sh
+from lcode.llm import Message, StreamEvent
+from lcode.permission import new_engine
+from lcode.session import Writer
+from lcode.tool import new_default_registry
+from lcode.tui.app import LcodeApp
+from lcode.tui.resume import select_session
+from lcode.tui.stream import ChatInput
 
 needs_sh = pytest.mark.skipif(_find_sh() is None, reason="no POSIX shell available")
 
@@ -50,17 +50,17 @@ def _isolate_home(tmp_path, monkeypatch) -> Path:
 
 def _hooks(tmp_path, monkeypatch, body: str):
     _isolate_home(tmp_path, monkeypatch)
-    path = tmp_path / ".mewcode" / "hooks.yaml"
+    path = tmp_path / ".lcode" / "hooks.yaml"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(body, encoding="utf-8")
     return load(tmp_path), path
 
 
-def _app(tmp_path, hook_engine=None) -> MewCodeApp:
+def _app(tmp_path, hook_engine=None) -> LcodeApp:
     providers = [
         ProviderConfig(name="fake", protocol="openai", api_key="test-key", model="fake-model")
     ]
-    return MewCodeApp(
+    return LcodeApp(
         providers,
         "dev",
         new_default_registry(),
@@ -71,7 +71,7 @@ def _app(tmp_path, hook_engine=None) -> MewCodeApp:
     )
 
 
-def _capture(app: MewCodeApp) -> list[tuple[str, str]]:
+def _capture(app: LcodeApp) -> list[tuple[str, str]]:
     captured: list[tuple[str, str]] = []
 
     def flush() -> None:
@@ -82,7 +82,7 @@ def _capture(app: MewCodeApp) -> list[tuple[str, str]]:
     return captured
 
 
-def _log_text(app: MewCodeApp) -> str:
+def _log_text(app: LcodeApp) -> str:
     log = app.query_one("#log", RichLog)
     return "\n".join(line.text for line in log.lines)
 

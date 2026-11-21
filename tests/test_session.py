@@ -8,9 +8,9 @@ from pathlib import Path
 
 import pytest
 
-from mewcode.compact import new_session_context, open_session_context, parse_session_time
-from mewcode.llm import Message, ToolCall, ToolResult
-from mewcode.session import (
+from lcode.compact import new_session_context, open_session_context, parse_session_time
+from lcode.llm import Message, ToolCall, ToolResult
+from lcode.session import (
     Writer,
     clean_expired,
     list_sessions,

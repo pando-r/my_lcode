@@ -3,18 +3,18 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from mewcode.agent import Agent
-from mewcode.agent.agent_tool import AgentTool
-from mewcode.agent.agent_worktree import _execute_with_worktree, build_worktree_notice
-from mewcode.agent.tool_context import ToolCallContext, bind_tool_context
-from mewcode.conversation import Conversation
-from mewcode.llm import StreamEvent
-from mewcode.permission import new_engine
-from mewcode.subagent import load_catalog
-from mewcode.task import Manager as TaskManager
-from mewcode.tool import Registry, Result
-from mewcode.tool.ctx import cwd_from_ctx, resolve_path
-from mewcode.worktree import ExitOptions, Manager
+from lcode.agent import Agent
+from lcode.agent.agent_tool import AgentTool
+from lcode.agent.agent_worktree import _execute_with_worktree, build_worktree_notice
+from lcode.agent.tool_context import ToolCallContext, bind_tool_context
+from lcode.conversation import Conversation
+from lcode.llm import StreamEvent
+from lcode.permission import new_engine
+from lcode.subagent import load_catalog
+from lcode.task import Manager as TaskManager
+from lcode.tool import Registry, Result
+from lcode.tool.ctx import cwd_from_ctx, resolve_path
+from lcode.worktree import ExitOptions, Manager
 
 
 class FakeReadTool:
@@ -64,10 +64,10 @@ class ScriptedProvider:
 
 
 def test_build_worktree_notice():
-    notice = build_worktree_notice("/parent", "/parent/.mewcode/worktrees/a")
+    notice = build_worktree_notice("/parent", "/parent/.lcode/worktrees/a")
     assert notice.startswith("<worktree-context>")
     assert "/parent" in notice
-    assert "/parent/.mewcode/worktrees/a" in notice
+    assert "/parent/.lcode/worktrees/a" in notice
     assert notice.rstrip().endswith("</worktree-context>")
 
 
@@ -97,7 +97,7 @@ async def test_execute_with_worktree_keeps_changed(git_repo):
 
 
 def _write_agent(tmp_path, name="iso", isolation="worktree"):
-    path = tmp_path / ".mewcode" / "agents" / f"{name}.md"
+    path = tmp_path / ".lcode" / "agents" / f"{name}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         f"---\nname: {name}\ndescription: d\nisolation: {isolation}\n---\nbody",

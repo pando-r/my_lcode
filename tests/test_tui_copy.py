@@ -7,14 +7,14 @@ from pathlib import Path
 from textual.geometry import Offset
 from textual.selection import Selection
 
-from mewcode.command import Registry, register_builtins
-from mewcode.command.ui import NopUI
-from mewcode.config import ProviderConfig
-from mewcode.llm import Message, StreamEvent
-from mewcode.permission import new_engine
-from mewcode.tool import new_default_registry
-from mewcode.tui.app import MewCodeApp, SessionState
-from mewcode.tui.logview import LogView, slice_cells
+from lcode.command import Registry, register_builtins
+from lcode.command.ui import NopUI
+from lcode.config import ProviderConfig
+from lcode.llm import Message, StreamEvent
+from lcode.permission import new_engine
+from lcode.tool import new_default_registry
+from lcode.tui.app import LcodeApp, SessionState
+from lcode.tui.logview import LogView, slice_cells
 
 
 class FakeProvider:
@@ -35,9 +35,9 @@ class FakeProvider:
         yield StreamEvent(done=True)
 
 
-def _app(tmp_path: Path) -> MewCodeApp:
+def _app(tmp_path: Path) -> LcodeApp:
     providers = [ProviderConfig(name="fake", protocol="openai", api_key="k", model="fake-model")]
-    app = MewCodeApp(
+    app = LcodeApp(
         providers,
         "dev",
         new_default_registry(),
@@ -203,12 +203,12 @@ async def test_copy_command_code_extracts_fences():
     ui._history = [
         Message(
             role="assistant",
-            content="看这里：\n```bash\nuv run mewcode\n```\n还有\n```\nx=1\n```",
+            content="看这里：\n```bash\nuv run lcode\n```\n还有\n```\nx=1\n```",
         )
     ]
     ui.set_command_args("code")
     await _registry().lookup("copy").handler(ui)
-    assert ui.copied == ["uv run mewcode\n\nx=1"]
+    assert ui.copied == ["uv run lcode\n\nx=1"]
 
 
 async def test_copy_command_empty_and_bad_args():

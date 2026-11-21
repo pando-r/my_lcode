@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import json
 
-from mewcode.team import BackendType, Manager, TeammateInfo
-from mewcode.team.mailbox import Box
-from mewcode.team.tools import (
+from lcode.team import BackendType, Manager, TeammateInfo
+from lcode.team.mailbox import Box
+from lcode.team.tools import (
     TaskCreateTool,
     TaskUpdateTool,
     TeamAwareSendMessageTool,
@@ -28,16 +28,16 @@ async def _team(manager: Manager):
 
 
 def test_team_tools_registration(tmp_path, git_repo):
-    from mewcode.task import (
+    from lcode.task import (
         Manager as TaskManager,
     )
-    from mewcode.task import (
+    from lcode.task import (
         SendMessageTool,
         TaskGetTool,
         TaskListTool,
     )
-    from mewcode.team.tools import team_tools
-    from mewcode.tool import Registry
+    from lcode.team.tools import team_tools
+    from lcode.tool import Registry
 
     manager = _manager(tmp_path, git_repo)
     task_mgr = TaskManager()
@@ -142,7 +142,7 @@ async def test_send_message_plan_approval_requires_lead(tmp_path, git_repo):
     await team.add_member(TeammateInfo(name="alice", agent_id="a1", is_active=True))
     manager.registry.register("alice", "a1")
 
-    from mewcode.agent.team_hook import TeammateContext, with_teammate_context
+    from lcode.agent.team_hook import TeammateContext, with_teammate_context
 
     teammate = TeammateContext(team_name=team.sanitized_name, member_name="alice", agent_id="a1")
     tool = TeamAwareSendMessageTool(manager, None)

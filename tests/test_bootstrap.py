@@ -4,20 +4,20 @@ from __future__ import annotations
 
 import pytest
 
-from mewcode import bootstrap
-from mewcode import config as config_mod
-from mewcode.config import CONFIG_ENV, ConfigError, resolve
+from lcode import bootstrap
+from lcode import config as config_mod
+from lcode.config import CONFIG_ENV, ConfigError, resolve
 
 
 @pytest.fixture
 def fake_home(tmp_path, monkeypatch):
-    # 把用户级配置固定到临时目录，避免碰到真实 ~/.mewcode
-    home_cfg = tmp_path / "home" / ".mewcode" / "config.yaml"
+    # 把用户级配置固定到临时目录，避免碰到真实 ~/.lcode
+    home_cfg = tmp_path / "home" / ".lcode" / "config.yaml"
     monkeypatch.setattr(config_mod, "user_config_path", lambda: home_cfg)
     monkeypatch.setattr(
         config_mod,
         "project_config_path",
-        lambda root=None: tmp_path / "proj" / ".mewcode" / "config.yaml",
+        lambda root=None: tmp_path / "proj" / ".lcode" / "config.yaml",
     )
     monkeypatch.delenv(CONFIG_ENV, raising=False)
     monkeypatch.chdir(tmp_path)
@@ -41,13 +41,13 @@ def test_resolve_falls_back_to_user_config(fake_home):
 
 def test_project_config_wins_over_user(fake_home, tmp_path):
     _write(fake_home)
-    project = _write(tmp_path / "proj" / ".mewcode" / "config.yaml")
+    project = _write(tmp_path / "proj" / ".lcode" / "config.yaml")
     assert resolve() == project
 
 
 def test_env_var_wins(fake_home, tmp_path, monkeypatch):
     _write(fake_home)
-    project = _write(tmp_path / "proj" / ".mewcode" / "config.yaml")
+    project = _write(tmp_path / "proj" / ".lcode" / "config.yaml")
     explicit = _write(tmp_path / "custom.yaml")
     monkeypatch.setenv(CONFIG_ENV, str(explicit))
     assert resolve() == explicit

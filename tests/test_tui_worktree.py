@@ -3,12 +3,12 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from mewcode.config import ProviderConfig
-from mewcode.llm import StreamEvent, ToolCall
-from mewcode.permission import new_engine
-from mewcode.tool import new_default_registry
-from mewcode.tui.app import MewCodeApp
-from mewcode.worktree import Manager
+from lcode.config import ProviderConfig
+from lcode.llm import StreamEvent, ToolCall
+from lcode.permission import new_engine
+from lcode.tool import new_default_registry
+from lcode.tui.app import LcodeApp
+from lcode.worktree import Manager
 
 
 class ScriptedProvider:
@@ -31,9 +31,9 @@ class ScriptedProvider:
             yield event
 
 
-def _app(repo: Path, worktree_mgr=None) -> MewCodeApp:
+def _app(repo: Path, worktree_mgr=None) -> LcodeApp:
     providers = [ProviderConfig(name="fake", protocol="openai", api_key="k", model="m")]
-    return MewCodeApp(
+    return LcodeApp(
         providers,
         "dev",
         new_default_registry(),

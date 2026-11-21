@@ -3,7 +3,7 @@ from __future__ import annotations
 import asyncio
 from pathlib import Path
 
-from mewcode.agent import (
+from lcode.agent import (
     MAX_ITERATIONS,
     MAX_UNKNOWN_RUN,
     NOTICE_CANCELLED,
@@ -12,11 +12,11 @@ from mewcode.agent import (
     Agent,
     Phase,
 )
-from mewcode.agent.runtime import SessionRuntime
-from mewcode.conversation import Conversation
-from mewcode.llm import StreamEvent, ToolCall
-from mewcode.permission import Mode, Outcome, new_engine
-from mewcode.tool import Registry, Result
+from lcode.agent.runtime import SessionRuntime
+from lcode.conversation import Conversation
+from lcode.llm import StreamEvent, ToolCall
+from lcode.permission import Mode, Outcome, new_engine
+from lcode.tool import Registry, Result
 
 
 def _engine():
@@ -379,7 +379,7 @@ async def test_ask_permanent(tmp_path):
             ev.approval.respond.set_result(Outcome.ALLOW_FOREVER)
 
     assert tool.exec_count == 1
-    local = tmp_path / ".mewcode" / "settings.local.yaml"
+    local = tmp_path / ".lcode" / "settings.local.yaml"
     assert local.exists()
     assert "Write(" in local.read_text(encoding="utf-8")
 

@@ -2,14 +2,14 @@ from __future__ import annotations
 
 import pytest
 
-from mewcode.permission.matcher import (
+from lcode.permission.matcher import (
     ExactMatcher,
     GlobMatcher,
     NotMatcher,
     RegexMatcher,
     compile_matcher,
 )
-from mewcode.permission.rule import Rule, RuleSet, parse_rule
+from lcode.permission.rule import Rule, RuleSet, parse_rule
 
 
 def test_exact_matcher():

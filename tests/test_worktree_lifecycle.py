@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from mewcode.worktree import (
+from lcode.worktree import (
     ExitAction,
     ExitOptions,
     Manager,

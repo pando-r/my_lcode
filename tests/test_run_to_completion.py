@@ -4,11 +4,11 @@ import asyncio
 
 import pytest
 
-from mewcode.agent import Agent, MaxTurnsReached
-from mewcode.conversation import Conversation
-from mewcode.llm import StreamEvent, ToolCall
-from mewcode.permission import Mode, Outcome, new_engine
-from mewcode.tool import Registry, Result
+from lcode.agent import Agent, MaxTurnsReached
+from lcode.conversation import Conversation
+from lcode.llm import StreamEvent, ToolCall
+from lcode.permission import Mode, Outcome, new_engine
+from lcode.tool import Registry, Result
 
 
 class ScriptedProvider:

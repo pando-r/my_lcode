@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from mewcode.hook.event import BLOCKING_EVENTS, Event, is_blocking, parse_event
-from mewcode.hook.matcher import eval_condition, get_by_path
-from mewcode.hook.rule import AtomCondition, CombineMode, Condition
-from mewcode.permission.matcher import ExactMatcher, GlobMatcher, NotMatcher
+from lcode.hook.event import BLOCKING_EVENTS, Event, is_blocking, parse_event
+from lcode.hook.matcher import eval_condition, get_by_path
+from lcode.hook.rule import AtomCondition, CombineMode, Condition
+from lcode.permission.matcher import ExactMatcher, GlobMatcher, NotMatcher
 
 
 def test_all_events_parse():

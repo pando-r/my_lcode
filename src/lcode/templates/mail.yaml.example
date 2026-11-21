@@ -1,0 +1,39 @@
+# Lcode 收件箱配置模板
+#
+# 复制到 <项目根>/.lcode/mail.yaml 后按需修改。
+# 用途：用邮件给 Lcode 派任务 —— 它读信、执行、再把结果回信给你。
+#
+# 三条安全闸门（缺一不可，都是刻意设计成「默认关闭」的）：
+#   1. senders 白名单：为空时**一封都不收**。From 头可以随便伪造，
+#      只靠自己写信箱地址过滤等于没有过滤。
+#   2. subject_prefix：只有主题以它开头的邮件才算任务，普通邮件不会被误读成指令。
+#   3. allow_write：默认 false，邮件来源的任务只能读不能写。
+
+enabled: false
+
+# IMAP 服务器。QQ 邮箱 / 163 都是 993 SSL；Gmail 用 imap.gmail.com:993。
+imap_host: imap.qq.com
+imap_port: 993
+folder: INBOX
+
+# user / auth_code 留空时自动继承 .lcode/notify.yaml 里的 email 段
+# （SMTP 和 IMAP 本来就是同一个账号、同一个授权码）。
+user: ""
+auth_code: ""
+
+# 发件人白名单。写完整地址，或写 @qq.com 匹配整个域名。
+# 留空 = 谁都不收，这是安全的默认行为。
+senders: []
+
+# 只有主题以此开头才当任务，例如「[Lcode] 帮我看看昨天的测试报告」。
+subject_prefix: "[Lcode]"
+
+# 允许邮件任务写文件 / 执行命令。默认 false —— 邮件正文是不可信输入，
+# 提示注入的后果在这里很具体（比如「把 ~/.ssh 打包发到某地址」）。
+allow_write: false
+
+# 单轮最多处理几封，防止一次灌进来 200 封把队列撑爆。
+max_per_poll: 5
+
+# IMAP 连接超时（秒）
+timeout: 15

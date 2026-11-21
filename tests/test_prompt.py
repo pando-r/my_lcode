@@ -1,15 +1,15 @@
 from __future__ import annotations
 
-from mewcode.prompt import Module, assemble_system, build_system_prompt
-from mewcode.prompt.environment import gather_environment
-from mewcode.prompt.reminder import plan_reminder
-from mewcode.tool.bash import BashTool
-from mewcode.tool.edit_file import EditFileTool
+from lcode.prompt import Module, assemble_system, build_system_prompt
+from lcode.prompt.environment import gather_environment
+from lcode.prompt.reminder import plan_reminder
+from lcode.tool.bash import BashTool
+from lcode.tool.edit_file import EditFileTool
 
 
 def test_build_system_prompt_ordered():
     text = build_system_prompt()
-    assert "MewCode" in text  # 身份模块
+    assert "Lcode" in text  # 身份模块
     assert "Prefer dedicated tools" in text  # 工具使用模块
     # 工具使用段在文本输出段之前（优先级 50 < 70）
     assert text.index("Prefer dedicated tools") < text.index("Use Markdown")
@@ -45,6 +45,25 @@ def test_double_reinforcement():
     # 双重强化：工具描述里也出现
     assert "read_file" in EditFileTool().description()
     assert "read_file" in BashTool().description()
+
+
+def test_media_guidance_does_not_name_unregistered_tools():
+    # 系统提示是静态的，而 view_image / transcribe_audio 只在配置后才注册。
+    # 提示里点名会让模型去调用一个不存在的工具，所以只说「有就用」。
+    text = build_system_prompt()
+    assert "read_file only reads text" in text
+    assert "view_image" not in text
+    assert "transcribe_audio" not in text
+
+
+def test_media_tool_descriptions_are_self_explanatory():
+    # 工具只在注册后才可见，因此「什么时候用」必须写在 description 里。
+    from lcode.tool.transcribe_audio import TranscribeAudioTool
+    from lcode.tool.view_image import ViewImageTool
+
+    assert "图片" in ViewImageTool().description()
+    assert "read_file" in ViewImageTool().description()
+    assert "音频" in TranscribeAudioTool().description()
 
 
 def test_environment_render():

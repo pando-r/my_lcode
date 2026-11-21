@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-from mewcode.agent.fork import (
+from lcode.agent.fork import (
     FORK_BOILERPLATE,
     FORK_BOILERPLATE_TAG,
     build_forked_messages,
     is_fork_context,
 )
-from mewcode.llm import (
+from lcode.llm import (
     ROLE_ASSISTANT,
     ROLE_TOOL,
     ROLE_USER,

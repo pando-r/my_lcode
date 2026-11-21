@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from mewcode.worktree.slug import flat_slug, validate_slug
+from lcode.worktree.slug import flat_slug, validate_slug
 
 
 @pytest.mark.parametrize(

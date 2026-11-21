@@ -2,12 +2,12 @@ from __future__ import annotations
 
 import pytest
 
-from mewcode.llm import ToolCall
-from mewcode.permission import Category, Decision, Mode, new_engine
-from mewcode.permission.blacklist import hits_blacklist
-from mewcode.permission.engine import mode_fallback
-from mewcode.permission.rule import RuleSet, match_pattern, parse_rule
-from mewcode.permission.sandbox import sandbox_ok
+from lcode.llm import ToolCall
+from lcode.permission import Category, Decision, Mode, new_engine
+from lcode.permission.blacklist import hits_blacklist
+from lcode.permission.engine import mode_fallback
+from lcode.permission.rule import RuleSet, match_pattern, parse_rule
+from lcode.permission.sandbox import sandbox_ok
 
 
 def test_blacklist():
@@ -20,18 +20,61 @@ def test_blacklist():
 
 
 def test_sandbox(tmp_path):
+    import os
+    import sys
+    import tempfile
+
     root = str(tmp_path)
     assert sandbox_ok(root, "a.txt")
     assert sandbox_ok(root, str(tmp_path / "a.txt"))
     assert not sandbox_ok(root, "/etc/passwd")
     assert not sandbox_ok(root, "../outside")
-    # N9：系统临时目录为显式白名单。
-    assert sandbox_ok(root, "/tmp/mewcode-sandbox-test.txt")
+    # N9：系统临时目录为显式白名单。Windows 上没有 /tmp，中转目录是 %TEMP%。
+    if sys.platform == "win32":
+        tmp_file = os.path.join(tempfile.gettempdir(), "lcode-sandbox-test.txt")
+    else:
+        tmp_file = "/tmp/lcode-sandbox-test.txt"
+    assert sandbox_ok(root, tmp_file)
 
 
 def test_sandbox_ancestor(tmp_path):
     root = str(tmp_path)
     assert sandbox_ok(root, str(tmp_path / "a" / "b" / "c.txt"))
+
+
+def test_temp_roots_non_empty_and_deduped():
+    from lcode.permission.sandbox import temp_roots
+
+    roots = temp_roots()
+    assert roots, "N9 白名单不能为空，否则临时目录中转会全部被拒"
+    import os
+
+    keys = [os.path.normcase(os.path.normpath(r)) for r in roots]
+    assert len(keys) == len(set(keys))
+
+
+def test_temp_whitelist_only_direct_children(tmp_path):
+    # 中转文件是单层的；子目录必须被拒，否则项目外的兄弟目录能顺着白名单逃出去。
+    import os
+
+    from lcode.permission.sandbox import sandbox_ok, temp_roots
+
+    temp_root = temp_roots()[0]
+    root = str(tmp_path)
+
+    assert sandbox_ok(root, os.path.join(temp_root, "lcode-direct.txt"))
+    assert not sandbox_ok(root, os.path.join(temp_root, "some-dir", "deep.txt"))
+
+
+def test_sandbox_case_insensitive_on_windows(tmp_path):
+    # Windows 路径大小写不敏感：同一目录的大小写变体不能判成越界。
+    import sys
+
+    root = str(tmp_path)
+    if sys.platform != "win32":
+        pytest.skip("只在 Windows 上有意义")
+    assert sandbox_ok(root, root.upper())
+    assert sandbox_ok(root, root.lower())
 
 
 def test_sandbox_symlink(tmp_path):
@@ -98,8 +141,8 @@ def test_engine_check_mode_ask(tmp_path):
 
 
 def test_engine_check_allow_rule(tmp_path):
-    (tmp_path / ".mewcode").mkdir()
-    (tmp_path / ".mewcode" / "settings.yaml").write_text(
+    (tmp_path / ".lcode").mkdir()
+    (tmp_path / ".lcode" / "settings.yaml").write_text(
         'permissions:\n  allow:\n    - "Write(*)"\n', encoding="utf-8"
     )
     engine, _ = new_engine(str(tmp_path))
@@ -116,8 +159,8 @@ def test_engine_check_invalid_file_args(tmp_path):
 
 
 def test_settings_rule_parse_failure_is_reported_and_skipped(tmp_path, capsys):
-    (tmp_path / ".mewcode").mkdir()
-    (tmp_path / ".mewcode" / "settings.yaml").write_text(
+    (tmp_path / ".lcode").mkdir()
+    (tmp_path / ".lcode" / "settings.yaml").write_text(
         'permissions:\n  allow:\n    - "Bash(!~[)"\n', encoding="utf-8"
     )
     engine, err = new_engine(str(tmp_path))
@@ -128,8 +171,8 @@ def test_settings_rule_parse_failure_is_reported_and_skipped(tmp_path, capsys):
 
 
 def test_settings_degradation(tmp_path):
-    (tmp_path / ".mewcode").mkdir()
-    (tmp_path / ".mewcode" / "settings.yaml").write_text("invalid: [unclosed\n", encoding="utf-8")
+    (tmp_path / ".lcode").mkdir()
+    (tmp_path / ".lcode" / "settings.yaml").write_text("invalid: [unclosed\n", encoding="utf-8")
     engine, err = new_engine(str(tmp_path))
     assert engine is not None  # never fatal for malformed settings
     assert err is None

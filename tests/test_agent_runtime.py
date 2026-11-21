@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from mewcode.agent.runtime import SessionRuntime
-from mewcode.compact import new_session_context
+from lcode.agent.runtime import SessionRuntime
+from lcode.compact import new_session_context
 
 
 def test_reset_for_new_session(tmp_path):

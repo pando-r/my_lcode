@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from mewcode.subagent import Source, load_catalog
-from mewcode.subagent.catalog import FORK_AGENT_NAME
+from lcode.subagent import Source, load_catalog
+from lcode.subagent.catalog import FORK_AGENT_NAME
 
 
 def _write(path: Path, name: str, description: str = "d", body: str = "body") -> None:
@@ -34,8 +34,8 @@ def test_builtin_definitions(tmp_path, monkeypatch):
 
 def test_project_overrides_user_overrides_builtin(tmp_path, monkeypatch):
     home = _isolate_home(tmp_path, monkeypatch)
-    _write(home / ".mewcode" / "agents" / "explore.md", "Explore", "user version")
-    _write(tmp_path / ".mewcode" / "agents" / "explore.md", "Explore", "project version")
+    _write(home / ".lcode" / "agents" / "explore.md", "Explore", "user version")
+    _write(tmp_path / ".lcode" / "agents" / "explore.md", "Explore", "project version")
 
     catalog = load_catalog(tmp_path)
     definition = catalog.resolve("Explore")
@@ -50,7 +50,7 @@ def test_project_overrides_user_overrides_builtin(tmp_path, monkeypatch):
 
 def test_user_overrides_builtin(tmp_path, monkeypatch):
     home = _isolate_home(tmp_path, monkeypatch)
-    _write(home / ".mewcode" / "agents" / "explore.md", "Explore", "user version")
+    _write(home / ".lcode" / "agents" / "explore.md", "Explore", "user version")
     catalog = load_catalog(tmp_path)
     assert catalog.resolve("Explore").source is Source.USER
 
@@ -58,7 +58,7 @@ def test_user_overrides_builtin(tmp_path, monkeypatch):
 def test_project_custom_agent_loaded(tmp_path, monkeypatch):
     _isolate_home(tmp_path, monkeypatch)
     _write(
-        tmp_path / ".mewcode" / "agents" / "wc-counter.md",
+        tmp_path / ".lcode" / "agents" / "wc-counter.md",
         "wc-counter",
         "count lines",
     )
@@ -70,7 +70,7 @@ def test_project_custom_agent_loaded(tmp_path, monkeypatch):
 
 def test_bad_definition_is_skipped(tmp_path, monkeypatch, capsys):
     _isolate_home(tmp_path, monkeypatch)
-    agents = tmp_path / ".mewcode" / "agents"
+    agents = tmp_path / ".lcode" / "agents"
     agents.mkdir(parents=True)
     (agents / "broken.md").write_text("not frontmatter", encoding="utf-8")
     _write(agents / "good.md", "good", "good role")

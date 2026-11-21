@@ -3,8 +3,8 @@ from __future__ import annotations
 import asyncio
 import json
 
-from mewcode.conversation import Conversation
-from mewcode.task import (
+from lcode.conversation import Conversation
+from lcode.task import (
     Manager,
     SendMessageTool,
     Status,

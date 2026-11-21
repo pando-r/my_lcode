@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import json
 
-from mewcode.llm import Message, StreamEvent
-from mewcode.memory import Manager, Store, UpdateAction, parse_actions
+from lcode.llm import Message, StreamEvent
+from lcode.memory import Manager, Store, UpdateAction, parse_actions
 
 
 def _action(**overrides) -> UpdateAction:

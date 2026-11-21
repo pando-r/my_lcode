@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import re
 
-from mewcode.team.tasks import Filter, Patch, Status, Store, Task
+from lcode.team.tasks import Filter, Patch, Status, Store, Task
 
 
 async def test_create_get(tmp_path):

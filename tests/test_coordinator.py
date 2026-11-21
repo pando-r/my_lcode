@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import pytest
 
-from mewcode import coordinator
-from mewcode.config import Config, FeaturesConfig, ProviderConfig
+from lcode import coordinator
+from lcode.config import Config, FeaturesConfig, ProviderConfig
 
 
 def _cfg(feature: bool) -> Config:
@@ -27,9 +27,9 @@ def _cfg(feature: bool) -> Config:
 )
 def test_double_lock(monkeypatch, feature, env, expected):
     if env:
-        monkeypatch.setenv("MEWCODE_COORDINATOR_MODE", env)
+        monkeypatch.setenv("LCODE_COORDINATOR_MODE", env)
     else:
-        monkeypatch.delenv("MEWCODE_COORDINATOR_MODE", raising=False)
+        monkeypatch.delenv("LCODE_COORDINATOR_MODE", raising=False)
     assert coordinator.is_enabled(_cfg(feature)) is expected
 
 

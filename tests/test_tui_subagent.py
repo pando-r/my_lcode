@@ -2,13 +2,13 @@ from __future__ import annotations
 
 import asyncio
 
-from mewcode.agent import ApprovalRequest
-from mewcode.config import ProviderConfig
-from mewcode.permission import Outcome, new_engine
-from mewcode.subagent import load_catalog
-from mewcode.task import Manager
-from mewcode.tool import new_default_registry
-from mewcode.tui.app import MewCodeApp, SessionState
+from lcode.agent import ApprovalRequest
+from lcode.config import ProviderConfig
+from lcode.permission import Outcome, new_engine
+from lcode.subagent import load_catalog
+from lcode.task import Manager
+from lcode.tool import new_default_registry
+from lcode.tui.app import LcodeApp, SessionState
 
 
 class TaskAgent:
@@ -19,11 +19,11 @@ class TaskAgent:
         return self.result
 
 
-def _app(tmp_path, task_mgr=None) -> MewCodeApp:
+def _app(tmp_path, task_mgr=None) -> LcodeApp:
     providers = [
         ProviderConfig(name="fake", protocol="openai", api_key="test-key", model="fake-model")
     ]
-    return MewCodeApp(
+    return LcodeApp(
         providers,
         "dev",
         new_default_registry(),

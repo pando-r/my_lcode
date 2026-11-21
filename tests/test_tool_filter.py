@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from mewcode.subagent import Source
-from mewcode.tool.filter import (
+from lcode.subagent import Source
+from lcode.tool.filter import (
     ALL_AGENT_DISALLOWED_TOOLS,
     ASYNC_AGENT_ALLOWED_TOOLS,
     CUSTOM_AGENT_DISALLOWED_TOOLS,
@@ -77,7 +77,7 @@ def test_whitelist_then_blacklist():
 
 
 def test_custom_agent_extra_disallowed(monkeypatch):
-    import mewcode.tool.filter as filter_mod
+    import lcode.tool.filter as filter_mod
 
     monkeypatch.setattr(filter_mod, "CUSTOM_AGENT_DISALLOWED_TOOLS", ["bash"])
     builtin = apply_agent_tool_filter(FilterParams(all=BASE, source=Source.BUILTIN))

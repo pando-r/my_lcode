@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import subprocess
 
-from mewcode.worktree import Manager
-from mewcode.worktree.git import (
+from lcode.worktree import Manager
+from lcode.worktree.git import (
     _has_unpushed_commits,
     _has_worktree_changes,
     _resolve_head_sha_from_fs,

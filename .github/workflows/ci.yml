@@ -1,0 +1,50 @@
+name: CI
+
+# 为什么一定要双平台矩阵：
+#   tests/test_permission.py::test_sandbox 曾在 Windows 上必失败，而单平台
+#   CI 永远看不见。路径沙箱、临时目录白名单、单实例锁的探活逻辑都是
+#   平台相关代码，只在一个 OS 上跑等于只验证了一半。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  # 同一分支的新 push 取消旧任务，避免排队浪费。
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: lint (ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --group dev
+      - name: ruff check
+        run: uv run ruff check .
+      - name: ruff format --check
+        run: uv run ruff format --check .
+
+  test:
+    name: test (${{ matrix.os }} / py${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false # 一个平台失败不要掩盖另一个平台的结果
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          python-version: ${{ matrix.python }}
+      - run: uv sync --group dev
+      - name: pytest
+        run: uv run pytest -q

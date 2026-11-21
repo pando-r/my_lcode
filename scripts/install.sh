@@ -1,20 +1,20 @@
 #!/bin/sh
-# mewcode 一行安装脚本（macOS / Linux）
+# lcode 一行安装脚本（macOS / Linux）
 #
 #   curl -LsSf https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.sh | sh
 #
 # 可选环境变量：
-#   MEWCODE_REPO       源码仓库地址（默认 https://github.com/pando-r/my_mecode）
-#   MEWCODE_CHANNEL    git（默认，从仓库装）| pypi（发布后从 PyPI 装）
-#   MEWCODE_INSTALLER  auto（默认，自动挑）| uv | pipx | pip
+#   LCODE_REPO       源码仓库地址（默认 https://github.com/pando-r/my_mecode）
+#   LCODE_CHANNEL    git（默认，从仓库装）| pypi（发布后从 PyPI 装）
+#   LCODE_INSTALLER  auto（默认，自动挑）| uv | pipx | pip
 #
 # 安装器优先级：uv > pipx > pip。没有 uv 也不会被强制下载 uv——
 # 机器上已有 pipx 或 Python 3.12+ 时直接走它们。
 set -eu
 
-REPO="${MEWCODE_REPO:-https://github.com/pando-r/my_mewcode}"
-CHANNEL="${MEWCODE_CHANNEL:-git}"
-INSTALLER="${MEWCODE_INSTALLER:-auto}"
+REPO="${LCODE_REPO:-https://github.com/pando-r/my_lcode}"
+CHANNEL="${LCODE_CHANNEL:-git}"
+INSTALLER="${LCODE_INSTALLER:-auto}"
 
 say() { printf '%s\n' "$*"; }
 have() { command -v "$1" >/dev/null 2>&1; }
@@ -45,14 +45,14 @@ fi
 
 # 2) 解析安装源：仓库渠道优先用 git；没装 git 就退回 zip 源码包
 if [ "$CHANNEL" = "pypi" ]; then
-  SRC="mewcode"
+  SRC="lcode"
 elif have git; then
   SRC="git+${REPO}.git"
 else
   SRC="${REPO}/archive/refs/heads/main.zip"
 fi
 
-say "==> 安装 mewcode（方式：$INSTALLER，来源：$SRC）"
+say "==> 安装 lcode（方式：$INSTALLER，来源：$SRC）"
 
 BIN_DIR=""
 case "$INSTALLER" in
@@ -70,18 +70,18 @@ case "$INSTALLER" in
       export PATH
     fi
     if ! have uv; then
-      say "uv 安装失败。可改用 pip：设置 MEWCODE_INSTALLER=pip 后重试，或参考 https://docs.astral.sh/uv/"
+      say "uv 安装失败。可改用 pip：设置 LCODE_INSTALLER=pip 后重试，或参考 https://docs.astral.sh/uv/"
       exit 1
     fi
     uv tool install --force "$SRC"
-    # 让 mewcode 进入 PATH，新开终端也生效
+    # 让 lcode 进入 PATH，新开终端也生效
     uv tool update-shell >/dev/null 2>&1 || true
     BIN_DIR="$(uv tool dir --bin 2>/dev/null || true)"
     ;;
   pipx)
     say "==> 使用已安装的 pipx（隔离环境，无需 uv）"
     if ! pipx install --force "$SRC"; then
-      say "pipx 安装失败。可改用 pip install：MEWCODE_INSTALLER=pip 后重试。"
+      say "pipx 安装失败。可改用 pip install：LCODE_INSTALLER=pip 后重试。"
       exit 1
     fi
     BIN_DIR="$(pipx environment --value PIPX_BIN_DIR 2>/dev/null || true)"
@@ -107,7 +107,7 @@ case "$INSTALLER" in
     BIN_DIR="$("$PY" -c 'import sysconfig; print(sysconfig.get_path("scripts", "posix_user"))' 2>/dev/null || true)"
     ;;
   *)
-    say "未知 MEWCODE_INSTALLER: $INSTALLER（可选 auto | uv | pipx | pip）"
+    say "未知 LCODE_INSTALLER: $INSTALLER（可选 auto | uv | pipx | pip）"
     exit 1
     ;;
 esac
@@ -117,16 +117,16 @@ if [ -n "$BIN_DIR" ]; then
   export PATH
 fi
 
-if ! command -v mewcode >/dev/null 2>&1; then
-  say "mewcode 已安装，但当前 PATH 里找不到它。请新开终端，或把这个目录加入 PATH：$BIN_DIR"
+if ! command -v lcode >/dev/null 2>&1; then
+  say "lcode 已安装，但当前 PATH 里找不到它。请新开终端，或把这个目录加入 PATH：$BIN_DIR"
 fi
 
 # 首次运行引导：写一份配置模板，用户只需填 api_key
 say ""
-mewcode --init || true
+lcode --init || true
 
 say ""
 say "安装完成："
-say "  1) 编辑 ~/.mewcode/config.yaml，把 providers[0].api_key 换成真实密钥"
-say "  2) 在任意项目目录运行：mewcode"
-say "  3) 查看版本：mewcode --version"
+say "  1) 编辑 ~/.lcode/config.yaml，把 providers[0].api_key 换成真实密钥"
+say "  2) 在任意项目目录运行：lcode"
+say "  3) 查看版本：lcode --version"

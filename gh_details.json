@@ -1,0 +1,29 @@
+{
+ "m87-labs/moondream": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ },
+ "OpenBMB/MiniCPM-V": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ },
+ "PaddlePaddle/PaddleOCR": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ },
+ "RapidAI/RapidOCR": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ },
+ "microsoft/markitdown": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ },
+ "SYSTRAN/faster-whisper": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ },
+ "QwenLM/Qwen2.5-VL": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ },
+ "QwenLM/Qwen3-Omni": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ },
+ "docling-project/docling": {
+  "error": "HTTP Error 403: rate limit exceeded"
+ }
+}

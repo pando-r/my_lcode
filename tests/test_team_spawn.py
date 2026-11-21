@@ -4,17 +4,17 @@ import asyncio
 import json
 from pathlib import Path
 
-from mewcode.agent import Agent
-from mewcode.agent.team_hook import TeamSpawnRequest
-from mewcode.conversation import Conversation
-from mewcode.llm import StreamEvent, ToolCall
-from mewcode.permission import new_engine
-from mewcode.subagent import load_catalog
-from mewcode.task import Manager as TaskManager
-from mewcode.team import AgentNameRegistry, BackendType, Manager
-from mewcode.team.types import Team
-from mewcode.tool import Registry
-from mewcode.worktree import Manager as WorktreeManager
+from lcode.agent import Agent
+from lcode.agent.team_hook import TeamSpawnRequest
+from lcode.conversation import Conversation
+from lcode.llm import StreamEvent, ToolCall
+from lcode.permission import new_engine
+from lcode.subagent import load_catalog
+from lcode.task import Manager as TaskManager
+from lcode.team import AgentNameRegistry, BackendType, Manager
+from lcode.team.types import Team
+from lcode.tool import Registry
+from lcode.worktree import Manager as WorktreeManager
 
 
 class MultiProvider:
@@ -57,7 +57,7 @@ class ScriptedProvider:
 
 
 async def test_spawn_inprocess_member_full_cycle(git_repo, tmp_path, monkeypatch):
-    import mewcode.team.manager as team_manager_module
+    import lcode.team.manager as team_manager_module
 
     monkeypatch.setattr(team_manager_module, "detect", lambda: BackendType.IN_PROCESS)
     home = tmp_path / "home"
@@ -111,7 +111,7 @@ async def test_spawn_inprocess_member_full_cycle(git_repo, tmp_path, monkeypatch
     assert Path(member.session_dir).is_dir()
     assert name_reg.resolve("alice") == payload["agent_id"]
 
-    from mewcode.team.mailbox import Box
+    from lcode.team.mailbox import Box
 
     lead_messages = await Box(team.mailbox_dir).read("lead")
     assert any("[idle] alice" in message.text for message in lead_messages)
@@ -129,10 +129,10 @@ async def test_spawn_inprocess_member_full_cycle(git_repo, tmp_path, monkeypatch
 
 
 async def test_plan_mode_required_member_starts_in_plan(git_repo, tmp_path, monkeypatch):
-    import mewcode.team.manager as team_manager_module
+    import lcode.team.manager as team_manager_module
 
     monkeypatch.setattr(team_manager_module, "detect", lambda: BackendType.IN_PROCESS)
-    agent_file = git_repo / ".mewcode" / "agents" / "planner.md"
+    agent_file = git_repo / ".lcode" / "agents" / "planner.md"
     agent_file.parent.mkdir(parents=True, exist_ok=True)
     agent_file.write_text(
         "---\nname: planner\ndescription: d\nplan_mode_required: true\n---\nplan",
@@ -160,7 +160,7 @@ async def test_plan_mode_required_member_starts_in_plan(git_repo, tmp_path, monk
             )
         )
     )
-    from mewcode.permission import Mode
+    from lcode.permission import Mode
 
     task = task_mgr.get(payload["agent_id"])
     assert task.sub_agent.permission_mode is Mode.PLAN
@@ -169,8 +169,8 @@ async def test_plan_mode_required_member_starts_in_plan(git_repo, tmp_path, monk
 
 
 async def test_send_message_resumes_stopped_inprocess_member(git_repo, tmp_path, monkeypatch):
-    import mewcode.team.manager as team_manager_module
-    from mewcode.team.tools import TeamAwareSendMessageTool
+    import lcode.team.manager as team_manager_module
+    from lcode.team.tools import TeamAwareSendMessageTool
 
     monkeypatch.setattr(team_manager_module, "detect", lambda: BackendType.IN_PROCESS)
     task_mgr = TaskManager()
@@ -220,8 +220,8 @@ async def test_send_message_resumes_stopped_inprocess_member(git_repo, tmp_path,
 
 
 async def test_pane_member_initial_prompt_written_to_mailbox(git_repo, tmp_path, monkeypatch):
-    import mewcode.team.manager as team_manager_module
-    import mewcode.team.spawn as spawn_module
+    import lcode.team.manager as team_manager_module
+    import lcode.team.spawn as spawn_module
 
     monkeypatch.setattr(team_manager_module, "detect", lambda: BackendType.TMUX)
 
@@ -264,7 +264,7 @@ async def test_pane_member_initial_prompt_written_to_mailbox(git_repo, tmp_path,
         )
     )
     assert backend.requests
-    from mewcode.team.mailbox import Box
+    from lcode.team.mailbox import Box
 
     messages = await Box(team.mailbox_dir).read(payload["agent_id"])
     assert messages[0].from_ == "lead"
@@ -280,8 +280,8 @@ async def test_pane_member_initial_prompt_written_to_mailbox(git_repo, tmp_path,
 
 
 async def test_inprocess_member_tools_use_worktree_cwd(git_repo, tmp_path, monkeypatch):
-    import mewcode.team.manager as team_manager_module
-    from mewcode.tool.write_file import WriteFileTool
+    import lcode.team.manager as team_manager_module
+    from lcode.tool.write_file import WriteFileTool
 
     monkeypatch.setattr(team_manager_module, "detect", lambda: BackendType.IN_PROCESS)
     task_mgr = TaskManager()
