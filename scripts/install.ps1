@@ -1,23 +1,46 @@
 ﻿# lcode one-line installer (Windows)
 #
-# 推荐用法（带超时：网不通时会报错退出，不会一直卡着）：
-#   $ProgressPreference='SilentlyContinue'; irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1 -TimeoutSec 30 | iex
+# ⚠ 两条硬性约束，改这个文件前先读：
 #
-# 国内网络下 raw.githubusercontent.com 经常直接不通，可换镜像（任选一条）：
-#   iex (iwr 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -UseBasicParsing -TimeoutSec 30).Content
-#   iex (iwr 'https://ghfast.top/https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1' -UseBasicParsing -TimeoutSec 30).Content
+#   1) 必须保存为**带 BOM 的 UTF-8**。
+#      没有 BOM 时，PowerShell 5.1 的 `-File` 会按系统代码页（中文 Windows = GBK）
+#      读文件，中文字符串被拆坏、把引号吃掉，直接报几十条
+#      `Missing closing '}'` ——脚本根本跑不起来。
+#      另存为时请确认文件头三字节是 EF BB BF。
+#
+#   2) 所以**不要**用 `irm ... | iex` 分发本脚本。
+#      带 BOM 的文本传给 iex 时，首字符 U+FEFF 会被当成标识符的一部分，
+#      首行 `#` 注释失效，报「无法将 Windows 项识别为 cmdlet」。
+#      正确用法是下载成文件再执行（见 README）：
+#         irm <url> -TimeoutSec 30 -OutFile "$env:TEMP\lcode-install.ps1"
+#         powershell -NoProfile -ExecutionPolicy Bypass -File "$env:TEMP\lcode-install.ps1"
+#
+# 推荐用法（带超时：网不通时会报错退出，不会一直卡着）：
+#   $ProgressPreference='SilentlyContinue'
+#   irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1 -TimeoutSec 30 -OutFile "$env:TEMP\lcode-install.ps1"
+#   powershell -NoProfile -ExecutionPolicy Bypass -File "$env:TEMP\lcode-install.ps1"
+#
+# 国内网络下 raw.githubusercontent.com 经常直接不通，换镜像（只改 URL）：
+#   irm 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -TimeoutSec 30 -OutFile "$env:TEMP\lcode-install.ps1"
+#   irm 'https://ghfast.top/https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1' -TimeoutSec 30 -OutFile "$env:TEMP\lcode-install.ps1"
 #
 # 一条都不通时，用这段自带回退的引导（每步都有超时）：
 #   $ProgressPreference='SilentlyContinue'
+#   $f="$env:TEMP\lcode-install.ps1"
 #   $u=@('https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1',
 #        'https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1',
 #        'https://ghfast.top/https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1')
-#   $c=$null; foreach($x in $u){ try{ $c=(iwr $x -UseBasicParsing -TimeoutSec 25).Content; break }catch{ Write-Host "失败: $x" } }
-#   if($c){ iex $c } else { throw '三个地址都下载失败' }
+#   $ok=$false
+#   foreach($x in $u){ try{
+#       irm $x -UseBasicParsing -TimeoutSec 25 -OutFile $f
+#       if((Get-Item $f).Length -gt 5000 -and (Select-String -Path $f -Pattern 'LCODE_' -Quiet -Encoding UTF8)){ $ok=$true; break }
+#     }catch{ Write-Host "失败: $x" } }
+#   if(-not $ok){ throw '三个地址都下载失败' }
+#   powershell -NoProfile -ExecutionPolicy Bypass -File $f
 #
 # 必须在 PowerShell 里运行（Windows PowerShell 5.1 或 PowerShell 7+）。
 # 在 cmd.exe 里请改用：
-#   powershell -ExecutionPolicy Bypass -Command "irm https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1 -TimeoutSec 30 | iex"
+#   powershell -NoProfile -ExecutionPolicy Bypass -Command "irm 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -TimeoutSec 30 -OutFile \"$env:TEMP\lcode-install.ps1\"; powershell -NoProfile -ExecutionPolicy Bypass -File \"$env:TEMP\lcode-install.ps1\""
 #
 # 可选环境变量：
 #   LCODE_REPO       源码仓库（默认 https://github.com/pando-r/my_mecode）
@@ -46,7 +69,7 @@ try {
 try { [Net.ServicePointManager]::Expect100Continue = $false } catch { }
 
 # ── 防挂死：让所有子进程在网络异常时自己失败，而不是无限期等待 ──────────────
-# git 遇到私有库或需要凭据时会在终端里等输入，通过 irm|iex 执行时表现为「脚本卡死」。
+# git 遇到私有库或需要凭据时会在终端里等输入，表现为「脚本卡死」。
 $env:GIT_TERMINAL_PROMPT = "0"
 $env:GIT_HTTP_LOW_SPEED_LIMIT = "1000"
 $env:GIT_HTTP_LOW_SPEED_TIME = "30"
@@ -326,7 +349,7 @@ function Select-ReachableUrl {
 }
 
 # 失败时不要把用户丢在「窗口直接关掉、什么都没看见」的处境里：
-# 通过 irm|iex 执行时 exit 会关掉整个 PowerShell 窗口。这里改用 throw，
+# 用 -File 直接跑时 exit 会立刻关掉窗口；这里改用 throw，
 # 报错留在屏幕上，窗口不会消失。
 function Write-Fail {
     param([string[]]$Lines)

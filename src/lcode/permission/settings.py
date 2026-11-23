@@ -87,6 +87,7 @@ def friendly_name(internal: str) -> str:
         "glob": "Glob",
         "grep": "Grep",
         "notify": "Notify",
+        "send_mail": "SendMail",
         "view_image": "ViewImage",
         "transcribe_audio": "Transcribe",
     }
@@ -101,6 +102,9 @@ def categorize(internal: str, read_only: bool) -> Category:
     # 而这恰恰是通知最需要生效的场景（常驻任务失败要有人知道）。
     if internal == "notify":
         return Category.READ
+    # send_mail 刻意**不**享受 notify 的待遇，落到下面的 EXEC：
+    # 它把数据送出本机且不可撤回，必须有人当场看见（TUI 里 ASK，
+    # 无人值守时 DENY 除非显式放开权限）。收件人白名单是另一道独立闸门。
     if internal in ("write_file", "edit_file"):
         return Category.WRITE
     return Category.EXEC  # bash and unknown tools: treat as side-effecting (N7)

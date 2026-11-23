@@ -3,9 +3,13 @@
 # 用邮件给 Lcode 派任务：主题以 [Lcode] 开头、发件人在白名单里的邮件
 # 会变成常驻任务，跑完自动回信。
 #
+# 内容写在**正文**里（比主题能塞的多得多）。收到回信后直接点「回复」接着聊：
+# 同一话题的来信会自动带上之前几轮的问答。
+#
 # 用法：
 #   lcode --check-mail                    只拉信入队（适合任务计划程序每 5 分钟跑一次）
 #   lcode --resident --mail-watch         常驻：每轮先收信，跑完回信
+#   lcode --mail-peek                     诊断：打印最近邮件被解析成什么样
 #
 # 安全：只收白名单 + 必须有主题前缀；邮件任务默认只读（allow_write: false）。
 # 想让它改文件必须显式打开 allow_write 或加 --mail-allow-write。
@@ -25,6 +29,15 @@ auth_code: ""
 senders:
   - 2987731879@qq.com
   - 3952613547@qq.com
+  - 2072472552@qq.com
+
+# 发信白名单：Agent 主动发信（send_mail 工具）只能发给这里列的地址。
+# 留空 = 一封都不发。要让它「给老王发封信」，把老王的地址加在这里。
+# 域名通配必须加引号：- "@qq.com"
+send_to:
+  - 2072472552@qq.com
+  - 3076874764@qq.com
+  - 2038262895@qq.com
 
 # 主题前缀，例如「[Lcode] 今天有什么要紧事」。
 subject_prefix: "[Lcode]"
@@ -34,3 +47,9 @@ allow_write: false
 
 max_per_poll: 5
 timeout: 15
+
+# 单封邮件的指令上限（字符）。正文是主体，主题只是行首那半句话。
+max_body: 4000
+
+# 回看最近几天内的邮件（按日期发现，不依赖未读状态）。
+catchup_days: 3

@@ -1,6 +1,6 @@
-# mewcode 权限配置示例
-# 三层配置：本地(.mewcode/settings.local.yaml) > 项目(.mewcode/settings.yaml) > 用户(~/.mewcode/settings.yaml)
-# 复制为 .mewcode/settings.yaml 生效；本地层 .mewcode/settings.local.yaml 已被 gitignore（人在回路「永久」写入此处）。
+# Lcode 权限配置示例
+# 三层配置：本地(.lcode/settings.local.yaml) > 项目(.lcode/settings.yaml) > 用户(~/.lcode/settings.yaml)
+# 复制为 .lcode/settings.yaml 生效；本地层 .lcode/settings.local.yaml 已被 gitignore（人在回路「永久」写入此处）。
 
 # 可选：默认权限模式（default / acceptEdits / plan / bypassPermissions），不写则 default
 default_mode: default

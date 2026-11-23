@@ -1,13 +1,13 @@
 # Lcode 通知通道配置模板
 #
-# 复制到 <项目根>/.mewcode/notify.yaml 后按需修改。
+# 复制到 <项目根>/.lcode/notify.yaml 后按需修改。
 # 常驻任务跑完 / 失败会自动发一条通知；Agent 也可以主动用 notify 工具发。
 #
 # 优先级：环境变量 > 本文件 > 内置默认值
-#   MEWCODE_NOTIFY_DESKTOP=0|1
-#   MEWCODE_NOTIFY_WEBHOOK=<url>
-#   MEWCODE_NOTIFY_MIN_LEVEL=info|ok|warn|error
-#   MEWCODE_NOTIFY_EMAIL_AUTH=<授权码>   # 设了会自动启用 email 段
+#   LCODE_NOTIFY_DESKTOP=0|1
+#   LCODE_NOTIFY_WEBHOOK=<url>
+#   LCODE_NOTIFY_MIN_LEVEL=info|ok|warn|error
+#   LCODE_NOTIFY_EMAIL_AUTH=<授权码>   # 设了会自动启用 email 段
 
 # 桌面横幅：Windows Toast / macOS 通知中心 / Linux notify-send
 desktop: true
@@ -25,7 +25,7 @@ webhook_timeout: 5
 
 # 邮件通知：QQ 邮箱 / 163 / Gmail 都能用，个人 QQ、微信没有官方发消息 API。
 # QQ 邮箱获取授权码：设置 → 账户 → 开启「POP3/SMTP 服务」→ 生成授权码。
-# 授权码不是 QQ 密码；建议改用环境变量 MEWCODE_NOTIFY_EMAIL_AUTH，别写进文件。
+# 授权码不是 QQ 密码；建议改用环境变量 LCODE_NOTIFY_EMAIL_AUTH，别写进文件。
 email:
   enabled: false
   smtp_host: smtp.qq.com

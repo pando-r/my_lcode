@@ -494,6 +494,85 @@ def test_cli_parses_no_notify():
     assert _build_parser().parse_args(["--no-notify"]).no_notify is True
 
 
+# ── 通知正文：答复在前，指令不进横幅 ──────────────────────────────────────
+#
+# 桌面横幅只有两三行。早期把 prompt 拼在第一行、再配一句单行摘要，
+# 结果开机简报的横幅第一行是「你是 K 的贾维斯。他刚开机，你主动开口。
+# 写一份简短的晨间简报…」——用户看到的是自己写的提示词，答复被挤下去。
+
+
+def test_notification_leads_with_answer_not_prompt():
+    from lcode.resident.daemon import _summarize_for_notify
+
+    body = _summarize_for_notify(
+        "下午好，K。今天阴转小雨，7~18℃，带伞。",
+        r"D:\p\results\job_1.md",
+        prompt="你是 K 的贾维斯。他刚开机，你主动开口。" * 20,
+    )
+    assert body.splitlines()[0] == "下午好，K。今天阴转小雨，7~18℃，带伞。"
+
+
+def test_notification_drops_long_prompt_entirely():
+    from lcode.resident.daemon import _summarize_for_notify
+
+    prompt = "你是 K 的贾维斯。他刚开机，你主动开口。写一份简短的晨间简报……" * 10
+    body = _summarize_for_notify("答复正文", "x.md", prompt=prompt)
+    # 六百多字的提示词截前六十字也是噪声，整个不能出现。
+    assert "贾维斯" not in body
+    assert "答复正文" in body
+
+
+def test_notification_keeps_short_prompt_as_label():
+    from lcode.resident.daemon import _summarize_for_notify
+
+    body = _summarize_for_notify("删了 3 个空目录。", "x.md", prompt="整理 docs 目录")
+    assert body.splitlines() == ["删了 3 个空目录。", "任务：整理 docs 目录", "结果已保存：x.md"]
+
+
+def test_notification_keeps_multiline_answer():
+    """简报本来就是「一屏看完」，只取一行会把天气和建议全丢掉。"""
+    from lcode.resident.daemon import _summarize_for_notify
+
+    answer = "下午好，K。\n\n衡阳今天阴转小雨，9~18℃，带伞。\n\n要出门赶在 17 点前。"
+    body = _summarize_for_notify(answer, "x.md")
+    assert "阴转小雨" in body
+    assert "17 点前" in body
+
+
+def test_notification_truncates_long_report():
+    from lcode.resident.daemon import NOTIFY_EXCERPT_LIMIT, _summarize_for_notify
+
+    body = _summarize_for_notify("步骤说明。" * 500, "x.md")
+    assert body.endswith("结果已保存：x.md")
+    assert "…" in body
+    assert len(body) < NOTIFY_EXCERPT_LIMIT + 50
+
+
+def test_notification_strips_markdown_markers():
+    """横幅不渲染 Markdown，``**加粗**`` 会原样显示成一堆星号。"""
+    from lcode.resident.daemon import _summarize_for_notify
+
+    body = _summarize_for_notify("## 结论\n\n**全部通过**，`7` 个用例。", "x.md")
+    assert "**" not in body
+    assert "`" not in body
+    assert "##" not in body
+    assert "全部通过" in body
+
+
+async def test_run_once_notification_uses_answer_body(tmp_path):
+    """端到端：跑一条任务，横幅正文必须以答复开头。"""
+    daemon = _daemon(tmp_path)
+    daemon._runner = _StubRunner("下午好，K。今天阴转小雨。")  # noqa: SLF001
+    fake = _FakeNotifier()
+    daemon._notifier = fake  # noqa: SLF001
+    daemon.queue.enqueue("你是 K 的贾维斯。他刚开机，你主动开口。" * 20)
+
+    await daemon.run_once()
+
+    _, message, _, _ = fake.sent[0]
+    assert message.splitlines()[0] == "下午好，K。今天阴转小雨。"
+
+
 # ── safeio：pythonw / GBK 终端兜底 ────────────────────────────────────────
 
 
@@ -810,10 +889,16 @@ async def test_duplicate_message_not_enqueued_twice(tmp_path, monkeypatch):
 
 async def test_mail_disabled_ingests_nothing(tmp_path, monkeypatch):
     from lcode import mailbox as mailbox_mod
+    from lcode.mailbox import FetchResult
 
     daemon = _daemon(tmp_path)  # mail=False
     called: list[int] = []
-    monkeypatch.setattr(mailbox_mod, "fetch_new", lambda _cfg, skip_ids=None: called.append(1) or FetchResult())
+
+    def fake_fetch(_cfg, skip_ids=None):
+        called.append(1)
+        return FetchResult()
+
+    monkeypatch.setattr(mailbox_mod, "fetch_new", fake_fetch)
     assert daemon.ingest_mail() == 0
     assert called == []
 
@@ -892,6 +977,99 @@ def test_cli_parses_mail_flags():
     assert defaults.mail_allow_write is False
 
 
+# ── 话题上下文：邮件追问与语音连续对话共用 ────────────────────────────────
+#
+# 语音这条线早先没给 enqueue 带 thread，于是每一轮都是全新会话：
+# 第二句「那它呢」模型完全不知道「它」指什么。这里锁住「给了 thread
+# 就必须带上上一轮问答」这个行为，邮件和语音都靠它。
+
+
+def test_thread_history_injected_into_prompt(tmp_path):
+    daemon = _daemon(tmp_path)
+    daemon._runner = _StubRunner("上一轮的回答")  # noqa: SLF001
+    first = daemon.queue.enqueue("现在几点", origin="voice", thread="voice-1")
+    daemon.queue.mark_running(first.id)
+    daemon.queue.mark_done(
+        first.id, daemon.queue.write_result(first.id, "五点半", "现在几点"), "五点半"
+    )
+
+    second = daemon.queue.enqueue("那明天呢", origin="voice", thread="voice-1")
+    prompt = daemon._prompt_with_thread(second)  # noqa: SLF001
+
+    assert "那明天呢" in prompt
+    assert "现在几点" in prompt
+    assert "五点半" in prompt
+
+
+def test_thread_history_uses_say_not_prompt(tmp_path):
+    """上下文里要放用户**原话**，不是带提示词前缀的完整 prompt。
+
+    语音入队的 prompt 形如 ``【语音提问】…不要用列表…\\n\\n现在几点``。
+    早期直接把 prompt 拼进上下文，于是每一轮都重复一遍那 45 字提示词：
+    3 轮就是 135 字纯噪音，模型还会反复看到「不要用列表」这种指令。
+    """
+    daemon = _daemon(tmp_path)
+    hint = "【语音提问】我的回答会被念出来，不要用列表。"
+    daemon.queue.enqueue(f"{hint}\n\n现在几点", origin="voice", thread="voice-1", say="现在几点")
+    first = daemon.queue.load()[0]
+    daemon.queue.mark_done(
+        first.id, daemon.queue.write_result(first.id, "五点半", first.prompt), "五点半"
+    )
+
+    second = daemon.queue.enqueue(
+        f"{hint}\n\n那明天呢", origin="voice", thread="voice-1", say="那明天呢"
+    )
+    prompt = daemon._prompt_with_thread(second)  # noqa: SLF001
+
+    # 历史段里不能出现提示词；本轮新消息里仍然保留（那是给这一轮的指令）。
+    history, _, current = prompt.partition("本次新消息：")
+    assert hint not in history
+    assert "提问：现在几点" in history
+    assert hint in current
+
+
+def test_thread_history_falls_back_to_prompt_without_say(tmp_path):
+    """旧队列没有 say 字段：仍然能用 prompt 拼上下文，不能直接丢掉历史。"""
+    daemon = _daemon(tmp_path)
+    first = daemon.queue.enqueue("老式入队", origin="voice", thread="voice-1")
+    daemon.queue.mark_done(
+        first.id, daemon.queue.write_result(first.id, "老答案", "老式入队"), "老答案"
+    )
+    second = daemon.queue.enqueue("接着说", origin="voice", thread="voice-1")
+    prompt = daemon._prompt_with_thread(second)  # noqa: SLF001
+    assert "老式入队" in prompt
+
+
+def test_thread_history_ignores_unfinished_turns(tmp_path):
+    """上一轮还在跑（或失败了）时不能把错误/空回答当上下文喂进去。"""
+    daemon = _daemon(tmp_path)
+    running = daemon.queue.enqueue("还在跑", origin="voice", thread="voice-1")
+    daemon.queue.mark_running(running.id)
+    failed = daemon.queue.enqueue("跑挂了", origin="voice", thread="voice-1")
+    daemon.queue.mark_failed(failed.id, "模型炸了")
+
+    second = daemon.queue.enqueue("接着说", origin="voice", thread="voice-1")
+    assert daemon._prompt_with_thread(second) == "接着说"  # noqa: SLF001
+
+
+def test_no_thread_means_single_turn(tmp_path):
+    """没有话题键（命令行入队）就是单轮问答，不拼任何历史。"""
+    daemon = _daemon(tmp_path)
+    first = daemon.queue.enqueue("老问题")
+    daemon.queue.mark_done(first.id, "/tmp/x.md", "老回答")
+    second = daemon.queue.enqueue("新问题")
+    assert daemon._prompt_with_thread(second) == "新问题"  # noqa: SLF001
+
+
+def test_different_threads_do_not_bleed(tmp_path):
+    """换了一段对话（空闲超时后新键）就不该再看到上一段的问答。"""
+    daemon = _daemon(tmp_path)
+    old = daemon.queue.enqueue("半小时前的问题", origin="voice", thread="voice-old")
+    daemon.queue.mark_done(old.id, "/tmp/x.md", "半小时前的回答")
+    fresh = daemon.queue.enqueue("新话题", origin="voice", thread="voice-new")
+    assert daemon._prompt_with_thread(fresh) == "新话题"  # noqa: SLF001
+
+
 # ── 计划任务轮询的轻量预检 ────────────────────────────────────────────────
 #
 # 每 3 分钟触发一次。完整启动要拉 MCP 子进程（实测 27s vs 预检 1.7s），
@@ -939,6 +1117,4 @@ def test_idle_mail_poll_skips_runner(tmp_path, monkeypatch):
 def _minimal_config():
     from lcode.config import Config, ProviderConfig
 
-    return Config(
-        providers=[ProviderConfig(name="p", protocol="openai", api_key="k", model="m")]
-    )
+    return Config(providers=[ProviderConfig(name="p", protocol="openai", api_key="k", model="m")])

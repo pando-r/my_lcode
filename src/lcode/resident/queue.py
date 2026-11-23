@@ -27,6 +27,8 @@ RESULTS_DIR = "results"
 
 ORIGIN_CLI = "cli"
 ORIGIN_MAIL = "mail"
+# 语音提问：结果会被念出来，用户已经在跟前听着了，再发一封邮件纯属打扰。
+ORIGIN_VOICE = "voice"
 
 SUMMARY_LIMIT = 280
 
@@ -58,6 +60,14 @@ class Task:
     # 原邮件主题与 Message-ID，用于回信时保持同一会话线程。
     subject: str = ""
     message_id: str = ""
+    # 话题键（同主题的追问共用）。回信追问时要靠它把上一轮问答带进上下文。
+    thread: str = ""
+    # 用户**原话**。``prompt`` 是给 Agent 的完整指令，可能带着一长串前缀
+    # （语音那 45 字的「【语音提问】…不要用列表」）。拼上下文时必须用原话，
+    # 否则每一轮都会把提示词再塞一遍：3 轮就是 135 字纯噪音，
+    # 而且模型会反复看到「不要用列表」这类指令，反而更容易跑偏。
+    # 空表示没单独记录（旧队列 / 命令行入队），此时回退到 prompt。
+    say: str = ""
 
     def __post_init__(self) -> None:
         # 手写 JSON 时容易漏 id，补一个，省得队列里出现匿名任务。
@@ -123,6 +133,8 @@ class TaskQueue:
                     reply_to=str(item.get("reply_to") or ""),
                     subject=str(item.get("subject") or ""),
                     message_id=str(item.get("message_id") or ""),
+                    thread=str(item.get("thread") or ""),
+                    say=str(item.get("say") or ""),
                 )
             )
         return tasks
@@ -156,6 +168,8 @@ class TaskQueue:
         reply_to: str = "",
         subject: str = "",
         message_id: str = "",
+        thread: str = "",
+        say: str = "",
     ) -> Task:
         text = prompt.strip()
         if not text:
@@ -168,10 +182,28 @@ class TaskQueue:
             reply_to=reply_to,
             subject=subject,
             message_id=message_id,
+            thread=thread,
+            say=say.strip(),
         )
         tasks.append(task)
         self.save(tasks)
         return task
+
+    def thread_history(self, thread: str, exclude_id: str = "", limit: int = 3) -> list[Task]:
+        """同一话题下已跑完的历史任务，按时间从早到晚返回。
+
+        只取 ``done``：失败的任务没有可用的回答，把错误信息当上下文喂进去
+        只会让模型顺着错误往下编。``limit`` 限制条数，避免一个聊了一周的话题
+        把每封新邮件的上下文都撑爆。
+        """
+        if not thread:
+            return []
+        done = [
+            task
+            for task in self.load()
+            if task.thread == thread and task.id != exclude_id and task.status == DONE
+        ]
+        return done[-limit:]
 
     def has_message(self, message_id: str) -> bool:
         """同一个 Message-ID 是否已经入过队。
@@ -230,6 +262,28 @@ class TaskQueue:
             return task
         return None
 
+    def result_text(self, task: Task, limit: int = 800) -> str:
+        """读回一条已完成任务的结果正文，截断到 ``limit`` 字。
+
+        优先读 ``results/<id>.md`` 的「## 结果」段：一句话摘要（``summary``）
+        往往只说结论，追问时模型需要的是上一轮到底答了什么。
+        读不到文件就退回摘要，再不行退回空串。
+        """
+        text = ""
+        if task.result_file:
+            try:
+                text = Path(task.result_file).read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                text = ""
+        if text.strip():
+            marker = text.find("## 结果")
+            if marker >= 0:
+                text = text[marker + len("## 结果") :]
+            text = text.strip()
+        if not text:
+            text = (task.summary or "").strip()
+        return text[: max(0, limit)]
+
     # ── results ──────────────────────────────────────────────────────────
 
     def write_result(self, task_id: str, text: str, prompt: str) -> str:
@@ -283,6 +337,7 @@ __all__ = [
     "FAILED",
     "ORIGIN_CLI",
     "ORIGIN_MAIL",
+    "ORIGIN_VOICE",
     "PENDING",
     "QUEUE_NAME",
     "RESULTS_DIR",

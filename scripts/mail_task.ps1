@@ -8,6 +8,7 @@
 # Usage (no admin rights needed):
 #   powershell -ExecutionPolicy Bypass -File scripts\mail_task.ps1
 #   powershell -ExecutionPolicy Bypass -File scripts\mail_task.ps1 -IntervalMinutes 1
+#   powershell -ExecutionPolicy Bypass -File scripts\mail_task.ps1 -AllowWrite
 #   powershell -ExecutionPolicy Bypass -File scripts\mail_task.ps1 -Remove
 #
 # NOTE: keep this file ASCII-only. Windows PowerShell 5.1 reads BOM-less files
@@ -19,6 +20,7 @@ param(
     [string]$WorkDir = "",
     [string]$Python = "",
     [string]$Mode = "default",
+    [switch]$AllowWrite,
     [switch]$NoNotify,
     [switch]$Remove
 )
@@ -57,6 +59,8 @@ $windowless = $Python -replace 'python\.exe$', 'pythonw.exe'
 if (Test-Path $windowless) { $Python = $windowless }
 
 $taskArgs = "-m lcode --resident-once --mail-watch --resident-mode $Mode"
+# Mail bodies are untrusted input; only allow writes on explicit request.
+if ($AllowWrite) { $taskArgs += " --mail-allow-write" }
 if ($NoNotify) { $taskArgs += " --no-notify" }
 
 $action = New-ScheduledTaskAction -Execute $Python -Argument $taskArgs -WorkingDirectory $WorkDir

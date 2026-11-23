@@ -143,15 +143,17 @@ async def test_read_file_decodes_gbk(tmp_path):
 # ── 配置 ─────────────────────────────────────────────────────────────────
 
 
-def test_new_default_registry_without_vision_has_seven_tools():
+def test_new_default_registry_without_vision_has_base_tools():
     reg = new_default_registry()
-    assert reg.count() == 7
+    # 7 个文件/命令/通知工具 + send_mail（主动发信）= 8
+    assert reg.count() == 8
     assert reg.get("view_image") is None
+    assert reg.get("send_mail") is not None
 
 
 def test_new_default_registry_with_vision_adds_view_image():
     reg = new_default_registry(VisionConfig(api_key="k", model="qwen-vl-max"))
-    assert reg.count() == 8
+    assert reg.count() == 9
     assert reg.get("view_image") is not None
     # 只读：Plan 模式下也能用，且会并发执行
     assert reg.is_read_only("view_image") is True
@@ -462,7 +464,7 @@ def test_registry_registers_transcribe_only_when_configured():
     assert bare.get("transcribe_audio") is None
 
     reg = new_default_registry(audio=AudioConfig(api_key="k", model="whisper-1"))
-    assert reg.count() == 8
+    assert reg.count() == 9
     tool = reg.get("transcribe_audio")
     assert tool is not None
     assert reg.is_read_only("transcribe_audio") is True

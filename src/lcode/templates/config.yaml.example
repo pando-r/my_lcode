@@ -1,6 +1,6 @@
-# mewcode 配置文件（首次运行自动生成）
-# 位置：~/.mewcode/config.yaml     —— 用户级，任何目录下运行 mewcode 都生效
-# 也可以在当前项目放一份 .mewcode/config.yaml，项目级优先（适合不同项目用不同模型）。
+# Lcode 配置文件（首次运行自动生成）
+# 位置：~/.lcode/config.yaml     —— 用户级，任何目录下运行 lcode 都生效
+# 也可以在当前项目放一份 .lcode/config.yaml，项目级优先（适合不同项目用不同模型）。
 # 把下面的 api_key 换成你的真实密钥即可运行；本文件不要提交到 git。
 
 providers:
@@ -27,3 +27,35 @@ providers:
 # features:
 #   coordinator_mode: false
 #   fork_teammate: false
+
+# 语音唤醒（可选）：喊一句话把它叫起来，它用语音回答你。
+# 需要先装依赖与模型：
+#   pip install lcode[voice]
+#   python -m lcode.voice.download
+# 然后 `lcode --voice` 启动；`lcode --voice-selftest` 单独测麦克风。
+# 注意：常驻数据在 ~/.lcode/voice/（模型、日志、指令记录），与代码分开存。
+# voice:
+#   wake_words: ["小可小可", "小可"]   # 不写就用内置那组音近词
+#   device: null                      # null = 自动挑一个能录到声音的
+#   threshold: 400                    # 「有人说话」的电平门限，噪声大可调高
+#   filter: true                      # 高通滤波，切低频嗡声，几乎总该开
+#   cutoff: 180
+#   speak: true                       # false = 只入队，不念回答
+#   speak_limit: 420                  # 最多念多少字
+#   answer_timeout: 240               # 等 Agent 答完的最长秒数
+#   project: ""                       # 语音任务的作用根目录，空=当前目录
+#   tts_voice: ""                     # SAPI 音色名，空=自动挑中文女声
+#   conversation: true                # 回答念完再开 12 秒追问窗口
+#   # 唤醒词的常见误听（整句只有它们时算「只是喊了一声」，不当指令发出去）
+#   wake_near_misses: ["小口", "小柯", "削个", "肖克"]
+#   # 精转写：vosk 只当触发器，整句交给更强的模型转一次。
+#   #   off        = 纯 vosk（42MB，会听错字）
+#   #   sensevoice = 本地 SenseVoice-Small（228MB，不联网、免费、实测 80ms）
+#   #   cloud      = 走下面 audio 段（按秒计费，音频离开本机）
+#   refine: sensevoice
+#   refine_min_seconds: 0.6           # 太短的片段不值得转
+#   refine_fallback: true             # 转失败就用 vosk 的结果
+#   refine_threads: 4                 # onnxruntime 线程数
+#   # 看门狗：麦克风流卡死（进程还活着但听不见了）时自动重建。
+#   # 90 秒读不到一个音频块就动手；写 0 关掉。
+#   watchdog: 90

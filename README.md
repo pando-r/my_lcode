@@ -15,20 +15,32 @@ Windows（PowerShell）：
 
 ```powershell
 $ProgressPreference='SilentlyContinue'
-irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1 -TimeoutSec 30 | iex
+irm https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1 -TimeoutSec 30 -OutFile "$env:TEMP\lcode-install.ps1"
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:TEMP\lcode-install.ps1"
 ```
 
 > **一定要带 `--max-time` / `-TimeoutSec`。** 国内网络下 `raw.githubusercontent.com` 常见
 > 表现是「连不上也不报错」，TCP 一直重试；命令不带超时就会**卡住不动**，看起来像死机。
 > 加上超时后最多等 30 秒就会明确报错，而不是无限期挂起。
 
-国内网络下这两条命令的主机本身可能就不通，换镜像（内容一致）：
+> **为什么不写成 `irm ... | iex`？** 脚本里有大量中文提示，文件必须是**带 BOM 的 UTF-8**：
+> 去掉 BOM 后 PowerShell 5.1 会按系统代码页（中文 Windows 是 GBK）读，直接报几十条语法错误。
+> 而带 BOM 的文本送进 `iex` 时，开头的 U+FEFF 会让首行 `#` 注释失效，报
+> `无法将 Windows 项识别为 cmdlet`。**下载成文件再 `-File` 执行**同时避开这两个坑，
+> 而且报错留在窗口里不会一闪而过。
+
+国内网络下这条命令的主机本身可能就不通，换镜像（内容一致，只换 URL）：
 
 ```powershell
-# Windows：jsDelivr（国内一般可达）
-iex (iwr 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -UseBasicParsing -TimeoutSec 30).Content
-# Windows：ghfast 代理
-iex (iwr 'https://ghfast.top/https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1' -UseBasicParsing -TimeoutSec 30).Content
+# jsDelivr（国内一般可达）
+irm 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -TimeoutSec 30 -OutFile "$env:TEMP\lcode-install.ps1"
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:TEMP\lcode-install.ps1"
+```
+
+```powershell
+# ghfast 代理
+irm 'https://ghfast.top/https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1' -TimeoutSec 30 -OutFile "$env:TEMP\lcode-install.ps1"
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:TEMP\lcode-install.ps1"
 ```
 
 ```bash
@@ -40,16 +52,25 @@ curl -LsSf --max-time 30 https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scri
 
 ```powershell
 $ProgressPreference='SilentlyContinue'
+$f="$env:TEMP\lcode-install.ps1"
 $urls=@(
   'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1',
   'https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1',
   'https://ghfast.top/https://raw.githubusercontent.com/pando-r/my_mecode/main/scripts/install.ps1')
-$code=$null
+$ok=$false
 foreach($u in $urls){
-  try{ Write-Host "尝试 $u"; $code=(iwr $u -UseBasicParsing -TimeoutSec 25).Content; break }
-  catch{ Write-Host "  失败：$($_.Exception.Message)" }
+  try{
+    Write-Host "尝试 $u"
+    irm $u -UseBasicParsing -TimeoutSec 25 -OutFile $f
+    # 校验内容再执行：别把半截错误页面当成脚本跑
+    if((Get-Item $f).Length -gt 5000 -and (Select-String -Path $f -Pattern 'LCODE_' -Quiet -Encoding UTF8)){
+      $ok=$true; break
+    }
+    Write-Host "  内容不对，换下一个"
+  }catch{ Write-Host "  失败：$($_.Exception.Message)" }
 }
-if($code){ iex $code } else { throw '三个地址都下载失败，请检查网络/代理' }
+if(-not $ok){ throw '三个地址都下载失败，请检查网络/代理' }
+powershell -NoProfile -ExecutionPolicy Bypass -File $f
 ```
 
 脚本会自动挑安装器：有 `uv` 用 `uv`、有 `pipx` 用 `pipx`、否则用你已有的 **Python 3.12+**
@@ -70,7 +91,9 @@ lcode
 
 ```powershell
 # Windows：只体检，不安装
-$env:LCODE_DOCTOR='1'; irm https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1 -TimeoutSec 30 | iex
+$env:LCODE_DOCTOR='1'
+irm 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -TimeoutSec 30 -OutFile "$env:TEMP\lcode-doctor.ps1"
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:TEMP\lcode-doctor.ps1"
 ```
 
 ```bash
@@ -83,11 +106,11 @@ LCODE_DOCTOR=1 curl -LsSf --max-time 30 https://cdn.jsdelivr.net/gh/pando-r/my_m
 六个站点的连通性（**每个地址最长 8 秒，不会卡**），并给出对应的处理建议。
 
 
-> **`irm ... | iex` 只能在 PowerShell 里跑**。贴进 `cmd.exe` 会直接报
-> `'irm' 不是内部或外部命令`，那样一行脚本连执行都没开始。cmd 用户请用：
+> **上面的命令只能在 PowerShell 里跑**。贴进 `cmd.exe` 会直接报
+> `'irm' 不是内部或外部命令`。cmd 用户请用：
 >
 > ```powershell
-> powershell -ExecutionPolicy Bypass -Command "irm https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1 -TimeoutSec 30 | iex"
+> powershell -NoProfile -ExecutionPolicy Bypass -Command "irm 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -TimeoutSec 30 -OutFile \"$env:TEMP\lcode-install.ps1\"; powershell -NoProfile -ExecutionPolicy Bypass -File \"$env:TEMP\lcode-install.ps1\""
 > ```
 
 不想装到全局？临时跑一次（二选一，装了 pipx 的话不需要 uv）：
@@ -141,6 +164,9 @@ pipx upgrade lcode        # 或 pip install --user --upgrade <上面的地址>
 
 | 现象 | 原因 | 处理 |
 | --- | --- | --- |
+| **`无法将 Windows 项识别为 cmdlet`** | 用 `irm ... \| iex` 直接跑远程脚本，脚本带 UTF-8 BOM，`iex` 把首字符 U+FEFF 当标识符，首行注释失效 | 改用本文档的「下载到 `$env:TEMP` 再 `-File`」写法；**不要**对带 BOM 的脚本用 `iex` |
+| **`无法将 System.Byte[] 转换为 Command`** | 用了 `iex (iwr ...).Content`，jsDelivr 回 `application/octet-stream`，`.Content` 是字节数组 | 同上，下载成文件再执行 |
+| **几十条 `Missing closing '}'` / 中文全是乱码** | 脚本被存成**无 BOM** 的 UTF-8，PowerShell 5.1 按 GBK 读，中文字符串把引号吃掉 | 别删脚本的 BOM；用官方下载命令原样落盘，别手动「另存为无 BOM」 |
 | **命令卡住不动，没有任何输出** | 域名被黑洞，TCP 一直重试；`irm`/`curl` 没设超时 | 命令加 `-TimeoutSec 30` / `--max-time 30`；换镜像地址；跑 `LCODE_DOCTOR=1` |
 | **卡在 `python` 那一步**（Windows） | `python` 是应用商店的 0 字节占位符（`WindowsApps\python.exe`），执行它会拉起商店并阻塞 | 脚本已自动跳过它并改用真解释器；仍不行就装 Python 3.12+，或 `LCODE_INSTALLER='uv'` 让 uv 自带解释器 |
 | 卡在 `git clone` / 要求输入用户名密码 | 仓库不可见（私有或改名），或被网络劫持 | 确认仓库公开可访问；`git` 已设 `GIT_TERMINAL_PROMPT=0` 会快速失败而不是等待输入 |
@@ -162,7 +188,8 @@ curl -LsSf --max-time 30 https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scri
 # Windows PowerShell（先设变量，再跑安装命令）
 $env:LCODE_PIP_INDEX='https://mirrors.aliyun.com/pypi/simple/'
 $ProgressPreference='SilentlyContinue'
-irm https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1 -TimeoutSec 30 | iex
+irm 'https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1' -TimeoutSec 30 -OutFile "$env:TEMP\lcode-install.ps1"
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:TEMP\lcode-install.ps1"
 ```
 
 安装脚本的环境变量：
@@ -186,7 +213,7 @@ irm https://cdn.jsdelivr.net/gh/pando-r/my_mecode@main/scripts/install.ps1 -Time
 - `git` 设 `GIT_TERMINAL_PROMPT=0`，遇到私有库/凭据请求立即失败而不等待输入。
 - `pip` 带 `--timeout 30 --retries 2`，`uv` 设 `UV_HTTP_TIMEOUT=60`。
 - Windows 上自动识别并跳过应用商店的 0 字节 `python.exe` 占位符。
-- 失败时用 `throw` 而不是 `exit`：报错留在屏幕上，不会因为 `irm|iex` 而把窗口关掉。
+- 失败时用 `throw` 而不是 `exit`：报错留在屏幕上，窗口不会一闪而过被关掉。
 
 ## 特性
 

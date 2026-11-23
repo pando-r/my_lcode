@@ -15,7 +15,7 @@ from lcode.tool.write_file import WriteFileTool
 def test_registry_definitions():
     reg = new_default_registry()
     defs = reg.definitions()
-    assert len(defs) == 7
+    assert len(defs) == 8
     assert [d.name for d in defs] == [
         "read_file",
         "write_file",
@@ -24,6 +24,8 @@ def test_registry_definitions():
         "glob",
         "grep",
         "notify",
+        # send_mail 恒注册，能不能发由 .lcode/mail.yaml 的 send_to 白名单决定。
+        "send_mail",
     ]
     assert reg.get("read_file") is not None
     assert reg.get("nope") is None
@@ -131,4 +133,4 @@ async def test_grep(tmp_path):
 
 def test_registry_count():
     assert Registry().count() == 0
-    assert new_default_registry().count() == 7
+    assert new_default_registry().count() == 8

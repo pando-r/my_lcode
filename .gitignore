@@ -33,5 +33,12 @@ build/
 .lcode/notify.yaml
 .lcode/notifications.jsonl
 
+# 主动发信流水：含收件人地址和正文预览，属于通信内容，不入库
+.lcode/mail-outbox.jsonl
+
 # 旧版目录名残留（重命名前的运行态，建议手工删除）
 .mewcode/
+
+# 语音数据（vosk 模型 42MB / 日志 / 指令记录）实际在 ~/.lcode/voice/，
+# 不在仓库里。这里只挡一种情况：有人把 --voice-model-dir 指到项目内。
+.lcode/voice/

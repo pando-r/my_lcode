@@ -6,9 +6,12 @@ import os
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Literal
+from typing import TYPE_CHECKING, Literal
 
 import yaml
+
+if TYPE_CHECKING:
+    from lcode.voice.config import VoiceConfig
 
 # 显式指定配置文件路径的环境变量（优先级最高）
 CONFIG_ENV = "LCODE_CONFIG"
@@ -102,6 +105,8 @@ class Config:
     features: FeaturesConfig = field(default_factory=FeaturesConfig)
     vision: VisionConfig | None = None
     audio: AudioConfig | None = None
+    # 语音唤醒：没写这段就等于整个语音功能不启用（也不会去查 vosk/sounddevice）
+    voice: VoiceConfig | None = None
 
     def effective_enable_subagent_background(self) -> bool:
         # N6：默认开启；False 时所有子 Agent 强制前台，Fork 路径直接报错。
@@ -231,7 +236,29 @@ def _from_dict(raw: object) -> Config:
         features=features,
         vision=_parse_vision(raw.get("vision")),
         audio=_parse_audio(raw.get("audio")),
+        voice=_parse_voice(raw.get("voice")),
     )
+
+
+def _parse_voice(raw: object):
+    """解析 ``voice`` 段；缺依赖时也不报错（只在真跑语音时才检查）。
+
+    和 vision/audio 的区别：那两段是「主模型看的眼睛/耳朵」，配了就该能用；
+    语音唤醒是可选插件，装了没配也不该影响启动。所以这里宽松：
+    解析失败只抛 ConfigError（能被 CLI 捕获并提示），不阻断。
+
+    真正的实现放在 ``lcode.voice.config`` 里——但那个模块会 import 整个包，
+    而 ``lcode.voice`` 在设计上不碰 numpy/vosk（全在函数内导入），
+    所以这里直接 import 是安全的。
+    """
+    if raw is None:
+        return None
+    from lcode.voice.config import parse_voice
+
+    try:
+        return parse_voice(raw)
+    except ValueError as exc:
+        raise ConfigError(f"voice 段配置有误：{exc}") from exc
 
 
 def _parse_vision(raw: object) -> VisionConfig | None:

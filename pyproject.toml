@@ -20,6 +20,23 @@ lcode = "lcode.cli:main"
 [project.optional-dependencies]
 # 图片缩放/裁剪、语音转写等「媒体」能力；核心包不强制装，缺了只影响 view_image 的预处理。
 media = ["pillow>=10"]
+# 语音唤醒（lcode --voice）：本地识别 + 麦克风 + 数组运算。
+# 这三样加起来上百兆，绝大多数用户用不上，所以做成可选项。
+# 模型不在这里：用 `python -m lcode.voice.download` 单独下（vosk 42MB）。
+#
+# sherpa-onnx 只用于 `voice.refine: sensevoice`（精转写）。它只依赖 onnxruntime，
+# pip 包 19MB，不拖 torch——这是没选 FunASR（要 torch 2GB+）的原因。
+# 不配 sensevoice 时它不被 import，装了也只是多 19MB。
+voice = [
+    "vosk>=0.3.45",
+    "sounddevice>=0.4.6",
+    "numpy>=1.24",
+    "sherpa-onnx>=1.10",
+    # 朗读：微软在线神经语音（Edge「大声朗读」同款）。要它是因为 Windows 自带的
+    # SAPI 中文只有 Huihui 那一档拼接音，听起来明显是人机。纯文本，无二进制。
+    # 不想联网/不想装：配置 voice.tts_engine: sapi 即可，代码会自动回退。
+    "edge-tts>=6.1",
+]
 
 [project.urls]
 Homepage = "https://github.com/pando-r/my_mecode"

@@ -323,9 +323,10 @@ async def test_tui_local_queries_use_live_state(tmp_path):
         await app.dispatch_slash("/status")
         status_text = _text(captured)
         assert "Mode:" in status_text and "default" in status_text
-        # 工具数量随默认注册表演进（notify 加入后是 7），断言用真实计数而不是硬编码。
+        # 工具数量随默认注册表演进（notify 加入后是 7，send_mail 加入后是 8），
+        # 断言用真实计数而不是硬编码。
         assert "Tools:" in status_text and f"{app.tool_count()} enabled" in status_text
-        assert app.tool_count() == 7
+        assert app.tool_count() == 8
         assert "Memories:" in status_text and "1 files" in status_text
         assert str(tmp_path) in status_text
 

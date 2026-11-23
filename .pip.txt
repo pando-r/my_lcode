@@ -1,0 +1,22 @@
+Resolved 14 packages in 5.16s
+   Building srt==3.5.3
+Downloading numpy (12.1MiB)
+Downloading vosk (13.3MiB)
+      Built srt==3.5.3
+ Downloaded numpy
+ Downloaded vosk
+Prepared 10 packages in 6.86s
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 10 packages in 1.73s
+ + certifi==2026.11.20
+ + charset-normalizer==3.5.2
+ + numpy==2.5.5
+ + requests==2.34.2
+ + sounddevice==0.5.6
+ + srt==3.5.3
+ + tqdm==4.70.1
+ + urllib3==2.8.0
+ + vosk==0.3.45
+ + websockets==17.4

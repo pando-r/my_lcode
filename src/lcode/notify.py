@@ -81,6 +81,15 @@ class EmailConfig:
         """缺任何一项都无法发送——少了就干脆不连，避免无谓的网络等待。"""
         return bool(self.enabled and self.smtp_host and self.user and self.auth_code and self.to)
 
+    def smtp_ready(self) -> bool:
+        """只判「能不能建起 SMTP 连接」，不管收件人。
+
+        ``ready()`` 那个 ``to`` 是**通知**的固定收件人；主动发信（send_mail 工具）
+        的收件人由调用方指定，所以不能要求 ``to`` 也配好。两张判据分开，
+        免得「想给好友发封信」被「通知收件人没填」挡住。
+        """
+        return bool(self.enabled and self.smtp_host and self.user and self.auth_code)
+
     def normalized(self) -> EmailConfig:
         return EmailConfig(
             enabled=bool(self.enabled),

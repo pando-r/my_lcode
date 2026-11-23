@@ -15,6 +15,19 @@
 - [project_knowledge] lcode 改名 Lcode 的改动范围（仅用户可见层） — 项目对外显示名已从 Lcode 改为 Lcode，但只改了「用户看得见」的一层：prompt/modules.py 身份模块、prompt/__init__.py 的 render_banner、command/builtin_loca
 - [project_knowledge] lcode 邮件通道配置与收发流程 — lcode 邮件通道（.lcode/mail.yaml）：
 - [project_knowledge] lcode vision 模型选型与多图总大小闸门 — lcode 的 vision 模型（src/lcode/vision.py，配置 .lcode/config.yaml 的 vision 段）：
-- [project_knowledge] lcode 质量基线（ruff/mypy/测试/CI 现状） — lcode 质量现状（最近核查）：测试 814 passed / 2 skipped（约 84s），只能手动跑；仓库无 CI（无 .github 目录）；ruff 仅 1 个错误（conversation.py 导入排序，--fix 可修）
 - [project_knowledge] lcode 语音输入（ASR）通道与踩过的坑 — lcode 新增「耳朵」能力：语音走 qwen3-asr-flash，调用 OpenAI 风格端点 /audio/transcriptions（早期直接打这个路径返回 404，说明需要按 OpenAI 兼容的 base_url 拼接，而不是
 - [project_knowledge] lcode 视频附件抽帧链路（方案 B） — lcode 视频附件不再当音频处理，改为「抽帧 → view_image」：
+- [project_knowledge] lcode 质量基线（ruff/mypy/测试/CI 现状） — lcode 质量现状（最近核查，工具都在项目 .venv 里）：
+- [project_knowledge] lcode 分发/打包现状与隐私风险 — lcode 的打包/分发现状（D:\Project\AgentProject\my_mecode）：
+- [project_knowledge] lcode 开机简报（boot brief）机制与踩过的坑 — 开机简报：每次 Windows 登录时主动打招呼 + 报衡阳天气 + 给建议，走桌面横幅。
+- [reference_material] Windows 快速启动会让 LastBootUpTime 不变 — K 的机器 `HiberbootEnabled = 1`（控制面板/电源选项里的「启用快速启动」开着）。
+- [project_knowledge] lcode 语音连续对话（话题键 + 追问窗口） — 语音原先「一次唤醒只能问一句、且每句都是全新会话」，现在用 voice-<时间>-<序号> 话题键把最近 3 轮问答拼进 daemon prompt，念完回答再开 12 秒追问窗口；顺带修掉 greet 念「在」时被麦克风录回去的伪指令问题。
+- [reference_material] lcode 媒体类型魔数识别（tool/media.py） — lcode 的 tool/media.py 用文件头「魔数」判断媒体类型，不依赖扩展名：PNG 89 50 4E 47 0D 0A 1A 0A、JPEG FF D8 FF、GIF GIF87a/GIF89a、WebP RIFF....WEB
+- [project_knowledge] lcode 语音唤醒误听词 + 自启真实来源（P0/P1 落地） — 两件事都是 2026-11-23 实机排查出来的，分别对应「跑的不是这份代码」和「唤醒词被当成指令」。
+- [project_knowledge] lcode 语音 P2：云端精转写（默认关）+ 百炼欠费现状 — vosk 只当触发器（唤醒词检测 + 句子边界），指令交给 qwen3-asr-flash 精转写；默认关（音频出本机是隐私决定），实机接通时踩了 asyncio 嵌套和回放静音两个坑，都已修复并补了回归测试。
+- [reference_material] K 的百炼（DashScope）账户在用哪些模型 — 主模型不在百炼上——主对话是 DeepSeek（`deepseek-flash`，base_url api.deepseek.com）。
+- [project_knowledge] lcode 语音实例重启与「代码是否生效」验证 — 改完 src/lcode/voice 后要重启常驻实例，否则跑的仍是旧代码（这次实机排查反复踩到）。
+- [reference_material] mypy 不跨方法收窄 Optional 属性（lcode wake.py 示例） — `if self._asr is None: return False` 写在 `_cloud_ready()` 里，紧接着在 `refine()` 里调 `self._asr(...)`，mypy 仍报 `"None" not calla
+- [project_knowledge] lcode 语音精转写换成免费本地 SenseVoice（替代百炼 qwen3-asr-flash） — K 说「百炼太贵了，看看有没有免费开源的」。结论：换成**本地 SenseVoice-Small**，更快、免费、不联网，准确率与云端持平。
+- [project_knowledge] lcode 语音看门狗（麦克风流卡死自救）+ 三个只有跑真循环才发现的 bug — 2026-11-23 实机「小可」静默失聪：进程活着、端口 47311 占着、日志从 15:54 之后一句不写，喊什么都不应，原因是主循环卡在 stream.read() 上永不返回。现在
+- [project_knowledge] lcode 语音朗读引擎：edge（默认，像真人）/ sapi（离线） — Windows 自带 SAPI 的中文只有 Microsoft Huihui Desktop 一档拼接音，调参救不了，K 说「音色有点人机」；现在默认走 edge-tts（微软在线神经语音 zh-CN-XiaoxiaoNeural，要联网、文字会发给微软），配 voice.tts_engine: sapi 可退回离线。greet 的合成必须放后台线程（在线合成 1~2 秒，同步会卡住主循环）。

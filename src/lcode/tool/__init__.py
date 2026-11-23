@@ -134,6 +134,7 @@ def new_default_registry(
     from lcode.tool.grep_tool import GrepTool
     from lcode.tool.notify import NotifyTool
     from lcode.tool.read_file import ReadFileTool
+    from lcode.tool.send_mail import SendMailTool
     from lcode.tool.write_file import WriteFileTool
 
     registry = Registry()
@@ -145,6 +146,9 @@ def new_default_registry(
     registry.register(GrepTool())
     # notify 排在最后：它是「把人叫回来」的通道，不参与和文件/命令工具的优先级竞争。
     registry.register(NotifyTool())
+    # send_mail 默认挂上，但真正能不能发由 .lcode/mail.yaml 的 send_to 白名单决定。
+    # 不在这里按配置条件注册，是因为配置可能中途被改，而工具表只在启动时扫一次。
+    registry.register(SendMailTool())
     if vision is not None and vision.ready():
         from lcode.tool.view_image import ViewImageTool
 

@@ -1,6 +1,6 @@
-# mewcode 配置文件示例
-# 复制为 .mewcode/config.yaml 并填入真实密钥后运行 `mewcode`。
-# 注意：.mewcode/config.yaml 已被 .gitignore 忽略，请勿提交真实密钥。
+# Lcode 配置文件示例
+# 复制为 .lcode/config.yaml 并填入真实密钥后运行 `lcode`。
+# 注意：.lcode/config.yaml 已被 .gitignore 忽略，请勿提交真实密钥。
 
 providers:
   - name: Claude                # 状态栏左侧显示的名称
@@ -19,16 +19,16 @@ providers:
 
 
 # ── 项目记忆与会话存档（无需在此配置，按目录约定自动工作）──────────────────
-# 项目指令 MEWCODE.md（三层优先级，高在前）：
-#   <project>/MEWCODE.md
-#   <project>/.mewcode/MEWCODE.md
-#   ~/.mewcode/MEWCODE.md
+# 项目指令 LCODE.md（三层优先级，高在前）：
+#   <project>/LCODE.md
+#   <project>/.lcode/LCODE.md
+#   ~/.lcode/LCODE.md
 # 指令文件支持独占一行的 `@include <relative_path>`，最多嵌套 5 层。
 #
 # 长期记忆（自动维护，索引 MEMORY.md 会注入系统提示）：
-#   <project>/.mewcode/memory/   （项目级：project_knowledge / reference_material）
-#   ~/.mewcode/memory/           （用户级：user_preference / correction_feedback）
+#   <project>/.lcode/memory/     （项目级：project_knowledge / reference_material）
+#   ~/.lcode/memory/             （用户级：user_preference / correction_feedback）
 #
 # 会话存档（JSONL 追加写，进程崩溃最多丢最后一行；30 天前自动清理）：
-#   <project>/.mewcode/sessions/<YYYYMMDD-HHMMSS-xxxx>/conversation.jsonl
+#   <project>/.lcode/sessions/<YYYYMMDD-HHMMSS-xxxx>/conversation.jsonl
 # 在 TUI 中输入 /resume 可从历史会话列表恢复。

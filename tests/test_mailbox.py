@@ -212,6 +212,155 @@ def test_extract_body_handles_gbk_payload():
     assert "中文正文" in extract_body(message)
 
 
+def test_extract_body_falls_back_to_html_when_plain_is_empty():
+    """plain 分支是空的（0 字节）时必须回退到 html。
+
+    这是「只能从主题说话」的根因：QQ / 网易的手机端和网页端一律发
+    multipart/alternative，其中 text/plain 常常是空串，用户真正写的内容
+    只在 html 分支里。早期实现只要**存在** plain 分支就直接返回，
+    于是正文永远是空，Agent 只能看见主题。
+    """
+    message = email.message.EmailMessage()
+    message["From"] = "k@qq.com"
+    message["Subject"] = "[Lcode] x"
+    message.set_content("")  # 空的 text/plain
+    message.add_alternative("<div>正文在这里</div>", subtype="html")
+    body = extract_body(message)
+    assert "正文在这里" in body
+
+
+def test_extract_body_skips_whitespace_only_plain():
+    # 「只有换行和空格」等价于空——不能因为 strip() 之后没内容就把 html 丢掉。
+    message = email.message.EmailMessage()
+    message["From"] = "k@qq.com"
+    message["Subject"] = "[Lcode] x"
+    message.set_content("\r\n\r\n   \n")
+    message.add_alternative("<p>真正的正文</p>", subtype="html")
+    assert "真正的正文" in extract_body(message)
+
+
+def test_extract_body_empty_when_both_parts_empty():
+    # 空签名邮件（QQ 的 <div><!--emptysign--></div>）解析出来必须是空串，
+    # 而不是一串标签或 "emptysign" 字样。
+    message = email.message.EmailMessage()
+    message["From"] = "k@qq.com"
+    message["Subject"] = "[Lcode] x"
+    message.set_content("")
+    message.add_alternative('<div><br /></div><div><!--emptysign--></div>', subtype="html")
+    assert extract_body(message).strip() == ""
+
+
+def test_extract_body_unescapes_html_entities():
+    # 不解实体的话，读起来就是「This&nbsp;is&nbsp;an」这种怪话（实测 QQ 邮箱）。
+    message = email.message.EmailMessage()
+    message["From"] = "k@qq.com"
+    message["Subject"] = "[Lcode] x"
+    message.set_content(
+        "<p>This&nbsp;is&nbsp;an&nbsp;end-to-end&nbsp;check.</p><p>a &lt; b</p>",
+        subtype="html",
+    )
+    body = extract_body(message)
+    assert "&nbsp;" not in body
+    assert "This is an end-to-end check." in body
+    assert "a < b" in body
+
+
+def test_extract_body_drops_script_and_style():
+    message = email.message.EmailMessage()
+    message["From"] = "k@qq.com"
+    message["Subject"] = "[Lcode] x"
+    message.set_content(
+        "<style>.a{color:red}</style><script>alert(1)</script><p>正文</p>", subtype="html"
+    )
+    body = extract_body(message)
+    assert "color:red" not in body
+    assert "alert" not in body
+    assert "正文" in body
+
+
+# ── 引用块剥离 ────────────────────────────────────────────────────────────
+#
+# 回复邮件时客户端会把上一封整段粘在正文后面。不剥掉的话，4000 字的预算
+# 里绝大部分是旧内容，用户这次真正写的那一句反而被截没了。
+
+
+@pytest.mark.parametrize(
+    "marker",
+    [
+        "---Original---",
+        "-------- 原始邮件 --------",
+        "------------------ Original Message ------------------",
+        "On Fri, Nov 20, 2026 at 23:35 K <k@qq.com> wrote:",
+        "在 2026年11月20日 23:35，K<k@qq.com> 写道：",
+    ],
+)
+def test_strip_quoted_history_cuts_at_client_marker(marker):
+    body = f"新的要求\n{marker}\n旧的内容一大堆"
+    assert mailbox_mod.strip_quoted_history(body) == "新的要求"
+
+
+def test_strip_quoted_history_keeps_body_without_marker():
+    body = "就是一句话，没有引用"
+    assert mailbox_mod.strip_quoted_history(body) == body
+
+
+def test_strip_quoted_history_keeps_original_when_nothing_new():
+    # 标记出现在开头 = 用户没写新内容就点了回复，这时保留原文更有用。
+    body = "---Original---\n旧的内容"
+    assert "旧的内容" in mailbox_mod.strip_quoted_history(body)
+
+
+def test_classify_strips_quoted_history_in_instruction():
+    mail = IncomingMail(
+        uid="1",
+        sender="k@qq.com",
+        subject="Re: [Lcode] 跑测试",
+        body="再跑一次\n\n---Original---\nFrom: me\n上次的内容" * 1,
+    )
+    instruction = classify([mail], _cfg()).accepted[0].prompt()
+    assert "再跑一次" in instruction
+    assert "上次的内容" not in instruction
+
+
+# ── 话题键（回信能接上上下文）─────────────────────────────────────────────
+
+
+@pytest.mark.parametrize(
+    "subject",
+    [
+        "[Lcode] 跑测试",
+        "Re: [Lcode] 跑测试",
+        "RE: [Lcode] 跑测试",
+        "Re: Re: [Lcode] 跑测试",
+        "答复：[Lcode] 跑测试",
+        "Re: [lcode] 跑测试",
+        "Fw: [Lcode] 跑测试",
+    ],
+)
+def test_thread_key_is_stable_across_replies(subject):
+    # 用户点「回复」而不是「新邮件」时，主题会多出 Re:；话题键必须不变，
+    # 否则每次回复都成了全新任务，Agent 看起来像失忆。
+    assert mailbox_mod.thread_key(subject, "[Lcode]") == "跑测试"
+
+
+def test_thread_key_distinguishes_topics():
+    assert mailbox_mod.thread_key("[Lcode] 跑测试", "[Lcode]") != mailbox_mod.thread_key(
+        "[Lcode] 写文档", "[Lcode]"
+    )
+
+
+def test_classify_sets_thread_key():
+    result = classify([_mail(subject="Re: [Lcode] 跑测试")], _cfg())
+    assert result.accepted[0].thread_key == "跑测试"
+
+
+def test_classify_respects_max_body():
+    mail = IncomingMail(uid="1", sender="k@qq.com", subject="[Lcode] x", body="字" * 5000)
+    instruction = classify([mail], _cfg(max_body=500)).accepted[0].prompt()
+    # 上限真的生效（早期 prompt() 里还写死了一个 MAX_BODY，把配置顶掉了）。
+    assert len(instruction) <= 500
+
+
 # ── 分拣 ──────────────────────────────────────────────────────────────────
 
 
@@ -227,7 +376,7 @@ def _cfg(**kwargs) -> MailConfig:
     return MailConfig(**base).normalized()
 
 
-def _mail(sender: str = "k@qq.com", subject: str = "[Lcode] 跑测试", body: str = "请跑") -> IncomingMail:
+def _mail(sender: str = "k@qq.com", subject: str = "[Lcode] 跑测试", body: str = "请跑"):
     return IncomingMail(uid="1", sender=sender, subject=subject, body=body)
 
 
@@ -507,6 +656,22 @@ def test_fetch_new_still_reports_real_rejections(monkeypatch):
     # 白名单外的信要留证：用户得知道「我发了为什么不理我」。
     assert len(result.rejected) == 1
     assert result.rejected[0].reason == "发件人不在白名单"
+
+
+def test_fetch_new_scans_newest_window(monkeypatch):
+    """收件箱一多，新信也必须进窗口。
+
+    早期写法是 ``data[0].split()[: max_per_poll * 8]``——IMAP 搜索结果是**从旧到新**
+    排列的，取前 N 个等于只扫最旧的 N 封。收件箱超过 40 封后，刚发来的信
+    永远进不了窗口，表现就是「发完半小时没反应」。
+    """
+    mails = {str(i): _build_message(subject=f"[Lcode] 第{i}封") for i in range(1, 61)}
+    client = _FakeImap(mails)
+    _patch_imap(monkeypatch, client)
+    result = mailbox_mod.fetch_new(_cfg())
+    assert result.accepted, "60 封信里至少要能取到最新的几封"
+    # 最新那封必须在结果里（旧写法会取到第 1~8 封）。
+    assert any("第60封" in mail.subject for mail in result.accepted)
 
 
 def test_since_date_uses_english_month(monkeypatch):

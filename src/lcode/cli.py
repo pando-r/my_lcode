@@ -68,8 +68,30 @@ async def _resident_early_exit(args) -> int | None:
     root = str(Path.cwd().resolve())
 
     text = getattr(args, "enqueue", "") or ""
+    # 来源标记由调用方声明（语音助手传 voice），daemon 据此决定要不要发邮件通知。
+    origin = getattr(args, "enqueue_origin", "") or "cli"
     if text.strip():
-        task = TaskQueue(_resident_dir(root)).enqueue(text)
+        task = TaskQueue(_resident_dir(root)).enqueue(text, origin=origin)
+        print(f"已入队 {task.id}: {task.prompt.strip()[:80]}")
+        return 0
+
+    # --enqueue-file：把长指令（尤其是中文）放进 UTF-8 文件再入队。
+    # 理由：命令行参数会经过 Windows 的 OEM 代码页与计划任务的参数拼接，
+    # 中文很容易变成乱码；文件读进来是确定的 UTF-8，不受这些环节影响。
+    prompt_file = getattr(args, "enqueue_file", "") or ""
+    if prompt_file.strip():
+        path = Path(prompt_file).expanduser()
+        if not path.is_absolute():
+            path = Path.cwd() / path
+        try:
+            body = path.read_text(encoding="utf-8")
+        except OSError as exc:
+            print(f"读不了指令文件 {path}: {exc}", file=sys.stderr)
+            return 2
+        if not body.strip():
+            print(f"指令文件是空的: {path}", file=sys.stderr)
+            return 2
+        task = TaskQueue(_resident_dir(root)).enqueue(body, origin=origin)
         print(f"已入队 {task.id}: {task.prompt.strip()[:80]}")
         return 0
 
@@ -132,6 +154,7 @@ async def _check_mail(root: str) -> int:
                 reply_to=mail.sender,
                 subject=mail.subject,
                 message_id=mail.message_id,
+                thread=mail.thread_key,
             )
         except ValueError as exc:
             print(f"转任务失败：{exc}", file=sys.stderr)
@@ -145,6 +168,371 @@ async def _check_mail(root: str) -> int:
     if not cfg.allow_write:
         print("（邮件任务以只读模式执行；需要写权限请加 --mail-allow-write 或改 mail.yaml）")
     return 0
+
+
+async def _mail_peek(root: str, limit: int = 8, outbox: bool = False) -> int:
+    """--mail-peek：把最近邮件被解析成什么样原样打出来。
+
+    存在的理由：「我明明在正文里写了，它却像只看到主题」这种问题，
+    光看 daemon.log 是查不出来的——日志只写指令前 60 字。这里把每封信的
+    主题、正文长度、话题键、最终指令都摊开，一眼能看出是正文没发出来
+    （长度 0）还是被过滤/被引用块挤掉了。
+
+    ``outbox=True`` 时改看**发件**记录（谁让它发过什么、发没发出去）。
+    """
+    from dataclasses import replace
+
+    from lcode.mailbox import OUTBOX_NAME, fetch_new, load_config
+
+    root_path = Path(root)
+    if outbox:
+        return _print_outbox(root_path, limit)
+
+    cfg = load_config(root)
+    if not cfg.ready():
+        print(
+            "收件箱未启用或配置不全：需要 .lcode/mail.yaml 里的 imap_host / "
+            "senders / user / auth_code（后两项可继承 notify.yaml）",
+            file=sys.stderr,
+        )
+        return 2
+
+    result = fetch_new(replace(cfg, max_per_poll=max(1, limit)))
+    print(f"收件箱 {cfg.user} · 回看 {cfg.catchup_days} 天 · 主题前缀 {cfg.subject_prefix}")
+    print(f"通过闸门 {len(result.accepted)} 封，退回 {len(result.rejected)} 封")
+    for mail in result.accepted:
+        print("")
+        print(f"[收] {mail.uid}  {mail.sender}  {mail.subject}")
+        print(f"     正文 {len(mail.body.strip())} 字 · 话题键「{mail.thread_key}」")
+        preview = " ".join(mail.prompt().split())
+        print(f"     指令 {len(mail.prompt())} 字：{preview[:160]}")
+        if not mail.body.strip():
+            print("     ！正文是空的：这封信只在主题里写了内容，或客户端没把正文发出来。")
+    for item in result.rejected:
+        print(f"[退] {item.uid}  {item.sender}  {item.subject}  ← {item.reason}")
+    if not result.accepted and not result.rejected:
+        print("（没有新的可读邮件）")
+    allowed = "、".join(cfg.send_to) if cfg.send_to else "（空，Agent 不能主动发信）"
+    print(f"\n发信白名单：{allowed}")
+    print(f"发件记录：lcode --mail-peek --outbox（{OUTBOX_NAME}）")
+    return 0
+
+
+def _mail_allow_to(root: str, address: str, *, inbound: bool = False) -> int:
+    """--mail-allow-to / --mail-allow-from：改 mail.yaml 的两个白名单。
+
+    为什么要有这个入口：白名单决定了 Agent 能不能把数据发出去、以及谁能给它派活。
+    手改 YAML 时很容易顺手写成 ``- @qq.com``——那个写法会让整份配置作废，而表现是
+    「邮件突然一封都不收了」，排查成本极高。走这里就顺带处理了引号。
+
+    ``inbound=True`` 时改的是 ``senders``（收信白名单）：只给发信白名单、不给收信
+    白名单，会出现「我请对方回信、对方回信却被当陌生地址退回」的断裂。
+    """
+    from lcode.mailbox import CONFIG_NAME, add_send_to, add_senders, load_config
+
+    root_path = Path(root)
+    path = root_path / ".lcode" / CONFIG_NAME
+    changed, message = (add_senders if inbound else add_send_to)(path, address)
+    if not changed:
+        print(message, file=sys.stderr)
+        return 1
+    cfg = load_config(root_path)
+    print(message)
+    if inbound:
+        allowed = "、".join(cfg.senders) if cfg.senders else "（空）"
+        print(f"当前收信白名单：{allowed}")
+        print(f"现在他发一封主题以 {cfg.subject_prefix} 开头的邮件过来，就会变成任务。")
+    else:
+        allowed = "、".join(cfg.send_to) if cfg.send_to else "（空）"
+        print(f"当前发信白名单：{allowed}")
+        print("现在可以对 Agent 说「给 <地址> 发一封邮件…」了。")
+    return 0
+
+
+def _mail_allowed(root: str) -> int:
+    """--mail-allowed：列出发信白名单与 SMTP 是否就绪。"""
+    from lcode.mailbox import CONFIG_NAME, load_config
+
+    cfg = load_config(Path(root))
+
+    from lcode.notify import load_config as load_notify_config
+
+    email_cfg = load_notify_config(root).email
+    path = Path(root) / ".lcode" / CONFIG_NAME
+
+    if not cfg.send_to:
+        print("发信白名单是空的：Agent 不能主动发信。")
+        print("  加一个：lcode --mail-allow-to someone@qq.com")
+        print(f"  配置文件：{path}")
+    else:
+        print(f"发信白名单（{path}）：")
+        for item in cfg.send_to:
+            print(f"  - {item}")
+    if email_cfg.smtp_ready():
+        print(f"SMTP：{email_cfg.smtp_host}:{email_cfg.smtp_port} / {email_cfg.user}（可用）")
+    else:
+        print("SMTP：未就绪，需要 .lcode/notify.yaml 的 email 段配全")
+        print("      （enabled / smtp_host / user / auth_code）")
+    return 0
+
+
+def _print_outbox(root: Path, limit: int) -> int:
+    """打印最近几次主动发信尝试。
+
+    「它到底给谁发过什么」是发信功能唯一的问责手段，所以这个入口必须存在。
+    被白名单挡掉的尝试也在里面——「想发但没发」同样是有用的信息。
+    """
+    import json
+
+    from lcode.mailbox import OUTBOX_NAME
+
+    path = root / ".lcode" / OUTBOX_NAME
+    if not path.is_file():
+        print(f"还没有发件记录（{path}）")
+        return 0
+    try:
+        entries = [
+            json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line
+        ]
+    except (OSError, ValueError) as exc:
+        print(f"发件记录读取失败: {exc}", file=sys.stderr)
+        return 1
+    print(f"发件记录 {path}（共 {len(entries)} 条，显示最近 {min(limit, len(entries))} 条）")
+    for entry in entries[-max(1, limit) :]:
+        flag = "已发" if entry.get("ok") else "未发"
+        print("")
+        print(f"[{flag}] {entry.get('at', '')}  → {entry.get('to', '')}")
+        print(f"       主题：{entry.get('subject', '')}")
+        if entry.get("reason"):
+            print(f"       原因：{entry['reason']}")
+        preview = " ".join(str(entry.get("body_preview", "")).split())
+        print(f"       正文：{preview[:120]}")
+    return 0
+
+
+def _voice_options(cfg, args):
+    """把配置里的 voice 段和命令行覆盖合成一份 VoiceOptions。
+
+    ``cfg`` 可能为 None：``--voice-list-devices`` 在读完配置之前就分流了
+    （麦克风坏的时候，配置多半也是坏的，不该因为缺 api_key 就看不到设备列表）。
+    """
+    from lcode.voice.wake import VoiceOptions
+
+    voice_cfg = getattr(cfg, "voice", None)
+    opts = VoiceOptions.from_config(voice_cfg, project=Path.cwd().resolve())
+    words = [w for w in (getattr(args, "voice_wake", None) or []) if w.strip()]
+    if words:
+        opts.wake_words = words
+    if getattr(args, "voice_device", None) is not None:
+        opts.device = int(args.voice_device)
+    if getattr(args, "voice_project", ""):
+        opts.project = Path(args.voice_project).expanduser().resolve()
+    if getattr(args, "voice_no_speak", False):
+        opts.speak_answer = False
+    if getattr(args, "voice_tts_engine", ""):
+        opts.tts_engine = args.voice_tts_engine.strip().lower()
+    if getattr(args, "voice_tts_voice", ""):
+        opts.tts_voice = args.voice_tts_voice.strip()
+    if getattr(args, "voice_no_conversation", False):
+        opts.conversation = False
+    if getattr(args, "voice_refine", ""):
+        opts.refine = args.voice_refine.strip().lower()
+    opts.quiet = bool(getattr(args, "voice_quiet", False))
+    opts.debug = bool(getattr(args, "voice_debug", False))
+    if getattr(args, "voice_watchdog", None) is not None:
+        opts.watchdog = max(0.0, float(args.voice_watchdog))
+    opts.simulate = getattr(args, "voice_simulate", "") or ""
+    opts.simulate_audio = bool(getattr(args, "voice_simulate_audio", False))
+    if getattr(args, "voice_no_auto_run", False):
+        opts.auto_run = False
+    if getattr(args, "voice_model_dir", ""):
+        opts.model_dir = Path(args.voice_model_dir).expanduser()
+    return opts
+
+
+def _voice_asr(cfg, opts, log):
+    """按配置装配精转写；返回 None 表示「只用 vosk」。
+
+    三种后端：
+
+    - ``off``：纯 vosk，42MB 小模型，装完就能用；
+    - ``sensevoice``：本地 SenseVoice-Small（228MB），不联网、不要 key、实测 80ms；
+    - ``cloud``：走 ``audio`` 段（qwen3-asr-flash 等），按秒计费，音频离开本机。
+
+    返回的 callable 永远不抛异常（失败返回空串），并挂 ``ready()`` / ``warmup()``。
+    """
+    backend = getattr(opts, "refine", "off")
+    if backend in ("", "off"):
+        return None
+
+    if backend == "sensevoice":
+        from lcode.voice import local_asr
+
+        asr = local_asr.make_transcriber(
+            log=log,
+            num_threads=int(getattr(opts, "refine_threads", local_asr.DEFAULT_THREADS)),
+        )
+        if not asr.ready():  # type: ignore[attr-defined]
+            for line in local_asr.SenseVoice(log=log).problems():
+                log(f"! {line}")
+            log("  退回本地 vosk（识别质量会下降）")
+            return None
+        return asr
+
+    if backend == "cloud":
+        from lcode.voice import cloud
+
+        audio_cfg = getattr(cfg, "audio", None)
+        asr = cloud.make_transcriber(audio_cfg, log)
+        if not asr.ready():  # type: ignore[attr-defined]
+            log("! 开了 refine: cloud，但 audio 段没配全（需要 backend/api_key），退回本地 vosk")
+            return None
+        return asr
+
+    log(f"! 未知的 voice.refine: {backend!r}（可选 off / sensevoice / cloud），退回 vosk")
+    return None
+
+
+def _voice_list_voices(cfg, args) -> int:
+    """--voice-list-voices：把能选的音色摊开，标出当前会用的那个。
+
+    不需要模型、不需要麦克风——「换个不人机的音色」这件事不该被
+    vosk 模型缺失挡住（模型 42MB，很多人根本没下）。
+    """
+    from lcode.voice import speech
+
+    opts = _voice_options(cfg, args)
+    engine = opts.tts_engine
+    print(f"当前引擎：{engine}（配置 voice.tts_engine）")
+    if engine == speech.EDGE and not speech.edge_available():
+        print("  ! 没装 edge-tts，实际会落回 sapi（音色回到人机档）")
+        print("    安装：pip install edge-tts")
+
+    want_edge = speech.EDGE_VOICES
+    current = opts.tts_voice or (
+        speech.DEFAULT_EDGE_VOICE if engine == speech.EDGE else speech.pick_voice()
+    )
+    print("\nedge（微软在线神经语音，要联网；听起来像真人）：")
+    for name, desc in want_edge:
+        mark = "*" if name == current else " "
+        print(f" {mark} {name:<36} {desc}")
+
+    print("\nsapi（Windows 自带，离线；中文通常只有一档，人机感就来自这里）：")
+    installed = speech.list_voices()
+    if not installed:
+        print("   （没装任何 SAPI 语音）")
+    for name in installed:
+        mark = "*" if name == current else " "
+        print(f" {mark} {name}")
+
+    print('\n试听：lcode --voice-say "我是小可，现在可以说话了"')
+    print('换一个：lcode --voice-say "我是小可" --voice-tts-voice zh-CN-XiaoyiNeural')
+    return 0
+
+
+def _voice_say_text(cfg, args, text: str) -> int:
+    """--voice-say：把一句话念出来，用来试听音色。
+
+    存在的理由：音色这事只能靠耳朵定。让人去改配置、重启常驻实例、
+    再喊一声唤醒词来判断，成本高到不会有人真去调——最后就一直用人机音。
+    """
+    from lcode.voice import speech
+
+    opts = _voice_options(cfg, args)
+    engine = opts.tts_engine
+    voice = opts.tts_voice or (
+        speech.DEFAULT_EDGE_VOICE if engine == speech.EDGE else speech.pick_voice()
+    )
+    print(f"引擎 {engine} · 音色 {voice or '（无）'}")
+    if not speech.available():
+        print("只有 Windows 支持朗读。", file=sys.stderr)
+        return 2
+    ok = speech.speak(text, voice=voice, engine=engine, timeout=120)
+    if not ok:
+        print("没念出来（edge 连不上会回退 sapi，两个都不行就是真没声音）", file=sys.stderr)
+        return 1
+    return 0
+
+
+async def _run_voice(cfg, args) -> int:
+    """--voice / --voice-selftest / --voice-list-devices / --voice-list-voices。
+
+    几条路都先做一次依赖体检：缺包缺模型时说人话，不扔 ImportError 栈。
+    """
+    from lcode.voice import check
+    from lcode.voice.wake import VoiceLog
+
+    if getattr(args, "voice_list_devices", False):
+        try:
+            import sounddevice as sd
+        except ImportError:
+            print("缺少 sounddevice。安装：pip install lcode[voice]", file=sys.stderr)
+            return 2
+        from lcode.voice.devices import list_devices
+
+        print(list_devices(sd))
+        return 0
+
+    # 音色相关两条路只碰 TTS，不碰麦克风和模型：先分流，别让缺模型拦住试听
+    if getattr(args, "voice_list_voices", False):
+        return _voice_list_voices(cfg, args)
+    say_text = getattr(args, "voice_say", "") or ""
+    if say_text.strip():
+        return _voice_say_text(cfg, args, say_text)
+
+    av = check(getattr(cfg, "voice", None))
+    if getattr(args, "voice_selftest", False):
+        # 自检只要求「依赖 + 模型」，不要求 TTS：先确认麦克风通不通
+        if av.missing_packages:
+            print("缺少 Python 包：" + "、".join(av.missing_packages), file=sys.stderr)
+            print("安装：pip install lcode[voice]", file=sys.stderr)
+            return 2
+        if not av.model_ok:
+            print(f"缺少 vosk 模型：{av.model_dir}", file=sys.stderr)
+            print("下载：python -m lcode.voice.download", file=sys.stderr)
+            return 2
+
+    if not av.ready:
+        for line in av.problems():
+            print(line, file=sys.stderr)
+        return 2
+
+    from lcode.voice import wake
+
+    opts = _voice_options(cfg, args)
+    log = VoiceLog(quiet=opts.quiet)
+
+    # TTS 缺失只是念不出来，不该拦住整个功能——说清楚就行
+    if not av.tts_ok:
+        log("! 没有中文 TTS 语音，回答只会写进日志、念不出来")
+
+    try:
+        model = wake.load_model(opts.model_dir, log)
+    except wake.VoiceError as exc:
+        print(str(exc), file=sys.stderr)
+        return 2
+
+    assistant = wake.VoiceAssistant(opts, log=log, asr=_voice_asr(cfg, opts, log))
+    try:
+        if getattr(args, "voice_selftest", False):
+            return assistant.selftest(model)
+        # 回放模式不抢单实例锁：可以一边让常驻的在听，一边回放测试
+        lock = None
+        if not opts.simulate:
+            lock = wake.acquire_instance_lock()
+            if lock is None:
+                log("已经有一个语音实例在监听，本次退出（同一时间只能有一个）")
+                return 0
+        try:
+            return assistant.run(model)
+        finally:
+            if lock is not None:
+                lock.close()
+    except wake.VoiceError as exc:
+        print(str(exc), file=sys.stderr)
+        return 2
+    finally:
+        log("语音退出")
 
 
 async def _run_resident(cfg, args) -> int:
@@ -214,6 +602,25 @@ async def _amain(member_args=None) -> int:
             # 拉信不需要 LLM 配置，所以放在读配置文件之前：邮箱填对了但 api_key
             # 还没填时，也应该能先确认收信链路是通的。
             return await _check_mail(str(Path.cwd().resolve()))
+        if getattr(member_args, "mail_peek", False):
+            # 同上：纯 IMAP / 本地文件诊断，不碰模型，也不入队。
+            return await _mail_peek(
+                str(Path.cwd().resolve()),
+                max(1, int(getattr(member_args, "mail_limit", 8) or 8)),
+                outbox=bool(getattr(member_args, "mail_outbox", False)),
+            )
+        allow_to = getattr(member_args, "mail_allow_to", "") or ""
+        if allow_to.strip():
+            # 改本地配置即可，不需要模型，也不必先有 api_key。
+            return _mail_allow_to(str(Path.cwd().resolve()), allow_to.strip())
+        allow_from = getattr(member_args, "mail_allow_from", "") or ""
+        if allow_from.strip():
+            return _mail_allow_to(str(Path.cwd().resolve()), allow_from.strip(), inbound=True)
+        if getattr(member_args, "mail_allowed", False):
+            return _mail_allowed(str(Path.cwd().resolve()))
+        if getattr(member_args, "voice_list_devices", False):
+            # 列音频设备不需要 LLM 配置：麦克风坏了的时候，配置多半也是坏的
+            return await _run_voice(None, member_args)
 
     explicit = getattr(member_args, "config", "") or None
     init_only = bool(getattr(member_args, "init", False))
@@ -233,6 +640,15 @@ async def _amain(member_args=None) -> int:
     except ConfigError as exc:
         print(str(exc), file=sys.stderr)
         return 1
+
+    # 语音模式：同样不加载 TUI。放在常驻之前，因为语音本身就是走常驻队列。
+    if member_args is not None and (
+        getattr(member_args, "voice", False)
+        or getattr(member_args, "voice_selftest", False)
+        or getattr(member_args, "voice_list_voices", False)
+        or (getattr(member_args, "voice_say", "") or "").strip()
+    ):
+        return await _run_voice(cfg, member_args)
 
     # 常驻模式：不加载 TUI，直接跑无头循环。
     if member_args is not None and (
@@ -463,6 +879,19 @@ def _build_parser() -> argparse.ArgumentParser:
     resident = parser.add_argument_group("常驻模式")
     resident.add_argument("--enqueue", default="", help="把一条任务加入常驻队列后退出")
     resident.add_argument(
+        "--enqueue-origin",
+        dest="enqueue_origin",
+        default="",
+        help="任务来源标记（cli / voice），语音来源不发邮件通知",
+    )
+    resident.add_argument(
+        "--enqueue-file",
+        dest="enqueue_file",
+        default="",
+        metavar="PATH",
+        help="从 UTF-8 文件读指令并入队后退出（中文长指令走这条，避开命令行编码）",
+    )
+    resident.add_argument(
         "--tasks", dest="resident_tasks", action="store_true", help="列出常驻队列后退出"
     )
     resident.add_argument("--resident", action="store_true", help="常驻循环：轮询队列并执行任务")
@@ -505,6 +934,129 @@ def _build_parser() -> argparse.ArgumentParser:
         help="不发送任务完成/失败通知（桌面横幅），只写日志",
     )
 
+    voice = parser.add_argument_group("语音")
+    voice.add_argument(
+        "--voice",
+        action="store_true",
+        help="语音唤醒常驻：喊唤醒词 → 提问 → 念回答（需要 pip install lcode[voice]）",
+    )
+    voice.add_argument(
+        "--voice-selftest",
+        dest="voice_selftest",
+        action="store_true",
+        help="录 4 秒验证麦克风与识别，不入队",
+    )
+    voice.add_argument(
+        "--voice-list-devices",
+        dest="voice_list_devices",
+        action="store_true",
+        help="列出音频设备后退出",
+    )
+    voice.add_argument(
+        "--voice-device", dest="voice_device", type=int, default=None, help="麦克风设备编号"
+    )
+    voice.add_argument(
+        "--voice-wake",
+        dest="voice_wake",
+        action="append",
+        default=[],
+        metavar="WORD",
+        help="唤醒词（可重复；覆盖配置里的 wake_words）",
+    )
+    voice.add_argument(
+        "--voice-project",
+        dest="voice_project",
+        default="",
+        metavar="PATH",
+        help="语音任务的作用根目录（默认当前目录）",
+    )
+    voice.add_argument(
+        "--voice-model-dir",
+        dest="voice_model_dir",
+        default="",
+        metavar="PATH",
+        help="vosk 模型目录（默认 ~/.lcode/voice/models/...）",
+    )
+    voice.add_argument(
+        "--voice-no-speak",
+        dest="voice_no_speak",
+        action="store_true",
+        help="只把问题入队，不念回答",
+    )
+    voice.add_argument(
+        "--voice-no-conversation",
+        dest="voice_no_conversation",
+        action="store_true",
+        help="念完回答不再自动接着听：每次提问都要重新喊唤醒词",
+    )
+    voice.add_argument(
+        "--voice-refine",
+        dest="voice_refine",
+        default="",
+        choices=["", "off", "sensevoice", "cloud"],
+        help="精转写后端：off(纯 vosk) / sensevoice(本地免费) / cloud(audio 段，按秒计费)",
+    )
+    voice.add_argument(
+        "--voice-no-auto-run",
+        dest="voice_no_auto_run",
+        action="store_true",
+        help="不自动催 --resident-once（已有常驻 daemon 时用）",
+    )
+    voice.add_argument(
+        "--voice-simulate",
+        dest="voice_simulate",
+        default="",
+        metavar="WAV",
+        help="回放一个 16bit wav 代替麦克风（调参用）",
+    )
+    voice.add_argument(
+        "--voice-simulate-audio",
+        dest="voice_simulate_audio",
+        action="store_true",
+        help="回放时也真的出声（默认静音）",
+    )
+    voice.add_argument(
+        "--voice-debug", dest="voice_debug", action="store_true", help="打印识别片段"
+    )
+    voice.add_argument(
+        "--voice-watchdog",
+        dest="voice_watchdog",
+        type=float,
+        default=None,
+        metavar="SECONDS",
+        help="多少秒读不到音频就重建麦克风（默认 90；0 = 关掉看门狗）",
+    )
+    voice.add_argument(
+        "--voice-quiet", dest="voice_quiet", action="store_true", help="不打印、不出声"
+    )
+    voice.add_argument(
+        "--voice-tts-engine",
+        dest="voice_tts_engine",
+        default="",
+        choices=["", "edge", "sapi"],
+        help="朗读引擎：edge(在线神经语音，像真人，默认) / sapi(Windows 自带，离线)",
+    )
+    voice.add_argument(
+        "--voice-tts-voice",
+        dest="voice_tts_voice",
+        default="",
+        metavar="NAME",
+        help="音色名，如 zh-CN-XiaoxiaoNeural（edge）或 Microsoft Huihui Desktop（sapi）",
+    )
+    voice.add_argument(
+        "--voice-list-voices",
+        dest="voice_list_voices",
+        action="store_true",
+        help="列出可选音色（edge + 系统 SAPI）后退出",
+    )
+    voice.add_argument(
+        "--voice-say",
+        dest="voice_say",
+        default="",
+        metavar="TEXT",
+        help="直接用当前音色念一句话后退出（试听音色用）",
+    )
+
     mail = parser.add_argument_group("收件箱")
     mail.add_argument(
         "--mail-watch",
@@ -517,6 +1069,45 @@ def _build_parser() -> argparse.ArgumentParser:
         dest="check_mail",
         action="store_true",
         help="只拉一次收件箱并入队，然后退出（供任务计划程序调度）",
+    )
+    mail.add_argument(
+        "--mail-peek",
+        dest="mail_peek",
+        action="store_true",
+        help="诊断：打印最近邮件被解析出的正文/话题键/指令，不入队",
+    )
+    mail.add_argument(
+        "--mail-limit",
+        dest="mail_limit",
+        type=int,
+        default=8,
+        help="--mail-peek 一次查看几封（默认 8）",
+    )
+    mail.add_argument(
+        "--outbox",
+        dest="mail_outbox",
+        action="store_true",
+        help="配合 --mail-peek：改看发件记录（Agent 主动发过什么）",
+    )
+    mail.add_argument(
+        "--mail-allow-to",
+        dest="mail_allow_to",
+        default="",
+        metavar="ADDRESS",
+        help="把地址加进发信白名单（send_to），然后退出",
+    )
+    mail.add_argument(
+        "--mail-allow-from",
+        dest="mail_allow_from",
+        default="",
+        metavar="ADDRESS",
+        help="把地址加进收信白名单（senders），允许它给 Agent 派任务，然后退出",
+    )
+    mail.add_argument(
+        "--mail-allowed",
+        dest="mail_allowed",
+        action="store_true",
+        help="列出发信白名单与 SMTP 是否就绪，然后退出",
     )
     mail.add_argument(
         "--mail-allow-write",
